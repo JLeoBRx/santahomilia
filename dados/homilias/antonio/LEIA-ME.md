@@ -15,7 +15,7 @@ Etapa 2.
   de Santo Antônio”. O site permite o uso com referência à fonte. Crédito
   obrigatório em qualquer publicação: “Tradução: Lírio Católico
   (liriocatolico.com.br), conferida com o latim e revisada pelo projeto
-  Liturgia.” O projeto não é autor da tradução recebida.
+  Santa Homilia.” O projeto não é autor da tradução recebida.
 - **Latim:** edição crítica, Centro Studi Antoniani, Pádua, 1979, consultada
   nos PDFs “Fonti dei Sermones”. O texto é protegido: serve só para conferir.
   Ele **não** é reproduzido aqui; a camada `latim/` guarda só a estrutura

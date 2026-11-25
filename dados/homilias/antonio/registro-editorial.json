@@ -19,7 +19,7 @@
    "copia_recebida": "Cópia das 85 páginas enviada pelo responsável do projeto (HTTrack, 06/11/2026): Homilia dos Santos/Homilia de Santos/santo antonio de padua (1195 - 1231)/view lirio/ e view lirio.zip (mesmo conteúdo; só os fins de linha diferem).",
    "metodo_declarado": "Segundo as próprias páginas, tradução para o português do Brasil feita pelo Lírio Católico \"a partir do latim com apoio do italiano\" da edição do Centro Studi Antoniani. Segundo a página Sobre do portal, as traduções são preparadas com Inteligência Artificial (Claude.ai e ChatGPT), calibradas com traduções existentes, e passam por uma breve revisão humana.",
    "politica_de_uso": "\"Não proibimos o uso do nosso conteúdo, entretanto, solicitamos que nos referencie como fonte ao citar ou utilizar os materiais disponibilizados neste site.\" (página Sobre, Direito Autoral; cópia em Homilia dos Santos/…/politica da lirio.txt). Decisão do responsável do projeto: trabalhar com a tradução, revisá-la e creditá-la ao Lírio Católico de modo visível.",
-   "credito": "Tradução: Lírio Católico (liriocatolico.com.br), conferida com o latim e revisada pelo projeto Liturgia. O projeto não é autor da tradução recebida.",
+   "credito": "Tradução: Lírio Católico (liriocatolico.com.br), conferida com o latim e revisada pelo projeto Santa Homilia. O projeto não é autor da tradução recebida.",
    "lacunas_na_fonte": "13 parágrafos estão sem tradução nas páginas do Lírio (\"Trecho ainda sem tradução — texto em latim\"); a página exibe o latim no lugar.",
    "nota_editorial": "A tradução portuguesa de base foi obtida do Lírio Católico (liriocatolico.com.br), que não proíbe o uso de seu conteúdo e pede que seja citado como fonte. Segundo o próprio Lírio Católico, suas traduções são preparadas com auxílio de inteligência artificial, calibradas com traduções existentes, e passam por revisão humana. O projeto conferiu o texto com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979), revisou-o e corrigiu-o; os trechos traduzidos diretamente do latim pelo projeto são identificados um a um. O projeto não reivindica a autoria da tradução recebida e não tem vínculo institucional, parceria ou afiliação com o Lírio Católico.",
    "aviso_traducao_propria": "Traduzido do latim pelo projeto; ausente na tradução do Lírio."
@@ -95,6 +95,12 @@
    "origem": "Programa de retradução independente",
    "decisao": "Acionado pelo responsável. Régua: parte do comentário em sequências de 8 palavras iguais às da tradução da Vozes. Todas as traduções foram feitas às cegas, só a partir do latim. Seis traduções próprias da Etapa 1, feitas com a Vozes aberta para conferência e acima do limite (20% ou sequência de 20 palavras), foram refeitas: SD19-02, SM04-05, SD33-03, SD50-01, SD59-02 e SM03-06 (de 20–26% para 3–15%, maior sequência de 8 a 12 palavras). Dos seis parágrafos do Lírio acima de 50%, a tradução às cegas decidiu: em quatro ela ficou muito abaixo, e eles passaram a tradução própria identificada (sd40 § 2, sd02 § 2, sd61 § 6 e sd54 § 15); em dois ela também coincidiu muito (sd03 § 1: 42%; sd13 § 4: 33%), sinal de que a proximidade vem da fórmula, e o texto do Lírio ficou. O prólogo sm01 já tinha sido resolvido pela questão 4 das deliberações finais.",
    "alteracoes": "Seis entradas de tradução própria com texto novo e o campo retraducao (medição antes, na primeira versão às cegas e depois). Quatro entradas novas de tradução própria em lugar do texto do Lírio (SD40-20, SD02-13, SD61-09 e SD54-08), com aviso e decisão registrada; a correção SD61-02 deixou de ser aplicada (substituída por SD61-09). sd02, sd40, sd54 e sd61 passaram a “finalizada com ressalvas”."
+  },
+  {
+   "data": "2026-11-25",
+   "origem": "Mudança para o repositório Santa Homilia",
+   "decisao": "O responsável decidiu: (1) o crédito obrigatório passa a dizer “revisada pelo projeto Santa Homilia”, em lugar de “projeto Liturgia”; (2) os títulos dos sermões da edição da Vozes guardados no catálogo interno (sumario.json, campo vozes_titulo) ficam, por serem títulos isolados. O resultado do programa de retradução foi enviado ao responsável para a validação final da Etapa 1.",
+   "alteracoes": "Texto do crédito em procedencia.traducao_recebida e no LEIA-ME. Nenhuma alteração de texto dos sermões."
   }
  ],
  "registros": [
