@@ -1,0 +1,18 @@
+@origem Lírio Católico, https://www.liriocatolico.com.br/santo_antonio_sermoes/view/prologo-domingo-xvii-depois-de-pentecostes/ (publicada em 2026-09-15); cópia da página enviada pelo responsável do projeto: Homilia dos Santos/Homilia de Santos/santo antonio de padua (1195 - 1231)/view lirio/view/prologo-domingo-xvii-depois-de-pentecostes/index.html
+@camada tradução revisada — tradução do Lírio Católico conferida com o latim; gerada por ferramentas/homilias/antonio/aplicar_alteracoes.py a partir da recebida e do registro editorial; não editar à mão
+@sermao sd46
+@rotulo Sermões Dominicais · Parte II · Sermão n.º 46
+@alteracoes SD46-01
+@traducao-propria SD46-01 (trechos traduzidos do latim neste projeto; ver registro)
+
+@titulo
+Prólogo
+
+@titulo-latino
+Prologus
+
+@secao 0
+
+@temas
+Damos graças ao Senhor Jesus Cristo, Filho de Deus, porque, sendo ele o guia e ele o caminho, chegamos ao primeiro domingo do mês de outubro.
+Por isso, deve-se notar que, das calendas de outubro até as calendas de novembro, leem-se na Igreja os livros dos Macabeus; e nesse tempo há quatro domingos, nos quais se leem quatro Evangelhos. Com as cláusulas deles poremos em concordância, se Deus o conceder, algumas histórias dos Macabeus, conforme virmos ser mais conveniente.

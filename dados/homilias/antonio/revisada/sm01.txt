@@ -1,0 +1,24 @@
+@origem Lírio Católico, https://www.liriocatolico.com.br/santo_antonio_sermoes/view/prologo-aos-quatro-sermoes-para-as-festas-da-bem-aventurada-virgem-maria/ (publicada em 2026-09-15); cópia da página enviada pelo responsável do projeto: Homilia dos Santos/Homilia de Santos/santo antonio de padua (1195 - 1231)/view lirio/view/prologo-aos-quatro-sermoes-para-as-festas-da-bem-aventurada-virgem-maria/index.html
+@camada tradução revisada — tradução do Lírio Católico conferida com o latim; gerada por ferramentas/homilias/antonio/aplicar_alteracoes.py a partir da recebida e do registro editorial; não editar à mão
+@sermao sm01
+@rotulo Sermões Marianos · Sermão n.º 73
+@alteracoes SM01-05
+@traducao-propria SM01-05 (trechos traduzidos do latim neste projeto; ver registro)
+
+@titulo
+Prólogo aos Quatro Sermões para as Festas da Bem-aventurada Virgem Maria
+
+@titulo-latino
+Prologus in Quattuor Sermones in Festivitatibus Beatae Mariae Virginis
+
+@secao 0
+
+@temas
+“Como a estrela da manhã no meio da névoa, e como a lua cheia em seus dias, ele brilha. E como o sol resplandecente. Como o arco-íris que brilha entre as nuvens de glória, e como a flor das rosas nos dias da primavera, e como os lírios que estão junto à corrente das águas, e como o incenso que exala perfume nos dias de verão; como o fogo que brilha e o incenso que arde no fogo, como um vaso de ouro maciço, ornado de toda pedra preciosa, como a oliveira que brota e o cipreste que se eleva às alturas” (Eclo 50,6-11).
+Eis as doze pedras preciosas no diadema da cabeça de Aarão (cf. Ex 28,17-21.36-38; Sb 18,24).
+Eis as doze estrelas na coroa da gloriosa Virgem (cf. Ap 12,1). Em seu louvor, segundo as suas quatro festas, a saber, a Natividade, a Anunciação, a Purificação e a Assunção, queremos dividir em quatro sermões esta autoridade do Eclesiástico e pô-la em concordância com cada festa, brevemente, conforme a própria Senhora conceder.
+Sermão na sua Natividade: “Como a estrela da manhã no meio da névoa, e como a lua cheia em seus dias”.
+Na Anunciação: “Como o sol resplandecente, e como o arco-íris que brilha entre as nuvens de glória”.
+Na Natividade do Senhor: “Como a flor das rosas nos dias da primavera, e como os lírios que estão junto à corrente das águas”.
+Na Purificação: “Como o incenso que exala perfume nos dias de verão; como o fogo que brilha e o incenso que arde no fogo”.
+Na Assunção: “Como um vaso de ouro maciço” etc.

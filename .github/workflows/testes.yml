@@ -1,0 +1,28 @@
+name: Testes
+
+# Roda a cada push (em qualquer branch) e a cada pull request.
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    name: Calendário, leituras e homilias
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      # Node 22.13 ou mais novo: os testes usam o modelo de permissões
+      # (--permission) para isolar o cálculo de referência do motor do site.
+      - name: Instalar o Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Testes automáticos (calendário, regras do Brasil, leituras, homilias, limpeza)
+        run: node --test "ferramentas/testes/*.test.mjs"

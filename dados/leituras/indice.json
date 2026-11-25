@@ -1,0 +1,13297 @@
+{
+ "_leia": [
+  "Referências bíblicas das leituras da Missa de cada dia litúrgico, só como fato: qual é a leitura (livro, capítulo e versículos). Nenhum texto das leituras, refrões, títulos ou orações está aqui; para ler as leituras, o site indica a Liturgia Diária da CNBB.",
+  "Chaves: TC-24-segunda-II = segunda-feira da 24ª semana do Tempo Comum, Ano II; TC-24-domingo-A = 24º domingo, Ano A; santo:<id> = celebração do santoral (dados/calendario/santoral.json). As chaves são resolvidas por js/leituras.js.",
+  "Cada chave tem uma lista de conjuntos; quase sempre um só. Quando há mais de um (por exemplo, missa da vigília e missa do dia, ou leituras à escolha), o site mostra todos e remete à CNBB para saber qual se usa em cada missa.",
+  "Numeração dos salmos como no Lecionário brasileiro: grega e, entre parênteses, a hebraica (ex.: Sl 121(122)).",
+  "Origem: extraídas em 25/11/2026 do índice anterior do projeto, só a indicação bíblica de cada leitura. As poucas que o índice anterior não trazia foram indicadas à mão e estão listadas em 'indicadas_a_mao'. Os três domingos que o índice anterior não tinha (TC-7-domingo-B, TC-8-domingo-B e TC-9-domingo-A) foram indicados à mão segundo o Ordo Lectionum Missae.",
+  "Natal: o índice anterior juntava num só conjunto a missa da aurora com a do dia (natal-dia) e as missas da vigília e da noite com a manhã do dia 24 (ADV-dez24). Aqui cada missa tem a sua chave: natal-vigilia, natal-noite, natal-aurora e natal-dia. Grafia de dois salmos uniformizada (Sl 96(97),1.6.11-12; Sl 95(96),1-2a.2b-3.11-12.13)."
+ ],
+ "indicadas_a_mao": {
+  "pentecostes / Primeira leitura (missa do dia)": "At 2,1-11 (o índice anterior trazia só \"At 11\")",
+  "TC-24-domingo-C / Segunda leitura": "1Tm 1,12-17",
+  "TC-11-sabado-I / Evangelho": "Mt 6,24-34",
+  "TC-31-sexta-I / Evangelho": "Lc 16,1-8",
+  "TC-31-sexta-II / Evangelho": "Lc 16,1-8",
+  "paixaodosenhor / Evangelho": "Jo 18,1–19,42",
+  "sagradafamilia-C / Evangelho": "Lc 2,41-52",
+  "ADV-dez24 / Salmo responsorial (vigília do Natal)": "Sl 88(89),4-5.16-17.27.29",
+  "TC-14-sexta-II / Salmo responsorial": "Sl 50(51),3-4.8-9.12-13.14.17",
+  "TC-20-domingo-A / Salmo responsorial": "Sl 66(67),2-3.5.6.8",
+  "TC-20-domingo-B / Salmo responsorial": "Sl 33(34),2-3.10-11.12-13.14-15",
+  "natal-dia / Salmo responsorial (missa da aurora)": "Sl 96(97),1.6.11-12",
+  "TC-7-domingo-B (domingo inteiro)": "Is 43,18-19.21-22.24b-25; Sl 40(41),2-3.4-5.13-14; 2Cor 1,18-22; Mc 2,1-12 (o índice anterior não tinha este domingo)",
+  "TC-8-domingo-B (domingo inteiro)": "Os 2,16b.17b.21-22; Sl 102(103),1-2.3-4.8.10.12-13; 2Cor 3,1b-6; Mc 2,18-22 (o índice anterior não tinha este domingo)",
+  "TC-9-domingo-A (domingo inteiro)": "Dt 11,18.26-28.32; Sl 30(31),2-3a.3bc-4.17.25; Rm 3,21-25a.28; Mt 7,21-27 (o índice anterior não tinha este domingo)"
+ },
+ "conjuntos": {
+  "ADV-1-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 2,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 121(122),1-2.4-5.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 13,11-14a"
+    ],
+    [
+     "Evangelho",
+     "Mt 24,37-44"
+    ]
+   ]
+  ],
+  "ADV-1-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 63,16b-17.19b;64,2b-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 79(80),2ac.3b.15-16.18-19"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 1,3-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 13,33-37"
+    ]
+   ]
+  ],
+  "ADV-1-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 33,14-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),4bc-5ab.8-9.10.14"
+    ],
+    [
+     "Segunda leitura",
+     "1Ts 3,12-4,2"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,25-28.34-36"
+    ]
+   ]
+  ],
+  "ADV-1-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 25,6-10a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Evangelho",
+     "Mt 15,29-37"
+    ]
+   ]
+  ],
+  "ADV-1-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 26,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1.8-9.19-21.25-27a"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,21.24-27"
+    ]
+   ]
+  ],
+  "ADV-1-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Is 30,19-21.23-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 146(147A),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,35-10,1.6-8"
+    ]
+   ]
+  ],
+  "ADV-1-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "Is 4,2-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 121(122),1-2.3-4a.4b-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,5-11"
+    ]
+   ]
+  ],
+  "ADV-1-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 29,17-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.4.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,27-31"
+    ]
+   ]
+  ],
+  "ADV-1-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Is 11,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2.7-8.12-13.17"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,21-24"
+    ]
+   ]
+  ],
+  "ADV-2-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 11,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2.7-8.12-13.17"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 15,4-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 3,1-12"
+    ]
+   ]
+  ],
+  "ADV-2-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 40,1-5.9-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Segunda leitura",
+     "2Pd 3,8-14"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,1-8"
+    ]
+   ]
+  ],
+  "ADV-2-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Br 5,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 125(126),1-2ab.2cd-3.4-5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 1,4-6.8-11"
+    ],
+    [
+     "Evangelho",
+     "Lc 3,1-6"
+    ]
+   ]
+  ],
+  "ADV-2-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 40,25-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8. e 10"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,28-30"
+    ]
+   ]
+  ],
+  "ADV-2-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 41,13-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,11-15"
+    ]
+   ]
+  ],
+  "ADV-2-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 48,1-4.9-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 79(80),2ac e 3b.15-16.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,10-13"
+    ]
+   ]
+  ],
+  "ADV-2-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "Is 35,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,17-26"
+    ]
+   ]
+  ],
+  "ADV-2-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 48,17-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4 e 6"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,16-19"
+    ]
+   ]
+  ],
+  "ADV-2-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Is 40,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2.3.10ac.11-12.13"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,12-14"
+    ]
+   ]
+  ],
+  "ADV-3-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 35,1-6a.10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),7.8-9a.9bc-10"
+    ],
+    [
+     "Segunda leitura",
+     "Tg 5,7-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,2-11"
+    ]
+   ]
+  ],
+  "ADV-3-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 61,1-2a.10-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Lc 1,46-48.49-50.53-54"
+    ],
+    [
+     "Segunda leitura",
+     "1Ts 5,16-24"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,6-8.19-28"
+    ]
+   ]
+  ],
+  "ADV-3-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Sf 3,14-18a"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 4,4-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 3,10-18"
+    ]
+   ]
+  ],
+  "ADV-3-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 45,6b-8.18.21b-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,19-23"
+    ]
+   ]
+  ],
+  "ADV-3-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 54,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2 e 4.5-6.11.12a.13b"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,24-30"
+    ]
+   ]
+  ],
+  "ADV-3-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 24,2-7.15-17a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),4bc-5ab.6-7bc.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 21,23-27"
+    ]
+   ]
+  ],
+  "ADV-3-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 56,1-3a.6-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 66(67),2-3.5.7-8"
+    ],
+    [
+     "Evangelho",
+     "Jo 5,33-36"
+    ]
+   ]
+  ],
+  "ADV-3-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Sf 3,1-2.9-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.6-7.17-18.19.23"
+    ],
+    [
+     "Evangelho",
+     "Mt 21,28-32"
+    ]
+   ]
+  ],
+  "ADV-4-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 7,10-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2.3-4ab.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 1,1-7"
+    ],
+    [
+     "Evangelho",
+     "Mt 1,18-24"
+    ]
+   ]
+  ],
+  "ADV-4-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 7,1-5.8b-12.14a.16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),2-3.4-5.27.29"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 16,25-27"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,26-38"
+    ]
+   ]
+  ],
+  "ADV-4-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Mq 5,1-4a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 79(80),2ac.3b.15-16.18-19"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 10,5-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,39-45"
+    ]
+   ]
+  ],
+  "ADV-dez17": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 49,2.8-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2.3-4ab.7-8.17"
+    ],
+    [
+     "Evangelho",
+     "Mt 1,1-17"
+    ]
+   ]
+  ],
+  "ADV-dez18": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 23,5-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2.12-13.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 1,18-24"
+    ]
+   ]
+  ],
+  "ADV-dez19": [
+   [
+    [
+     "Primeira leitura",
+     "Jz 13,2-7.24-25a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 70(71),3-4a.5-6ab.16-17"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,5-25"
+    ]
+   ]
+  ],
+  "ADV-dez20": [
+   [
+    [
+     "Primeira leitura",
+     "Is 7,10-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2.3-4ab.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,26-38"
+    ]
+   ]
+  ],
+  "ADV-dez21": [
+   [
+    [
+     "Primeira leitura",
+     "Ct 2,8-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),2-3.11-12.20-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,39-45"
+    ]
+   ]
+  ],
+  "ADV-dez22": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 1,24-28"
+    ],
+    [
+     "Salmo responsorial",
+     "1Sm 2,1. 4-5.6-7. 8abcd"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,46-56"
+    ]
+   ]
+  ],
+  "ADV-dez23": [
+   [
+    [
+     "Primeira leitura",
+     "Ml 3,1-4.23-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),4-5ab.8-9.10 e 14"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,57-66"
+    ]
+   ]
+  ],
+  "ADV-dez24": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 7,1-5.8b-12.14a.16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),2-3.4-5.27.29"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,67-79"
+    ]
+   ]
+  ],
+  "NAT-apos-epifania-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 4,11-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2. 10-11. 12-13"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,45-52"
+    ]
+   ]
+  ],
+  "NAT-apos-epifania-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 4,19-5,4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2.14.15bc.17"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,14-22a"
+    ]
+   ]
+  ],
+  "NAT-apos-epifania-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 5,14-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5.6a e 9b"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,22-30"
+    ]
+   ]
+  ],
+  "NAT-apos-epifania-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 3,22-4,6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 2,7-8.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mt 4,12-17.23-25"
+    ]
+   ]
+  ],
+  "NAT-apos-epifania-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 5,5-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 147(147B),12-13.14-15.19-20"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,12-16"
+    ]
+   ]
+  ],
+  "NAT-apos-epifania-terca": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 4,7-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2.3-4ab.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,34-44"
+    ]
+   ]
+  ],
+  "NAT-dez29": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 2,3-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2a.2b-3.5b-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,22-35"
+    ]
+   ]
+  ],
+  "NAT-dez30": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 2,12-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),7-8a.8b-9.10"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,36-40"
+    ]
+   ]
+  ],
+  "NAT-dez31": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 2,18-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2.11-12.13"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,1-18"
+    ]
+   ]
+  ],
+  "NAT-jan02": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 2,22-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,19-28"
+    ]
+   ]
+  ],
+  "NAT-jan03": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 2,29-3,6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.3cd-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,29-34"
+    ]
+   ]
+  ],
+  "NAT-jan04": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 3,7-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.7-8.9"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,35-42"
+    ]
+   ]
+  ],
+  "NAT-jan05": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 3,11-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.4.5"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,43-51"
+    ]
+   ]
+  ],
+  "NAT-jan06": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 5,5-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 147(147B),12-13.14-15.19-20"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,7-11"
+    ]
+   ]
+  ],
+  "NAT-jan07": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 5,14-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5 e 6a e 9b"
+    ],
+    [
+     "Evangelho",
+     "Jo 2,1-11"
+    ]
+   ]
+  ],
+  "PAS-1-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "At 3,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),1-2.3-4.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Lc 24,13-35"
+    ]
+   ]
+  ],
+  "PAS-1-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "At 3,11-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 8,2a.5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Lc 24,35-48"
+    ]
+   ]
+  ],
+  "PAS-1-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "At 4,13-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1.14-15.16ab.18.19-21"
+    ],
+    [
+     "Evangelho",
+     "Mc 16,9-15"
+    ]
+   ]
+  ],
+  "PAS-1-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "At 2,14.22-32"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a.5.7-8.9-10.11"
+    ],
+    [
+     "Evangelho",
+     "Mt 28,8-15"
+    ]
+   ]
+  ],
+  "PAS-1-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "At 4,1-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1-2.4.22-24.25-27a"
+    ],
+    [
+     "Evangelho",
+     "Jo 21,1-14"
+    ]
+   ]
+  ],
+  "PAS-1-terca": [
+   [
+    [
+     "Primeira leitura",
+     "At 2,36-41"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),4-5.18-19.20.22"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,11-18"
+    ]
+   ]
+  ],
+  "PAS-2-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "At 5,17-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,16-21"
+    ]
+   ]
+  ],
+  "PAS-2-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "At 5,27-33"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2.9.17-18.19-20"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,31-36"
+    ]
+   ]
+  ],
+  "PAS-2-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "At 6,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),1-2.4-5.18-19"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,16-21"
+    ]
+   ]
+  ],
+  "PAS-2-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "At 4,23-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 2,1-3.4-6.7-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,1-8"
+    ]
+   ]
+  ],
+  "PAS-2-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "At 5,34-42"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.4.13-14"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,1-15"
+    ]
+   ]
+  ],
+  "PAS-2-terca": [
+   [
+    [
+     "Primeira leitura",
+     "At 4,32-37"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 92(93),1ab.1c-2.5"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,7b-15"
+    ]
+   ]
+  ],
+  "PAS-3-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "At 2,14.22-33"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a.5.7-8.9-10.11"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 1,17-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 24,13-35"
+    ]
+   ]
+  ],
+  "PAS-3-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "At 3,13-15.17-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 4,2.4.7.9"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 2,1-5a"
+    ],
+    [
+     "Evangelho",
+     "Lc 24,35-48"
+    ]
+   ]
+  ],
+  "PAS-3-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "At 5,27b-32.40b-41"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2.4.5-6.11.12a.13b"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 5,11-14"
+    ],
+    [
+     "Evangelho",
+     "Jo 21,1-19"
+    ]
+   ]
+  ],
+  "PAS-3-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "At 8,1b-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 65(66),1-3a.4-5. 6-7a"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,35-40"
+    ]
+   ]
+  ],
+  "PAS-3-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "At 8,26-40"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 65(66),8-9.16-17.20"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,44-51"
+    ]
+   ]
+  ],
+  "PAS-3-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "At 9,31-42"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116B),12-13.14-15.16-17"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,60-69"
+    ]
+   ]
+  ],
+  "PAS-3-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "At 6,8-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),23-24. 26-27. 29-30"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,22-29"
+    ]
+   ]
+  ],
+  "PAS-3-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "At 9,1-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 116(117),1.2"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,52-59"
+    ]
+   ]
+  ],
+  "PAS-3-terca": [
+   [
+    [
+     "Primeira leitura",
+     "At 7,51-8,1a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),3cd-4.6ab e 7b e 8a.17 e 21ab"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,30-35"
+    ]
+   ]
+  ],
+  "PAS-4-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "At 2,14a.36-41"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 2,20b-25"
+    ],
+    [
+     "Evangelho",
+     "Jo 10,1-10"
+    ]
+   ]
+  ],
+  "PAS-4-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "At 4,8-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1.8-9.21-23.26.28cd.29"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 3,1-2"
+    ],
+    [
+     "Evangelho",
+     "Jo 10,11-18"
+    ]
+   ]
+  ],
+  "PAS-4-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "At 13,14.43-52"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.5"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 7,9.14b-17"
+    ],
+    [
+     "Evangelho",
+     "Jo 10,27-30"
+    ]
+   ]
+  ],
+  "PAS-4-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "At 12,24-13,5a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 66(67),2-3.5.6 e 8"
+    ],
+    [
+     "Evangelho",
+     "Jo 12,44-50"
+    ]
+   ]
+  ],
+  "PAS-4-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "At 13,13-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),2-3. 21-22.25 e 27"
+    ],
+    [
+     "Evangelho",
+     "Jo 13,16-20"
+    ]
+   ]
+  ],
+  "PAS-4-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "At 13,44-52"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,7-14"
+    ]
+   ]
+  ],
+  "PAS-4-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "At 11,1-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 41(42),2-3;42(43),3.4"
+    ],
+    [
+     "Evangelho",
+     "Jo 10,11-18"
+    ]
+   ]
+  ],
+  "PAS-4-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "At 13,26-33"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 2,6-7.8-9.10-11"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,1-6"
+    ]
+   ]
+  ],
+  "PAS-4-terca": [
+   [
+    [
+     "Primeira leitura",
+     "At 11,19-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 86(87),1-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Jo 10,22-30"
+    ]
+   ]
+  ],
+  "PAS-5-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "At 6,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),1-2.4-5.18-19"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 2,4-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,1-12"
+    ]
+   ]
+  ],
+  "PAS-5-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "At 9,26-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 21(22),26b-27.28.30.31-32"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 3,18-24"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,1-8"
+    ]
+   ]
+  ],
+  "PAS-5-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "At 14,21b-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),8-9.10-11.12-13ab"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 21,1-5a"
+    ],
+    [
+     "Evangelho",
+     "Jo 13,31-33a.34-35"
+    ]
+   ]
+  ],
+  "PAS-5-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "At 15,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 121(122),1-2.3-4a.4b-5"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,1-8"
+    ]
+   ]
+  ],
+  "PAS-5-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "At 15,7-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2a.2b-3.10"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,9-11"
+    ]
+   ]
+  ],
+  "PAS-5-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "At 16,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.5"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,18-21"
+    ]
+   ]
+  ],
+  "PAS-5-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "At 14,5-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 113B(115),1-2.3-4.15-16"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,21-26"
+    ]
+   ]
+  ],
+  "PAS-5-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "At 15,22-31"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,12-17"
+    ]
+   ]
+  ],
+  "PAS-5-terca": [
+   [
+    [
+     "Primeira leitura",
+     "At 14,19-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),10-11.12-13ab.21"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,27-31a"
+    ]
+   ]
+  ],
+  "PAS-6-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "At 8,5-8.14-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 65(66),1-3a.4-5.6-7a.16.20"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 3,15-18"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,15-21"
+    ]
+   ]
+  ],
+  "PAS-6-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "At 10,25-26.34-35.44-48"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 4,7-10"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,9-17"
+    ]
+   ]
+  ],
+  "PAS-6-domingo-C": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 66(67),2-3.5.6.8"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 21,10-14.22-23"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,23-29"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 22,12-14.16-17.20"
+    ],
+    [
+     "Evangelho",
+     "Jo 17,20-26"
+    ]
+   ]
+  ],
+  "PAS-6-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "At 17,15.22-18,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 148,1-2.11-12ab.12c-14a.4bcd"
+    ],
+    [
+     "Evangelho",
+     "Jo 16,12-15"
+    ]
+   ]
+  ],
+  "PAS-6-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "At 18,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Evangelho",
+     "Jo 16,16-20"
+    ]
+   ]
+  ],
+  "PAS-6-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "At 18,23-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.8-9.10"
+    ],
+    [
+     "Evangelho",
+     "Jo 16,23b-28"
+    ]
+   ]
+  ],
+  "PAS-6-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "At 16,11-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5.6a e 9b"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,26-16,4a"
+    ]
+   ]
+  ],
+  "PAS-6-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "At 18,9-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Jo 16,20-23a"
+    ]
+   ]
+  ],
+  "PAS-6-terca": [
+   [
+    [
+     "Primeira leitura",
+     "At 16,22-34"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 137(138),1-2a.2bc-3.7c-8"
+    ],
+    [
+     "Evangelho",
+     "Jo 16,5-11"
+    ]
+   ]
+  ],
+  "PAS-7-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "At 1,12-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.4.7-8a"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 4,13-16"
+    ],
+    [
+     "Evangelho",
+     "Jo 17,1-11a"
+    ]
+   ]
+  ],
+  "PAS-7-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "At 20,28-38"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 67(68),29-30.33-34.35-36"
+    ],
+    [
+     "Evangelho",
+     "Jo 17,11b-19"
+    ]
+   ]
+  ],
+  "PAS-7-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "At 22,30; 23,6-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a e 5.7-8.9-10.11"
+    ],
+    [
+     "Evangelho",
+     "Jo 17,20-26"
+    ]
+   ]
+  ],
+  "PAS-7-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "At 28,16-20.30-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 10(11),4.5 e 7"
+    ],
+    [
+     "Evangelho",
+     "Jo 21,20-25"
+    ]
+   ]
+  ],
+  "PAS-7-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "At 19,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 67(68),2-3.4-5ac.6-7ab"
+    ],
+    [
+     "Evangelho",
+     "Jo 16,29-33"
+    ]
+   ]
+  ],
+  "PAS-7-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "At 25,13b-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.11-12.19-20ab"
+    ],
+    [
+     "Evangelho",
+     "Jo 21,15-19"
+    ]
+   ]
+  ],
+  "PAS-7-terca": [
+   [
+    [
+     "Primeira leitura",
+     "At 20,17-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 67(68),10-11.20-21"
+    ],
+    [
+     "Evangelho",
+     "Jo 17,1-11a"
+    ]
+   ]
+  ],
+  "QUA-0-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 30,15-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4 e 6"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,22-25"
+    ]
+   ]
+  ],
+  "QUA-0-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Is 58,9b-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 85(86),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,27-32"
+    ]
+   ]
+  ],
+  "QUA-0-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 58,1-9a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.5-6a.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,14-15"
+    ]
+   ]
+  ],
+  "QUA-1-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 2,7-9; 3,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.5-6a.12-13.14.17"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 5,12-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 4,1-11"
+    ]
+   ]
+  ],
+  "QUA-1-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 9,8-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),4bc-5ab.6-7bc.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 3,18-22"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,12-15"
+    ]
+   ]
+  ],
+  "QUA-1-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 26,4-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 90(91),1-2.10-11.12-13.14-15"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 10,8-13"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,1-13"
+    ]
+   ]
+  ],
+  "QUA-1-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Jn 3,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4,12-13.18-19"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,29-32"
+    ]
+   ]
+  ],
+  "QUA-1-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Est 4,17n.p-r.aa-bb.gg-hh"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 137(138),1-2a. 2bc-3. 7c-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,7-12"
+    ]
+   ]
+  ],
+  "QUA-1-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 26,16-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),1-2.4-5.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,43-48"
+    ]
+   ]
+  ],
+  "QUA-1-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "Lv 19,1-2.11-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19),8.9.10.15"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,31-46"
+    ]
+   ]
+  ],
+  "QUA-1-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 18,21-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 129(130),1-2.3-4.5-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,20-26"
+    ]
+   ]
+  ],
+  "QUA-1-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Is 55,10-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),4-5.6-7.16-17.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,7-15"
+    ]
+   ]
+  ],
+  "QUA-2-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 12,1-4a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),4-5.18-19.20.22"
+    ],
+    [
+     "Segunda leitura",
+     "2Tm 1,8b-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,1-9"
+    ]
+   ]
+  ],
+  "QUA-2-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 22,1-2.9a.10-13.15-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116B),10.15.16-17.18-19"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,31b-34"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,2-10"
+    ]
+   ]
+  ],
+  "QUA-2-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 15,5-12.17-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.7-8.9abc.13.14"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,28b-36"
+    ]
+   ]
+  ],
+  "QUA-2-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 18,18-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),5-6.14.15-16"
+    ],
+    [
+     "Evangelho",
+     "Mt 20,17-28"
+    ]
+   ]
+  ],
+  "QUA-2-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 17,5-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4 e 6"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,19-31"
+    ]
+   ]
+  ],
+  "QUA-2-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Mq 7,14-15.18-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.9-10.11-12"
+    ],
+    [
+     "Evangelho",
+     "Lc 15,1-3.11-32"
+    ]
+   ]
+  ],
+  "QUA-2-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 9,4b-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 78(79),8.9.11.13"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,36-38"
+    ]
+   ]
+  ],
+  "QUA-2-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 37,3-4.12-13a.17b-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),16-17.18-19.20-21"
+    ],
+    [
+     "Evangelho",
+     "Mt 21,33-43.45-46"
+    ]
+   ]
+  ],
+  "QUA-2-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Is 1,10.16-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),8-9.16bc-17.21.23"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,1-12"
+    ]
+   ]
+  ],
+  "QUA-3-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 17,3-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 5,1-2.5-8"
+    ],
+    [
+     "Evangelho",
+     "Jo 4,5-42"
+    ]
+   ]
+  ],
+  "QUA-3-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 20,1-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19),8.9.10.11"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 1,22-25"
+    ],
+    [
+     "Evangelho",
+     "Jo 2,13-25"
+    ]
+   ]
+  ],
+  "QUA-3-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 3,1-8a.13-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8-11"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 10,1-6.10.12"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,1-9"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Ex 17,3-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 5,1-2.5-8"
+    ],
+    [
+     "Evangelho",
+     "Jo 4,5-42"
+    ]
+   ]
+  ],
+  "QUA-3-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 4,1.5-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 147(147B),12-13.15-16.19-20"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,17-19"
+    ]
+   ]
+  ],
+  "QUA-3-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 7,23-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,14-23"
+    ]
+   ]
+  ],
+  "QUA-3-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Os 6,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.18-19.20-21ab"
+    ],
+    [
+     "Evangelho",
+     "Lc 18,9-14"
+    ]
+   ]
+  ],
+  "QUA-3-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 5,1-15a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 41(42),2.3; Sl 42(43),3.4"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,24-30"
+    ]
+   ]
+  ],
+  "QUA-3-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Os 14,2-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 80(81),6c-8a.8bc-9.10-11ab.14.17"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,28b-34"
+    ]
+   ]
+  ],
+  "QUA-3-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 3,25.34-43"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),4bc-5ab.6-7bc.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,21-35"
+    ]
+   ]
+  ],
+  "QUA-4-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 16,1b.6-7.10-13a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 5,8-14"
+    ],
+    [
+     "Evangelho",
+     "Jo 9,1-41"
+    ]
+   ]
+  ],
+  "QUA-4-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "2Cr 36,14-16.19-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 136(137),1-2.3.4-5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 2,4-10"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,14-21"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "1Sm 16,1b.6-7.10-13a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 5,8-14"
+    ],
+    [
+     "Evangelho",
+     "Jo 9,1-41"
+    ]
+   ]
+  ],
+  "QUA-4-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Js 5,9a.10-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.4-5.6-7"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 5,17-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 15,1-3.11-32"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "1Sm 16,1b.6-7.10-13a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 5,8-14"
+    ],
+    [
+     "Evangelho",
+     "Jo 9,1-41"
+    ]
+   ]
+  ],
+  "QUA-4-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 49,8-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),8-9.13cd-14.17-18"
+    ],
+    [
+     "Evangelho",
+     "Jo 5,17-30"
+    ]
+   ]
+  ],
+  "QUA-4-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 32,7-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 105(106),19-20.21-22.23"
+    ],
+    [
+     "Evangelho",
+     "Jo 5,31-47"
+    ]
+   ]
+  ],
+  "QUA-4-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 11,18-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 7,2-3.9bc-10.11-12"
+    ],
+    [
+     "Evangelho",
+     "Jo 7,40-53"
+    ]
+   ]
+  ],
+  "QUA-4-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "Is 65,17-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2 e 4.5-6.11-12a e 13b"
+    ],
+    [
+     "Evangelho",
+     "Jo 4,43-54"
+    ]
+   ]
+  ],
+  "QUA-4-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 2,1a.12-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),17-18.19-20.21 e 23"
+    ],
+    [
+     "Evangelho",
+     "Jo 7,1-2.10.25-30"
+    ]
+   ]
+  ],
+  "QUA-4-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 47,1-9.12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 45(46),2-3.5-6.8-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 5,1-16"
+    ]
+   ]
+  ],
+  "QUA-5-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 37,12-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 129(130),1-2.3-4ab.5-6.7-8"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,8-11"
+    ],
+    [
+     "Evangelho",
+     "Jo 11,1-45"
+    ]
+   ]
+  ],
+  "QUA-5-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 31,31-34"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.12-13.14-15"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 5,7-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 12,20-33"
+    ]
+   ]
+  ],
+  "QUA-5-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Is 43,16-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 125(126),1-2ab.2cd-3.4-5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 3,8-14"
+    ],
+    [
+     "Evangelho",
+     "Jo 8,1-11"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Ez 37,12-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 129(130),1-2.3-4ab.5-6.7-8"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,8-11"
+    ],
+    [
+     "Evangelho",
+     "Jo 11,1-45"
+    ]
+   ]
+  ],
+  "QUA-5-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 3,14-20.24.49a.91-92.95"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,52.53-54.55.56-57"
+    ],
+    [
+     "Evangelho",
+     "Jo 8,31-42"
+    ]
+   ]
+  ],
+  "QUA-5-quinta": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 17,3-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),4-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 8,51-59"
+    ]
+   ]
+  ],
+  "QUA-5-sabado": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 37,21-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Jr 31,10.11-12ab.13"
+    ],
+    [
+     "Evangelho",
+     "Jo 11,45-56"
+    ]
+   ]
+  ],
+  "QUA-5-segunda": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Evangelho",
+     "Jo 8,1-11"
+    ]
+   ]
+  ],
+  "QUA-5-sexta": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 20,10-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 17(18),2-3a.3bc-4.5-6.7"
+    ],
+    [
+     "Evangelho",
+     "Jo 10,31-42"
+    ]
+   ]
+  ],
+  "QUA-5-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 21,4-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 101(102),2-3.16-18.19-21"
+    ],
+    [
+     "Evangelho",
+     "Jo 8,21-30"
+    ]
+   ]
+  ],
+  "SS-quarta": [
+   [
+    [
+     "Primeira leitura",
+     "Is 50,4-9a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),8-10.21bcd-22.31.33-34"
+    ],
+    [
+     "Evangelho",
+     "Mt 26,14-25"
+    ]
+   ]
+  ],
+  "SS-segunda": [
+   [
+    [
+     "Primeira leitura",
+     "Is 42,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.2.3.13-14"
+    ],
+    [
+     "Evangelho",
+     "Jo 12,1-11"
+    ]
+   ]
+  ],
+  "SS-terca": [
+   [
+    [
+     "Primeira leitura",
+     "Is 49,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 70(71),1-2.3-4a.5-6ab.15.17"
+    ],
+    [
+     "Evangelho",
+     "Jo 13,21-33.36-38"
+    ]
+   ]
+  ],
+  "TC-1-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 2,14-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),1-2.3-4.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,29-39"
+    ]
+   ]
+  ],
+  "TC-1-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 3,1-10.19-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),2 e 5.7-8a.8b-9.10"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,29-39"
+    ]
+   ]
+  ],
+  "TC-1-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 3,7-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),6-7.8-9.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,40-45"
+    ]
+   ]
+  ],
+  "TC-1-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 4,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 43(44),10-11.14-15.24-25"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,40-45"
+    ]
+   ]
+  ],
+  "TC-1-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 4,12-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19B),8.9.10.15"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,13-17"
+    ]
+   ]
+  ],
+  "TC-1-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 9,1-4.17-19; 10,1a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 20(21),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,13-17"
+    ]
+   ]
+  ],
+  "TC-1-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 1,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1.2b.6e7c.9"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,14-20"
+    ]
+   ]
+  ],
+  "TC-1-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 1,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116),12-13.14.17.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,14-20"
+    ]
+   ]
+  ],
+  "TC-1-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 4,1-5.11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 77(78),3 e 4bc.6c-7.8"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,1-12"
+    ]
+   ]
+  ],
+  "TC-1-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 8,4-7.10-22a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),16-17.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,1-12"
+    ]
+   ]
+  ],
+  "TC-1-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 2,5-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 8,2a e 5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,21b-28"
+    ]
+   ]
+  ],
+  "TC-1-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 1,9-20"
+    ],
+    [
+     "Salmo responsorial",
+     "1Sm 2,1.4-5.6-7.8abcd"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,21b-28"
+    ]
+   ]
+  ],
+  "TC-10-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Os 6,3-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),1.8.12-13.14-15"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 4,18-25"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,9-13"
+    ]
+   ]
+  ],
+  "TC-10-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 3,9-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 129(130),1-2.3-4ab.4c-6.7-8"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 4,13-18-5,1"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,20-35"
+    ]
+   ]
+  ],
+  "TC-10-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 17,17-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29,2.4.5-6.11.12a.13b"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 1,11-19"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,11-17"
+    ]
+   ]
+  ],
+  "TC-10-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 3,4-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 98(99),5.6.7.8.9"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,17-19"
+    ]
+   ]
+  ],
+  "TC-10-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 18,20-39"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a.4.5 e 8.11"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,17-19"
+    ]
+   ]
+  ],
+  "TC-10-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 3,15-4,1.3-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,20-26"
+    ]
+   ]
+  ],
+  "TC-10-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 18,41-46"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 64(65),10abcd.10e-11.12-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,20-26"
+    ]
+   ]
+  ],
+  "TC-10-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 5,14-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8-9.11-12"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,33-37"
+    ]
+   ]
+  ],
+  "TC-10-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 19,19-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a.5.7-8.9-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,33-37"
+    ]
+   ]
+  ],
+  "TC-10-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 1,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,1-12"
+    ]
+   ]
+  ],
+  "TC-10-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 17,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 120(121),1-2.3-4.5-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,1-12"
+    ]
+   ]
+  ],
+  "TC-10-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 4,7-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116B),10-11.15-16.17-18"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,27-32"
+    ]
+   ]
+  ],
+  "TC-10-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 19,9a.11-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),7-8a.8b-9.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,27-32"
+    ]
+   ]
+  ],
+  "TC-10-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 1,18-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),129.130.131.132.133.134.135"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,13-16"
+    ]
+   ]
+  ],
+  "TC-10-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 17,7-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 4,2-3.4-5.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,13-16"
+    ]
+   ]
+  ],
+  "TC-11-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 19,2-6a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.5"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 5,6-11"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,36-10,8"
+    ]
+   ]
+  ],
+  "TC-11-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 17,22-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 91(92),2-3.13-14.15-16"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 5,6-10"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,26-34"
+    ]
+   ]
+  ],
+  "TC-11-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 12,7-10.13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 31(32),1-2.5.7.11"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 2,16.19-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,36-8,3"
+    ]
+   ]
+  ],
+  "TC-11-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 9,6-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.3-4.9"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,1-6.16-18"
+    ]
+   ]
+  ],
+  "TC-11-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 2,1.6-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),20.21.24"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,1-6.16-18"
+    ]
+   ]
+  ],
+  "TC-11-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 11,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110(111),1-2.3-4.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,7-15"
+    ]
+   ]
+  ],
+  "TC-11-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 48,1-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.3-4.5-6.7"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,7-15"
+    ]
+   ]
+  ],
+  "TC-11-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 12,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),8-9.10-11.12-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,24-34"
+    ]
+   ]
+  ],
+  "TC-11-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Cr 24,17-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),4-5.29-30.31-32.33-34"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,24-34"
+    ]
+   ]
+  ],
+  "TC-11-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 6,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,38-42"
+    ]
+   ]
+  ],
+  "TC-11-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 21,1-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 5,2-3.5-6.7"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,38-42"
+    ]
+   ]
+  ],
+  "TC-11-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 11,18.21b-30"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,19-23"
+    ]
+   ]
+  ],
+  "TC-11-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 11,1-4.9-18.20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 131(132),11.12.13-14.17-18"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,19-23"
+    ]
+   ]
+  ],
+  "TC-11-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 8,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),2.5-6.7.8-9a"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,43-48"
+    ]
+   ]
+  ],
+  "TC-11-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 21,17-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.5-6a.11 e 16"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,43-48"
+    ]
+   ]
+  ],
+  "TC-12-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 20,10-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),8-10.14.17.33-35"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 5,12-15"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,26-33"
+    ]
+   ]
+  ],
+  "TC-12-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 38,1.8-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 106(107),23-24.25-26.28-29.30-31"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 5,14-17"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,35-41"
+    ]
+   ]
+  ],
+  "TC-12-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Zc 12,10-11;13,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 62(63),2abcd.2e-4.5-6.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 3,26-29"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,18-24"
+    ]
+   ]
+  ],
+  "TC-12-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 15,1-12.17-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),1-2.3-4.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,15-20"
+    ]
+   ]
+  ],
+  "TC-12-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 22,8-13; 23,1-3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),33.34.35.36.37.40"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,15-20"
+    ]
+   ]
+  ],
+  "TC-12-quinta-I": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 105(106),1-2.3-4a.4b-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,21-29"
+    ]
+   ]
+  ],
+  "TC-12-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 24,8-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 78(79),1-2.3-5.8.9"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,21-29"
+    ]
+   ]
+  ],
+  "TC-12-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 18,1-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Lc 1,46-47.48-49.50 e 53.54-55"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,5-17"
+    ]
+   ]
+  ],
+  "TC-12-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Lm 2,2.10-14.18-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 73(74),1-2.3-4.5-7.20-21"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,5-17"
+    ]
+   ]
+  ],
+  "TC-12-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 12,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),12-13.18-19.20 e 22"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,1-5"
+    ]
+   ]
+  ],
+  "TC-12-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 17,5-8.13-15a.18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 59(60),3.4-5.11-12a.12b-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,1-5"
+    ]
+   ]
+  ],
+  "TC-12-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 17,1.9-10.15-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,1-4"
+    ]
+   ]
+  ],
+  "TC-12-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 25,1-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 136(137),1-2.3.4-5.6"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,1-4"
+    ]
+   ]
+  ],
+  "TC-12-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 13,2.5-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 14(15),2-3ab.3cd-4ab.5"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,6.12-14"
+    ]
+   ]
+  ],
+  "TC-12-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 19,9b-11.14-21.31-35a.36"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 47(48),2-3a.3b-4.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,6.12-14"
+    ]
+   ]
+  ],
+  "TC-13-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 4,8-11.14-16a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),2-3.16-17.18-19"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 6,3-4.8-11"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,37-42"
+    ]
+   ]
+  ],
+  "TC-13-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 1,13-15;2,23-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2.4.5-6.11.12a.13b"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 8,7.9.13-15"
+    ],
+    [
+     "Evangelho",
+     "Mc 5,21-43"
+    ]
+   ]
+  ],
+  "TC-13-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 19,16b.19-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a.5.7-8.9-10.11"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 5,1.13-18"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,51-62"
+    ]
+   ]
+  ],
+  "TC-13-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 21,5.8-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),7-8.10-11.12-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,28-34"
+    ]
+   ]
+  ],
+  "TC-13-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Am 5,14-15.21-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),7.8-9.10-11.12-13.16bc-17"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,28-34"
+    ]
+   ]
+  ],
+  "TC-13-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 22,1-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 114(115),1-2.3-4.5-6.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,1-8"
+    ]
+   ]
+  ],
+  "TC-13-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Am 7,10-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19),8.9.10.11"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,1-8"
+    ]
+   ]
+  ],
+  "TC-13-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 27,1-5.15-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 134(135),1-2.3-4. 5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,14-17"
+    ]
+   ]
+  ],
+  "TC-13-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Am 9,11-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,14-17"
+    ]
+   ]
+  ],
+  "TC-13-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 18,16-33"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8-9.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,18-22"
+    ]
+   ]
+  ],
+  "TC-13-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Am 2,6-10.13-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),16bc-17.18-19.20-21.22-23"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,18-22"
+    ]
+   ]
+  ],
+  "TC-13-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 23,1-4.19; 24,1-8.62-67"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 105(106),1-2.3-4a.4b-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,9-13"
+    ]
+   ]
+  ],
+  "TC-13-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Am 8,4-6.9-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),2.10.20.30.40.131"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,9-13"
+    ]
+   ]
+  ],
+  "TC-13-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 19,15-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 25(26),2-3.9-10.11-12"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,23-27"
+    ]
+   ]
+  ],
+  "TC-13-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Am 3,1-8; 4,11-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 5,5-6.7.8"
+    ],
+    [
+     "Evangelho",
+     "Mt 8,23-27"
+    ]
+   ]
+  ],
+  "TC-14-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Zc 9,9-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),1-2.8-9.10-11.13cd-14"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,9.11-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,25-30"
+    ]
+   ]
+  ],
+  "TC-14-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 2,2-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 122(123),1-2a.2bcd.3-4"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 12,7-10"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,1-6"
+    ]
+   ]
+  ],
+  "TC-14-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Is 66,10-14c"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 65(66),1-3a.4-5.6-7a.16.20"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 6,14-18"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,1-12.17-20"
+    ]
+   ]
+  ],
+  "TC-14-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 41,55-57.42,5-7a.17-24a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),2-3.10-11.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,1-7"
+    ]
+   ]
+  ],
+  "TC-14-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Os 10,1-3.7-8.12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,1-7"
+    ]
+   ]
+  ],
+  "TC-14-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 44,18-21.23b-29.45,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),16-17.18-19.20-21"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,7-15"
+    ]
+   ]
+  ],
+  "TC-14-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Os 11,1-4.8c-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 79(80),2ac e 3b.15-16"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,7-15"
+    ]
+   ]
+  ],
+  "TC-14-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 49,29-32; 50,15-26a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),1-2.3-4.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,24-33"
+    ]
+   ]
+  ],
+  "TC-14-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Is 6,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 92(93),1ab.1c-2.5"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,24-33"
+    ]
+   ]
+  ],
+  "TC-14-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 28,10-22a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 90(91),1-2.3-4.14-15ab"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,18-26"
+    ]
+   ]
+  ],
+  "TC-14-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Os 2,16.17b-18.21-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,18-26"
+    ]
+   ]
+  ],
+  "TC-14-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 46,1-7.28-30"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 36(37),3-4.18-19.27-28.39-40"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,16-23"
+    ]
+   ]
+  ],
+  "TC-14-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Os 14,2-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.8-9.12-13.14.17"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,16-23"
+    ]
+   ]
+  ],
+  "TC-14-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 32,23-33"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 16(17),1.2-3.6-7.8b e 15"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,32-38"
+    ]
+   ]
+  ],
+  "TC-14-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Os 8,4-7.11-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 113B(115),3-4.5-6.7ab-8.9-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,32-38"
+    ]
+   ]
+  ],
+  "TC-15-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 55,10-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 64(65),10.11.12-13.14"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,18-23"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,1-23"
+    ]
+   ]
+  ],
+  "TC-15-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Am 7,12-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,7-13"
+    ]
+   ]
+  ],
+  "TC-15-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 30,10-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),14.17.30-31.33-34.36ab.37"
+    ],
+    [
+     "Segunda leitura",
+     "Cl 1,15-20"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,25-37"
+    ]
+   ]
+  ],
+  "TC-15-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 3,1-6.9-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,25-27"
+    ]
+   ]
+  ],
+  "TC-15-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Is 10,5-7.13-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 93(94),5-6.7-8.9-10.14-15"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,25-27"
+    ]
+   ]
+  ],
+  "TC-15-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 3,13-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),1 e 5.8-9.24-25.26-27"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,28-30"
+    ]
+   ]
+  ],
+  "TC-15-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Is 26,7-9.12.16-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 101(102),13-15.16-18.19-21"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,28-30"
+    ]
+   ]
+  ],
+  "TC-15-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 12,37-42"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 135(136),1 e 23-24.10-12.13-15"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,14-21"
+    ]
+   ]
+  ],
+  "TC-15-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Mq 2,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 9B(10),1-2.3-5.7-8.14"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,14-21"
+    ]
+   ]
+  ],
+  "TC-15-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 1,8-14.22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 123(124),1-3.4-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,34-11,1"
+    ]
+   ]
+  ],
+  "TC-15-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Is 1,10-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),8-9.16bc-17.21 e 23"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,34-11,1"
+    ]
+   ]
+  ],
+  "TC-15-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 11,10-12,14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116B),12-13.15-16.17-18"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,1-8"
+    ]
+   ]
+  ],
+  "TC-15-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Is 38,1-6.21-22.7-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 38,10.11.12.16"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,1-8"
+    ]
+   ]
+  ],
+  "TC-15-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 2,1-15a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),3.14.30-31.33-34"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,20-24"
+    ]
+   ]
+  ],
+  "TC-15-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Is 7,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 47(48),2-3a.3b-4.5-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,20-24"
+    ]
+   ]
+  ],
+  "TC-16-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 12,13.16-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 85(86),5-6.9-10.15-16a"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,26-27"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,24-43"
+    ]
+   ]
+  ],
+  "TC-16-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 23,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 2,13-18"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,30-34"
+    ]
+   ]
+  ],
+  "TC-16-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 18,1-10a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 14(15),2-3ab.3cd-4ab.5"
+    ],
+    [
+     "Segunda leitura",
+     "Cl 1,24-28"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,38-42"
+    ]
+   ]
+  ],
+  "TC-16-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 16,1-5.9-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 77(78),18-19.23-24.25-26.27-28"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,1-9"
+    ]
+   ]
+  ],
+  "TC-16-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 1,1.4-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 70(71),1-2.3-4a.5-6ab.15ab e 17"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,1-9"
+    ]
+   ]
+  ],
+  "TC-16-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 19,1-2.9-11.16-20b"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,52.53-54.55.56-57"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,10-17"
+    ]
+   ]
+  ],
+  "TC-16-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 2,1-3.7-8.12-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 35(36),6-7ab.8-9.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,10-17"
+    ]
+   ]
+  ],
+  "TC-16-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 24,3-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),1-2.5-6.14-15"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,24-30"
+    ]
+   ]
+  ],
+  "TC-16-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 7,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 83(84),3.4.5-6a e 8a.11"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,24-30"
+    ]
+   ]
+  ],
+  "TC-16-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 14,5-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Ex 15,1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,38-42"
+    ]
+   ]
+  ],
+  "TC-16-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Mq 6,1-4.6-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),5-6.8-9.16bc-17.21 e 23"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,38-42"
+    ]
+   ]
+  ],
+  "TC-16-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 20,1-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19B),8.9.10.11"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,18-23"
+    ]
+   ]
+  ],
+  "TC-16-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 3,14-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Jr 31,10.11-12ab.13"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,18-23"
+    ]
+   ]
+  ],
+  "TC-16-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 14,21-15,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Ex 15,8-9.10 e 12.17"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,46-50"
+    ]
+   ]
+  ],
+  "TC-16-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Mq 7,14-15.18-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),2-4.5-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 12,46-50"
+    ]
+   ]
+  ],
+  "TC-17-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 3,5.7-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),57.72.76-77.127-128.129-130"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,28-30"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,44-52"
+    ]
+   ]
+  ],
+  "TC-17-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 4,42-44"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),10-11.15-16.17-18"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 4,1-6"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,1-15"
+    ]
+   ]
+  ],
+  "TC-17-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 18,20-32"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 137(138),1-2a.2bc-3.6-7ab.7c.8"
+    ],
+    [
+     "Segunda leitura",
+     "Cl 2,12-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,1-13"
+    ]
+   ]
+  ],
+  "TC-17-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 34,29-35"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 98(99),5.6.7.9"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,44-46"
+    ]
+   ]
+  ],
+  "TC-17-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 15,10.16-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 58(59),2-3.4-5a.10-11.17.18"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,44-46"
+    ]
+   ]
+  ],
+  "TC-17-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 40,16-21.34-38"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 83"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,47-53"
+    ]
+   ]
+  ],
+  "TC-17-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 18,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,47-53"
+    ]
+   ]
+  ],
+  "TC-17-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Lv 25,1.8-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 66(67),2-3.5.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,1-12"
+    ]
+   ]
+  ],
+  "TC-17-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 26,11-16.24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),15-16.30-31.33-34"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,1-12"
+    ]
+   ]
+  ],
+  "TC-17-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 32,15-24.30-34"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 105(106),19-20.21-22.23"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,31-35"
+    ]
+   ]
+  ],
+  "TC-17-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 13,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Dt 32,18-19. 20. 21"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,31-35"
+    ]
+   ]
+  ],
+  "TC-17-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Lv 23,1.4-11.15-16.27.34b-37"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 80(81),3-4.5-6ab.10-11ab"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,54-58"
+    ]
+   ]
+  ],
+  "TC-17-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 26,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),5.8-10.14"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,54-58"
+    ]
+   ]
+  ],
+  "TC-17-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 33,7-11; 34,5b.28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),6-7.8-9.10-11.12-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,36-43"
+    ]
+   ]
+  ],
+  "TC-17-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 14,17-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 78(79),8.9.11 e 13"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,36-43"
+    ]
+   ]
+  ],
+  "TC-18-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 55,1-3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),8-9.15-16.17-18"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,35.37-39"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,13-21"
+    ]
+   ]
+  ],
+  "TC-18-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 16,2-4.12-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 77(78),3.4bc.23-24.25.54"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 4,17.20-24"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,24-35"
+    ]
+   ]
+  ],
+  "TC-18-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Ecl 1,2; 2,21-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),3-4.5-6.12-13.14.17"
+    ],
+    [
+     "Segunda leitura",
+     "Cl 3,1-5.9-11"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,13-21"
+    ]
+   ]
+  ],
+  "TC-18-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 13,1-2.25-14,1.26-30.34-35"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 105(106),6-7a.13-14.21-22.23"
+    ],
+    [
+     "Evangelho",
+     "Mt 15,21-28"
+    ]
+   ]
+  ],
+  "TC-18-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 31,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Jr 31,10.11-12ab.13"
+    ],
+    [
+     "Evangelho",
+     "Mt 15,21-28"
+    ]
+   ]
+  ],
+  "TC-18-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 20,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,13-23"
+    ]
+   ]
+  ],
+  "TC-18-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 31,31-34"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),12-13.14-15.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,13-23"
+    ]
+   ]
+  ],
+  "TC-18-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 6,4-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 17(18),2-3a.3bc-4.47 e 51ab"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,14-20"
+    ]
+   ]
+  ],
+  "TC-18-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Hab 1,12-2,4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 9A(9),8-9.10-11.12-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,14-20"
+    ]
+   ]
+  ],
+  "TC-18-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 11,4b-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 80(81),12-13.14-15.16-17"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,13-21"
+    ]
+   ]
+  ],
+  "TC-18-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 28,1-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),29.43.79.80.95.102"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,13-21"
+    ]
+   ]
+  ],
+  "TC-18-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 4,32-40"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 76(77),12-13.14-15.16 e 21"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,24-28"
+    ]
+   ]
+  ],
+  "TC-18-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Na 2,1.3; 3,1-3.6-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Dt 32,35cd-36ab.39abcd.41"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,24-28"
+    ]
+   ]
+  ],
+  "TC-18-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 12,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.5-6a.6bc-7.12-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,22-36"
+    ]
+   ]
+  ],
+  "TC-18-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 28,1-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),29.43.79.80.95.102"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,22-36"
+    ]
+   ]
+  ],
+  "TC-19-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 19,9a.11-13a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 9,1-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 14,22-33"
+    ]
+   ]
+  ],
+  "TC-19-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 19,4-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 4,30-5,2"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,41-51"
+    ]
+   ]
+  ],
+  "TC-19-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 18,6-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),1.12.18-19.20.22"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 11,1-2.8-19"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,32-48"
+    ]
+   ]
+  ],
+  "TC-19-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 34,1-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 65(66),1-3a.5 e 16-17"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,15-20"
+    ]
+   ]
+  ],
+  "TC-19-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 9,1-7; 10,18-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 112(113),1-2. 3-4. 5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,15-20"
+    ]
+   ]
+  ],
+  "TC-19-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Js 3,7-10a.11.13-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 113A(114),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,21-19,1"
+    ]
+   ]
+  ],
+  "TC-19-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 12,1-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 77(78),56-57.58-59.61-62"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,21-19,1"
+    ]
+   ]
+  ],
+  "TC-19-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Js 24,14-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a.5.7-8.11"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,13-15"
+    ]
+   ]
+  ],
+  "TC-19-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 18,1-10.13b.30-32"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),12-13.14-15.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,13-15"
+    ]
+   ]
+  ],
+  "TC-19-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 10,12-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 147(147B),12-13.14-15.19-20"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,22-27"
+    ]
+   ]
+  ],
+  "TC-19-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 1,2-5.24-28c"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 148,1-2.11-12ab.12c-14a.14bcd"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,22-27"
+    ]
+   ]
+  ],
+  "TC-19-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Js 24,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 135(136),1-3.16-18.21-22.24"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,3-12"
+    ]
+   ]
+  ],
+  "TC-19-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 16,1-15.60.63"
+    ],
+    [
+     "Primeira leitura",
+     "Ez 16,59-63"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,3-12"
+    ]
+   ]
+  ],
+  "TC-19-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 31,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Dt 32,3-4a.7.8.9 e 12"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,1-5.10.12-14"
+    ]
+   ]
+  ],
+  "TC-19-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 2,8-3,4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),14.24.72.103.111.131"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,1-5.10.12-14"
+    ]
+   ]
+  ],
+  "TC-2-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 49,3.5-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),2.4ab.7-8a.8b-9.10"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 1,1-3"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,29-34"
+    ]
+   ]
+  ],
+  "TC-2-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 3,3b-10.19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),2.4ab.7-8a.8b-9.10"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 6,13c-15a.17-20"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,35-42"
+    ]
+   ]
+  ],
+  "TC-2-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Is 62,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2a.2b-3.7-8a.9-10a.c"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 12,4-11"
+    ],
+    [
+     "Evangelho",
+     "Jo 2,1-11"
+    ]
+   ]
+  ],
+  "TC-2-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 7,1-3.15-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 109(110),1.2.3.4"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,1-6"
+    ]
+   ]
+  ],
+  "TC-2-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 17,32-33.37.40-51"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 143"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,1-6"
+    ]
+   ]
+  ],
+  "TC-2-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 7,25-8,6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),7-8a.8b-9.10.17"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,7-12"
+    ]
+   ]
+  ],
+  "TC-2-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 18,6-9; 19,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 55(56),2-3.9-10.11-13"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,7-12"
+    ]
+   ]
+  ],
+  "TC-2-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 9,2-3.11-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,20-21"
+    ]
+   ]
+  ],
+  "TC-2-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 1,1-4.11-12.19.23-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 79(80),2-3.5-7"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,20-21"
+    ]
+   ]
+  ],
+  "TC-2-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 5,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 109(110),1.2.3.4"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,18-22"
+    ]
+   ]
+  ],
+  "TC-2-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 15,16-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),8-9.16bc-17.21.23"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,18-22"
+    ]
+   ]
+  ],
+  "TC-2-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 8,6-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),8 e 10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,13-19"
+    ]
+   ]
+  ],
+  "TC-2-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 24,3-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 56(57),2.3-4.6 e 11"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,13-19"
+    ]
+   ]
+  ],
+  "TC-2-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 6,10-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110(111),1-2.4-5.9 e 10c"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,23-28"
+    ]
+   ]
+  ],
+  "TC-2-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 16,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),20.21-22.27-28"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,23-28"
+    ]
+   ]
+  ],
+  "TC-20-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 56,1.6-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 66(67),2-3.5.6.8"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 11,13-15.29-32"
+    ],
+    [
+     "Evangelho",
+     "Mt 15,21-28"
+    ]
+   ]
+  ],
+  "TC-20-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Pr 9,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.10-11.12-13.14-15"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 5,15-20"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,51-58"
+    ]
+   ]
+  ],
+  "TC-20-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 38,4-6.8-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),2.3.4.18"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 12,1-4"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,49-53"
+    ]
+   ]
+  ],
+  "TC-20-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jz 9,6-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 20(21),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mt 20,1-16a"
+    ]
+   ]
+  ],
+  "TC-20-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 34,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a,3b-4.5.6"
+    ],
+    [
+     "Evangelho",
+     "Mt 20,1-16a"
+    ]
+   ]
+  ],
+  "TC-20-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jz 11,19-39a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),5.7-8a.8b-9.10"
+    ],
+    [
+     "Evangelho",
+     "Mt 22,1-14"
+    ]
+   ]
+  ],
+  "TC-20-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 36,23-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),12-13.14-15.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 22,1-14"
+    ]
+   ]
+  ],
+  "TC-20-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rt 2,1-3.8-11; 4,13-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,1-12"
+    ]
+   ]
+  ],
+  "TC-20-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 43,1-7a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,1-12"
+    ]
+   ]
+  ],
+  "TC-20-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jz 2,11-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 105(106),34-35.36-37.39-40.43ab e 44"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,16-22"
+    ]
+   ]
+  ],
+  "TC-20-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 24,15-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Dt 32,18-19.20.21"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,16-22"
+    ]
+   ]
+  ],
+  "TC-20-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rt 1,1.3-6.14b-16.22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),5-6.7.8-9a.9bc-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 22,34-40"
+    ]
+   ]
+  ],
+  "TC-20-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 37,1-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 106(107),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 22,34-40"
+    ]
+   ]
+  ],
+  "TC-20-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jz 6,11-24a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9. 11-12. 13-14"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,23-30"
+    ]
+   ]
+  ],
+  "TC-20-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 28,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Dt 32,26-27ab.27cd-28.30.35cd-36ab"
+    ],
+    [
+     "Evangelho",
+     "Mt 19,23-30"
+    ]
+   ]
+  ],
+  "TC-21-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 22,19-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 137(138),1-2a.2bc-3.6.8bc"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 11,33-36"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,13-20"
+    ]
+   ]
+  ],
+  "TC-21-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Js 24,1-2a.15-17.18b"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.16-17.18-19.20-21.22-23"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 5,21-32"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,60-69"
+    ]
+   ]
+  ],
+  "TC-21-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Is 66,18-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 116(117),1.2"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 12,5-7.11-13"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,22-30"
+    ]
+   ]
+  ],
+  "TC-21-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 2,9-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 138"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,27-32"
+    ]
+   ]
+  ],
+  "TC-21-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Ts 3,6-10.16-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.4-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,27-32"
+    ]
+   ]
+  ],
+  "TC-21-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 3,7-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),3-4.12-13.14 e 17"
+    ],
+    [
+     "Evangelho",
+     "Mt 24,42-51"
+    ]
+   ]
+  ],
+  "TC-21-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 1,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mt 24,42-51"
+    ]
+   ]
+  ],
+  "TC-21-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 4,9-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.7-8.9"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,14-30"
+    ]
+   ]
+  ],
+  "TC-21-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 1,26-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32,12-13. 18-19. 20-21"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,14-30"
+    ]
+   ]
+  ],
+  "TC-21-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 1,1-5.8b-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5-6a e 9b"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,13-22"
+    ]
+   ]
+  ],
+  "TC-21-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Ts 1,1-5.11b-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2a.2b-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,13-22"
+    ]
+   ]
+  ],
+  "TC-21-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 4,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1 e 2b.5-6.10.11-12"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,1-13"
+    ]
+   ]
+  ],
+  "TC-21-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 1,17-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),1-2.4-5.10ab e 11"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,1-13"
+    ]
+   ]
+  ],
+  "TC-21-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 2,1-8 1"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 138(139),1-3.4-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,23-26"
+    ]
+   ]
+  ],
+  "TC-21-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Ts 2,1-3a.14-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),10.11-12a.12b-13"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,23-26"
+    ]
+   ]
+  ],
+  "TC-22-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 20,7-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 62(63),2.3-4.5-6.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 12,1-2"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,21-27"
+    ]
+   ]
+  ],
+  "TC-22-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 4,1-2.6-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 14(15),2-3ab.3cd-4ab.5"
+    ],
+    [
+     "Segunda leitura",
+     "Tg 1,17-18.21b-22.27"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,1-8.14-15.21-23"
+    ]
+   ]
+  ],
+  "TC-22-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 3,19-21.30-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 67(68),4-5ac.6-7ab.10-11"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 12,18-19.22-24a"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,1.7-14"
+    ]
+   ]
+  ],
+  "TC-22-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 1,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 51(52),10.11"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,38-44"
+    ]
+   ]
+  ],
+  "TC-22-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 3,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),12-13.14-15.20-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,38-44"
+    ]
+   ]
+  ],
+  "TC-22-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 1,9-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),2-3ab.3cd-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,1-11"
+    ]
+   ]
+  ],
+  "TC-22-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 3,18-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2.3-4ab.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,1-11"
+    ]
+   ]
+  ],
+  "TC-22-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 1,21-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 53(54),3-4.6 e 8"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,1-5"
+    ]
+   ]
+  ],
+  "TC-22-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 4,6b-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),17-18.19-20.21"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,1-5"
+    ]
+   ]
+  ],
+  "TC-22-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 4,13-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1 e 3.4-5.11-12.13"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,16-30"
+    ]
+   ]
+  ],
+  "TC-22-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 2,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),97.98.99.100.101.102"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,16-30"
+    ]
+   ]
+  ],
+  "TC-22-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 1,15-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.4.5"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,33-39"
+    ]
+   ]
+  ],
+  "TC-22-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 4,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 36(37),3-4.5-6.27-28.39-40"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,33-39"
+    ]
+   ]
+  ],
+  "TC-22-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Ts 5,1-6.9-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.4.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,31-37"
+    ]
+   ]
+  ],
+  "TC-22-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 2,10b-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),8-9.10-11.12-13ab.13cd-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,31-37"
+    ]
+   ]
+  ],
+  "TC-23-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 33,7-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 13,8-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,15-20"
+    ]
+   ]
+  ],
+  "TC-23-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 35,4-7a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),7.8-9a.9bc-10"
+    ],
+    [
+     "Segunda leitura",
+     "Tg 2,1-5"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,31-37"
+    ]
+   ]
+  ],
+  "TC-23-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 9,13-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),3-4.5-6.12-13.14.17"
+    ],
+    [
+     "Segunda leitura",
+     "Fm 9b-10.12-17"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,25-33"
+    ]
+   ]
+  ],
+  "TC-23-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 3,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),2-3. 10-11.12-13ab"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,20-26"
+    ]
+   ]
+  ],
+  "TC-23-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 7,25-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 44(45),11-12.14-15.16-17"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,20-26"
+    ]
+   ]
+  ],
+  "TC-23-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 3,12-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 150,1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,27-38"
+    ]
+   ]
+  ],
+  "TC-23-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 8,1b-7.11-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 138(139),1-3.13-14ab-23-24"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,27-38"
+    ]
+   ]
+  ],
+  "TC-23-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 1,15-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 112(113),1-2.3-4.5a e 6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,43-49"
+    ]
+   ]
+  ],
+  "TC-23-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 10,14-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116),12-13.17-18"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,43-49"
+    ]
+   ]
+  ],
+  "TC-23-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 1,24-2,3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 61(62),6-7.9"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,6-11"
+    ]
+   ]
+  ],
+  "TC-23-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 5,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 5,5-6.7.12"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,6-11"
+    ]
+   ]
+  ],
+  "TC-23-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 1,1-2.12-14,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),1-2a.5.7-8.11"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,39-42"
+    ]
+   ]
+  ],
+  "TC-23-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 9,16-19.22b-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 83(84),3.4.5-6.12"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,39-42"
+    ]
+   ]
+  ],
+  "TC-23-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Cl 2,6-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,12-19"
+    ]
+   ]
+  ],
+  "TC-23-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 6,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5-6a.9b"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,12-19"
+    ]
+   ]
+  ],
+  "TC-24-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 27,33-28,9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.9-10.11-12"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 14,7-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,21-35"
+    ]
+   ]
+  ],
+  "TC-24-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 50,5-9a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 114(115),1-2.3-4.5-6.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Tg 2,14-18"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,27-35"
+    ]
+   ]
+  ],
+  "TC-24-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 32,7-11.13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.12-13.17.19"
+    ],
+    [
+     "Segunda leitura",
+     "1Tm 1,12-17"
+    ],
+    [
+     "Evangelho",
+     "Lc 15,1-32"
+    ]
+   ]
+  ],
+  "TC-24-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 3,14-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,31-35"
+    ]
+   ]
+  ],
+  "TC-24-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 12,31-13,13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),2-3.4-5.12.22"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,31-35"
+    ]
+   ]
+  ],
+  "TC-24-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 4,12-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110(111),7-8.9.10"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,36-50"
+    ]
+   ]
+  ],
+  "TC-24-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 15,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,36-50"
+    ]
+   ]
+  ],
+  "TC-24-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 6,13-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,4-15"
+    ]
+   ]
+  ],
+  "TC-24-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 15,35-37.42-49"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 55(56),10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,4-15"
+    ]
+   ]
+  ],
+  "TC-24-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 2,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 27(28),2.7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,1-10"
+    ]
+   ]
+  ],
+  "TC-24-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 11,17-26.33"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),7-8a.8b-9.10.17"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,1-10"
+    ]
+   ]
+  ],
+  "TC-24-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 6,2c-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 48"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,1-3"
+    ]
+   ]
+  ],
+  "TC-24-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 15,12-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 16(17),1.6-7.8b e 15"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,1-3"
+    ]
+   ]
+  ],
+  "TC-24-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Tm 3,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 100(101),1-2ab.2cd-3ab.5.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,11-17"
+    ]
+   ]
+  ],
+  "TC-24-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 12,12-14.27-31a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.4.5"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,11-17"
+    ]
+   ]
+  ],
+  "TC-25-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 55,6-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),2-3.8-9.17-18"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 1,20c-24.27a"
+    ],
+    [
+     "Evangelho",
+     "Mt 20,1-16a"
+    ]
+   ]
+  ],
+  "TC-25-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 2,12.17-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 53(54),3-4.5.6.8"
+    ],
+    [
+     "Segunda leitura",
+     "Tg 3,16-4,3"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,30-37"
+    ]
+   ]
+  ],
+  "TC-25-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Am 8,4-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 112(113),1-2.4-6.7-8"
+    ],
+    [
+     "Segunda leitura",
+     "1Tm 2,1-8"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,1-13"
+    ]
+   ]
+  ],
+  "TC-25-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Esd 9,5-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Tb 13,2.3-4.5.8"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,1-6"
+    ]
+   ]
+  ],
+  "TC-25-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Pr 30,5-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,1-6"
+    ]
+   ]
+  ],
+  "TC-25-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ag 1,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5-6a e 9b"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,7-9"
+    ]
+   ]
+  ],
+  "TC-25-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ecl 1,2-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),3-4.5-6.12-13.14 e 17"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,7-9"
+    ]
+   ]
+  ],
+  "TC-25-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Zc 2,5-9.14-15a"
+    ],
+    [
+     "Salmo responsorial",
+     "Jr 31,10.11-12ab.13"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,43b-45"
+    ]
+   ]
+  ],
+  "TC-25-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ecl 11,9-12,8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),3-4.5-6.12-13.14 e 17"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,43b-45"
+    ]
+   ]
+  ],
+  "TC-25-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Esd 1,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 125(126),1-2ab.2cd-3.4-5.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,16-18"
+    ]
+   ]
+  ],
+  "TC-25-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Pr 3,27-34"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 14(15),1a-3ab.3cd-4ab.5"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,16-18"
+    ]
+   ]
+  ],
+  "TC-25-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ag 1,15b-2,9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 42(43),1.2.3.4"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,18-22"
+    ]
+   ]
+  ],
+  "TC-25-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ecl 3,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 143(144),1a e 2abc.3-4"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,18-22"
+    ]
+   ]
+  ],
+  "TC-25-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Esd 6,7-8.12b.14-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 121(122),1-2.3-4a.4b-5"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,19-21"
+    ]
+   ]
+  ],
+  "TC-25-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Pr 21,1-6.10-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),1.27.30.34.35.44"
+    ],
+    [
+     "Evangelho",
+     "Lc 8,19-21"
+    ]
+   ]
+  ],
+  "TC-26-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 18,25-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24,4bc-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 21,28-32"
+    ]
+   ]
+  ],
+  "TC-26-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 11,25-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19),8.10.12-13.14"
+    ],
+    [
+     "Segunda leitura",
+     "Tg 5,1-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,38-43.45.47-48"
+    ]
+   ]
+  ],
+  "TC-26-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Am 6,1a.4-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),7.8-9a.9bc-10"
+    ],
+    [
+     "Segunda leitura",
+     "1Tm 6,11-16"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,19-31"
+    ]
+   ]
+  ],
+  "TC-26-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ne 2,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 136(137),1-2.3.4-5.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,57-62"
+    ]
+   ]
+  ],
+  "TC-26-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 9,1-12.14-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 87,10bc-11. 12-13. 14-15"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,57-62"
+    ]
+   ]
+  ],
+  "TC-26-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ne 8,1-4a.5-6.7b-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19),8.9.10.11"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,1-12"
+    ]
+   ]
+  ],
+  "TC-26-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 19,21-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),7-8a.8b-9abc.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,1-12"
+    ]
+   ]
+  ],
+  "TC-26-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Br 4,5-12.27-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),33-35.36-37"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,17-24"
+    ]
+   ]
+  ],
+  "TC-26-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 42,1-3.5-6.12-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),66.71.75.91.125.130"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,17-24"
+    ]
+   ]
+  ],
+  "TC-26-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Zc 8,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 101(102),16-18.19-21.29.22-23"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,46-50"
+    ]
+   ]
+  ],
+  "TC-26-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 1,6-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 16(17),1.2-3.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,46-50"
+    ]
+   ]
+  ],
+  "TC-26-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Br 1,15-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 78(79),1-2.3-5.8.9"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,13-16"
+    ]
+   ]
+  ],
+  "TC-26-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 38,1.12-21; 40,3-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 138(139),1-3.7-8.9-10.13-14ab"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,13-16"
+    ]
+   ]
+  ],
+  "TC-26-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Zc 8,20-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 86(87),1-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,51-56"
+    ]
+   ]
+  ],
+  "TC-26-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 3,1-3.11-17.20-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 87(88),2-3.4-5.6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,51-56"
+    ]
+   ]
+  ],
+  "TC-27-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 5,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 79(80),9.12.13-14.15-16.19-20"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 4,6-9"
+    ],
+    [
+     "Evangelho",
+     "Mt 21,33-43"
+    ]
+   ]
+  ],
+  "TC-27-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 2,18-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 2,9-11"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,2-16"
+    ]
+   ]
+  ],
+  "TC-27-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Hab 1,2-3; 2,2-4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "2Tm 1,6-8.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,5-10"
+    ]
+   ]
+  ],
+  "TC-27-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jn 4,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 85(86),3-4.5-6.9-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,1-4"
+    ]
+   ]
+  ],
+  "TC-27-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 2,1-2.7-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 116(117),1.2"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,1-4"
+    ]
+   ]
+  ],
+  "TC-27-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Ml 3,13-20a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,5-13"
+    ]
+   ]
+  ],
+  "TC-27-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 3,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Lc 1,69-70.71-72.73 e 75"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,5-13"
+    ]
+   ]
+  ],
+  "TC-27-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jl 4,12-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.11-12"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,27-28"
+    ]
+   ]
+  ],
+  "TC-27-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 3,22-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,27-28"
+    ]
+   ]
+  ],
+  "TC-27-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jn 1,1-2,1.11"
+    ],
+    [
+     "Salmo responsorial",
+     "Jn 2,2.3.4.5.8"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,25-37"
+    ]
+   ]
+  ],
+  "TC-27-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 1,6-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110(111),1-2.7-8.9 e 10c"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,25-37"
+    ]
+   ]
+  ],
+  "TC-27-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jl 1,13-15; 2,1-2"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 9A(9),2-3.6 e 16.8-9"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,15-26"
+    ]
+   ]
+  ],
+  "TC-27-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 3,7-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110(111),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,15-26"
+    ]
+   ]
+  ],
+  "TC-27-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Jn 3,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 129(130),1-2.3-4ab.7-8"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,38-42"
+    ]
+   ]
+  ],
+  "TC-27-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 1,13-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 138(139),1-3.13-14ab.14c-15"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,38-42"
+    ]
+   ]
+  ],
+  "TC-28-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 25, 6-10a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 4,12-14.19-20"
+    ],
+    [
+     "Evangelho",
+     "Mt 22,1-14"
+    ]
+   ]
+  ],
+  "TC-28-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 7,7-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),12-13.14-15.16-17"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 4,12-13"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,17-30"
+    ]
+   ]
+  ],
+  "TC-28-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "2Rs 5,14-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Segunda leitura",
+     "2Tm 2,8-13"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,11-19"
+    ]
+   ]
+  ],
+  "TC-28-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 2,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 61(62),2-3.6-7.9"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,42-46"
+    ]
+   ]
+  ],
+  "TC-28-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 5,18-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,42-46"
+    ]
+   ]
+  ],
+  "TC-28-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 3,21-30"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 129(130),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,47-54"
+    ]
+   ]
+  ],
+  "TC-28-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 1,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,47-54"
+    ]
+   ]
+  ],
+  "TC-28-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 4,13.16-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104,6-7. 8-9. 42-43"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,8-12"
+    ]
+   ]
+  ],
+  "TC-28-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 1,15-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 8,2-3a.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,8-12"
+    ]
+   ]
+  ],
+  "TC-28-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 1,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,29-32"
+    ]
+   ]
+  ],
+  "TC-28-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 4,22-24.26-27.31-5,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 112(113),1-2.3-4.5a e 6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,29-32"
+    ]
+   ]
+  ],
+  "TC-28-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 4,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 31(32),1-2.5.11"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,1-7"
+    ]
+   ]
+  ],
+  "TC-28-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 1,11-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),1-2.4-5.12-13"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,1-7"
+    ]
+   ]
+  ],
+  "TC-28-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 1,16-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19A),2-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,37-41"
+    ]
+   ]
+  ],
+  "TC-28-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Gl 5,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),41.43.44.45.47.48"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,37-41"
+    ]
+   ]
+  ],
+  "TC-29-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 45,1.4-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1.2a.3.4-5.7-8.9-10a.c"
+    ],
+    [
+     "Segunda leitura",
+     "1Ts 1,1-5b"
+    ],
+    [
+     "Evangelho",
+     "Mt 22,15-21"
+    ]
+   ]
+  ],
+  "TC-29-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 53,10-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),4-5.18-19.20.22"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 4,14-16"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,35-45"
+    ]
+   ]
+  ],
+  "TC-29-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 17,8-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 120(121),1-2.3-4.5-6.7-8"
+    ],
+    [
+     "Segunda leitura",
+     "2Tm 3,14-4,2"
+    ],
+    [
+     "Evangelho",
+     "Lc 18,1-8"
+    ]
+   ]
+  ],
+  "TC-29-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 6,12-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 123(124),1-3.4-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,39-48"
+    ]
+   ]
+  ],
+  "TC-29-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 3,2-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,39-48"
+    ]
+   ]
+  ],
+  "TC-29-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 6,19-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4 e 6"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,49-53"
+    ]
+   ]
+  ],
+  "TC-29-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 3,14-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),1-2.4-5.11-12.18-19"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,49-53"
+    ]
+   ]
+  ],
+  "TC-29-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 8,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2.3-4ab.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,1-9"
+    ]
+   ]
+  ],
+  "TC-29-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 4,7-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 121(122),1-2.3-4a.4b-5"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,1-9"
+    ]
+   ]
+  ],
+  "TC-29-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 4,20-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Lc 1,69-70.71-72.73-75"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,13-21"
+    ]
+   ]
+  ],
+  "TC-29-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 2,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.4.5"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,13-21"
+    ]
+   ]
+  ],
+  "TC-29-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 7,18-25a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),66.68.76.77.93.94"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,54-59"
+    ]
+   ]
+  ],
+  "TC-29-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 4,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2.3-4ab.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,54-59"
+    ]
+   ]
+  ],
+  "TC-29-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 5,12.15b.17-19.20b-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),7-8a.8b-9.10.17"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,35-38"
+    ]
+   ]
+  ],
+  "TC-29-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 2,12-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 84(85),9ab-10.11-12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,35-38"
+    ]
+   ]
+  ],
+  "TC-3-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 8,23b-9,3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.4.13-14"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 1,10-13.17"
+    ],
+    [
+     "Evangelho",
+     "Mt 4,12-23"
+    ]
+   ]
+  ],
+  "TC-3-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Jn 3,1-5.10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),4ab-5ab.6-7bc.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 7,29-31"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,14-20"
+    ]
+   ]
+  ],
+  "TC-3-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Ne 8,2-4a.5-6.8-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18B(19),8.9.10.15"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,1-4;4,14-21"
+    ]
+   ]
+  ],
+  "TC-3-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 10,11-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 109(110),1.2.3.4"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,1-20"
+    ]
+   ]
+  ],
+  "TC-3-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 7,4-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),4-5.27-28.29-30"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,1-20"
+    ]
+   ]
+  ],
+  "TC-3-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 10,19-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),l-2.3-4ab.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,21-25"
+    ]
+   ]
+  ],
+  "TC-3-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 7,18-19.24-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 131(132),1-2.3-5.11.12.13-14"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,21-25"
+    ]
+   ]
+  ],
+  "TC-3-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 11,1-2.8-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Lc 1,69-70.71-72.73-75"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,35-41"
+    ]
+   ]
+  ],
+  "TC-3-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 12,1-7a.10-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),12-13.14-15.16-17"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,35-41"
+    ]
+   ]
+  ],
+  "TC-3-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 9,15.24-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,22-30"
+    ]
+   ]
+  ],
+  "TC-3-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 5,1-7.10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),20.21-22.25-26"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,22-30"
+    ]
+   ]
+  ],
+  "TC-3-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 10,32-39"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 36(37),3-4.5-6.23-24.39-40"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,26-34"
+    ]
+   ]
+  ],
+  "TC-3-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 11,1-4a.5-10a.13-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.5-6a.6bc-7.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mc 4,26-34"
+    ]
+   ]
+  ],
+  "TC-3-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 10,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),2 e 4ab.7-8a.10.11"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,31-35"
+    ]
+   ]
+  ],
+  "TC-3-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 6,12b-15.17-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),7.8.9.10"
+    ],
+    [
+     "Evangelho",
+     "Mc 3,31-35"
+    ]
+   ]
+  ],
+  "TC-30-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 22,20-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 17(18),2-3a.3bc-4. 47.51ab"
+    ],
+    [
+     "Segunda leitura",
+     "1Ts 1,5c-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 22,34-40"
+    ]
+   ]
+  ],
+  "TC-30-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 31,7-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 125(126),1-2ab.2cd-3.4-5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 5,1-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,46-52"
+    ]
+   ]
+  ],
+  "TC-30-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 35,15b-17.20-22a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.17-18.19.23"
+    ],
+    [
+     "Segunda leitura",
+     "2Tm 4,6-8.16-18"
+    ],
+    [
+     "Evangelho",
+     "Lc 18,9-14"
+    ]
+   ]
+  ],
+  "TC-30-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 8,26-30"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 12(13),4-5.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,22-30"
+    ]
+   ]
+  ],
+  "TC-30-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 6,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),10-11.12-13ab.13cd-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,22-30"
+    ]
+   ]
+  ],
+  "TC-30-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 8,31b-39"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 108(109),21-22.26-27.30-31"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,31-35"
+    ]
+   ]
+  ],
+  "TC-30-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 6,10-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 143(144),1.2.9-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,31-35"
+    ]
+   ]
+  ],
+  "TC-30-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 9,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 147(147B),12-13.14-15.19-20"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,1-6"
+    ]
+   ]
+  ],
+  "TC-30-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 1,18b-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 41(42),2.3.5bcd"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,1.7-11"
+    ]
+   ]
+  ],
+  "TC-30-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 8,12-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 67(68),2 e 4.6-7ab.20-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,10-17"
+    ]
+   ]
+  ],
+  "TC-30-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 4,32-5,8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,10-17"
+    ]
+   ]
+  ],
+  "TC-30-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 11,1-2a.11-12.25-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 93"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,1.7-11"
+    ]
+   ]
+  ],
+  "TC-30-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,1-6"
+    ]
+   ]
+  ],
+  "TC-30-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 8,18-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 125(126),1-2ab.2cd-3.4-5.6"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,18-21"
+    ]
+   ]
+  ],
+  "TC-30-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 5,21-33"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Lc 13,18-21"
+    ]
+   ]
+  ],
+  "TC-31-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 6,2-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 17(18),2-3a.3bc-4.47.51ab"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 7,23-28"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,28b-34"
+    ]
+   ]
+  ],
+  "TC-31-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 11,22-12,2"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),1-2.8-9.10-11.13cd-14"
+    ],
+    [
+     "Segunda leitura",
+     "2Ts 1,11-2,2"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,1-10"
+    ]
+   ]
+  ],
+  "TC-31-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 13,8-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.4-5.9"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,25-33"
+    ]
+   ]
+  ],
+  "TC-31-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 2,12-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,25-33"
+    ]
+   ]
+  ],
+  "TC-31-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 14,7-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.4.13-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 15,1-10"
+    ]
+   ]
+  ],
+  "TC-31-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 3,3-8a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 15,1-10"
+    ]
+   ]
+  ],
+  "TC-31-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 16,3-9.16.22-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),2-3.4-5.10-11"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,9-15"
+    ]
+   ]
+  ],
+  "TC-31-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 4,10-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.5-6.8a e 9"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,9-15"
+    ]
+   ]
+  ],
+  "TC-31-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 11,29-36"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 68(69),30-31.33-34.36-37"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,12-14"
+    ]
+   ]
+  ],
+  "TC-31-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 2,1-4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 130(131),1.2.3"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,12-14"
+    ]
+   ]
+  ],
+  "TC-31-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 15,14-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,1-8"
+    ]
+   ]
+  ],
+  "TC-31-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 3,17-4,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 121(122),1-2.3-4a.4b-5"
+    ],
+    [
+     "Evangelho",
+     "Lc 16,1-8"
+    ]
+   ]
+  ],
+  "TC-31-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 12,5-16a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 130(131),1.2.3"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,15-24"
+    ]
+   ]
+  ],
+  "TC-31-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fl 2,5-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 21(22),26b-27.28-30a.31-32"
+    ],
+    [
+     "Evangelho",
+     "Lc 14,15-24"
+    ]
+   ]
+  ],
+  "TC-32-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 6,12-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 62(63),2.3-4.5-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,1-13"
+    ]
+   ]
+  ],
+  "TC-32-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 17,10-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),7.8-9a.9bc-10"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 9,24-28"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,38-44"
+    ]
+   ]
+  ],
+  "TC-32-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "2Mc 7,1-2.9-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 16(17),1.5-6.8b.15"
+    ],
+    [
+     "Segunda leitura",
+     "2Ts 2,16-3,5"
+    ],
+    [
+     "Evangelho",
+     "Lc 20,27-38"
+    ]
+   ]
+  ],
+  "TC-32-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 6,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 81(82),3-4.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,11-19"
+    ]
+   ]
+  ],
+  "TC-32-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tt 3,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,11-19"
+    ]
+   ]
+  ],
+  "TC-32-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 7,22-8,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),89,90.91.130.135.175"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,20-25"
+    ]
+   ]
+  ],
+  "TC-32-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Fm 1,7-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),7.8-9a.9bc-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,20-25"
+    ]
+   ]
+  ],
+  "TC-32-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 18,14-16; 19,6-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 104(105),2-3.36-37.42-43"
+    ],
+    [
+     "Evangelho",
+     "Lc 18,1-8"
+    ]
+   ]
+  ],
+  "TC-32-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "3Jo 1,5-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 18,1-8"
+    ]
+   ]
+  ],
+  "TC-32-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 1,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 138(139),1-3.4-6.7-8.9-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,1-6"
+    ]
+   ]
+  ],
+  "TC-32-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tt 1,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2. 3-4ab.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,1-6"
+    ]
+   ]
+  ],
+  "TC-32-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 13,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18A(19),2-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,26-37"
+    ]
+   ]
+  ],
+  "TC-32-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Jo 1,4-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),1.2.10.11.17.18"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,26-37"
+    ]
+   ]
+  ],
+  "TC-32-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Sb 2,23-3,9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.16-17.18-19"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,7-10"
+    ]
+   ]
+  ],
+  "TC-32-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tt 2,1-8.11-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 36(37),3-4.18-23.27 e 29"
+    ],
+    [
+     "Evangelho",
+     "Lc 17,7-10"
+    ]
+   ]
+  ],
+  "TC-33-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Pr 31,10-13.19-20.30-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5"
+    ],
+    [
+     "Segunda leitura",
+     "1Ts 5,1-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,14-30"
+    ]
+   ]
+  ],
+  "TC-33-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 12,1-3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),5.8.9-10.11"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 10,11-14.18"
+    ],
+    [
+     "Evangelho",
+     "Mc 13,24-32"
+    ]
+   ]
+  ],
+  "TC-33-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Ml 3,19-20a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),5-6.7-8.9a.9bc"
+    ],
+    [
+     "Segunda leitura",
+     "2Ts 3,7-12"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,5-19"
+    ]
+   ]
+  ],
+  "TC-33-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Mc 7,1.20-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 16(17),1.5-6.8b.15"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,11-28"
+    ]
+   ]
+  ],
+  "TC-33-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 4,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 150,1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,11-28"
+    ]
+   ]
+  ],
+  "TC-33-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Mc 2,15-29"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),1-2.5-6.14-15"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,41-44"
+    ]
+   ]
+  ],
+  "TC-33-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jo 5,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5-6a e 9b"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,41-44"
+    ]
+   ]
+  ],
+  "TC-33-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Mc 6,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 9A(9),2-3.4.6.16b e 19"
+    ],
+    [
+     "Evangelho",
+     "Lc 20,27-40"
+    ]
+   ]
+  ],
+  "TC-33-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 11,4-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 143(144),1.2.9-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 20,27-40"
+    ]
+   ]
+  ],
+  "TC-33-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Mc 1,10-15.41-43.54-57.62-64"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),53.61.134.150.155.158"
+    ],
+    [
+     "Evangelho",
+     "Lc 18,35-43"
+    ]
+   ]
+  ],
+  "TC-33-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 1,1-4; 2,1-5a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4 e 6"
+    ],
+    [
+     "Evangelho",
+     "Lc 18,35-43"
+    ]
+   ]
+  ],
+  "TC-33-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "1Mc 4,36-37.52-59"
+    ],
+    [
+     "Salmo responsorial",
+     "1Cr 29,10.11abc.11d-12a.12bcd"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,45-48"
+    ]
+   ]
+  ],
+  "TC-33-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 10,8-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),14.24.72.103.111.131"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,45-48"
+    ]
+   ]
+  ],
+  "TC-33-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "2Mc 6,18-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 3,2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,1-10"
+    ]
+   ]
+  ],
+  "TC-33-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 3,1-6.14-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 14(15),1a e 2-3ab.3cd-4ab.5"
+    ],
+    [
+     "Evangelho",
+     "Lc 19,1-10"
+    ]
+   ]
+  ],
+  "TC-34-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 5,1-6.13-14.16-17.23-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,62-63. 64.65.66.67"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,12-19"
+    ]
+   ]
+  ],
+  "TC-34-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 15,1-4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.7-8.9"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,12-19"
+    ]
+   ]
+  ],
+  "TC-34-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 6,12-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,68-70.71-72.73-74"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,20-28"
+    ]
+   ]
+  ],
+  "TC-34-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 18,1-2.21-23; 19,1-3.9a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.4.5"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,20-28"
+    ]
+   ]
+  ],
+  "TC-34-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,15-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,82-83.84-85.86-87"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,34-36"
+    ]
+   ]
+  ],
+  "TC-34-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jo 22,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.3-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,34-36"
+    ]
+   ]
+  ],
+  "TC-34-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 1,1-6.8-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,52.53.54.55.56-57"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,1-4"
+    ]
+   ]
+  ],
+  "TC-34-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 14,1-3.4b-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2.3-4ab.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,1-4"
+    ]
+   ]
+  ],
+  "TC-34-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,2-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,75-77.78-79.80-81"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,29-33"
+    ]
+   ]
+  ],
+  "TC-34-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 20,1-4.11-21,2"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 83(84),3.4.5-6a e 8a"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,29-33"
+    ]
+   ]
+  ],
+  "TC-34-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 2,31-45"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,57.58.59.60.61"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,5-11"
+    ]
+   ]
+  ],
+  "TC-34-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 14,14-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),10.11-12.13"
+    ],
+    [
+     "Evangelho",
+     "Lc 21,5-11"
+    ]
+   ]
+  ],
+  "TC-4-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Sf 2,3;3,12-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),7.8-9a.9bc-10"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 1,26-31"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,1-12a"
+    ]
+   ]
+  ],
+  "TC-4-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 18,15-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 94(95),1-2.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 7,32-35"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,21-28"
+    ]
+   ]
+  ],
+  "TC-4-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 1,4-5.17-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 70(71),1-2.3-4a.5-6ab.15ab.17"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,21-30"
+    ]
+   ]
+  ],
+  "TC-4-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 12,4-7.11-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.13-14.17-18a"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,1-6"
+    ]
+   ]
+  ],
+  "TC-4-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 24,2.9-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 31(32),1-2.5.6.7"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,1-6"
+    ]
+   ]
+  ],
+  "TC-4-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 12,18-19.21-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 47(48),2-3a.3b-4.9.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,7-13"
+    ]
+   ]
+  ],
+  "TC-4-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 2,1-4.10-12"
+    ],
+    [
+     "Salmo responsorial",
+     "1Cr 29,10.11ab.11d-12a.12bcd"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,7-13"
+    ]
+   ]
+  ],
+  "TC-4-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 13,15-17.20-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,30-34"
+    ]
+   ]
+  ],
+  "TC-4-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 3,4-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),9.10.11.12.13.14"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,30-34"
+    ]
+   ]
+  ],
+  "TC-4-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 11,32-40"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),20.21.22.23.24"
+    ],
+    [
+     "Evangelho",
+     "Mc 5,1-20"
+    ]
+   ]
+  ],
+  "TC-4-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 15,13-14.30;16,5-13a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 3,2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mc 5,1-20"
+    ]
+   ]
+  ],
+  "TC-4-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 13,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 26(27),1.3.5.8b-9abc"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,14-29"
+    ]
+   ]
+  ],
+  "TC-4-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 47,2-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 17(18),31.47 e 50.51"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,14-29"
+    ]
+   ]
+  ],
+  "TC-4-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 12,1-4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 21(22),26b-27.28.30 e 31-32"
+    ],
+    [
+     "Evangelho",
+     "Mc 5,21-43"
+    ]
+   ]
+  ],
+  "TC-4-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 18,9-10.14b.24-25a.30-19,3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 85(86),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 5,21-43"
+    ]
+   ]
+  ],
+  "TC-5-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 58,7-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),4-5.6-7.8a.9"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 2,1-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,13-16"
+    ]
+   ]
+  ],
+  "TC-5-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 7,1-4.6-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 146(147),1-2.3-4.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 9,16-19.22-23"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,29-39"
+    ]
+   ]
+  ],
+  "TC-5-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Is 6,1-2a.3-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 137(138),1-2a.2bc.3.4-5.7c-8"
+    ],
+    [
+     "Evangelho",
+     "Lc 5,1-11"
+    ]
+   ]
+  ],
+  "TC-5-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 2,4b-9.15-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.27-28.29bc-30"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,14-23"
+    ]
+   ]
+  ],
+  "TC-5-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 10,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 36(37),5-6.30-31.39-40"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,14-23"
+    ]
+   ]
+  ],
+  "TC-5-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 2,18-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,24-30"
+    ]
+   ]
+  ],
+  "TC-5-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 11,4-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 105(106),3-4.35-36.37 e 40"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,24-30"
+    ]
+   ]
+  ],
+  "TC-5-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 3,9-24"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),2.3-4.5-6.12-13"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,1-10"
+    ]
+   ]
+  ],
+  "TC-5-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 12,26-32; 13,33-34"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 105(106),6-7a.19-20.21-22"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,1-10"
+    ]
+   ]
+  ],
+  "TC-5-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 1,1-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.5-6.10 e 12.24 e 35c"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,53-56"
+    ]
+   ]
+  ],
+  "TC-5-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 8,1-7.9-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 131(132),6-7.8-10"
+    ],
+    [
+     "Evangelho",
+     "Mc 6,53-56"
+    ]
+   ]
+  ],
+  "TC-5-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 3,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 31(32),1-2.5. 6.7"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,31-37"
+    ]
+   ]
+  ],
+  "TC-5-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 11,29-32; 12,19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 80(81),10-11ab.12-13.14-15"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,31-37"
+    ]
+   ]
+  ],
+  "TC-5-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 1,20-2,4a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 8,4-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,1-13"
+    ]
+   ]
+  ],
+  "TC-5-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 8,22-23.27-30"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 83(84),3.4.5.10.11"
+    ],
+    [
+     "Evangelho",
+     "Mc 7,1-13"
+    ]
+   ]
+  ],
+  "TC-6-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 15,16-21"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),1-2.4-5.17-18.33-34"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 2,6-10"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,17-37"
+    ]
+   ]
+  ],
+  "TC-6-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Lv 13,1-2.44-46"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 31(32),1-2.5.11"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 10,31-11,1"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,40-45"
+    ]
+   ]
+  ],
+  "TC-6-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 17,5-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4.6"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 15,12.16-20"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,17.20-26"
+    ]
+   ]
+  ],
+  "TC-6-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 8,6-13.20-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116B),12-13.14-15.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,22-26"
+    ]
+   ]
+  ],
+  "TC-6-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 1,19-27 19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 14(15),2-3ab.3cd-4ab.5"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,22-26"
+    ]
+   ]
+  ],
+  "TC-6-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 9,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 101(102),16-18.19-21.29 e 22-23"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,27-33"
+    ]
+   ]
+  ],
+  "TC-6-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 2,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33,2-3.4-5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,27-33"
+    ]
+   ]
+  ],
+  "TC-6-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 11,1-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),2-3.4-5.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,2-13"
+    ]
+   ]
+  ],
+  "TC-6-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 3,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 11(12),2-3.4-5.7-8a"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,2-13"
+    ]
+   ]
+  ],
+  "TC-6-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 4,1-15.25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),1 e 8.16bc-17.20-21"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,11-13"
+    ]
+   ]
+  ],
+  "TC-6-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),67.68.71.72.75.76"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,11-13"
+    ]
+   ]
+  ],
+  "TC-6-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 11,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),10-11.12-13.14-15"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,34-9,1"
+    ]
+   ]
+  ],
+  "TC-6-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 2,14-24.26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,34-9,1"
+    ]
+   ]
+  ],
+  "TC-6-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 6,5-8; 7,1-5.10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 28(29),1a e 2.3ac-4.3b e 9b-10"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,14-21"
+    ]
+   ]
+  ],
+  "TC-6-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 1,12-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 93(94),12-13a.14-15.18-19"
+    ],
+    [
+     "Evangelho",
+     "Mc 8,14-21"
+    ]
+   ]
+  ],
+  "TC-7-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Lv 19,1-2.17-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8.10.12-13"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 3,16-23"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,38-48"
+    ]
+   ]
+  ],
+  "TC-7-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 43,18-19.21-22.24b-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 40(41),2-3.4-5.13-14"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 1,18-22"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,1-12"
+    ]
+   ]
+  ],
+  "TC-7-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "1Sm 26,2.7-9.12-13.22-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8.10.12-13"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 15,45-49"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,27-38"
+    ]
+   ]
+  ],
+  "TC-7-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 4,12-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),165.168.171.174.175"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,38-40"
+    ]
+   ]
+  ],
+  "TC-7-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 4,13-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 48(49),2-3.6-7.8-10.11"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,38-40"
+    ]
+   ]
+  ],
+  "TC-7-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 5,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 1,1-2.3.4 e 6"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,41-50"
+    ]
+   ]
+  ],
+  "TC-7-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 5,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 48(49),14-15ab.15cd-16.17-18.19-20"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,41-43.45-56.47-50"
+    ]
+   ]
+  ],
+  "TC-7-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 17,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),13-14.15-16.17-18a"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,13-16"
+    ]
+   ]
+  ],
+  "TC-7-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 5,13-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 140(141),1-2.3.8"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,13-16"
+    ]
+   ]
+  ],
+  "TC-7-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 1,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 92(93),1ab.1c-2.5"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,14-29"
+    ]
+   ]
+  ],
+  "TC-7-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 3,13-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19B),8.9.10.15"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,14-29"
+    ]
+   ]
+  ],
+  "TC-7-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 6,5-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),12.16.18.27.34.35"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,1-12"
+    ]
+   ]
+  ],
+  "TC-7-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 5,9-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8-9.11-12"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,1-12"
+    ]
+   ]
+  ],
+  "TC-7-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 2,1-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 36(37),3-4.18-19.27-28.39-40"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,30-37"
+    ]
+   ]
+  ],
+  "TC-7-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "Tg 4,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 54(55),7-8.9-10a.10b-11a.23"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,30-37"
+    ]
+   ]
+  ],
+  "TC-8-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 49,14-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 61,2-3.6-7.8-9ab"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 4,1-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,24-34"
+    ]
+   ]
+  ],
+  "TC-8-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Os 2,16b.17b.21-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.8.10.12-13"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 3,1b-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,18-22"
+    ]
+   ]
+  ],
+  "TC-8-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 27,5-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 91(92),2-3.13-14.15-16"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 15,54-58"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,39-45"
+    ]
+   ]
+  ],
+  "TC-8-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 36,1-2a.5-6.13-19"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 78(79),8.9.11.13"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,32-45"
+    ]
+   ]
+  ],
+  "TC-8-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Pd 1,18-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 147(147B),12-13.14-15.19-20"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,32-45"
+    ]
+   ]
+  ],
+  "TC-8-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 42, 15-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,46-52"
+    ]
+   ]
+  ],
+  "TC-8-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Pd 2,2-5.9-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 99(100),2.3.4.5"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,46-52"
+    ]
+   ]
+  ],
+  "TC-8-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 51,17-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19B),8.9.10.11"
+    ],
+    [
+     "Evangelho",
+     "Mc 11,27-33"
+    ]
+   ]
+  ],
+  "TC-8-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "Jd 17.20b-25"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 62(63),2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 11,27-33"
+    ]
+   ]
+  ],
+  "TC-8-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 17,20-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 31(32),1-2.5.6.7"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,17-27"
+    ]
+   ]
+  ],
+  "TC-8-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Pd 1,3-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 110(111),1-2.5-6.9.10c"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,17-27"
+    ]
+   ]
+  ],
+  "TC-8-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 44,1.9-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 149,1-2.3-4.5-6a e 9b"
+    ],
+    [
+     "Evangelho",
+     "Mc 11,11-26"
+    ]
+   ]
+  ],
+  "TC-8-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Pd 4,7-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),10. 11-12. 13"
+    ],
+    [
+     "Evangelho",
+     "Mc 11,11-26"
+    ]
+   ]
+  ],
+  "TC-8-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 35,1-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 49(50),5-6.7-8.14 e 23"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,28-31"
+    ]
+   ]
+  ],
+  "TC-8-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "1Pd 1,10-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1. 2-3ab.3c-4"
+    ],
+    [
+     "Evangelho",
+     "Mc 10,28-31"
+    ]
+   ]
+  ],
+  "TC-9-domingo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 11,18.26-28.32"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),2-3a.3bc-4.17.25"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 3,21-25a.28"
+    ],
+    [
+     "Evangelho",
+     "Mt 7,21-27"
+    ]
+   ]
+  ],
+  "TC-9-domingo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 5,12-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 80(81),3-4.5-6ab.6c-8a.10-11b"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 4,6-11"
+    ],
+    [
+     "Evangelho",
+     "Mc 2,23-3,6"
+    ]
+   ]
+  ],
+  "TC-9-domingo-C": [
+   [
+    [
+     "Primeira leitura",
+     "1Rs 8,41-43"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 116,1.2"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 1,1-2.6-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 7,1-10"
+    ]
+   ]
+  ],
+  "TC-9-quarta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Tb 3,1-11a.16-17a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),1-3.4bc-5ab.6-7bc.8-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,18-27"
+    ]
+   ]
+  ],
+  "TC-9-quarta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Tm 1,1-3.6-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 122(123),1-2a.2bcd"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,18-27"
+    ]
+   ]
+  ],
+  "TC-9-quinta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Tb 6,10-11; 7,1.9-17; 8,4-9a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,28b-34"
+    ]
+   ]
+  ],
+  "TC-9-quinta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Tm 2,8-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 24(25),4-5ab.8-9.10 e 14"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,28b-34"
+    ]
+   ]
+  ],
+  "TC-9-sabado-I": [
+   [
+    [
+     "Primeira leitura",
+     "Tb 12,1.5-15.20"
+    ],
+    [
+     "Salmo responsorial",
+     "Tb 13,2.6.7.8"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,38-44"
+    ]
+   ]
+  ],
+  "TC-9-sabado-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Tm 4,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 70(71),8-9.14-15ab.16-17.22"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,38-44"
+    ]
+   ]
+  ],
+  "TC-9-segunda-I": [
+   [
+    [
+     "Primeira leitura",
+     "Tb 1,3; 2,1a-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.3-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,1-12"
+    ]
+   ]
+  ],
+  "TC-9-segunda-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Pd 1,2-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 90(91),1-2.14-15ab.15c-16"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,1-12"
+    ]
+   ]
+  ],
+  "TC-9-sexta-I": [
+   [
+    [
+     "Primeira leitura",
+     "Tb 11,5-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 145(146),2ab.6c-7.8-9a.9bc-10"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,35-37"
+    ]
+   ]
+  ],
+  "TC-9-sexta-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Tm 3,10-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 118(119),157.160.161.165.166.168"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,35-37"
+    ]
+   ]
+  ],
+  "TC-9-terca-I": [
+   [
+    [
+     "Primeira leitura",
+     "Tb 2,9-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.7bc-8.9"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,13-17"
+    ]
+   ]
+  ],
+  "TC-9-terca-II": [
+   [
+    [
+     "Primeira leitura",
+     "2Pd 3,12-15a.17-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 89(90),2.3-4.10.14.16"
+    ],
+    [
+     "Evangelho",
+     "Mc 12,13-17"
+    ]
+   ]
+  ],
+  "ascensaodosenhor-A": [
+   [
+    [
+     "Primeira leitura",
+     "At 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 1,17-23"
+    ],
+    [
+     "Evangelho",
+     "Mt 28,16-20"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "At 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 1,17-23"
+    ],
+    [
+     "Evangelho",
+     "Mt 28,16-20"
+    ]
+   ]
+  ],
+  "ascensaodosenhor-B": [
+   [
+    [
+     "Primeira leitura",
+     "At 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 1,17-23"
+    ],
+    [
+     "Evangelho",
+     "Mc 16,15-20"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "At 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 1,17-23"
+    ],
+    [
+     "Evangelho",
+     "Mc 16,15-20"
+    ]
+   ]
+  ],
+  "ascensaodosenhor-C": [
+   [
+    [
+     "Primeira leitura",
+     "At 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 1,17-23"
+    ],
+    [
+     "Evangelho",
+     "Lc 24,46-53"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "At 1,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 46(47),2-3.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 1,17-23"
+    ],
+    [
+     "Evangelho",
+     "Lc 24,46-53"
+    ]
+   ]
+  ],
+  "batismo-A": [
+   [
+    [
+     "Primeira leitura",
+     "Is 42,1-4.6-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 28(29),1a.2.3ac-4.3b.9b-10"
+    ],
+    [
+     "Segunda leitura",
+     "At 10,34-38"
+    ],
+    [
+     "Evangelho",
+     "Mt 3,13-17"
+    ]
+   ]
+  ],
+  "batismo-B": [
+   [
+    [
+     "Primeira leitura",
+     "Is 42,1-4.6-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 28(29),1a.2.3ac-4.3b.9b-10"
+    ],
+    [
+     "Segunda leitura",
+     "At 10,34-38"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,7-11"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Is 55,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 5,1-9"
+    ],
+    [
+     "Evangelho",
+     "Mc 1,7-11"
+    ]
+   ]
+  ],
+  "batismo-C": [
+   [
+    [
+     "Primeira leitura",
+     "Is 42,1-4.6-7"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 28(29),1a.2.3ac-4.3b.9b-10"
+    ],
+    [
+     "Segunda leitura",
+     "At 10,34-38"
+    ],
+    [
+     "Evangelho",
+     "Lc 3,15-16.21-22"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Is 40,1-5.9-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2.3-4.24-25.27-28.29-30"
+    ],
+    [
+     "Segunda leitura",
+     "Tt 2,11-14;3,4-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 3,15-16.21-22"
+    ]
+   ]
+  ],
+  "ceiadosenhor": [
+   [
+    [
+     "Primeira leitura",
+     "Is 61,1-3a.6a.8b-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),21-22.25.27"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 1,5-8"
+    ],
+    [
+     "Evangelho",
+     "Lc 4,16-21"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Ex 12,1-8.11-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116B),12-13.15-16bc.17-18"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 11,23-26"
+    ],
+    [
+     "Evangelho",
+     "Jo 13,1-15"
+    ]
+   ]
+  ],
+  "cinzas": [
+   [
+    [
+     "Primeira leitura",
+     "Jl 2,12-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 50(51),3-4.5-6a.12-13.14.17"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 5,20 - 6,2"
+    ],
+    [
+     "Evangelho",
+     "Mt 6,1-6.16-18"
+    ]
+   ]
+  ],
+  "corpuschristi-A": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 8,2-3.14b-16a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 147,12-13.14-15.19-20"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 10,16-17"
+    ],
+    [
+     "Evangelho",
+     "Jo 6,51-58"
+    ]
+   ]
+  ],
+  "corpuschristi-B": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 24,3-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116),12-13.15.16bc.17-18"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 9,11-15"
+    ],
+    [
+     "Evangelho",
+     "Mc 14,12-16.22-26"
+    ]
+   ]
+  ],
+  "corpuschristi-C": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 14,18-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 109(110),1.2.3.4"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 11,23-26"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,11b-17"
+    ]
+   ]
+  ],
+  "cristoreidouniverso-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 34,11-12.15-17"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-2a.2b-3.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 15,20-26.28"
+    ],
+    [
+     "Evangelho",
+     "Mt 25,31-46"
+    ]
+   ]
+  ],
+  "cristoreidouniverso-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 92(93),1ab.1c-2.5"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 1,5-8"
+    ],
+    [
+     "Evangelho",
+     "Jo 18,33b-37"
+    ]
+   ]
+  ],
+  "cristoreidouniverso-C": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 5,1-3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 121(122),1-2.4-5"
+    ],
+    [
+     "Segunda leitura",
+     "Cl 1,12-20"
+    ],
+    [
+     "Evangelho",
+     "Lc 23,35-43"
+    ]
+   ]
+  ],
+  "divinamisericordia-A": [
+   [
+    [
+     "Primeira leitura",
+     "At 2,42-47"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),2-4.13-15.22-24"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 1,3-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,19-31"
+    ]
+   ]
+  ],
+  "divinamisericordia-B": [
+   [
+    [
+     "Primeira leitura",
+     "At 4,32-35"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),2-4.16ab-18.22-24"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 5,1-6"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,19-31"
+    ]
+   ]
+  ],
+  "divinamisericordia-C": [
+   [
+    [
+     "Primeira leitura",
+     "At 5,12-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),2-4.22-24.25-27a"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 1,9-11a.12-13.17-19"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,19-31"
+    ]
+   ]
+  ],
+  "epifania": [
+   [
+    [
+     "Primeira leitura",
+     "Is 60,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 71(72),1-2.7-8.10-11.12-13"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 3,2-3a.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 2,1-12"
+    ]
+   ]
+  ],
+  "natal-aurora": [
+   [
+    [
+     "Primeira leitura",
+     "Is 62,11-12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1.6.11-12"
+    ],
+    [
+     "Segunda leitura",
+     "Tt 3,4-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,15-20"
+    ]
+   ]
+  ],
+  "natal-dia": [
+   [
+    [
+     "Primeira leitura",
+     "Is 52,7-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 1,1-6"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,1-18"
+    ]
+   ]
+  ],
+  "natal-noite": [
+   [
+    [
+     "Primeira leitura",
+     "Is 9,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2a.2b-3.11-12.13"
+    ],
+    [
+     "Segunda leitura",
+     "Tt 2,11-14"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,1-14"
+    ]
+   ]
+  ],
+  "natal-vigilia": [
+   [
+    [
+     "Primeira leitura",
+     "Is 62,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),4-5.16-17.27.29"
+    ],
+    [
+     "Segunda leitura",
+     "At 13,16-17.22-25"
+    ],
+    [
+     "Evangelho",
+     "Mt 1,1-25"
+    ]
+   ]
+  ],
+  "paixaodosenhor": [
+   [
+    [
+     "Primeira leitura",
+     "Is 52,13-53,12"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),2.6.12-13.15-16.17.25"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 4,14-16; 5,7-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 18,1–19,42"
+    ]
+   ]
+  ],
+  "pascoa": [
+   [
+    [
+     "Primeira leitura",
+     "At 10,34a.37-43"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117,1-2.16ab-17.22-23"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 5,6b-8"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,1-9"
+    ]
+   ]
+  ],
+  "pentecostes": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 11,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.24.35c.27-28.29bc-30"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,22-27"
+    ],
+    [
+     "Evangelho",
+     "Jo 7,37-39"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Gn 11,1-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),10-11.12-13.14-15"
+    ],
+    [
+     "Segunda leitura",
+     "Ex 19,3-8a.16-20b"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,52.53.54.55.56-57"
+    ],
+    [
+     "Terceira leitura",
+     "Ez 37,1-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 106(107),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Quarta leitura",
+     "Jl 3,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.24.35c.27-28.29bc-30"
+    ],
+    [
+     "Epístola",
+     "Rm 8,22-27"
+    ],
+    [
+     "Evangelho",
+     "Jo 7,37-39"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "At 2,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1ab.24ac.29bc-30.31.34"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 12,3b-7.12-13"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,19-23"
+    ]
+   ]
+  ],
+  "ramos-A": [
+   [
+    [
+     "Evangelho",
+     "Mt 21,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 21(22),8-9.17-18a.19-20.23-24"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 2,6-11"
+    ]
+   ]
+  ],
+  "ramos-B": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 24,3-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 115(116),12-13.15.16bc.17-18"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 9,11-15"
+    ],
+    [
+     "Evangelho",
+     "Mc 14,12-16.22-26"
+    ]
+   ]
+  ],
+  "ramos-C": [
+   [
+    [
+     "Evangelho",
+     "Lc 19,28-40"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 21(22),8-9.17-18a.19-20.23-24"
+    ]
+   ]
+  ],
+  "sagradafamilia-A": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 3,3-7.14-17a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5"
+    ],
+    [
+     "Segunda leitura",
+     "Cl 3,12-21"
+    ],
+    [
+     "Evangelho",
+     "Mt 2,13-15.19-23"
+    ]
+   ]
+  ],
+  "sagradafamilia-B": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 2,3-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2a.2b-3.5b-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,22-35"
+    ]
+   ]
+  ],
+  "sagradafamilia-C": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 3,3-7.14-17a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 127(128),1-2.3.4-5"
+    ],
+    [
+     "Segunda leitura",
+     "Cl 3,12-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,41-52"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "1Sm 1,20-22.24-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 83(84),2-3.5-6.9-10"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 3,1-2.21-24"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,41-52"
+    ]
+   ]
+  ],
+  "santamaria": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 6,22-27"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 66(67),2-3.5.6.8"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 4,4-7"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,16-21"
+    ]
+   ]
+  ],
+  "santissimatrindade-A": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 34,4b-6.8-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Dn 3,52.53.54.55.56"
+    ],
+    [
+     "Segunda leitura",
+     "2Cor 13,11-13"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,16-18"
+    ]
+   ]
+  ],
+  "santissimatrindade-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 4,32-34.39-40"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),4-5.6.9.18-19.20.22"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 8,14-17"
+    ],
+    [
+     "Evangelho",
+     "Mt 28,16-20"
+    ]
+   ]
+  ],
+  "santissimatrindade-C": [
+   [
+    [
+     "Primeira leitura",
+     "Pr 8,22-31"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 8,4-5.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 5,1-5"
+    ],
+    [
+     "Evangelho",
+     "Jo 16,12-15"
+    ]
+   ]
+  ],
+  "santo:NSAparecida": [
+   [
+    [
+     "Primeira leitura",
+     "Est 5,1b-2; 7,2b-3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 44(45),11-12a.12b-13.14-15a.15b-16"
+    ],
+    [
+     "Segunda leitura",
+     "Ap 12,1.5.13a.15-16a"
+    ],
+    [
+     "Evangelho",
+     "Jo 2,1-11"
+    ]
+   ]
+  ],
+  "santo:NSDores": [
+   [
+    [
+     "Primeira leitura",
+     "Hb 5,7-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),2-3a.3bc-4.5-6.15-16.20"
+    ],
+    [
+     "Evangelho",
+     "Jo 19,25-27"
+    ]
+   ]
+  ],
+  "santo:NSGuadalupe": [
+   [
+    [
+     "Primeira leitura",
+     "Ct 2,8-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 32(33),2-3.11-12.20-21"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,39-45"
+    ]
+   ]
+  ],
+  "santo:anjos": [
+   [
+    [
+     "Primeira leitura",
+     "Ex 23,20-23"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 90(91),1-2.3-4.5-6.10-11"
+    ],
+    [
+     "Evangelho",
+     "Mt 18,1-5.10"
+    ]
+   ]
+  ],
+  "santo:anunciacao": [
+   [
+    [
+     "Primeira leitura",
+     "Is 7,10-14; 8,10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 39(40),7-8a.8b-9.10,11"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 10,4-10"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,26-38"
+    ]
+   ]
+  ],
+  "santo:apresentacao": [
+   [
+    [
+     "Primeira leitura",
+     "Ml 3,1-4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),7.8.9.10"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,22-40"
+    ]
+   ]
+  ],
+  "santo:apresentacao-domingo": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 23(24),7.8.9.10"
+    ],
+    [
+     "Segunda leitura",
+     "Hb 2,14-18"
+    ],
+    [
+     "Evangelho",
+     "Lc 2,22-40"
+    ]
+   ]
+  ],
+  "santo:arcanjos": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,9-10.13-14"
+    ],
+    [
+     "Primeira leitura",
+     "Ap 12,7-12a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 137(138),1-2a.2bc-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,47-51"
+    ]
+   ]
+  ],
+  "santo:assuncao": [
+   [
+    [
+     "Primeira leitura",
+     "1Cr 15,3-4.15-16; 16,1-2"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 131(132),6-7.9-10.13-14"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 15,54-57"
+    ],
+    [
+     "Evangelho",
+     "Lc 11,27-28"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Ap 11,19a; 12,1-6a.10ab"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 44(45),10bc.11.12ab.16"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 15,20-27a"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,39-56"
+    ]
+   ]
+  ],
+  "santo:basilioegregorio": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 4,1-7.11-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3.4.5.6"
+    ],
+    [
+     "Evangelho",
+     "Mt 23,8-12"
+    ]
+   ]
+  ],
+  "santo:catedra": [
+   [
+    [
+     "Primeira leitura",
+     "1Pd 5,1-4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,13-19"
+    ]
+   ]
+  ],
+  "santo:conversaosaopaulo": [
+   [
+    [
+     "Primeira leitura",
+     "At 22,3-16"
+    ],
+    [
+     "Primeira leitura",
+     "At 9,1-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 116(117),1.2"
+    ],
+    [
+     "Evangelho",
+     "Mc 16,15-18"
+    ]
+   ]
+  ],
+  "santo:exaltacao": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 21,4b-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 77(78),1-2.34-35.36-37.38"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,13-17"
+    ]
+   ]
+  ],
+  "santo:exaltacao-domingo": [
+   [
+    [
+     "Primeira leitura",
+     "Nm 21,4b-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 77(78),1-2.34-35.36-37.38"
+    ],
+    [
+     "Segunda leitura",
+     "Fl 2,6-11"
+    ],
+    [
+     "Evangelho",
+     "Jo 3,13-17"
+    ]
+   ]
+  ],
+  "santo:fieisdefuntos": [
+   [
+    [
+     "Primeira leitura",
+     "Jó 19,1.23-27a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3.4.5.6"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 15,20-24a.25-28"
+    ],
+    [
+     "Evangelho",
+     "Lc 12,35-40"
+    ]
+   ]
+  ],
+  "santo:imaculada": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 3,9-15.20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 1,3-6.11-12"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,26-38"
+    ]
+   ]
+  ],
+  "santo:joaoevangelista": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 1,1-4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.11-12"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,2-8"
+    ]
+   ]
+  ],
+  "santo:latrao": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 45(46),2-3.5-6.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 3,9c-11.16-17"
+    ],
+    [
+     "Evangelho",
+     "Jo 2,13-22"
+    ]
+   ]
+  ],
+  "santo:maedaigreja": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 3,9-15.20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 86(87),1-2.3 e 5.6-7"
+    ],
+    [
+     "Evangelho",
+     "Jo 19,25-34"
+    ]
+   ]
+  ],
+  "santo:natividade": [
+   [
+    [
+     "Primeira leitura",
+     "Mq 5,1-4a"
+    ],
+    [
+     "Primeira leitura",
+     "Rm 8,28-30"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 70(71),6; Sl 12(13),6"
+    ],
+    [
+     "Evangelho",
+     "Mt 1,1-16.18-23"
+    ]
+   ]
+  ],
+  "santo:pedroepaulo": [
+   [
+    [
+     "Primeira leitura",
+     "At 3,1-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18A(19),2-3.4-5"
+    ],
+    [
+     "Segunda leitura",
+     "Gl 1,11-20"
+    ],
+    [
+     "Evangelho",
+     "Jo 21,15-19"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "At 12,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.4-5.6-7.8-9"
+    ],
+    [
+     "Segunda leitura",
+     "2Tm 4,6-8.17-18"
+    ],
+    [
+     "Evangelho",
+     "Mt 16,13-19"
+    ]
+   ]
+  ],
+  "santo:santaagueda": [
+   [
+    [
+     "Primeira leitura",
+     "Gn 14,18-20"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 109(110),1.2.3.4"
+    ],
+    [
+     "Segunda leitura",
+     "1Cor 11,23-26"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,11b-17"
+    ]
+   ]
+  ],
+  "santo:santamarta": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 4,7-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 33(34),2-3.4-5.6-7.8-9.10-11"
+    ],
+    [
+     "Evangelho",
+     "Jo 11,19-27"
+    ]
+   ]
+  ],
+  "santo:santoandre": [
+   [
+    [
+     "Primeira leitura",
+     "Rm 10,9-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19A),2-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 4,18-22"
+    ]
+   ]
+  ],
+  "santo:santoestevao": [
+   [
+    [
+     "Primeira leitura",
+     "At 6,8-10.7,54-59"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 30(31),3cd-4.6 e 8ab.16bc e 17"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,17-22"
+    ]
+   ]
+  ],
+  "santo:santosinocentes": [
+   [
+    [
+     "Primeira leitura",
+     "1Jo 1,5-2,2"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 123(124),2-3.4-5.7b-8"
+    ],
+    [
+     "Evangelho",
+     "Mt 2,13-18"
+    ]
+   ]
+  ],
+  "santo:saobarnabe": [
+   [
+    [
+     "Primeira leitura",
+     "At 11,21b-26; 13,1-3"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 97(98),1.2-3ab.3cd-4.5-6"
+    ],
+    [
+     "Evangelho",
+     "Mt 10,7-13"
+    ]
+   ]
+  ],
+  "santo:saobartolomeu": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 21,9b-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),10-11.12-13ab.17-18"
+    ],
+    [
+     "Evangelho",
+     "Jo 1,45-51"
+    ]
+   ]
+  ],
+  "santo:saofilipeetiago": [
+   [
+    [
+     "Primeira leitura",
+     "1Cor 15,1-8"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19A),2-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Jo 14,6-14"
+    ]
+   ]
+  ],
+  "santo:saojoao": [
+   [
+    [
+     "Primeira leitura",
+     "Jr 1,4-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 70(71),l-2.3-4a.5-6ab.15ab e 17"
+    ],
+    [
+     "Segunda leitura",
+     "1Pd 1,8-12"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,5-17"
+    ]
+   ],
+   [
+    [
+     "Primeira leitura",
+     "Is 49,1-6"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 138(139),1-3.13-14ab.14c-15"
+    ],
+    [
+     "Segunda leitura",
+     "At 13,22-26"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,57-66"
+    ]
+   ]
+  ],
+  "santo:saojoaquimesantana": [
+   [
+    [
+     "Primeira leitura",
+     "Eclo 44,1.10-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 131(132),11.13-14.17-18"
+    ],
+    [
+     "Evangelho",
+     "Mt 13,16-17"
+    ]
+   ]
+  ],
+  "santo:saojose": [
+   [
+    [
+     "Primeira leitura",
+     "2Sm 7,4-5a.12-14a.16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),2-3.4-5.27 e 29"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 4,13.16-18.22"
+    ],
+    [
+     "Evangelho",
+     "Mt 1,16.18-21.24a"
+    ]
+   ]
+  ],
+  "santo:saolourenco": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 9,6-10"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 111(112),1-2.5-6.7-8.9"
+    ],
+    [
+     "Evangelho",
+     "Jo 12,24-26"
+    ]
+   ]
+  ],
+  "santo:saolucas": [
+   [
+    [
+     "Primeira leitura",
+     "2Tm 4,10-17b"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 144(145),10-11,12-13ab,17-18"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,1-9"
+    ]
+   ]
+  ],
+  "santo:saomarcos": [
+   [
+    [
+     "Primeira leitura",
+     "1Pd 5,5b-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 88(89),2-3,6-7,16-17"
+    ],
+    [
+     "Evangelho",
+     "Mc 16,15-20"
+    ]
+   ]
+  ],
+  "santo:saomateus": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 4,1-7.11-13"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19A),2-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Mt 9,9-13"
+    ]
+   ]
+  ],
+  "santo:saomatias": [
+   [
+    [
+     "Primeira leitura",
+     "At 1,15-17.20-26"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 112(113),1-2.3-4.5-6.7-8"
+    ],
+    [
+     "Evangelho",
+     "Jo 15,9-17"
+    ]
+   ]
+  ],
+  "santo:saotiago": [
+   [
+    [
+     "Primeira leitura",
+     "2Cor 4,7-15"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 125(126),1-2ab.2cd-3.4-5.6"
+    ],
+    [
+     "Evangelho",
+     "Mt 20,20-28"
+    ]
+   ]
+  ],
+  "santo:saotimoteoetito": [
+   [
+    [
+     "Primeira leitura",
+     "2Tm 1,1-8"
+    ],
+    [
+     "Primeira leitura",
+     "Tt 1,1-5"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 95(96),1-2a.2b-3.7-8a.10"
+    ],
+    [
+     "Evangelho",
+     "Lc 10,1-9"
+    ]
+   ]
+  ],
+  "santo:saotome": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 2,19-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 116(117),1-2"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,24-29"
+    ]
+   ]
+  ],
+  "santo:simaoejudas": [
+   [
+    [
+     "Primeira leitura",
+     "Ef 2,19-22"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18(19A),2-3.4-5"
+    ],
+    [
+     "Evangelho",
+     "Lc 6,12-19"
+    ]
+   ]
+  ],
+  "santo:stamariamadalena": [
+   [
+    [
+     "Primeira leitura",
+     "Ct 3,1-4a"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 62(63),2.3-4.5-6.8-9"
+    ],
+    [
+     "Evangelho",
+     "Jo 20,1-2.11-18"
+    ]
+   ]
+  ],
+  "santo:todosossantos": [
+   [
+    [
+     "Primeira leitura",
+     "Ap 7,2-4.9-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 23(24),1-2.3-4ab.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 3,1-3"
+    ],
+    [
+     "Evangelho",
+     "Mt 5,1-12a"
+    ]
+   ]
+  ],
+  "santo:transfiguracao-A": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,9-10.13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.9"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,1-9"
+    ]
+   ]
+  ],
+  "santo:transfiguracao-A-domingo": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,9-10.13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.9"
+    ],
+    [
+     "Segunda leitura",
+     "2Pd 1,16-19"
+    ],
+    [
+     "Evangelho",
+     "Mt 17,1-9"
+    ]
+   ]
+  ],
+  "santo:transfiguracao-B": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,9-10.13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.9"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,2-10"
+    ]
+   ]
+  ],
+  "santo:transfiguracao-B-domingo": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,9-10.13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.9"
+    ],
+    [
+     "Segunda leitura",
+     "2Pd 1,16-19"
+    ],
+    [
+     "Evangelho",
+     "Mc 9,2-10"
+    ]
+   ]
+  ],
+  "santo:transfiguracao-C": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,9-10.13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.9"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,28b-36"
+    ]
+   ]
+  ],
+  "santo:transfiguracao-C-domingo": [
+   [
+    [
+     "Primeira leitura",
+     "Dn 7,9-10.13-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 96(97),1-2.5-6.9"
+    ],
+    [
+     "Segunda leitura",
+     "2Pd 1,16-19"
+    ],
+    [
+     "Evangelho",
+     "Lc 9,28b-36"
+    ]
+   ]
+  ],
+  "santo:visitacao": [
+   [
+    [
+     "Primeira leitura",
+     "Sf 3,14-18"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Evangelho",
+     "Lc 1,39-56"
+    ]
+   ]
+  ],
+  "scj-A": [
+   [
+    [
+     "Primeira leitura",
+     "Dt 7,6-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 102(103),1-2.3-4.6-7.8.10"
+    ],
+    [
+     "Segunda leitura",
+     "1Jo 4,7-16"
+    ],
+    [
+     "Evangelho",
+     "Mt 11,25-30"
+    ]
+   ]
+  ],
+  "scj-B": [
+   [
+    [
+     "Primeira leitura",
+     "Os 11,1.3-4.8c-9"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Segunda leitura",
+     "Ef 3,8-12.14-19"
+    ],
+    [
+     "Evangelho",
+     "Jo 19,31-37"
+    ]
+   ]
+  ],
+  "scj-C": [
+   [
+    [
+     "Primeira leitura",
+     "Ez 34,11-16"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 22(23),1-3a.3b-4.5.6"
+    ],
+    [
+     "Segunda leitura",
+     "Rm 5,5b-11"
+    ],
+    [
+     "Evangelho",
+     "Lc 15,3-7"
+    ]
+   ]
+  ],
+  "vigilia-pascal": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.5-6.10.12.13-14.24.35c"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),5.8.9-10.11"
+    ],
+    [
+     "Terceira leitura",
+     "Ex 14,15-15,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Ex 15,1-2.3-4.5-6.17-18"
+    ],
+    [
+     "Quarta leitura",
+     "Is 54,5-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2.4.5-6.11.12a.13b"
+    ],
+    [
+     "Quinta leitura",
+     "Is 55,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Sexta leitura",
+     "Br 3,9-15.32-4,4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18B(19),8.9.10.11"
+    ],
+    [
+     "Sétima leitura",
+     "Ez 36,16-17a.18-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 41(42),3.5bcd; 42,3.4"
+    ],
+    [
+     "Carta",
+     "Rm 6,3-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1-2.16ab-17.22-23"
+    ],
+    [
+     "Evangelho",
+     "Mt 28,1-10"
+    ]
+   ]
+  ],
+  "vigilia-pascal-A": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.5-6.10.12.13-14.24.35c"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),5.8.9-10.11"
+    ],
+    [
+     "Terceira leitura",
+     "Ex 14,15-15,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Ex 15,1-2.3-4.5-6.17-18"
+    ],
+    [
+     "Quarta leitura",
+     "Is 54,5-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2.4.5-6.11.12a.13b"
+    ],
+    [
+     "Quinta leitura",
+     "Is 55,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Sexta leitura",
+     "Br 3,9-15.32-4,4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18B(19),8.9.10.11"
+    ],
+    [
+     "Sétima leitura",
+     "Ez 36,16-17a.18-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 41(42),3.5bcd; 42,3.4"
+    ],
+    [
+     "Carta",
+     "Rm 6,3-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1-2.16ab-17.22-23"
+    ],
+    [
+     "Evangelho",
+     "Mt 28,1-10"
+    ]
+   ]
+  ],
+  "vigilia-pascal-B": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.5-6.10.12.13-14.24.35c"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15,5.8.9-10.11"
+    ],
+    [
+     "Terceira leitura",
+     "Ex 14,15-15,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Ex 15,1-2.3-4.5-6.17-18"
+    ],
+    [
+     "Quarta leitura",
+     "Is 54,5-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2.4.5-6.11.12a.13b"
+    ],
+    [
+     "Quinta leitura",
+     "Is 55,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Sexta leitura",
+     "Br 3,9-15.32-4,4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18B(19),8.9.10.11"
+    ],
+    [
+     "Sétima leitura",
+     "Ez 36,16-17a.18-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 41(42),3.5bcd;42,3.4"
+    ],
+    [
+     "Carta",
+     "Rm 6,3-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1-2.16ab-17.22-23"
+    ],
+    [
+     "Evangelho",
+     "Mc 16,1-7"
+    ]
+   ]
+  ],
+  "vigilia-pascal-C": [
+   [
+    [
+     "Salmo responsorial",
+     "Sl 103(104),1-2a.5-6.10.12.13-14.24.35c"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 15(16),5.8.9-10.11"
+    ],
+    [
+     "Terceira leitura",
+     "Ex 14,15-15,1"
+    ],
+    [
+     "Salmo responsorial",
+     "Ex 15,1-2.3-4.5-6.17-18"
+    ],
+    [
+     "Quarta leitura",
+     "Is 54,5-14"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 29(30),2.4.5-6.11.12a.13b"
+    ],
+    [
+     "Quinta leitura",
+     "Is 55,1-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Is 12,2-3.4bcd.5-6"
+    ],
+    [
+     "Sexta leitura",
+     "Br 3,9-15.32-4,4"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 18B(19),8.9.10.11"
+    ],
+    [
+     "Sétima leitura",
+     "Ez 36,16-17a.18-28"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 41(42),3.5bcd; 42,3.4"
+    ],
+    [
+     "Carta",
+     "Rm 6,3-11"
+    ],
+    [
+     "Salmo responsorial",
+     "Sl 117(118),1-2.16ab-17.22-23"
+    ],
+    [
+     "Evangelho",
+     "Lc 24,1-12"
+    ]
+   ]
+  ]
+ }
+}
