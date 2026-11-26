@@ -107,7 +107,7 @@
    "data": "2026-11-26",
    "origem": "Revisão corretiva das dez retraduções",
    "decisao": "O responsável fixou o critério: a fidelidade ao latim decide a tradução, e a coincidência com a Vozes ou com outra tradução moderna, quando vem de tradução fiel e independente, não é problema e não justifica mudar o texto. Pediu que se revertessem as mudanças da segunda passada (feitas para diminuir a coincidência) sem justificativa filológica, que se corrigissem as perdas de fidelidade apontadas pela auditoria complementar (entre elas “homini regi”, nas duas ocorrências do SD50-01) e que os dez trechos fossem relidos por inteiro com o latim. A Etapa 1 não foi declarada aprovada e nada avançou para a distribuição litúrgica.",
-   "alteracoes": "Só os dez trechos (SD19-02, SM04-05, SD33-03, SD50-01, SD59-02, SM03-06, SD02-13, SD40-20, SD54-08 e SD61-09): 59 alterações, das quais 20 reversões da segunda passada, 33 correções de fidelidade e 6 de marcação de referência; SD40-20 conferido sem alteração. Cada entrada guarda o campo revisao_corretiva (antes, depois, latim, origem, decisão e justificativa de cada mudança); o texto anterior e o corrigido de cada trecho estão em revisao-corretiva-2026-11-26.json. A recebida não foi alterada."
+   "alteracoes": "Só os dez trechos (SD19-02, SM04-05, SD33-03, SD50-01, SD59-02, SM03-06, SD02-13, SD40-20, SD54-08 e SD61-09): 59 alterações: 20 reversões (totais ou parciais) da segunda passada, 32 correções de fidelidade da tradução às cegas, 1 correção num ajuste posterior à primeira versão (motivo não registrado) e 6 de marcação de referência; SD40-20 conferido sem alteração. Cada entrada guarda o campo revisao_corretiva (antes, depois, latim, origem, decisão e justificativa de cada mudança); o texto anterior e o corrigido de cada trecho estão em revisao-corretiva-2026-11-26.json. A recebida não foi alterada. A origem de cada mudança foi conferida comparando a primeira versão às cegas com o texto anterior à revisão."
   }
  ],
  "registros": [
@@ -2708,7 +2708,7 @@
    "revisao_corretiva": {
     "data": "2026-11-26",
     "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
-    "resultado": "7 alterações, das quais 4 reversões da segunda passada",
+    "resultado": "7 alterações, das quais 4 reversões (total ou parcial) da segunda passada",
     "alteracoes": [
      {
       "antes": "no ouro, a sabedoria do mundo;",
@@ -2723,7 +2723,7 @@
       "depois": "Com estas coisas se cerca e se adorna a mulher fornicadora, a grande Babilônia, a sinagoga de Satanás, a turba dos carnais. Dela se acrescenta:",
       "latim": "Istis mulier fornicaria, Babylon magna, Satanae synagoga, carnalium turba circumdatur et ornatur. De qua subditur",
       "origem": "segunda passada (similaridade)",
-      "decisao": "reverter",
+      "decisao": "reverter em parte",
       "justificativa": "Istis = “com estas coisas”; as aposições vêm com vírgulas, como no latim; turba tem sentido pejorativo que “multidão” apaga; subditur = “acrescenta-se”. Fica “se adorna” (ornatur), mais exato que o “se enfeita” da primeira versão."
      },
      {
@@ -2766,7 +2766,8 @@
       "decisao": "corrigir",
       "justificativa": "O autor repete o verbo (nudabuntur … nudati), em eco com nudaberis e denudatur da mesma passagem; a tradução anterior quebrava a repetição."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -4671,7 +4672,7 @@
    "revisao_corretiva": {
     "data": "2026-11-26",
     "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
-    "resultado": "4 alterações, das quais 1 reversão da segunda passada",
+    "resultado": "4 alterações, das quais 1 reversão (total ou parcial) da segunda passada",
     "alteracoes": [
      {
       "antes": "Salomão levantou duas colunas",
@@ -4705,7 +4706,8 @@
       "decisao": "corrigir",
       "justificativa": "As duas metades são simétricas (a firmeza / a força), cada uma ligada a uma coluna."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -5968,7 +5970,8 @@
     "data": "2026-11-26",
     "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
     "resultado": "conferido integralmente com o latim; nenhuma alteração",
-    "alteracoes": []
+    "alteracoes": [],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -7491,7 +7494,7 @@
    "revisao_corretiva": {
     "data": "2026-11-26",
     "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
-    "resultado": "24 alterações, das quais 12 reversões da segunda passada",
+    "resultado": "24 alterações, das quais 13 reversões (total ou parcial) da segunda passada",
     "alteracoes": [
      {
       "antes": "semelhante a um rei que fez",
@@ -7546,9 +7549,9 @@
       "antes": "o altar dos perfumes, a sua alma, repleta de todo o perfume das virtudes",
       "depois": "o altar dos incensos, a sua alma, que foi cheia de todo o perfume das virtudes",
       "latim": "in altari incensorum, ipsius anima, quae omni fuit plena odore virtutum",
-      "origem": "tradução às cegas",
-      "decisao": "corrigir",
-      "justificativa": "Oração relativa com pretérito (quae … fuit plena); “altar dos incensos” pela reversão acima."
+      "origem": "segunda passada (similaridade); tradução às cegas",
+      "decisao": "reverter e corrigir",
+      "justificativa": "“perfumes” veio da segunda passada e volta a “incensos” (incensorum). A oração relativa com pretérito (quae … fuit plena) corrige o “repleta” da primeira versão."
      },
      {
       "antes": "que o altar dos perfumes enche de fragrância",
@@ -7619,8 +7622,8 @@
       "depois": "Igualmente, os três braços com que abraça o próximo são: perdoar a quem comete falta, corrigir quem erra, alimentar quem tem fome.",
       "latim": "Item, tria brachia quibus amplectitur proximum sunt: delinquenti parcere, errantem corrigere, esurientem reficere",
       "origem": "segunda passada (similaridade)",
-      "decisao": "reverter",
-      "justificativa": "Volta a estrutura do latim (Item, tria brachia … sunt), “corrigir quem erra” (errantem) e “alimentar” (reficere). Mantém-se “perdoar a quem comete falta”, corrigido depois da segunda passada por fidelidade (delinquens = quem comete falta)."
+      "decisao": "reverter em parte",
+      "justificativa": "Volta a estrutura do latim (Item, tria brachia … sunt), “corrigir quem erra” (errantem) e “alimentar” (reficere). Ficam “quem comete falta”, que entrou na segunda passada mas traduz delinquens melhor que o “quem peca” da primeira versão, e “perdoar”, restabelecido depois da segunda passada pela ligação com “Perdoa-lhes” (Lc 23,34), a citação que ilustra este braço."
      },
      {
       "antes": "(Lc 23,34)",
@@ -7686,7 +7689,8 @@
       "decisao": "corrigir",
       "justificativa": "incensorum; e a conjunção et, que faltava."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -8284,7 +8288,8 @@
       "decisao": "corrigir",
       "justificativa": "Citação literal; a edição não marca “Cf.”."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -8749,7 +8754,8 @@
       "decisao": "corrigir",
       "justificativa": "lacrimam é singular; auferet = tirará."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -9078,7 +9084,7 @@
    "revisao_corretiva": {
     "data": "2026-11-26",
     "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
-    "resultado": "5 alterações, das quais 1 reversão da segunda passada",
+    "resultado": "5 alterações, das quais 1 reversão (total ou parcial) da segunda passada",
     "alteracoes": [
      {
       "antes": "tu que tiveste um Filho em comum com Deus Pai",
@@ -9120,7 +9126,8 @@
       "decisao": "corrigir",
       "justificativa": "As três expressões finais são citações (Credo, Cl 1,18, Rm 8,29), e a edição marca as três; só a última estava entre aspas."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -10315,7 +10322,7 @@
    "revisao_corretiva": {
     "data": "2026-11-26",
     "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
-    "resultado": "6 alterações, das quais 2 reversões da segunda passada",
+    "resultado": "6 alterações, das quais 1 reversão (total ou parcial) da segunda passada",
     "alteracoes": [
      {
       "antes": "e o Senhor não estava no vento",
@@ -10353,9 +10360,9 @@
       "antes": "e pensava que saudação seria aquela",
       "depois": "e pensava que saudação seria esta",
       "latim": "et cogitabat qualis esset ista salutatio",
-      "origem": "segunda passada (similaridade)",
-      "decisao": "reverter",
-      "justificativa": "ista = esta; a troca foi só por similaridade."
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "ista = esta. (“aquela” já estava na primeira versão às cegas; não veio da segunda passada.)"
      },
      {
       "antes": "a descida do Espírito Santo",
@@ -10365,7 +10372,8 @@
       "decisao": "corrigir",
       "justificativa": "superventio = vinda sobre (Lc 1,35 superveniet)."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -10599,9 +10607,9 @@
       "antes": "Com estas três coisas foi cercada a bem-aventurada Virgem",
       "depois": "Com estas três coisas foi fechada a bem-aventurada Virgem",
       "latim": "His tribus beata Virgo fuit clausa … De hac triplici clausura … Hortus conclusus",
-      "origem": "tradução às cegas",
+      "origem": "ajuste posterior à primeira versão (motivo não registrado)",
       "decisao": "corrigir",
-      "justificativa": "clausa = fechada; o autor encadeia clausa, clausura e hortus conclusus (“jardim fechado”), e “cercada” quebra a cadeia."
+      "justificativa": "A primeira versão às cegas tinha “Por estas três coisas foi resguardada”; “Com … cercada” entrou num ajuste posterior cujo motivo não ficou registrado. clausa = fechada: o autor encadeia clausa, clausura e hortus conclusus (“jardim fechado”), e o próprio Lírio traduz “Foi fechada contra o setentrião” no § 4 deste sermão."
      },
      {
       "antes": "porque partilhou com ele a mesma carne",
@@ -10643,7 +10651,8 @@
       "decisao": "corrigir",
       "justificativa": "Advérbio do latim."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {
@@ -13261,7 +13270,8 @@
       "decisao": "corrigir",
       "justificativa": "septenarius é termo técnico (série de sete), que o Lírio já traduzia “setenário”."
      }
-    ]
+    ],
+    "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
    }
   },
   {

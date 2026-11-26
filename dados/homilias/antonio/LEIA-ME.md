@@ -191,12 +191,12 @@ independente não é problema editorial.
 O que foi feito, só nos dez trechos do programa:
 
 - as mudanças da segunda passada sem justificativa filológica foram
-  revertidas (20); as que melhoravam a fidelidade ficaram, com o motivo
-  registrado;
-- foram corrigidas as perdas de fidelidade da tradução às cegas apontadas
-  pela auditoria complementar ou achadas na releitura integral (33), entre
-  elas “homini regi” (“a um homem rei”), omitido nas duas ocorrências do
-  SD50-01;
+  revertidas, no todo ou em parte (20); as que melhoravam a fidelidade
+  ficaram, com o motivo registrado;
+- foram corrigidas as perdas de fidelidade apontadas pela auditoria
+  complementar ou achadas na releitura integral (33: 32 da tradução às cegas
+  e uma de um ajuste posterior cujo motivo não ficou registrado), entre elas
+  “homini regi” (“a um homem rei”), omitido nas duas ocorrências do SD50-01;
 - seis marcações de referência foram acertadas pela edição (uso de “cf.” e
   aspas);
 - os dez trechos foram relidos por inteiro com o latim (artigos, número,
@@ -209,9 +209,9 @@ O que foi feito, só nos dez trechos do programa:
 | SD19-02 | sd19 § 7 | 7 | 4 |
 | SM04-05 | fim do sm04 § 5 | 7 | 0 |
 | SD33-03 | sd33 § 1 | 4 | 1 |
-| SD50-01 | sd50 § 1 | 24 | 12 |
+| SD50-01 | sd50 § 1 | 24 | 13 |
 | SD59-02 | sd59 § 3 | 2 | 0 |
-| SM03-06 | sm03 § 10 | 6 | 2 |
+| SM03-06 | sm03 § 10 | 6 | 1 |
 | SD02-13 | sd02 § 2 | 1 | 0 |
 | SD40-20 | sd40 § 2 | 0 | 0 |
 | SD54-08 | sd54 § 15 | 3 | 0 |
@@ -219,7 +219,9 @@ O que foi feito, só nos dez trechos do programa:
 
 Cada alteração está no campo `revisao_corretiva` da entrada (e na
 `AUDITORIA.md`); o texto anterior e o corrigido de cada trecho estão em
-`revisao-corretiva-2026-11-26.json`. A recebida não foi alterada, e nenhum
+`revisao-corretiva-2026-11-26.json`. A origem de cada mudança foi conferida
+comparando a primeira versão às cegas com o texto anterior à revisão. A
+recebida não foi alterada, e nenhum
 texto fora dos dez trechos mudou. O relatório da revisão:
 https://claude.ai/artifact/CViJLdg9b3io7VLgn2Wuqi
 

@@ -283,7 +283,7 @@ function entradaAntonio(r, item) {
   if (r.retraducao) L.push(`- **Retradução às cegas (${r.retraducao.data.split('-').reverse().join('/')}):** ${r.retraducao.medida}: texto anterior ${r.retraducao.antes}; primeira versão às cegas ${r.retraducao.primeira_versao}; texto final ${r.retraducao.depois}.${r.retraducao.observacao ? ` ${r.retraducao.observacao}` : ''}`);
   if (r.revisao_corretiva) {
     const rc = r.revisao_corretiva;
-    L.push(`- **Revisão corretiva (${rc.data.split('-').reverse().join('/')}):** critério: ${rc.criterio}. Resultado: ${rc.resultado}.`);
+    L.push(`- **Revisão corretiva (${rc.data.split('-').reverse().join('/')}):** critério: ${rc.criterio}. Resultado: ${rc.resultado}.${rc.origem_verificada ? ` ${rc.origem_verificada}` : ''}`);
     for (const a of rc.alteracoes) L.push(`  - “${linha(a.antes)}” → “${linha(a.depois)}”${a.ocorrencias ? ` (${a.ocorrencias} ocorrências)` : ''}. Latim: ${linha(a.latim)}. Origem: ${a.origem}; decisão: ${a.decisao}. ${linha(a.justificativa)}`);
   }
   L.push(`- **Fonte consultada:** ${r.fonte_consultada || '—'}`, '');
