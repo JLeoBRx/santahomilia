@@ -280,7 +280,12 @@ function entradaAntonio(r, item) {
   if (r.nota) L.push(`- **Nota (${r.nota.aviso}):** ${r.nota.procedencia} Texto: “${linha(r.nota.texto)}”`);
   if (r.decisao) L.push(`- **Decisão do responsável (${r.decisao.data.split('-').reverse().join('/')}, ${r.decisao.questao}):** ${r.decisao.escolha}. ${r.decisao.texto}${r.decisao.aplicada_em ? ` Aplicada em ${r.decisao.aplicada_em.join(', ')}.` : ''}`);
   if (r.origem_da_aplicacao) L.push(`- **Origem da aplicação:** ${r.origem_da_aplicacao}`);
-  if (r.retraducao) L.push(`- **Retradução às cegas (${r.retraducao.data.split('-').reverse().join('/')}):** ${r.retraducao.medida}: texto anterior ${r.retraducao.antes}; primeira versão às cegas ${r.retraducao.primeira_versao}; texto final ${r.retraducao.depois}.`);
+  if (r.retraducao) L.push(`- **Retradução às cegas (${r.retraducao.data.split('-').reverse().join('/')}):** ${r.retraducao.medida}: texto anterior ${r.retraducao.antes}; primeira versão às cegas ${r.retraducao.primeira_versao}; texto final ${r.retraducao.depois}.${r.retraducao.observacao ? ` ${r.retraducao.observacao}` : ''}`);
+  if (r.revisao_corretiva) {
+    const rc = r.revisao_corretiva;
+    L.push(`- **Revisão corretiva (${rc.data.split('-').reverse().join('/')}):** critério: ${rc.criterio}. Resultado: ${rc.resultado}.`);
+    for (const a of rc.alteracoes) L.push(`  - “${linha(a.antes)}” → “${linha(a.depois)}”${a.ocorrencias ? ` (${a.ocorrencias} ocorrências)` : ''}. Latim: ${linha(a.latim)}. Origem: ${a.origem}; decisão: ${a.decisao}. ${linha(a.justificativa)}`);
+  }
   L.push(`- **Fonte consultada:** ${r.fonte_consultada || '—'}`, '');
   return L.join('\n');
 }
@@ -293,7 +298,7 @@ function auditoriaAntonioMd(REG, CAT) {
   const L = [];
   L.push('# Auditoria da tradução — Sermões de Santo Antônio de Pádua', '', '> Gerado a partir de `dados/homilias/antonio/registro-editorial.json` por `ferramentas/homilias/gerar_documentos.mjs`. Não edite à mão.', '');
   L.push('## Etapas', '', '| Etapa | Estado | Data |', '|---|---|---|');
-  for (const e of Object.values(REG.etapas)) L.push(`| ${e.nome} | ${e.estado} | ${(e.data_de_conclusao || e.entregue_em || e.autorizada_em || '').split('-').reverse().join('/')} |`);
+  for (const e of Object.values(REG.etapas)) L.push(`| ${e.nome} | ${e.estado}${e.pendente ? ` (pendente: ${e.pendente})` : ''} | ${(e.data_de_conclusao || e.entregue_em || e.autorizada_em || '').split('-').reverse().join('/')} |`);
   L.push('', '## Obra e fontes', '');
   L.push(`- **Obra:** ${REG.obra.autor}, *${REG.obra.titulo}*. ${REG.obra.divisao}`);
   const P = REG.procedencia;

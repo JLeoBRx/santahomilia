@@ -68,7 +68,8 @@
    "entregue_em": "2026-11-24",
    "data_de_conclusao": "2026-11-24",
    "aprovacao": "Aprovada pelo responsável do projeto em 24/11/2026, com as deliberações finais (D.1, questões 1–15; D.2, 39 sugestões), aplicadas no mesmo dia.",
-   "resultado": "85 itens colacionados por inteiro com o latim; deliberações aplicadas na revisada; nenhum sermão publicado. Pendências fora da etapa: remoção dos PDFs protegidos (a cargo do responsável) e o programa de retradução independente (executado em 25/11/2026)."
+   "resultado": "85 itens colacionados por inteiro com o latim; deliberações aplicadas na revisada; nenhum sermão publicado. Pendências fora da etapa: remoção dos PDFs protegidos (a cargo do responsável) e o programa de retradução independente (executado em 25/11/2026).",
+   "pendente": "validação final das dez retraduções: auditoria e revisão corretiva feitas em 26/11/2026; aguarda revisão independente"
   }
  },
  "historico": [
@@ -101,6 +102,12 @@
    "origem": "Mudança para o repositório Santa Homilia",
    "decisao": "O responsável decidiu: (1) o crédito obrigatório passa a dizer “revisada pelo projeto Santa Homilia”, em lugar de “projeto Liturgia”; (2) os títulos dos sermões da edição da Vozes guardados no catálogo interno (sumario.json, campo vozes_titulo) ficam, por serem títulos isolados. O resultado do programa de retradução foi enviado ao responsável para a validação final da Etapa 1.",
    "alteracoes": "Texto do crédito em procedencia.traducao_recebida e no LEIA-ME. Nenhuma alteração de texto dos sermões."
+  },
+  {
+   "data": "2026-11-26",
+   "origem": "Revisão corretiva das dez retraduções",
+   "decisao": "O responsável fixou o critério: a fidelidade ao latim decide a tradução, e a coincidência com a Vozes ou com outra tradução moderna, quando vem de tradução fiel e independente, não é problema e não justifica mudar o texto. Pediu que se revertessem as mudanças da segunda passada (feitas para diminuir a coincidência) sem justificativa filológica, que se corrigissem as perdas de fidelidade apontadas pela auditoria complementar (entre elas “homini regi”, nas duas ocorrências do SD50-01) e que os dez trechos fossem relidos por inteiro com o latim. A Etapa 1 não foi declarada aprovada e nada avançou para a distribuição litúrgica.",
+   "alteracoes": "Só os dez trechos (SD19-02, SM04-05, SD33-03, SD50-01, SD59-02, SM03-06, SD02-13, SD40-20, SD54-08 e SD61-09): 59 alterações, das quais 20 reversões da segunda passada, 33 correções de fidelidade e 6 de marcação de referência; SD40-20 conferido sem alteração. Cada entrada guarda o campo revisao_corretiva (antes, depois, latim, origem, decisão e justificativa de cada mudança); o texto anterior e o corrigido de cada trecho estão em revisao-corretiva-2026-11-26.json. A recebida não foi alterada."
   }
  ],
  "registros": [
@@ -2674,9 +2681,9 @@
    "tipo": "traducao-propria",
    "confianca": "alta",
    "localizacao": "§ 7 (inteiro)",
-   "depois": "7. Segue-se: “E a mulher estava cercada de púrpura” etc. Na púrpura se designa o amor da dignidade; no escarlate, que é da cor do sangue, a crueldade da mente; no ouro, a sabedoria do mundo; na pedra preciosa e nas pérolas, a abundância das riquezas. É disso que se cerca e se adorna a mulher fornicadora: a grande Babilônia, a sinagoga de Satanás, a multidão dos carnais. Sobre ela o texto continua: “Tendo na mão uma taça de ouro” etc. A taça, ou cálice de ouro, que Babilônia tem na mão é a glória do mundo: de ouro por fora, mas por dentro repleta de toda sujeira e abominação. Por isso diz Salomão nos Provérbios: “Enganosa é a graça, e vã é a formosura” (Pr 31,30). Este cálice embriaga os reis do mundo, os prelados da Igreja, as religiosas e os religiosos. Daí as palavras de João: “Com ela fornicaram os reis da terra, e os que habitam a terra se embriagaram com o vinho da sua prostituição” (Ap 17,2). Desta embriaguez diz Isaías: “O Senhor misturou no meio do Egito um espírito de vertigem, e fez o Egito errar em todas as suas obras, como erra o bêbado que vomita” (Is 19,14). Vertigem, propriamente, é sempre que o vento, ao levantar-se, faz a terra rodar em giro; ou é a dor de cabeça. No meio do Egito, isto é, nos mundanos, o Senhor misturou, isto é, permitiu que se misturasse, o espírito de vertigem, isto é, o amor da cobiça; levados por seu impulso, como por um vento, eles andam mudando à roda, e assim erram como o bêbado, que nunca acha caminho largo; e, como o bêbado não sente quando o arrastam nem quando o ferem, assim também estes. Por isso dizem nos Provérbios: “Açoitaram-me, e não me doeu; arrastaram-me, e não o senti” (Pr 23,35); porque o pecador miserável não sente dor quando os demônios o açoitam, nem o percebe quando eles o arrastam de pecado em pecado.\nDisto tens a concordância nas Lamentações de Jeremias: “Alegra-te e exulta, filha de Edom, que habitas na terra de Hus: também a ti chegará o cálice; ficarás embriagada e despida” (Lm 4,21). Edom quer dizer sangue. A filha de Edom é a voluptuosidade afeminada dos carnais. A ela o Profeta fala com ironia: “Alegra-te e exulta”. Ela se alegra na abundância do século e exulta na luxúria da carne. Mora na terra de Hus, nome que quer dizer conselho, e desse conselho diz Isaías: “Os sábios conselheiros do Faraó deram um conselho insensato” (Is 19,11). Os sábios deste mundo dão um conselho insensato: buscar as coisas temporais, agarrar o que foge, crer na promessa enganosa do mundo. Iludida pelo conselho deste mundo, a filha de Edom se embriaga com o cálice de ouro da glória mundana e depois é posta a nu. Pois os amantes deste século, passada a embriaguez das coisas temporais, ficarão nus de todos os bens e, assim despojados, serão condenados às penas eternas.\nPor isso João acrescenta no Apocalipse: “Um anjo forte levantou uma pedra, como uma grande mó, e lançou-a ao mar, dizendo: Com este ímpeto será lançada Babilônia, aquela grande cidade, e não será mais encontrada” (Ap 18,21). O anjo forte é Cristo, porque venceu as potestades do ar. Levantou uma pedra, porque eleva os maus, de coração duro, para os castigar mais gravemente; como uma grande mó, porque rodam pelo mundo, ou porque esmagam os outros; e lançou-a ao mar, isto é, na amargura do inferno, para que “quanto Babilônia se exaltou e viveu em delícias, tanto sinta de tormentos” (cf. Ap 18,7).",
+   "depois": "7. Segue-se: “E a mulher estava cercada de púrpura” etc. Na púrpura se designa o amor da dignidade; no escarlate, que é da cor do sangue, a crueldade da mente; no ouro, a sabedoria mundana; na pedra preciosa e nas pérolas, a opulência das riquezas. Com estas coisas se cerca e se adorna a mulher fornicadora, a grande Babilônia, a sinagoga de Satanás, a turba dos carnais. Dela se acrescenta: “Tendo na mão uma taça de ouro” etc. A taça, ou cálice de ouro, na mão de Babilônia é a glória do mundo, dourada por fora, mas por dentro cheia de toda imundície e abominação. Por isso diz Salomão nos Provérbios: “Enganosa é a graça, e vã é a formosura” (Pr 31,30). Deste cálice se embriagam os reis do mundo, os prelados da Igreja, as religiosas e os religiosos. Por isso diz João: “Com ela fornicaram os reis da terra, e os que habitam a terra se embriagaram com o vinho da sua prostituição” (Ap 17,2). Desta embriaguez diz Isaías: “O Senhor misturou no meio do Egito um espírito de vertigem, e fez o Egito errar em todas as suas obras, como erra o bêbado que vomita” (Is 19,14). Vertigem, propriamente, é sempre que o vento, ao levantar-se, faz a terra rodar em giro; ou é a dor de cabeça. No meio do Egito, isto é, nos mundanos, o Senhor misturou, isto é, permitiu que se misturasse, o espírito de vertigem, isto é, o amor da cobiça; levados por seu impulso, como por um vento, eles andam mudando à roda, e assim erram como o bêbado, que nunca acha caminho largo; e, como o bêbado não sente quando o arrastam nem quando o ferem, assim também estes. Por isso dizem nos Provérbios: “Açoitaram-me, e não me doeu; arrastaram-me, e não o senti” (Pr 23,35); porque o pecador miserável não sente dor quando os demônios o açoitam, nem o percebe quando eles o arrastam de pecado em pecado.\nDisto tens a concordância nas Lamentações de Jeremias: “Alegra-te e exulta, filha de Edom, que habitas na terra de Hus: também a ti chegará o cálice; ficarás embriagada e despida” (Lm 4,21). Edom quer dizer sangue. A filha de Edom é a voluptuosidade afeminada dos carnais. A ela o Profeta fala com ironia: “Alegra-te e exulta”. Ela se alegra na abundância do século e exulta na luxúria da carne. Mora na terra de Hus, nome que quer dizer conselho, e desse conselho diz Isaías: “Os sábios conselheiros do Faraó deram um conselho insensato” (Is 19,11). Os sábios deste mundo dão um conselho insensato: buscar as coisas temporais, agarrar o que foge, crer na falsa promessa do mundo. Iludida pelo conselho deste mundo, a filha de Edom se embriaga com o cálice de ouro da glória mundana e depois é posta a nu. Pois os amantes deste século, passada a embriaguez das coisas temporais, serão despidos de todos os bens e, despidos, serão condenados às penas eternas.\nPor isso João acrescenta no Apocalipse: “Um anjo forte levantou uma pedra, como uma grande mó, e lançou-a ao mar, dizendo: Com este ímpeto será lançada Babilônia, aquela grande cidade, e não será mais encontrada” (Ap 18,21). O anjo forte é Cristo, porque venceu as potestades do ar. Levantou uma pedra, porque eleva os maus, de coração duro, para os castigar mais gravemente; como uma grande mó, porque rodam pelo mundo, ou porque esmagam os outros; e lançou-a ao mar, isto é, na amargura do inferno, para que “quanto Babilônia se exaltou e viveu em delícias, tanto sinta de tormentos” (cf. Ap 18,7).",
    "latim": "Sequitur: Et mulier erat circumdata purpura etc. In purpura, amor dignitatis; in coccino… crudelitas mentis… (o parágrafo inteiro, cerca de 3.100 caracteres)",
-   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido da edição crítica, no vocabulário que o próprio Lírio usa nos §§ 6 e 8 (taça, Babilônia, mulher fornicadora). Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos a partir do latim.",
+   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido da edição crítica, no vocabulário que o próprio Lírio usa nos §§ 6 e 8 (taça, Babilônia, mulher fornicadora). Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos (segunda passada). Na revisão corretiva de 26/11/2026, as mudanças dessa passada sem justificativa filológica foram revertidas, e o parágrafo inteiro foi conferido de novo com o latim.",
    "origem_do_texto": "tradução própria do latim (parágrafo inteiro)",
    "motivo": "Lacuna na tradução recebida.",
    "estado": "aplicada",
@@ -2695,7 +2702,71 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "26% (17 palavras)",
     "primeira_versao": "23% (24 palavras)",
-    "depois": "14% (10 palavras)"
+    "depois": "14% (10 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
+   },
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "7 alterações, das quais 4 reversões da segunda passada",
+    "alteracoes": [
+     {
+      "antes": "no ouro, a sabedoria do mundo;",
+      "depois": "no ouro, a sabedoria mundana;",
+      "latim": "in auro, mundana sapientia",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "mundana é adjetivo, e o mesmo adjetivo volta adiante (“glória mundana”, mundanae gloriae). A troca foi feita só por similaridade. Mantém-se “que é da cor do sangue”, da mesma troca, porque reproduz o verbo de quod sanguinei est coloris."
+     },
+     {
+      "antes": "É disso que se cerca e se adorna a mulher fornicadora: a grande Babilônia, a sinagoga de Satanás, a multidão dos carnais. Sobre ela o texto continua:",
+      "depois": "Com estas coisas se cerca e se adorna a mulher fornicadora, a grande Babilônia, a sinagoga de Satanás, a turba dos carnais. Dela se acrescenta:",
+      "latim": "Istis mulier fornicaria, Babylon magna, Satanae synagoga, carnalium turba circumdatur et ornatur. De qua subditur",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "Istis = “com estas coisas”; as aposições vêm com vírgulas, como no latim; turba tem sentido pejorativo que “multidão” apaga; subditur = “acrescenta-se”. Fica “se adorna” (ornatur), mais exato que o “se enfeita” da primeira versão."
+     },
+     {
+      "antes": "A taça, ou cálice de ouro, que Babilônia tem na mão é a glória do mundo: de ouro por fora, mas por dentro repleta de toda sujeira e abominação.",
+      "depois": "A taça, ou cálice de ouro, na mão de Babilônia é a glória do mundo, dourada por fora, mas por dentro cheia de toda imundície e abominação.",
+      "latim": "in manu Babylonis est mundi gloria, foris aurea, sed intus omni spurcitia et abominatione plena",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "in manu Babylonis = “na mão de Babilônia”; plena = “cheia”; spurcitia é imundície moral, e “sujeira” rebaixa o registro."
+     },
+     {
+      "antes": "Este cálice embriaga os reis do mundo, os prelados da Igreja, as religiosas e os religiosos. Daí as palavras de João:",
+      "depois": "Deste cálice se embriagam os reis do mundo, os prelados da Igreja, as religiosas e os religiosos. Por isso diz João:",
+      "latim": "Hoc calice inebriantur reges mundi … Unde Ioannes: …, inquit",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "Volta a forma passiva/reflexiva do latim (inebriantur) e a fórmula de citação do autor (Unde Ioannes … inquit). A troca foi só por similaridade."
+     },
+     {
+      "antes": "a abundância das riquezas",
+      "depois": "a opulência das riquezas",
+      "latim": "divitiarum opulentia designatur",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "opulentia = opulência; “abundância das riquezas” enfraquece o termo."
+     },
+     {
+      "antes": "crer na promessa enganosa do mundo",
+      "depois": "crer na falsa promessa do mundo",
+      "latim": "falsae mundi promissioni credere",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "falsa é o adjetivo do latim; “enganosa” muda o matiz (falsidade × engano)."
+     },
+     {
+      "antes": "ficarão nus de todos os bens e, assim despojados, serão condenados às penas eternas",
+      "depois": "serão despidos de todos os bens e, despidos, serão condenados às penas eternas",
+      "latim": "nudabuntur omnibus bonis, et nudati damnabuntur aeternis poenis",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "O autor repete o verbo (nudabuntur … nudati), em eco com nudaberis e denudatur da mesma passagem; a tradução anterior quebrava a repetição."
+     }
+    ]
    }
   },
   {
@@ -4573,9 +4644,9 @@
    "tipo": "traducao-propria",
    "confianca": "alta",
    "localizacao": "§ 1 (inteiro)",
-   "depois": "1. Naquele tempo, disse Jesus aos seus discípulos: “Se a vossa justiça não for maior que a dos escribas e fariseus, não entrareis no reino dos céus” (Mt 5,20).\nLê-se no terceiro livro dos Reis que nas bases do templo havia, esculpidos, querubins, leões, bois e correias pendentes (cf. 3Rs 7,27-29). Observa que três coisas concorrem para sustentar a estrutura de uma casa: os capitéis, as colunas e as bases. Os capitéis, assim chamados por serem como as cabeças das colunas, foram os profetas, dos quais se diz no terceiro livro dos Reis: “Os capitéis que estavam sobre o alto das colunas eram lavrados à maneira de lírio” (3Rs 7,19). Pelo lírio se designa a claridade do alto, a da pátria eterna e da imortalidade, e a amenidade do paraíso, perfumada de flores; foi isto que os profetas, pais dos apóstolos, nos deram a conhecer em suas profecias. As colunas foram os apóstolos, dos quais se diz: “Eu firmei as suas colunas” (Sl 74,4). Por isso, no terceiro livro dos Reis, Salomão levantou duas colunas: a uma deu o nome de Jaquin, que quer dizer firmeza, e à outra o de Booz, isto é, na fortaleza (cf. 3Rs 7,21). Estas duas colunas significam os apóstolos, a quem bem se chama duas colunas, porque, depois que Cristo ressuscitou, o Espírito Santo lhes foi dado duas vezes: uma na terra, para que se amasse o próximo, e outra do céu, para que se amasse a Deus. Na Ressurreição de Cristo receberam a firmeza; no envio do Espírito Santo, uma força que não desfalece.\nAs bases são os prelados e pregadores do nosso tempo, nos quais devem estar esculpidas estas quatro coisas: querubins, leões, bois e correias. Os querubins significam a plenitude da ciência e da doutrina; os leões, o terror do poder; os bois, a mansidão da misericórdia; as correias, os laços da disciplina. Que nas bases do templo, peço-vos, estejam esculpidas estas coisas: a ciência da doutrina, para que ensinem; o terror do poder, para que repreendam; a mansidão da misericórdia, para que amparem; os laços da disciplina, para que contenham. Destas quatro coisas se fala no quarto livro dos Reis, onde Eliseu clamava: “Meu pai, meu pai, carro de Israel e seu cocheiro” (4Rs 2,12). “Meu pai”, para ensinar; “meu pai”, para corrigir; “carro”, para amparar; e “cocheiro”, para conter. Se os prelados e pregadores da Igreja esculpirem em si estas quatro coisas, poderão de fato ter aquela justiça abundante de que fala o Senhor no evangelho de hoje: “Se a vossa justiça não for maior” etc.",
+   "depois": "1. Naquele tempo, disse Jesus aos seus discípulos: “Se a vossa justiça não for maior que a dos escribas e fariseus, não entrareis no reino dos céus” (Mt 5,20).\nLê-se no terceiro livro dos Reis que nas bases do templo havia, esculpidos, querubins, leões, bois e correias pendentes (cf. 3Rs 7,27-29). Observa que três coisas concorrem para sustentar a estrutura de uma casa: os capitéis, as colunas e as bases. Os capitéis, assim chamados por serem como as cabeças das colunas, foram os profetas, dos quais se diz no terceiro livro dos Reis: “Os capitéis que estavam sobre o alto das colunas eram lavrados à maneira de lírio” (3Rs 7,19). Pelo lírio se designa a claridade do alto, a da pátria eterna e da imortalidade, e a amenidade do paraíso, perfumada de flores; foi isto que os profetas, pais dos apóstolos, nos deram a conhecer em suas profecias. As colunas foram os apóstolos, dos quais se diz: “Eu firmei as suas colunas” (Sl 74,4). Por isso, no terceiro livro dos Reis, Salomão levantou as colunas: a uma deu o nome de Jaquin, que quer dizer firmeza, e à outra o de Booz, isto é, na força (cf. 3Rs 7,21). Estas duas colunas significam os apóstolos, a quem bem se chama duas colunas, porque depois da Ressurreição de Cristo receberam duas vezes o Espírito Santo: primeiro na terra, para que se amasse o próximo; depois do céu, para que se amasse a Deus. Na Ressurreição de Cristo receberam a firmeza; no envio do Espírito Santo, a força que não desfalece.\nAs bases são os prelados e pregadores do nosso tempo, nos quais devem estar esculpidas estas quatro coisas: querubins, leões, bois e correias. Os querubins significam a plenitude da ciência e da doutrina; os leões, o terror do poder; os bois, a mansidão da misericórdia; as correias, os laços da disciplina. Que nas bases do templo, peço-vos, estejam esculpidas estas coisas: a ciência da doutrina, para que ensinem; o terror do poder, para que repreendam; a mansidão da misericórdia, para que amparem; os laços da disciplina, para que contenham. Destas quatro coisas se fala no quarto livro dos Reis, onde Eliseu clamava: “Meu pai, meu pai, carro de Israel e seu cocheiro” (4Rs 2,12). “Meu pai”, para ensinar; “meu pai”, para corrigir; “carro”, para amparar; e “cocheiro”, para conter. Se os prelados e pregadores da Igreja esculpirem em si estas quatro coisas, poderão de fato ter aquela justiça abundante de que fala o Senhor no evangelho de hoje: “Se a vossa justiça não for maior” etc.",
    "latim": "In illo tempore… Dicitur in tertio libro Regum, quod in basibus templi erant sculpta cherubim, leones, boves et lora dependentia… (o parágrafo inteiro, cerca de 2.260 caracteres)",
-   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido aqui da edição crítica, nas convenções do próprio Lírio (livros dos Reis numerados como na Vulgata: 3Rs, 4Rs). Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos a partir do latim.",
+   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido aqui da edição crítica, nas convenções do próprio Lírio (livros dos Reis numerados como na Vulgata: 3Rs, 4Rs). Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos (segunda passada). Na revisão corretiva de 26/11/2026, as mudanças dessa passada sem justificativa filológica foram revertidas, e o parágrafo inteiro foi conferido de novo com o latim.",
    "origem_do_texto": "tradução própria do latim (parágrafo inteiro)",
    "motivo": "Lacuna na tradução recebida.",
    "estado": "aplicada",
@@ -4594,7 +4665,47 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "24% (19 palavras)",
     "primeira_versao": "17% (18 palavras)",
-    "depois": "12% (12 palavras)"
+    "depois": "12% (12 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
+   },
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "4 alterações, das quais 1 reversão da segunda passada",
+    "alteracoes": [
+     {
+      "antes": "Salomão levantou duas colunas",
+      "depois": "Salomão levantou as colunas",
+      "latim": "Salomon erexit columnas, unam … et alteram",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "O latim não diz “duas” aqui; o número só aparece depois (istas duas columnas)."
+     },
+     {
+      "antes": "isto é, na fortaleza",
+      "depois": "isto é, na força",
+      "latim": "Booz, idest in robore … robur indeficiens",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "O autor amarra os nomes às graças recebidas: Jaquin = firmitas → firmitatem; Booz = in robore → robur. “Fortaleza” e depois “força” desfazem o elo."
+     },
+     {
+      "antes": "porque, depois que Cristo ressuscitou, o Espírito Santo lhes foi dado duas vezes: uma na terra, para que se amasse o próximo, e outra do céu, para que se amasse a Deus.",
+      "depois": "porque depois da Ressurreição de Cristo receberam duas vezes o Espírito Santo: primeiro na terra, para que se amasse o próximo; depois do céu, para que se amasse a Deus.",
+      "latim": "quia bis post Christi Resurrectionem acceperunt Spiritum Sanctum: primo in terra … secundo e caelo",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "acceperunt (os apóstolos receberam) é ativo, e primo … secundo marcam ordem; a troca para a passiva foi só por similaridade."
+     },
+     {
+      "antes": "uma força que não desfalece",
+      "depois": "a força que não desfalece",
+      "latim": "firmitatem … robur indeficiens acceperunt",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "As duas metades são simétricas (a firmeza / a força), cada uma ligada a uma coluna."
+     }
+    ]
    }
   },
   {
@@ -5831,7 +5942,7 @@
    "substitui_bloco": true,
    "depois": "2. Observa que neste evangelho se notam duas coisas: a saída de Jesus Cristo dos confins de Tiro e a cura do surdo e mudo. A primeira, quando se diz antes: “Saindo Jesus dos confins de Tiro” (Mc 7,31). A segunda, quando se acrescenta: “E trazem-lhe um surdo e mudo” (Mc 7,32). Com estas cláusulas poremos em concordância algumas autoridades do Eclesiástico.\nNo intróito da missa de hoje canta-se: “Olha, Senhor, para a tua aliança” (Sl 73,20). E lê-se a epístola do bem-aventurado Paulo aos Coríntios: “Tal confiança temos” (2Cor 3,4), que queremos dividir em duas partes e pôr em concordância com as duas cláusulas do santo evangelho. A primeira parte é: “Tal confiança temos”. A segunda: “Que nos fez idôneos” (2Cor 3,6).",
    "latim": "Nota quod in hoc evangelio duo notantur: Iesu Christi de finibus Tyri egressio, surdi et muti curatio…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal.",
+   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -5848,10 +5959,17 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "51% (30 palavras), texto do Lírio",
     "primeira_versao": "11% (10 palavras)",
-    "depois": "11% (10 palavras)"
+    "depois": "11% (10 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
    },
    "estado": "aplicada",
-   "data": "2026-11-25"
+   "data": "2026-11-25",
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "conferido integralmente com o latim; nenhuma alteração",
+    "alteracoes": []
+   }
   },
   {
    "id": "SD42-01",
@@ -7346,9 +7464,9 @@
    "tipo": "traducao-propria",
    "confianca": "alta",
    "localizacao": "§ 1 (inteiro)",
-   "depois": "1. Naquele tempo, disse Jesus aos seus discípulos esta parábola: “O reino dos céus é semelhante a um rei que fez as bodas de seu filho” (Mt 22,2).\nDiz-se no livro dos Macabeus que “levaram para dentro do templo o candelabro, o altar dos perfumes e a mesa” (1Mc 4,49). Vejamos o que estas quatro coisas significam no sentido alegórico, no moral e no anagógico. Observa que há três templos, o seio da Virgem, a alma fiel e a Jerusalém do céu, e que em todos três se encontram candelabro, altar dos perfumes e mesa. Do templo do seio virginal se diz no terceiro livro dos Reis que Salomão construiu o templo de três materiais, de mármore, de cedro e de ouro: o cedro cobria o mármore, e o ouro cobria o cedro (cf. 3Rs 6,7.9.18.20-22). No mármore está figurada a virgindade da bem-aventurada Maria; no cedro, cujo cheiro afugenta as serpentes, a sua humildade; no ouro, a sua pobreza. O cedro da humildade reveste o mármore da virgindade, quer dizer, conserva-o e adorna-o. Virgem soberba, com efeito, não é virgem; por isso a bem-aventurada Maria, como quem se esquece da virgindade, põe adiante a humildade, dizendo: “Eis a serva do Senhor” (Lc 1,38). O cedro da humildade é ornado com o ouro da pobreza, porque da gordura das riquezas costuma brotar a iniquidade da soberba. Foi neste templo que se puseram o candelabro, o altar dos perfumes e a mesa. Como na divindade são três as pessoas e uma a substância, assim na humanidade de Cristo são três as substâncias e uma a pessoa. Jesus Cristo é Deus e homem, que consta de alma e carne. O candelabro significa a divindade; o altar dos perfumes, a sua alma, repleta de todo o perfume das virtudes; a mesa, a sua carne, da qual nos alimentamos e com a qual nos saciamos no Sacramento do altar. Bendito e glorioso este templo, que o candelabro da luz eterna ilumina, que o altar dos perfumes enche de fragrância, que a mesa da proposição sacia.\nSobre o segundo templo, a alma fiel, diz o Apóstolo: “O templo de Deus é santo, e esse templo sois vós” (1Cor 3,17). Para dentro deste templo devemos levar o candelabro da caridade, o altar dos perfumes, que é a devoção da mente, e a mesa da proposição, que é a palavra da santa pregação. Do candelabro da caridade se fala no Êxodo, onde o Senhor diz a Moisés: “Farás um candelabro dúctil, de ouro puríssimo, com taças, pequenas esferas e lírios que dele saiam. Seis braços sairão dos lados, três de um lado e três do outro” (Ex 25,31-32). Chama-se dúctil o que se estende a martelo. O martelo da tribulação bate o candelabro da caridade para que ela, estendida, cresça, não em si mesma, mas na mente do homem. Por isso diz Agostinho, sobre a epístola de João: “A caridade perfeita é esta: estar alguém pronto até a morrer pelos irmãos. Mas será que, mal nasce, já é de todo perfeita? Não: nasce para se aperfeiçoar; nascida, é nutrida; nutrida, fortalece-se; fortalecida, aperfeiçoa-se; e, chegada à perfeição, diz: ‘Desejo partir e estar com Cristo’ (Fl 1,23). Aqui se mostram abertamente o progresso e a perfeição da caridade”. O candelabro da caridade faz-se também de ouro puríssimo, pois ela não aceita mistura de vício algum e sobressai entre as demais virtudes como o ouro entre os demais metais. Deste candelabro devem sair taças, pequenas esferas e lírios. A taça, que pela sua concavidade retém o que nela se derrama e o dá a beber, significa a humildade com a compunção da mente: o que é côncavo recebe o que se derrama, e o que é inchado o repele. A esfera, que gira em roda, significa a solicitude pelas necessidades do próximo. Os lírios, a pureza da castidade. Tu, pois, que tens caridade, tem as taças para com Deus, as esferas para com o próximo e os lírios para contigo mesmo.\nObserva ainda que são seis os braços do candelabro da caridade, três do lado direito e três do esquerdo; com eles a caridade abraça Deus e o próximo. Com três abraça a Deus: abominar os pecados, calcar aos pés as coisas temporais, contemplar as celestes. Do primeiro diz o Salmista: “Odiei e abominei a iniquidade” (Sl 118,163). Do segundo, o Apóstolo: “Tive todas as coisas por esterco, para ganhar a Cristo e abraçá-lo” (cf. Fl 3,8). Do terceiro, o mesmo Apóstolo: “Não pondo vós os olhos nas coisas que se veem, mas nas que não se veem” (cf. 2Cor 4,18). E com outros três abraça o próximo: perdoar a quem comete falta, corrigir quem anda errado, dar de comer a quem tem fome. Do primeiro se diz no evangelho: “Perdoa-lhes, porque não sabem o que fazem” (Lc 23,34). Do segundo, Tiago: “Quem fizer um pecador voltar do erro do seu caminho salvará a sua alma da morte e cobrirá uma multidão de pecados” (Tg 5,20). Do terceiro, Salomão: “Se o teu inimigo tiver fome, dá-lhe de comer; se tiver sede, dá-lhe de beber” (Pr 25,21; cf. Rm 12,20). Se, com um tal candelabro, o altar da devoção e a mesa da santa pregação forem levados para dentro da nossa alma, então ela será de fato um templo santo, em que Deus habita.\nDo terceiro templo, que é a Jerusalém celeste, se diz no Salmo: “Entrarei na tua casa”, isto é, na Igreja militante; “adorarei no teu santo templo” (Sl 5,8), isto é, na triunfante; e em ambas: “louvarei o teu nome” (Sl 137,2). Por isso se conta em Daniel que ele entrou em sua casa e, abertas as janelas do seu cenáculo na direção de Jerusalém, três vezes por dia dobrava os joelhos, adorava e louvava diante do seu Deus (cf. Dn 6,10). Neste templo está o candelabro da luz; por isso se diz no Apocalipse: “A claridade de Deus a ilumina, e a sua lâmpada é o Cordeiro” (Ap 21,23). Ali está também o altar dos perfumes; por isso se diz no mesmo livro: “Veio um anjo e pôs-se diante do altar, com um turíbulo de ouro; e foram-lhe dados muitos perfumes, para que oferecesse as orações de todos os santos sobre o altar de ouro que está diante do trono. E o fumo dos perfumes subiu das orações dos santos, da mão do anjo, diante de Deus” (Ap 8,3-4). É o que Rafael diz a Tobias: “Quando oravas com lágrimas, sepultavas os mortos e deixavas a tua refeição, eu apresentei a tua oração ao Senhor” (Tb 12,12). Ali está também a mesa; por isso se diz em Lucas: “Eu vos preparo o reino, como meu Pai mo preparou, para que comais e bebais à minha mesa no meu reino” (Lc 22,29-30).\nCom este tríplice templo queremos pôr em concordância três bodas e, concordando-as, celebrá-las. Delas se diz no evangelho de hoje: “O reino dos céus é semelhante a um rei que fez as bodas de seu filho”.",
+   "depois": "1. Naquele tempo, disse Jesus aos seus discípulos esta parábola: “O reino dos céus é semelhante a um homem rei que fez as bodas de seu filho” (Mt 22,2).\nDiz-se no livro dos Macabeus que “levaram para dentro do templo o candelabro, o altar dos incensos e a mesa” (1Mc 4,49). Vejamos o que estas quatro coisas significam no sentido alegórico, no moral e no anagógico. Observa que o templo é tríplice: o seio virginal, a alma fiel e a Jerusalém celeste; e em cada um deles há candelabro, altar dos incensos e mesa. Do templo do seio virginal se diz no terceiro livro dos Reis que Salomão edificou o templo com três materiais, a saber, mármore, cedro e ouro; o mármore era revestido de cedro, e o cedro, de ouro (cf. 3Rs 6,7.9.18.20-22). No mármore se designa a virgindade da bem-aventurada Maria; no cedro, que com o seu cheiro afugenta as serpentes, a sua humildade; no ouro, a sua pobreza. O mármore da virgindade é revestido, isto é, conservado e adornado, pelo cedro da humildade. Pois a virgem soberba não é virgem; e por isso a bem-aventurada Maria, como quem se esquece da virgindade, põe adiante a humildade, dizendo: “Eis a serva do Senhor” (Lc 1,38). O cedro da humildade é ornado com o ouro da pobreza, porque da gordura das riquezas costuma brotar a iniquidade da soberba. Para dentro deste templo foram levados o candelabro, o altar dos incensos e a mesa. Assim como na divindade há três pessoas e uma substância, assim na humanidade de Cristo há três substâncias e uma pessoa. Jesus Cristo é Deus e homem, que consta de alma e carne. O candelabro significa a divindade; o altar dos incensos, a sua alma, que foi cheia de todo o perfume das virtudes; a mesa, a sua carne, da qual nos alimentamos e com a qual nos saciamos no Sacramento do altar. Bendito e glorioso este templo, que o candelabro da luz eterna ilumina, que o altar do incenso torna perfumado, que a mesa da proposição sacia.\nIgualmente, do segundo templo, que é a alma fiel, diz o Apóstolo: “O templo de Deus é santo, e esse templo sois vós” (1Cor 3,17). Para dentro deste templo devemos levar o candelabro da caridade, o altar dos incensos, isto é, a devoção da mente, e a mesa da proposição, isto é, a palavra da santa pregação. Do candelabro da caridade se fala no Êxodo, onde o Senhor diz a Moisés: “Farás um candelabro dúctil, de ouro puríssimo, com taças, pequenas esferas e lírios que dele saiam. Seis braços sairão dos lados, três de um lado e três do outro” (Ex 25,31-32). Chama-se dúctil o que se estende a martelo. O candelabro da caridade é batido com o martelo da tribulação, para que, estendida, ela cresça, não em si mesma, mas na mente do homem. Por isso diz Agostinho, sobre a epístola de João: “A caridade perfeita é esta: estar alguém pronto até a morrer pelos irmãos. Mas será que, mal nasce, já é de todo perfeita? Não: nasce para se aperfeiçoar; nascida, é nutrida; nutrida, fortalece-se; fortalecida, aperfeiçoa-se; e, chegada à perfeição, diz: ‘Desejo partir e estar com Cristo’ (Fl 1,23). Aqui se mostram abertamente o progresso e a perfeição da caridade”. O candelabro da caridade faz-se também de ouro puríssimo, pois ela não aceita mistura de vício algum e sobressai entre as demais virtudes como o ouro entre os demais metais. Deste candelabro devem sair taças, pequenas esferas e lírios. A taça, que pela sua concavidade retém o que nela se derrama e o dá a beber, significa a humildade com a compunção da mente: o que é côncavo recebe o que se derrama, e o que é inchado o repele. A pequena esfera, que gira em roda, significa a solicitude pela necessidade do próximo. Os lírios, a pureza da castidade. Tu, pois, que tens caridade, tem taças para com Deus, pequenas esferas para com o próximo e lírios para contigo mesmo.\nObserva ainda que o candelabro da caridade tem seis braços, três à direita e três à esquerda, com os quais abraça a Deus e ao próximo. Os três com que abraça a Deus são: abominar os pecados, calcar aos pés as coisas temporais, contemplar as celestes. Do primeiro diz o Salmista: “Odiei e abominei a iniquidade” (Sl 118,163). Do segundo, o Apóstolo: “Tive todas as coisas por esterco, para ganhar a Cristo e abraçá-lo” (cf. Fl 3,8). Do terceiro, o mesmo Apóstolo: “Contemplando vós não as coisas que se veem, mas as que não se veem” (cf. 2Cor 4,18). Igualmente, os três braços com que abraça o próximo são: perdoar a quem comete falta, corrigir quem erra, alimentar quem tem fome. Do primeiro se diz no evangelho: “Perdoa-lhes, porque não sabem o que fazem” (cf. Lc 23,34). Do segundo, Tiago: “Quem fizer um pecador converter-se do erro do seu caminho salvará a sua alma da morte e cobrirá uma multidão de pecados” (Tg 5,20). Do terceiro, Salomão: “Se o teu inimigo tiver fome, dá-lhe de comer; se tiver sede, dá-lhe de beber” (Rm 12,20; cf. Pr 25,21). Se, com um tal candelabro, o altar da devoção e a mesa da santa pregação forem levados para dentro da nossa alma, então ela será de fato um templo santo, em que Deus habita.\nIgualmente, do terceiro templo, que é a Jerusalém celeste, se diz no Salmo: “Entrarei na tua casa”, isto é, na Igreja militante; “adorarei no teu santo templo” (Sl 5,8), isto é, na triunfante; e em ambas: “louvarei o teu nome” (Sl 137,2). Por isso se diz em Daniel que Daniel entrou em sua casa e, abertas as janelas do seu cenáculo na direção de Jerusalém, três vezes por dia dobrava os joelhos, adorava e louvava diante do seu Deus (cf. Dn 6,10). Neste templo está o candelabro da luz; por isso se diz no Apocalipse: “A claridade de Deus a ilumina, e a sua lâmpada é o Cordeiro” (Ap 21,23). Ali está também o altar dos incensos; por isso se diz no mesmo livro: “Veio um anjo e pôs-se diante do altar, com um turíbulo de ouro; e foram-lhe dados muitos incensos, para que oferecesse as orações de todos os santos sobre o altar de ouro que está diante do trono. E o fumo dos incensos subiu das orações dos santos e da mão do anjo diante de Deus” (Ap 8,3-4). É o que Rafael diz a Tobias: “Quando oravas com lágrimas, sepultavas os mortos e deixavas a tua refeição, eu apresentei a tua oração ao Senhor” (Tb 12,12). Ali está também a mesa; por isso se diz em Lucas: “Eu vos preparo o reino, como meu Pai mo preparou, para que comais e bebais à minha mesa no meu reino” (Lc 22,29-30).\nCom este tríplice templo queremos pôr em concordância três bodas e, concordando-as, celebrá-las. Delas se diz no evangelho de hoje: “O reino dos céus é semelhante a um homem rei que fez as bodas de seu filho”.",
    "latim": "In illo tempore: Dixit Iesus discipulis suis parabolam hanc: Simile factum est regnum caelorum homini regi… (o parágrafo inteiro, cerca de 6.120 caracteres)",
-   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido da edição crítica, nas convenções do próprio Lírio (livros dos Reis e Salmos pela Vulgata). A edição dá Rom 12,20 para “Si esurierit inimicus tuus…”, que Antônio atribui a Salomão; a tradução indica as duas passagens (Pr 25,21; cf. Rm 12,20). A citação de Lc 22,29-30, sem referência na edição, recebeu a referência. “Altare incensorum” traduzido “altar dos perfumes”. Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos a partir do latim.",
+   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido da edição crítica, nas convenções do próprio Lírio (livros dos Reis e Salmos pela Vulgata). A edição dá Rom 12,20 para “Si esurierit inimicus tuus…”, que Antônio atribui a Salomão; a tradução indica as duas passagens, na ordem da edição (Rm 12,20; cf. Pr 25,21). A citação de Lc 22,29-30, sem referência na edição, recebeu a referência. “Altare incensorum” traduzido “altar dos incensos”. Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos (segunda passada). Na revisão corretiva de 26/11/2026, as mudanças dessa passada sem justificativa filológica foram revertidas, e o parágrafo inteiro foi conferido de novo com o latim.",
    "origem_do_texto": "tradução própria do latim (parágrafo inteiro)",
    "motivo": "Lacuna na tradução recebida.",
    "estado": "aplicada",
@@ -7367,7 +7485,208 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "22% (27 palavras)",
     "primeira_versao": "25% (26 palavras)",
-    "depois": "3% (9 palavras)"
+    "depois": "3% (9 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
+   },
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "24 alterações, das quais 12 reversões da segunda passada",
+    "alteracoes": [
+     {
+      "antes": "semelhante a um rei que fez",
+      "depois": "semelhante a um homem rei que fez",
+      "latim": "Simile factum est regnum caelorum homini regi",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "homini regi (“a um homem rei”) estava omitido nas duas ocorrências, no início e no fim do parágrafo.",
+      "ocorrencias": 2
+     },
+     {
+      "antes": "“levaram para dentro do templo o candelabro, o altar dos perfumes e a mesa”",
+      "depois": "“levaram para dentro do templo o candelabro, o altar dos incensos e a mesa”",
+      "latim": "intulerunt candelabrum et altare incensorum et mensam in templum",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "incensorum = dos incensos; o termo volta nas incensa de Ap 8,3-4, no mesmo parágrafo."
+     },
+     {
+      "antes": "Observa que há três templos, o seio da Virgem, a alma fiel e a Jerusalém do céu, e que em todos três se encontram candelabro, altar dos perfumes e mesa.",
+      "depois": "Observa que o templo é tríplice: o seio virginal, a alma fiel e a Jerusalém celeste; e em cada um deles há candelabro, altar dos incensos e mesa.",
+      "latim": "Nota quod triplex est templum, scilicet uterus virginalis, anima fidelis et Ierusalem caelestis, in quorum quolibet sunt",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "triplex est templum (um templo tríplice), uterus virginalis, caelestis e in quorum quolibet (em cada um) são literais; a troca foi só por similaridade."
+     },
+     {
+      "antes": "Salomão construiu o templo de três materiais, de mármore, de cedro e de ouro: o cedro cobria o mármore, e o ouro cobria o cedro",
+      "depois": "Salomão edificou o templo com três materiais, a saber, mármore, cedro e ouro; o mármore era revestido de cedro, e o cedro, de ouro",
+      "latim": "aedificavit templum ex tribus, scilicet marmore, cedro et auro. Marmor cedro, cedrus vestiebatur auro",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "aedificavit = edificou; vestiebatur é passivo; acrescenta-se “a saber” (scilicet), que faltava nas duas versões."
+     },
+     {
+      "antes": "No mármore está figurada a virgindade da bem-aventurada Maria; no cedro, cujo cheiro afugenta as serpentes, a sua humildade; no ouro, a sua pobreza. O cedro da humildade reveste o mármore da virgindade, quer dizer, conserva-o e adorna-o. Virgem soberba, com efeito, não é virgem; por isso",
+      "depois": "No mármore se designa a virgindade da bem-aventurada Maria; no cedro, que com o seu cheiro afugenta as serpentes, a sua humildade; no ouro, a sua pobreza. O mármore da virgindade é revestido, isto é, conservado e adornado, pelo cedro da humildade. Pois a virgem soberba não é virgem; e por isso",
+      "latim": "In marmore … in cedro, quae odore suo fugat serpentes … designatur … Marmor virginitatis vestitur, idest conservatur et ornatur, cedro humilitatis. Superba enim virgo non est virgo, et ideo",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "in … designatur = “no … se designa”; a relativa com odore suo; a passiva vestitur … conservatur et ornatur; enim = pois; et ideo = e por isso."
+     },
+     {
+      "antes": "Foi neste templo que se puseram o candelabro, o altar dos perfumes e a mesa. Como na divindade são três as pessoas e uma a substância, assim na humanidade de Cristo são três as substâncias e uma a pessoa.",
+      "depois": "Para dentro deste templo foram levados o candelabro, o altar dos incensos e a mesa. Assim como na divindade há três pessoas e uma substância, assim na humanidade de Cristo há três substâncias e uma pessoa.",
+      "latim": "In hoc templum fuerunt illata … Sicut in divinitate tres sunt personae et una substantia, sic in Christi humanitate tres sunt substantiae et una persona",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "illata é o mesmo verbo de intulerunt (1Mc 4,49), traduzido “levar para dentro”; sicut … sic; una sem “só” (a primeira versão acrescentava “só”)."
+     },
+     {
+      "antes": "o altar dos perfumes, a sua alma, repleta de todo o perfume das virtudes",
+      "depois": "o altar dos incensos, a sua alma, que foi cheia de todo o perfume das virtudes",
+      "latim": "in altari incensorum, ipsius anima, quae omni fuit plena odore virtutum",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Oração relativa com pretérito (quae … fuit plena); “altar dos incensos” pela reversão acima."
+     },
+     {
+      "antes": "que o altar dos perfumes enche de fragrância",
+      "depois": "que o altar do incenso torna perfumado",
+      "latim": "altare incensi odoriferum redditur",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "incensi está no singular aqui; odoriferum redditur = torna perfumado."
+     },
+     {
+      "antes": "Sobre o segundo templo, a alma fiel, diz o Apóstolo:",
+      "depois": "Igualmente, do segundo templo, que é a alma fiel, diz o Apóstolo:",
+      "latim": "Item, de secundo templo, quod est anima fidelis, dicit Apostolus",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "Volta a relativa (quod est); acrescenta-se “Igualmente” (Item), marca de enumeração do autor omitida nas duas versões."
+     },
+     {
+      "antes": "o altar dos perfumes, que é a devoção da mente, e a mesa da proposição, que é a palavra da santa pregação",
+      "depois": "o altar dos incensos, isto é, a devoção da mente, e a mesa da proposição, isto é, a palavra da santa pregação",
+      "latim": "altare incensorum, idest devotionem mentis, et mensam propositionis, idest verbum sanctae praedicationis",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "idest = isto é (duas vezes)."
+     },
+     {
+      "antes": "O martelo da tribulação bate o candelabro da caridade para que ela, estendida, cresça,",
+      "depois": "O candelabro da caridade é batido com o martelo da tribulação, para que, estendida, ela cresça,",
+      "latim": "Candelabrum caritatis percutitur malleo tribulationis, ut producta crescat",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "Volta a passiva do latim (percutitur)."
+     },
+     {
+      "antes": "A esfera, que gira em roda, significa a solicitude pelas necessidades do próximo.",
+      "depois": "A pequena esfera, que gira em roda, significa a solicitude pela necessidade do próximo.",
+      "latim": "In sphaerula, quae circumvolvitur, sollicitudo circa proximi necessitatem",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "sphaerula é diminutivo (como no Êxodo: “pequenas esferas”); necessitatem é singular."
+     },
+     {
+      "antes": "tem as taças para com Deus, as esferas para com o próximo e os lírios para contigo mesmo",
+      "depois": "tem taças para com Deus, pequenas esferas para com o próximo e lírios para contigo mesmo",
+      "latim": "habe scyphos quoad Deum, sphaerulas quoad proximum, et lilia quoad teipsum",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Sem artigo no latim; sphaerulas é diminutivo."
+     },
+     {
+      "antes": "Observa ainda que são seis os braços do candelabro da caridade, três do lado direito e três do esquerdo; com eles a caridade abraça Deus e o próximo. Com três abraça a Deus:",
+      "depois": "Observa ainda que o candelabro da caridade tem seis braços, três à direita e três à esquerda, com os quais abraça a Deus e ao próximo. Os três com que abraça a Deus são:",
+      "latim": "Nota etiam, quod candelabrum caritatis habet sex brachia, tria a dextris et tria a sinistris, quibus amplectitur Deum et proximum. Tria quibus amplectitur Deum sunt",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "habet, a dextris / a sinistris, a relativa quibus e o sujeito tria … sunt; a troca foi só por similaridade."
+     },
+     {
+      "antes": "“Não pondo vós os olhos nas coisas que se veem, mas nas que não se veem”",
+      "depois": "“Contemplando vós não as coisas que se veem, mas as que não se veem”",
+      "latim": "Contemplantibus vobis non quae videntur, sed ea quae non videntur",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "O autor cita o versículo por causa da palavra: ilustra a caelestium contemplatio que acabou de nomear."
+     },
+     {
+      "antes": "E com outros três abraça o próximo: perdoar a quem comete falta, corrigir quem anda errado, dar de comer a quem tem fome.",
+      "depois": "Igualmente, os três braços com que abraça o próximo são: perdoar a quem comete falta, corrigir quem erra, alimentar quem tem fome.",
+      "latim": "Item, tria brachia quibus amplectitur proximum sunt: delinquenti parcere, errantem corrigere, esurientem reficere",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "Volta a estrutura do latim (Item, tria brachia … sunt), “corrigir quem erra” (errantem) e “alimentar” (reficere). Mantém-se “perdoar a quem comete falta”, corrigido depois da segunda passada por fidelidade (delinquens = quem comete falta)."
+     },
+     {
+      "antes": "(Lc 23,34)",
+      "depois": "(cf. Lc 23,34)",
+      "latim": "Dimitte eis, quia nesciunt quid faciunt (edição: “Cf. Lc 23,34”)",
+      "origem": "marcação de referência",
+      "decisao": "corrigir",
+      "justificativa": "Citação adaptada; a edição marca “Cf.”."
+     },
+     {
+      "antes": "voltar do erro do seu caminho",
+      "depois": "converter-se do erro do seu caminho",
+      "latim": "Qui converti fecerit peccatorem ab errore viae suae",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "converti = converter-se."
+     },
+     {
+      "antes": "(Pr 25,21; cf. Rm 12,20)",
+      "depois": "(Rm 12,20; cf. Pr 25,21)",
+      "latim": "Si esurierit inimicus tuus, ciba illum; si sitit, potum da illi (edição: “Rom 12,20; Cf. Prov 25,21”)",
+      "origem": "marcação de referência",
+      "decisao": "corrigir",
+      "justificativa": "A redação é a de Rm 12,20; o autor atribui a Salomão. Segue-se a ordem da edição."
+     },
+     {
+      "antes": "Do terceiro templo, que é a Jerusalém celeste, se diz no Salmo:",
+      "depois": "Igualmente, do terceiro templo, que é a Jerusalém celeste, se diz no Salmo:",
+      "latim": "Item, de tertio templo, quod est Ierusalem caelestis. De quo in Psalmo",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Item omitido."
+     },
+     {
+      "antes": "Por isso se conta em Daniel que ele entrou em sua casa",
+      "depois": "Por isso se diz em Daniel que Daniel entrou em sua casa",
+      "latim": "Unde dicitur in Daniele, quod ingressus est Daniel domum suam",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "dicitur = diz-se; o sujeito é nomeado no latim."
+     },
+     {
+      "antes": "Ali está também o altar dos perfumes;",
+      "depois": "Ali está também o altar dos incensos;",
+      "latim": "Est ibi et altare incensorum",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "incensorum."
+     },
+     {
+      "antes": "e foram-lhe dados muitos perfumes",
+      "depois": "e foram-lhe dados muitos incensos",
+      "latim": "et data sunt illi incensa multa",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "incensa; mantém o elo com o “altar dos incensos” que o autor quer mostrar no céu."
+     },
+     {
+      "antes": "E o fumo dos perfumes subiu das orações dos santos, da mão do anjo, diante de Deus",
+      "depois": "E o fumo dos incensos subiu das orações dos santos e da mão do anjo diante de Deus",
+      "latim": "Et ascendit fumus incensorum de orationibus sanctorum et de manu angeli coram Deo",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "incensorum; e a conjunção et, que faltava."
+     }
+    ]
    }
   },
   {
@@ -7912,9 +8231,9 @@
    "confianca": "alta",
    "localizacao": "§ 15 (inteiro)",
    "substitui_bloco": true,
-   "depois": "15. Do mesmo modo, quem tem fome e sede de justiça dá a cada um o que é seu: a Deus e ao próximo, o amor; a si mesmo, a aflição pelas faltas cometidas. Esta tríplice justiça se nota naquelas três palavras: “Deus meu, Deus meu, por que me abandonaste?” (Mt 27,46). Diz duas vezes “Deus”, por causa do duplo amor; “abandonaste”, por causa da pena corporal. Por isso diz ali a Glosa: “Por que me abandonaste? isto é: por que me expuseste a tão grande pena?”, diz o Filho ao Pai.\nDestas três palavras diz Habacuc: “O justo vive da fé” (Gl 3,11; cf. Hab 2,4). Justo se diz daquele que guarda o direito. “Justo” refere-se a si mesmo; “da fé”, a Deus; “vive”, ao próximo. Quem é justo, guardando em si mesmo o direito, julgando-se e condenando-se a si mesmo, vive da fé em Deus no amor do próximo. Mas quem não ama, como diz João, permanece na morte (cf. 1Jo 3,14).",
+   "depois": "15. Do mesmo modo, quem tem fome e sede de justiça dá a cada um o que é seu: a Deus e ao próximo, o amor; a si mesmo, a aflição pelas faltas cometidas. Esta tríplice justiça se nota naquelas três palavras: “Deus meu, Deus meu, por que me abandonaste?” (Mt 27,46). Diz duas vezes “Deus”, por causa do duplo amor; “abandonaste”, por causa da pena corporal. Por isso diz ali a Glosa: “Por que me abandonaste? isto é: por que me expuseste a tão grande pena?”, diz o Filho ao Pai.\nDestas três palavras diz Habacuc: “O justo vive da fé” (Gl 3,11; cf. Hab 2,4). Justo se diz porque guarda os direitos. “Justo” refere-se a si mesmo; “da fé”, a Deus; “vive”, ao próximo. Quem é justo, guardando em si mesmo os direitos, julgando-se e condenando-se a si mesmo, vive da fé em Deus no amor do próximo. Mas “quem não ama”, como diz João, “permanece na morte” (1Jo 3,14).",
    "latim": "Item, qui esuriem et sitim habet iustitiae, reddit unicuique quod suum est…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal.",
+   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -7931,10 +8250,42 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "67% (21 palavras), texto do Lírio",
     "primeira_versao": "16% (12 palavras)",
-    "depois": "16% (12 palavras)"
+    "depois": "16% (12 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
    },
    "estado": "aplicada",
-   "data": "2026-11-25"
+   "data": "2026-11-25",
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "3 alterações",
+    "alteracoes": [
+     {
+      "antes": "Justo se diz daquele que guarda o direito.",
+      "depois": "Justo se diz porque guarda os direitos.",
+      "latim": "Iustus dictus, quia iura custodit",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "quia é causal (não relativo) e iura é plural."
+     },
+     {
+      "antes": "guardando em si mesmo o direito",
+      "depois": "guardando em si mesmo os direitos",
+      "latim": "in seipso iura custodiens",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "iura é plural."
+     },
+     {
+      "antes": "Mas quem não ama, como diz João, permanece na morte (cf. 1Jo 3,14).",
+      "depois": "Mas “quem não ama”, como diz João, “permanece na morte” (1Jo 3,14).",
+      "latim": "Qui vero, ut dicit Ioannes, non diligit, manet in morte (edição: “1Io 3,14”)",
+      "origem": "marcação de referência",
+      "decisao": "corrigir",
+      "justificativa": "Citação literal; a edição não marca “Cf.”."
+     }
+    ]
+   }
   },
   {
    "id": "SD55-01",
@@ -8353,9 +8704,9 @@
    "confianca": "alta",
    "localizacao": "§ 3 (inteiro)",
    "repete_bloco": 7,
-   "depois": "3. “Outra vez vos digo: alegrai-vos” (Fl 4,4). Observa que diz duas vezes “alegrai-vos”, por causa do duplo benefício, o da primeira e o da segunda vinda. Devemos alegrar-nos porque na primeira vinda ele nos trouxe riquezas e glória; e devemos alegrar-nos de novo porque na segunda nos há de dar a longura dos dias. Por isso se diz nos Provérbios: “Na sua direita está a longura dos dias, e na sua esquerda as riquezas e a glória” (Pr 3,16). Na esquerda está a primeira vinda, que trouxe riquezas gloriosas: a humildade e a pobreza, a paciência e a obediência. Na direita, a segunda, na qual está a vida eterna.\nDo benefício da primeira vinda fala também Isaías: “Levanta-te, levanta-te, reveste-te de fortaleza, braço do Senhor. Levanta-te como nos dias antigos, nas gerações dos séculos. Não foste tu que feriste o soberbo e chagaste o dragão? Não foste tu que secaste o mar, a água do abismo impetuoso, e fizeste do fundo do mar um caminho, para que passassem os libertados?” (Is 51,9-10). O braço do Senhor é Jesus Cristo, Filho de Deus, no qual e por meio do qual ele fez todas as coisas. Por nossa causa, este braço de Deus Pai foi partido em duas partes: na Paixão, a alma, separada da carne, desceu para libertar os que estavam no inferno, e a carne repousou no sepulcro. Mas no dia da Ressurreição o Pai consolidou o seu braço “e sarou a ferida do seu golpe” (cf. Is 30,26). Diz, pois: “Braço do Senhor”, isto é: ó Filho, levanta-te do trono da glória do Pai; “levanta-te”, assumindo a carne; “reveste-te de fortaleza”, a da divindade, contra o príncipe do mundo, para que, mais forte, expulses o forte (cf. Lc 11,22). “Levanta-te”, resgatando o gênero humano, “como nos dias antigos” livraste o povo de Israel da servidão do Egito. Ó Filho, “tu feriste o soberbo”, isto é, o diabo, lançando-o fora do céu; “chagaste o dragão” na tua Paixão, tirando-lhe o domínio; “tu secaste o mar”, quer dizer, o mar Vermelho etc., como se dissesse: tu, que fizeste estas coisas, também farás esta. O Senhor secou o mar e a água do abismo impetuoso quando destruiu o poder do diabo, que o mar significa, e o seu engano, que o abismo significa; e assim fez do fundo do mar, isto é, do inferno, um caminho, para que passassem os libertados.\nDo benefício da segunda vinda diz também o Senhor em Isaías: “Eis que eu crio” — de anjos e de homens — “Jerusalém” — a celeste — “para ser exultação, e o seu povo para ser alegria. E exultarei em Jerusalém e me alegrarei no meu povo; e não se ouvirá mais nela voz de choro nem voz de clamor” (Is 65,18-19); porque, como diz o mesmo Isaías, “o Senhor Deus enxugará as lágrimas de todo rosto” (Is 25,8).",
+   "depois": "3. “Outra vez vos digo: alegrai-vos” (Fl 4,4). Observa que diz duas vezes “alegrai-vos”, por causa do duplo benefício, o da primeira e o da segunda vinda. Devemos alegrar-nos porque na primeira vinda ele nos trouxe riquezas e glória; e devemos alegrar-nos de novo porque na segunda nos há de dar a longura dos dias. Por isso se diz nos Provérbios: “Na sua direita está a longura dos dias, e na sua esquerda as riquezas e a glória” (Pr 3,16). Na esquerda está a primeira vinda, na qual houve riquezas gloriosas, isto é, a humildade e a pobreza, a paciência e a obediência. Na direita, a segunda, na qual está a vida eterna.\nDo benefício da primeira vinda fala também Isaías: “Levanta-te, levanta-te, reveste-te de fortaleza, braço do Senhor. Levanta-te como nos dias antigos, nas gerações dos séculos. Não foste tu que feriste o soberbo e chagaste o dragão? Não foste tu que secaste o mar, a água do abismo impetuoso, e fizeste do fundo do mar um caminho, para que passassem os libertados?” (Is 51,9-10). O braço do Senhor é Jesus Cristo, Filho de Deus, no qual e por meio do qual ele fez todas as coisas. Por nossa causa, este braço de Deus Pai foi partido em duas partes: na Paixão, a alma, separada da carne, desceu para libertar os que estavam no inferno, e a carne repousou no sepulcro. Mas no dia da Ressurreição o Pai consolidou o seu braço “e sarou a ferida do seu golpe” (cf. Is 30,26). Diz, pois: “Braço do Senhor”, isto é: ó Filho, levanta-te do trono da glória do Pai; “levanta-te”, assumindo a carne; “reveste-te de fortaleza”, a da divindade, contra o príncipe do mundo, para que, mais forte, expulses o forte (cf. Lc 11,22). “Levanta-te”, resgatando o gênero humano, “como nos dias antigos” livraste o povo de Israel da servidão do Egito. Ó Filho, “tu feriste o soberbo”, isto é, o diabo, lançando-o fora do céu; “chagaste o dragão” na tua Paixão, tirando-lhe o domínio; “tu secaste o mar”, quer dizer, o mar Vermelho etc., como se dissesse: tu, que fizeste estas coisas, também farás esta. O Senhor secou o mar e a água do abismo impetuoso quando destruiu o poder do diabo, que o mar significa, e o seu engano, que o abismo significa; e assim fez do fundo do mar, isto é, do inferno, um caminho, para que passassem os libertados.\nDo benefício da segunda vinda diz também o Senhor em Isaías: “Eis que eu crio” — de anjos e de homens — “Jerusalém” — a celeste — “para ser exultação, e o seu povo para ser alegria. E exultarei em Jerusalém e me alegrarei no meu povo; e não se ouvirá mais nela voz de choro nem voz de clamor” (Is 65,18-19); porque, como diz o mesmo Isaías, “o Senhor Deus tirará a lágrima de todo rosto” (Is 25,8).",
    "latim": "Iterum dico, gaudete {Phil 4,4}. Nota quod bis dicit gaudete… (o parágrafo inteiro, cerca de 2.490 caracteres)",
-   "justificativa": "O § 3 falta na tradução recebida: a página do Lírio repete em seu lugar o § 2 (SD59-01). Traduzido da edição crítica, com as citações bíblicas traduzidas do latim de Antônio. Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas.",
+   "justificativa": "O § 3 falta na tradução recebida: a página do Lírio repete em seu lugar o § 2 (SD59-01). Traduzido da edição crítica, com as citações bíblicas traduzidas do latim de Antônio. Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
    "origem_do_texto": "tradução própria do latim (parágrafo inteiro, no lugar da repetição do § 2)",
    "motivo": "Lacuna na tradução recebida.",
    "estado": "aplicada",
@@ -8374,7 +8725,31 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "21% (14 palavras)",
     "primeira_versao": "15% (12 palavras)",
-    "depois": "15% (12 palavras)"
+    "depois": "15% (12 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
+   },
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "2 alterações",
+    "alteracoes": [
+     {
+      "antes": "Na esquerda está a primeira vinda, que trouxe riquezas gloriosas: a humildade",
+      "depois": "Na esquerda está a primeira vinda, na qual houve riquezas gloriosas, isto é, a humildade",
+      "latim": "In sinistra primus adventus, in quo fuerunt divitiae gloriosae, idest humilitas",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "in quo fuerunt = na qual houve; “que trouxe” acrescenta uma ação ao advento; idest = isto é."
+     },
+     {
+      "antes": "“o Senhor Deus enxugará as lágrimas de todo rosto”",
+      "depois": "“o Senhor Deus tirará a lágrima de todo rosto”",
+      "latim": "auferet Dominus Deus lacrimam ab omni facie",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "lacrimam é singular; auferet = tirará."
+     }
+    ]
    }
   },
   {
@@ -8676,9 +9051,9 @@
    "confianca": "alta",
    "localizacao": "§ 6 (inteiro)",
    "substitui_bloco": true,
-   "depois": "6. Por isso se segue: “E deu à luz o seu filho primogênito” (Lc 2,7). Eis a bondade, eis o paraíso. Correi, pois, famintos, avarentos e usurários, para quem o dinheiro é mais caro que Deus, e comprai sem dinheiro e sem troca alguma (cf. Is 55,1) o grão de trigo que hoje a Virgem tirou do celeiro do seu seio. Deu à luz, pois, um filho. Que filho? Deus, Filho de Deus. Ó mais feliz que todo feliz, tu que tiveste um Filho em comum com Deus Pai! Que glória seria para uma pobre mulherzinha ter um filho em comum com um imperador mortal! Quanto maior, sem comparação, a glória da Virgem, que teve um Filho em comum com Deus Pai! “Deu à luz o seu filho”. O Pai deu-lhe a divindade, a Mãe, a humanidade; o Pai a majestade, a Mãe a fraqueza. Deu à luz o seu filho Emanuel, isto é, Deus conosco (cf. Mt 1,23). “Quem, então, será contra nós?” (cf. Rm 8,31). Como diz Isaías no capítulo 59: “O capacete da salvação sobre a sua cabeça” (Is 59,17). O capacete é a humanidade; a cabeça, a divindade; a cabeça escondida sob o capacete, a divindade sob a humanidade. Não há, pois, que temer. A vitória está do nosso lado, porque Deus está conosco armado. Graças a ti, Virgem gloriosa, porque por ti Deus está conosco. Deu à luz, pois, o seu filho primogênito, isto é, gerado do Pai antes de todos os séculos; ou primogênito dentre os mortos (cf. Cl 1,18); ou “entre muitos irmãos” (cf. Rm 8,29).",
+   "depois": "6. Por isso se segue: “E deu à luz o seu filho primogênito” (Lc 2,7). Eis a bondade, eis o paraíso. Correi, pois, famintos, avarentos e usurários, para quem o dinheiro é mais caro que Deus, e “comprai sem dinheiro e sem troca alguma” (Is 55,1) o grão de trigo que hoje a Virgem tirou do celeiro do seu seio. Deu à luz, pois, um filho. Que filho? Deus, Filho de Deus. Ó mais feliz que todo feliz, tu que tiveste o Filho em comum com Deus Pai! Que glória seria para uma pobre mulherzinha ter um filho em comum com um imperador mortal! Quanto maior, sem comparação, a glória da Virgem, que teve o Filho em comum com Deus Pai! “Deu à luz o seu filho”. O Pai deu a divindade, a Mãe a humanidade; o Pai a majestade, a Mãe a fraqueza. Deu à luz o seu filho Emanuel, isto é, Deus conosco (cf. Mt 1,23). “Quem, então, será contra nós?” (cf. Rm 8,31). Como diz Isaías no capítulo 59: “O capacete da salvação sobre a sua cabeça” (Is 59,17). O capacete é a humanidade; a cabeça, a divindade; a cabeça escondida sob o capacete, a divindade sob a humanidade. Não há, pois, que temer. A vitória está do nosso lado, porque Deus está conosco armado. Graças a ti, Virgem gloriosa, porque por ti Deus está conosco. Deu à luz, pois, o seu filho primogênito, isto é, “gerado do Pai antes de todos os séculos”; ou “primogênito dentre os mortos” (cf. Cl 1,18); ou “entre muitos irmãos” (cf. Rm 8,29).",
    "latim": "Unde sequitur: Et peperit filium suum primogenitum… Ecce bonitas, ecce paradisus…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal.",
+   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -8695,10 +9070,58 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "56% (24 palavras), texto do Lírio",
     "primeira_versao": "20% (17 palavras)",
-    "depois": "18% (14 palavras)"
+    "depois": "18% (14 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
    },
    "estado": "aplicada",
-   "data": "2026-11-25"
+   "data": "2026-11-25",
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "5 alterações, das quais 1 reversão da segunda passada",
+    "alteracoes": [
+     {
+      "antes": "tu que tiveste um Filho em comum com Deus Pai",
+      "depois": "tu que tiveste o Filho em comum com Deus Pai",
+      "latim": "quae Filium communicasti Deo Patri",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Trata-se do Filho único; “um Filho” enfraquece a referência cristológica."
+     },
+     {
+      "antes": "que teve um Filho em comum com Deus Pai",
+      "depois": "que teve o Filho em comum com Deus Pai",
+      "latim": "quae communicavit Filium Deo Patri",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Idem."
+     },
+     {
+      "antes": "O Pai deu-lhe a divindade, a Mãe, a humanidade;",
+      "depois": "O Pai deu a divindade, a Mãe a humanidade;",
+      "latim": "Pater dedit deitatem, Mater humanitatem",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "O “lhe” foi acrescentado só para quebrar uma sequência igual à Vozes; não está no latim."
+     },
+     {
+      "antes": "e comprai sem dinheiro e sem troca alguma (cf. Is 55,1)",
+      "depois": "e “comprai sem dinheiro e sem troca alguma” (Is 55,1)",
+      "latim": "emite absque argento et absque ulla commutatione (edição: “Is 55,1”)",
+      "origem": "marcação de referência",
+      "decisao": "corrigir",
+      "justificativa": "Citação literal de Is 55,1; a edição não marca “Cf.”."
+     },
+     {
+      "antes": "isto é, gerado do Pai antes de todos os séculos; ou primogênito dentre os mortos (cf. Cl 1,18);",
+      "depois": "isto é, “gerado do Pai antes de todos os séculos”; ou “primogênito dentre os mortos” (cf. Cl 1,18);",
+      "latim": "‘ante omnia saecula de Patre genitum’, vel ‘primogenitum ex mortuis’",
+      "origem": "marcação de referência",
+      "decisao": "corrigir",
+      "justificativa": "As três expressões finais são citações (Credo, Cl 1,18, Rm 8,29), e a edição marca as três; só a última estava entre aspas."
+     }
+    ]
+   }
   },
   {
    "id": "SD62-01",
@@ -9865,9 +10288,9 @@
    "tipo": "traducao-propria",
    "confianca": "alta",
    "localizacao": "§ 10 (inteiro)",
-   "depois": "10. Desta suavidade se diz no terceiro livro dos Reis: “Eis um grande vento, e forte, que derrubava os montes e quebrava os rochedos; e o Senhor não estava no vento. E depois do vento, um abalo; e ali não estava o Senhor. E depois do abalo, um fogo; nem ali estava o Senhor. E depois do fogo, o sussurro de uma brisa suave; ali estava o Senhor” (3Rs 19,11-12). No evangelho de hoje tens estas quatro coisas. O grande vento foi a saudação angélica, que prometia coisas grandes e foi trazida por Gabriel, cujo nome quer dizer fortaleza, a uma mulher fortíssima. Esta saudação derrubou os montes da soberba e quebrou os rochedos, isto é, a dureza da mente humana. As quatro coisas que se acham nesta saudação comparam-se às quatro propriedades da pedra safira. A safira parece mostrar em si uma estrela, e com esta propriedade combina: “Ave, cheia de graça” (Lc 1,28); tem a cor do ar, e a isto combina: “O Senhor é contigo” (Lc 1,28); estanca o sangue, e nisto concorda: “Bendita és tu entre as mulheres” (Lc 1,28), tu que estancaste o sangue da primeira maldição. A safira também mata o antraz, e a esta propriedade convém: “Bendito é o fruto do teu ventre” (Lc 1,42), que matou o diabo.\nCom razão, portanto, se diz: “Eis um grande vento” etc., “e ali não estava o Senhor”, isto é, a Encarnação do Verbo. “E depois do vento” da saudação, “o abalo”: “Ela se perturbou com as suas palavras”, diz, “e pensava que saudação seria aquela” (Lc 1,29); “e ali não estava o Senhor”, isto é, a Encarnação do Verbo. “E depois do abalo, o fogo”, isto é, a descida do Espírito Santo e a sombra do poder do Altíssimo (cf. Lc 1,35); “nem ali estava o Senhor”. “E depois do fogo, o sussurro de uma brisa suave”, a saber: “Eis a serva do Senhor” (Lc 1,38); “ali estava o Senhor”, isto é, a Encarnação do Filho de Deus. Pois, assim que ela disse: “Faça-se em mim segundo a tua palavra” (Lc 1,38), logo “o Verbo se fez carne e habitou entre nós” (Jo 1,14).",
+   "depois": "10. Desta suavidade se diz no terceiro livro dos Reis: “Eis um grande vento, e forte, que derrubava os montes e quebrava os rochedos; mas o Senhor não estava no vento. E depois do vento, um abalo; e ali não estava o Senhor. E depois do abalo, um fogo; nem ali estava o Senhor. E depois do fogo, o sussurro de uma brisa suave; ali estava o Senhor” (cf. 3Rs 19,11-12). No evangelho de hoje tens estas quatro coisas. O grande vento foi a saudação angélica, que prometia grandes coisas e foi proferida por Gabriel, cujo nome quer dizer fortaleza, a uma mulher fortíssima. Esta saudação derrubou os montes da soberba e quebrou os rochedos, isto é, a dureza da mente humana. As quatro coisas que se acham nesta saudação comparam-se às quatro propriedades da pedra safira. A safira parece mostrar uma estrela, e com esta propriedade combina: “Ave, cheia de graça” (Lc 1,28); tem a cor do ar, e a isto combina: “O Senhor é contigo” (Lc 1,28); estanca o sangue, e nisto concorda: “Bendita és tu entre as mulheres” (Lc 1,28), tu que estancaste o sangue da primeira maldição. A safira também mata o antraz, e a esta propriedade convém: “Bendito é o fruto do teu ventre” (Lc 1,42), que matou o diabo.\nCom razão, portanto, se diz: “Eis um grande vento” etc., “e ali não estava o Senhor”, isto é, a Encarnação do Verbo. “E depois do vento” da saudação, “o abalo”: “Ela se perturbou com as suas palavras”, diz, “e pensava que saudação seria esta” (Lc 1,29); “e ali não estava o Senhor”, isto é, a Encarnação do Verbo. “E depois do abalo, o fogo”, isto é, a vinda do Espírito Santo e a sombra do poder do Altíssimo (cf. Lc 1,35); “nem ali estava o Senhor”. “E depois do fogo, o sussurro de uma brisa suave”, a saber: “Eis a serva do Senhor” (Lc 1,38); “ali estava o Senhor”, isto é, a Encarnação do Filho de Deus. Pois, assim que ela disse: “Faça-se em mim segundo a tua palavra” (Lc 1,38), logo “o Verbo se fez carne e habitou entre nós” (Jo 1,14).",
    "latim": "De hac suavitate dicitur in tertio libro Regum: Ecce spiritus grandis et fortis… (o parágrafo inteiro, cerca de 1.710 caracteres)",
-   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido da edição crítica, nas convenções do próprio Lírio (“grande vento” como nos temas deste sermão; “sussurro de uma brisa suave” como no sd60). As retomadas do texto de 3Rs 19,11-12 no comentário vão entre aspas, como citação. Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos a partir do latim.",
+   "justificativa": "O Lírio não traduziu este parágrafo (a página mostra o latim com o aviso “Trecho ainda sem tradução”). Traduzido da edição crítica, nas convenções do próprio Lírio (“grande vento” como nos temas deste sermão; “sussurro de uma brisa suave” como no sd60). As retomadas do texto de 3Rs 19,11-12 no comentário vão entre aspas, como citação. Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Na primeira versão às cegas, os trechos que ainda coincidiam por tradução literal foram refeitos (segunda passada). Na revisão corretiva de 26/11/2026, as mudanças dessa passada sem justificativa filológica foram revertidas, e o parágrafo inteiro foi conferido de novo com o latim.",
    "origem_do_texto": "tradução própria do latim (parágrafo inteiro)",
    "motivo": "Lacuna na tradução recebida.",
    "estado": "aplicada",
@@ -9886,7 +10309,63 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "20% (13 palavras)",
     "primeira_versao": "24% (12 palavras)",
-    "depois": "4% (8 palavras)"
+    "depois": "4% (8 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
+   },
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "6 alterações, das quais 2 reversões da segunda passada",
+    "alteracoes": [
+     {
+      "antes": "e o Senhor não estava no vento",
+      "depois": "mas o Senhor não estava no vento",
+      "latim": "sed non in spiritu Dominus",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "sed = mas."
+     },
+     {
+      "antes": "(3Rs 19,11-12)",
+      "depois": "(cf. 3Rs 19,11-12)",
+      "latim": "… ibi Dominus (edição: “Cf. 3Reg 19,11-12”)",
+      "origem": "marcação de referência",
+      "decisao": "corrigir",
+      "justificativa": "O texto do autor difere da Vulgata (acrescenta ibi Dominus); a edição marca “Cf.”."
+     },
+     {
+      "antes": "a saudação angélica, que prometia coisas grandes e foi trazida por Gabriel",
+      "depois": "a saudação angélica, que prometia grandes coisas e foi proferida por Gabriel",
+      "latim": "angelica salutatio, grandia promittens et a Gabriele … prolata",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter em parte",
+      "justificativa": "Fica “angélica” (angelica é adjetivo, mais exato que “do anjo”). “coisas grandes” não tem justificativa e volta a “grandes coisas”. prolata = proferida: nem “levada” (primeira versão) nem “trazida” (segunda) traduzem o verbo."
+     },
+     {
+      "antes": "A safira parece mostrar em si uma estrela",
+      "depois": "A safira parece mostrar uma estrela",
+      "latim": "Sapphyrus stellam videtur ostendere",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "“em si” não está no latim."
+     },
+     {
+      "antes": "e pensava que saudação seria aquela",
+      "depois": "e pensava que saudação seria esta",
+      "latim": "et cogitabat qualis esset ista salutatio",
+      "origem": "segunda passada (similaridade)",
+      "decisao": "reverter",
+      "justificativa": "ista = esta; a troca foi só por similaridade."
+     },
+     {
+      "antes": "a descida do Espírito Santo",
+      "depois": "a vinda do Espírito Santo",
+      "latim": "Spiritus Sancti superventio",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "superventio = vinda sobre (Lc 1,35 superveniet)."
+     }
+    ]
    }
   },
   {
@@ -10079,9 +10558,9 @@
    "localizacao": "§ 5, fim do parágrafo",
    "completa_truncado": true,
    "antes": "O caricedo",
-   "depois": "O caricedo é um lugar coberto de carriço, ou um canavial, ou um lugar coberto de espinhos. Com estas três coisas foi cercada a bem-aventurada Virgem, para que nem a sugestão do diabo, nem o engano do mundo, nem o prazer do pecado a pudessem violar. Desta tríplice clausura se diz no Cântico dos Cânticos: “Jardim fechado, minha irmã, jardim fechado, fonte selada” (Ct 4,12). A bem-aventurada Maria é chamada irmã de Cristo porque partilhou com ele a mesma carne. Ela foi jardim fechado pelo muro da humildade, do lado do setentrião; jardim fechado pelo muro da pobreza, do lado do meridião; fonte selada com o selo da virgindade, do lado do ocidente. Estas são as tábuas douradas por dentro e por fora, unidas sem separação, dispostas por igual e assentadas sobre bases de prata, isto é, sobre a pureza da intenção e a confissão do louvor divino.",
+   "depois": "O caricedo é um lugar cheio de carriço, ou um canavial, ou um lugar cheio de espinhos. Com estas três coisas foi fechada a bem-aventurada Virgem, para que nem a sugestão do diabo, nem o engano do mundo, nem o prazer do pecado a pudessem violar. Desta tríplice clausura se diz no Cântico dos Cânticos: “Jardim fechado, minha irmã, jardim fechado, fonte selada” (Ct 4,12). A bem-aventurada Maria é chamada irmã de Cristo por causa da comunhão da carne. Ela foi jardim fechado pelo muro da humildade, contra o setentrião; jardim fechado pelo muro da pobreza, contra o meridião; fonte selada com o selo da virgindade, contra o ocidente. Estas são as tábuas douradas por dentro e por fora, inseparavelmente unidas, dispostas por igual e assentadas sobre bases de prata, isto é, sobre a pureza da intenção e a confissão do louvor divino.",
    "latim": "Carectum est locus herba carice plenus, vel arundinetum, vel locus plenus spinis. His tribus beata Virgo fuit clausa… (o fim do parágrafo, cerca de 740 caracteres)",
-   "justificativa": "O fim do § 5 falta na tradução recebida: a página do Lírio para em “O caricedo” (SM04-04). Traduzido aqui da edição crítica, a partir da palavra em que a página parou, nas convenções do próprio Lírio (setentrião, meridião, ocidente, como no § 4). Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas.",
+   "justificativa": "O fim do § 5 falta na tradução recebida: a página do Lírio para em “O caricedo” (SM04-04). Traduzido aqui da edição crítica, a partir da palavra em que a página parou, nas convenções do próprio Lírio (setentrião, meridião, ocidente, como no § 4). Retraduzido no programa de retradução independente: a tradução anterior do projeto foi feita com a Vozes aberta para conferência e passava do limite do programa (20% ou sequência de 20 palavras). Esta versão foi feita às cegas. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
    "origem_do_texto": "tradução própria do latim (fim do parágrafo, a partir de “O caricedo”)",
    "motivo": "Lacuna na tradução recebida.",
    "estado": "aplicada",
@@ -10100,7 +10579,71 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "26% (11 palavras)",
     "primeira_versao": "6% (8 palavras)",
-    "depois": "6% (8 palavras)"
+    "depois": "6% (8 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
+   },
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "7 alterações",
+    "alteracoes": [
+     {
+      "antes": "O caricedo é um lugar coberto de carriço, ou um canavial, ou um lugar coberto de espinhos.",
+      "depois": "O caricedo é um lugar cheio de carriço, ou um canavial, ou um lugar cheio de espinhos.",
+      "latim": "locus herba carice plenus … vel locus plenus spinis",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "plenus = cheio (duas vezes)."
+     },
+     {
+      "antes": "Com estas três coisas foi cercada a bem-aventurada Virgem",
+      "depois": "Com estas três coisas foi fechada a bem-aventurada Virgem",
+      "latim": "His tribus beata Virgo fuit clausa … De hac triplici clausura … Hortus conclusus",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "clausa = fechada; o autor encadeia clausa, clausura e hortus conclusus (“jardim fechado”), e “cercada” quebra a cadeia."
+     },
+     {
+      "antes": "porque partilhou com ele a mesma carne",
+      "depois": "por causa da comunhão da carne",
+      "latim": "propter carnis contubernium",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "contubernium = convivência, comunhão; “partilhou com ele a mesma carne” interpreta em vez de traduzir."
+     },
+     {
+      "antes": "do lado do setentrião",
+      "depois": "contra o setentrião",
+      "latim": "contra aquilonem",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "contra é preposição de orientação e defesa; é também a forma que o Lírio usa no § 4 deste sermão (“contra o setentrião”)."
+     },
+     {
+      "antes": "do lado do meridião",
+      "depois": "contra o meridião",
+      "latim": "contra meridiem",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Idem."
+     },
+     {
+      "antes": "do lado do ocidente",
+      "depois": "contra o ocidente",
+      "latim": "contra occidentem",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Idem."
+     },
+     {
+      "antes": "unidas sem separação",
+      "depois": "inseparavelmente unidas",
+      "latim": "inseparabiliter coniunctae",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "Advérbio do latim."
+     }
+    ]
    }
   },
   {
@@ -12681,9 +13224,9 @@
    "confianca": "alta",
    "localizacao": "§ 2 (inteiro)",
    "substitui_bloco": true,
-   "depois": "2. Observa que há uma tríplice Jerusalém espiritual: a primeira, a Igreja militante; a segunda, a alma fiel; a terceira, a pátria celeste. Tomarei, pois, em nome do Senhor, um tijolo, isto é, o coração de cada ouvinte, e nele escreverei a cidade tríplice, isto é, os artigos da Igreja, as virtudes da alma, os prêmios da pátria celeste, trazendo, sob o número sete, autoridades de um e de outro Testamento e expondo-as.",
+   "depois": "2. Observa que há uma tríplice Jerusalém espiritual: a primeira, a Igreja militante; a segunda, a alma fiel; a terceira, a pátria celeste. Tomarei, pois, em nome do Senhor, um tijolo, isto é, o coração de cada ouvinte, e nele escreverei a cidade tríplice, isto é, os artigos da Igreja, as virtudes da alma, os prêmios da pátria celeste, trazendo, sob o número setenário, autoridades de um e de outro Testamento e expondo-as.",
    "latim": "Nota quod triplex est Ierusalem spiritualis… Sumam ergo in nomine Domini laterem…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal.",
+   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -12700,10 +13243,26 @@
     "medida": "parte do comentário (sem citações) em sequências de 8 palavras iguais às da tradução da Vozes; entre parênteses, a maior sequência",
     "antes": "51% (27 palavras), texto do Lírio",
     "primeira_versao": "14% (10 palavras)",
-    "depois": "14% (10 palavras)"
+    "depois": "14% (10 palavras)",
+    "observacao": "Medições anteriores à revisão corretiva de 26/11/2026. Desde então a coincidência com outras traduções não é critério de tradução, e o texto corrigido não foi medido de novo."
    },
    "estado": "aplicada",
-   "data": "2026-11-25"
+   "data": "2026-11-25",
+   "revisao_corretiva": {
+    "data": "2026-11-26",
+    "criterio": "fidelidade ao latim; a coincidência com outras traduções não foi usada como critério",
+    "resultado": "1 alteração",
+    "alteracoes": [
+     {
+      "antes": "sob o número sete",
+      "depois": "sob o número setenário",
+      "latim": "sub septenario numero",
+      "origem": "tradução às cegas",
+      "decisao": "corrigir",
+      "justificativa": "septenarius é termo técnico (série de sete), que o Lírio já traduzia “setenário”."
+     }
+    ]
+   }
   },
   {
    "id": "SD17-14",

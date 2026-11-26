@@ -9,6 +9,11 @@ deliberações finais do responsável aplicadas; os 85 itens foram conferidos po
 inteiro. Nenhum sermão está publicado no site. A distribuição no calendário é a
 Etapa 2.
 
+A validação final das dez retraduções do programa de retradução independente
+está pendente: elas passaram pela auditoria complementar e pela revisão
+corretiva de 26/11/2026 (abaixo) e aguardam revisão independente. A Etapa 1
+não foi declarada aprovada depois disso, e a Etapa 2 não começou.
+
 ## Fontes e crédito
 
 - **Tradução de base:** Lírio Católico (liriocatolico.com.br), seção “Sermões
@@ -35,6 +40,7 @@ Etapa 2.
 | `latim/<código>.json` | Estrutura da edição crítica, sem texto |
 | `registro-editorial.json` | Todas as decisões: entradas (correções, sugestões, dúvidas…), a colação de cada item e as observações gerais |
 | `revisada/<código>.txt` | Gerada: recebida + entradas aplicadas do registro. **Não edite à mão.** |
+| `revisao-corretiva-2026-11-26.json` | Histórico da revisão corretiva: texto anterior e texto corrigido de cada um dos dez trechos. Só histórico; não é lido pelo site nem pelos scripts |
 | `verificacao-estrutural.json` | Conferência automática da estrutura (seções, parágrafos, lacunas) |
 | `AUDITORIA.md` | Gerado do registro: cada decisão, com o latim e a justificativa |
 | `sumario.json` | Títulos da edição da Vozes, usados só no catálogo |
@@ -90,7 +96,11 @@ Outros campos usados nas decisões do responsável:
 - `substituida_por`: correção que deixou de valer porque o trecho foi
   substituído;
 - `retraducao`: data e medições (texto anterior, primeira versão às cegas e
-  texto final) das traduções do programa de retradução independente;
+  texto final) das traduções do programa de retradução independente; as
+  medições são anteriores à revisão corretiva (`observacao`);
+- `revisao_corretiva`: data, critério, resultado e cada alteração da revisão
+  corretiva de 26/11/2026 (antes, depois, latim, origem, decisão e
+  justificativa);
 - `origem_da_aplicacao`: entradas aplicadas depois da colação, por
   deliberação do responsável. Elas não entram nas contagens do resumo da
   colação.
@@ -137,7 +147,10 @@ conferência):
 
 Quando a primeira versão às cegas passou do limite (20% ou sequência acima de
 16 palavras), os trechos coincidentes, quase sempre traduções literais de uma
-frase formular, foram refeitos a partir do latim.
+frase formular, foram refeitos a partir do latim. Essa segunda passada foi
+revista em 26/11/2026: as mudanças feitas só para diminuir a coincidência
+foram revertidas (ver a revisão corretiva, abaixo). As medições das tabelas
+são anteriores à revisão.
 
 **Parágrafos do Lírio** (acima de 50% e com sequência de 20 palavras ou mais):
 a primeira versão às cegas decidiu.
@@ -165,7 +178,50 @@ python3 ferramentas/homilias/antonio/medir_coincidencia.py --vozes <…> --parag
 python3 ferramentas/homilias/antonio/medir_coincidencia.py --vozes <…> --arquivo nova_traducao.txt
 ```
 
-O texto da Vozes é só lido para comparar e não deve ser versionado.
+O texto da Vozes é só lido para comparar e não deve ser versionado. A medição
+é só informativa: desde 26/11/2026 ela não decide nenhuma tradução.
+
+## Revisão corretiva das dez retraduções (26/11/2026)
+
+Critério fixado pelo responsável: **a fidelidade ao original latino decide a
+tradução**. A tradução não se muda para diminuir a coincidência com a Vozes ou
+com outra tradução moderna; a semelhança que resulta de uma tradução fiel e
+independente não é problema editorial.
+
+O que foi feito, só nos dez trechos do programa:
+
+- as mudanças da segunda passada sem justificativa filológica foram
+  revertidas (20); as que melhoravam a fidelidade ficaram, com o motivo
+  registrado;
+- foram corrigidas as perdas de fidelidade da tradução às cegas apontadas
+  pela auditoria complementar ou achadas na releitura integral (33), entre
+  elas “homini regi” (“a um homem rei”), omitido nas duas ocorrências do
+  SD50-01;
+- seis marcações de referência foram acertadas pela edição (uso de “cf.” e
+  aspas);
+- os dez trechos foram relidos por inteiro com o latim (artigos, número,
+  sujeito e objeto, posse, referências cristológicas, termos técnicos,
+  expressões, omissões e acréscimos, sequência do argumento, referências
+  bíblicas). O SD40-20 não precisou de alteração.
+
+| Entrada | Trecho | Alterações | Reversões da segunda passada |
+|---|---|---|---|
+| SD19-02 | sd19 § 7 | 7 | 4 |
+| SM04-05 | fim do sm04 § 5 | 7 | 0 |
+| SD33-03 | sd33 § 1 | 4 | 1 |
+| SD50-01 | sd50 § 1 | 24 | 12 |
+| SD59-02 | sd59 § 3 | 2 | 0 |
+| SM03-06 | sm03 § 10 | 6 | 2 |
+| SD02-13 | sd02 § 2 | 1 | 0 |
+| SD40-20 | sd40 § 2 | 0 | 0 |
+| SD54-08 | sd54 § 15 | 3 | 0 |
+| SD61-09 | sd61 § 6 | 5 | 1 |
+
+Cada alteração está no campo `revisao_corretiva` da entrada (e na
+`AUDITORIA.md`); o texto anterior e o corrigido de cada trecho estão em
+`revisao-corretiva-2026-11-26.json`. A recebida não foi alterada, e nenhum
+texto fora dos dez trechos mudou. O relatório da revisão:
+https://claude.ai/artifact/CViJLdg9b3io7VLgn2Wuqi
 
 ## Não fazer
 
