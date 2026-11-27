@@ -101,6 +101,10 @@ Outros campos usados nas decisões do responsável:
 - `revisao_corretiva`: data, critério, resultado e cada alteração da revisão
   corretiva de 26/11/2026 (antes, depois, latim, origem, decisão e
   justificativa);
+- `atualizacoes`: mudanças documentais feitas depois, cada uma com data,
+  campo, motivo e o texto anterior (`antes`), que continua registrado. Usado
+  nas entradas, nas observações gerais e na procedência (por exemplo, a
+  reavaliação de 27/11/2026 das quatro traduções próprias);
 - `origem_da_aplicacao`: entradas aplicadas depois da colação, por
   deliberação do responsável. Elas não entram nas contagens do resumo da
   colação.

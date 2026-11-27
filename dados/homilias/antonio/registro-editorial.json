@@ -17,12 +17,26 @@
   "traducao_recebida": {
    "fonte": "Lírio Católico (liriocatolico.com.br), seção \"Sermões de Santo Antônio\": https://www.liriocatolico.com.br/santo_antonio_sermoes/",
    "copia_recebida": "Cópia das 85 páginas enviada pelo responsável do projeto (HTTrack, 06/11/2026): Homilia dos Santos/Homilia de Santos/santo antonio de padua (1195 - 1231)/view lirio/ e view lirio.zip (mesmo conteúdo; só os fins de linha diferem).",
-   "metodo_declarado": "Segundo as próprias páginas, tradução para o português do Brasil feita pelo Lírio Católico \"a partir do latim com apoio do italiano\" da edição do Centro Studi Antoniani. Segundo a página Sobre do portal, as traduções são preparadas com Inteligência Artificial (Claude.ai e ChatGPT), calibradas com traduções existentes, e passam por uma breve revisão humana.",
+   "metodo_declarado": "Declarado pelo próprio Lírio Católico; o projeto não verificou esse processo. Nas páginas dos sermões, a fonte é o “texto latino da edição crítica do Centro Studi Antoniani (Pádua) e tradução italiana do mesmo Centro”, e a tradução para o português do Brasil é “feita a partir do latim com apoio do italiano”, com botões que mostram o latim e o italiano de cada seção. Na página Sobre do portal, os originais são usados “juntamente com traduções públicas existentes em inglês, espanhol e francês que já se encontram em domínio público”; as traduções preliminares são feitas com Inteligência Artificial (Claude.ai e ChatGPT), “sempre calibrando os resultados com traduções existentes em outras línguas”; e cada texto passa por “uma breve revisão” humana.",
    "politica_de_uso": "\"Não proibimos o uso do nosso conteúdo, entretanto, solicitamos que nos referencie como fonte ao citar ou utilizar os materiais disponibilizados neste site.\" (página Sobre, Direito Autoral; cópia em Homilia dos Santos/…/politica da lirio.txt). Decisão do responsável do projeto: trabalhar com a tradução, revisá-la e creditá-la ao Lírio Católico de modo visível.",
    "credito": "Tradução: Lírio Católico (liriocatolico.com.br), conferida com o latim e revisada pelo projeto Santa Homilia. O projeto não é autor da tradução recebida.",
    "lacunas_na_fonte": "13 parágrafos estão sem tradução nas páginas do Lírio (\"Trecho ainda sem tradução — texto em latim\"); a página exibe o latim no lugar.",
-   "nota_editorial": "A tradução portuguesa de base foi obtida do Lírio Católico (liriocatolico.com.br), que não proíbe o uso de seu conteúdo e pede que seja citado como fonte. Segundo o próprio Lírio Católico, suas traduções são preparadas com auxílio de inteligência artificial, calibradas com traduções existentes, e passam por revisão humana. O projeto conferiu o texto com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979), revisou-o e corrigiu-o; os trechos traduzidos diretamente do latim pelo projeto são identificados um a um. O projeto não reivindica a autoria da tradução recebida e não tem vínculo institucional, parceria ou afiliação com o Lírio Católico.",
-   "aviso_traducao_propria": "Traduzido do latim pelo projeto; ausente na tradução do Lírio."
+   "nota_editorial": "A tradução portuguesa de base foi obtida do Lírio Católico (liriocatolico.com.br), que não proíbe o uso de seu conteúdo e pede que seja citado como fonte. Segundo o próprio Lírio Católico, suas traduções são preparadas com auxílio de inteligência artificial a partir do latim, com o apoio de traduções existentes em outras línguas, entre elas o italiano, e passam por revisão humana. O projeto conferiu o texto com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979), revisou-o e corrigiu-o; os trechos traduzidos diretamente do latim pelo projeto são identificados um a um. O projeto não reivindica a autoria da tradução recebida e não tem vínculo institucional, parceria ou afiliação com o Lírio Católico.",
+   "aviso_traducao_propria": "Traduzido do latim pelo projeto; ausente na tradução do Lírio.",
+   "atualizacoes": [
+    {
+     "data": "2026-11-27",
+     "campo": "metodo_declarado",
+     "antes": "Segundo as próprias páginas, tradução para o português do Brasil feita pelo Lírio Católico \"a partir do latim com apoio do italiano\" da edição do Centro Studi Antoniani. Segundo a página Sobre do portal, as traduções são preparadas com Inteligência Artificial (Claude.ai e ChatGPT), calibradas com traduções existentes, e passam por uma breve revisão humana.",
+     "motivo": "Autorizado pelo responsável em 27/11/2026 (análise de 26/11/2026: https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw): o resumo anterior omitia que o Lírio declara calibrar com traduções “em outras línguas” e usar o italiano como apoio. Descrição atribuída ao próprio Lírio, não verificada pelo projeto."
+    },
+    {
+     "data": "2026-11-27",
+     "campo": "nota_editorial",
+     "antes": "A tradução portuguesa de base foi obtida do Lírio Católico (liriocatolico.com.br), que não proíbe o uso de seu conteúdo e pede que seja citado como fonte. Segundo o próprio Lírio Católico, suas traduções são preparadas com auxílio de inteligência artificial, calibradas com traduções existentes, e passam por revisão humana. O projeto conferiu o texto com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979), revisou-o e corrigiu-o; os trechos traduzidos diretamente do latim pelo projeto são identificados um a um. O projeto não reivindica a autoria da tradução recebida e não tem vínculo institucional, parceria ou afiliação com o Lírio Católico.",
+     "motivo": "Autorizado pelo responsável em 27/11/2026 (análise de 26/11/2026: https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw): o resumo anterior omitia que o Lírio declara calibrar com traduções “em outras línguas” e usar o italiano como apoio. Descrição atribuída ao próprio Lírio, não verificada pelo projeto."
+    }
+   ]
   },
   "latim": {
    "edicao": "Sancti Antonii Patavini Sermones dominicales et festivi, edição crítica, Centro Studi Antoniani, Pádua, 1979, 3 vols.",
@@ -108,6 +122,12 @@
    "origem": "Revisão corretiva das dez retraduções",
    "decisao": "O responsável fixou o critério: a fidelidade ao latim decide a tradução, e a coincidência com a Vozes ou com outra tradução moderna, quando vem de tradução fiel e independente, não é problema e não justifica mudar o texto. Pediu que se revertessem as mudanças da segunda passada (feitas para diminuir a coincidência) sem justificativa filológica, que se corrigissem as perdas de fidelidade apontadas pela auditoria complementar (entre elas “homini regi”, nas duas ocorrências do SD50-01) e que os dez trechos fossem relidos por inteiro com o latim. A Etapa 1 não foi declarada aprovada e nada avançou para a distribuição litúrgica.",
    "alteracoes": "Só os dez trechos (SD19-02, SM04-05, SD33-03, SD50-01, SD59-02, SM03-06, SD02-13, SD40-20, SD54-08 e SD61-09): 59 alterações: 20 reversões (totais ou parciais) da segunda passada, 32 correções de fidelidade da tradução às cegas, 1 correção num ajuste posterior à primeira versão (motivo não registrado) e 6 de marcação de referência; SD40-20 conferido sem alteração. Cada entrada guarda o campo revisao_corretiva (antes, depois, latim, origem, decisão e justificativa de cada mudança); o texto anterior e o corrigido de cada trecho estão em revisao-corretiva-2026-11-26.json. A recebida não foi alterada. A origem de cada mudança foi conferida comparando a primeira versão às cegas com o texto anterior à revisão."
+  },
+  {
+   "data": "2026-11-27",
+   "origem": "Reavaliação das quatro traduções próprias",
+   "decisao": "O responsável autorizou as alterações documentais recomendadas na análise de 26/11/2026 (“Reavaliação das quatro traduções próprias — Santo Antônio”, https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw): manter as traduções próprias de sd02 § 2, sd40 § 2, sd54 § 15 e sd61 § 6 por apresentarem maior fidelidade ao latim nos pontos identificados, e não por serem diferentes da Vozes; corrigir a OBS-02, que afirmava mais do que se pode sustentar sobre a relação entre o Lírio e a Vozes; completar a descrição do método declarado pelo Lírio; e indicar Mt 27,46 e Mc 15,34 no sd54 § 15. Nenhuma tradução foi alterada, nenhum sermão foi publicado e a Etapa 2 não começou.",
+   "alteracoes": "Justificativas de SD02-13, SD40-20, SD54-08 e SD61-09 reescritas; OBS-02 reescrita; metodo_declarado e nota_editorial da procedência completados; referência do SD54-08 de “(Mt 27,46)” para “(Mt 27,46; Mc 15,34)”, só a referência. Os textos anteriores ficam no campo atualizacoes de cada lugar."
   }
  ],
  "registros": [
@@ -5944,7 +5964,7 @@
    "substitui_bloco": true,
    "depois": "2. Observa que neste evangelho se notam duas coisas: a saída de Jesus Cristo dos confins de Tiro e a cura do surdo e mudo. A primeira, quando se diz antes: “Saindo Jesus dos confins de Tiro” (Mc 7,31). A segunda, quando se acrescenta: “E trazem-lhe um surdo e mudo” (Mc 7,32). Com estas cláusulas poremos em concordância algumas autoridades do Eclesiástico.\nNo intróito da missa de hoje canta-se: “Olha, Senhor, para a tua aliança” (Sl 73,20). E lê-se a epístola do bem-aventurado Paulo aos Coríntios: “Tal confiança temos” (2Cor 3,4), que queremos dividir em duas partes e pôr em concordância com as duas cláusulas do santo evangelho. A primeira parte é: “Tal confiança temos”. A segunda: “Que nos fez idôneos” (2Cor 3,6).",
    "latim": "Nota quod in hoc evangelio duo notantur: Iesu Christi de finibus Tyri egressio, surdi et muti curatio…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+   "justificativa": "Tradução própria do projeto, elaborada diretamente a partir do latim em 25/11/2026, sem consulta à tradução portuguesa da Vozes durante a primeira elaboração, e conferida novamente com o latim em 26/11/2026. Substituiu o texto do Lírio no programa de retradução de 25/11/2026. A versão foi mantida após revisão por apresentar maior fidelidade ao texto latino nos pontos identificados. As coincidências entre o texto do Lírio e a tradução da Vozes não permitem determinar, por si sós, a origem textual dessas escolhas. Pontos identificados na reavaliação de 26/11/2026: o texto do Lírio acrescenta “o salmo”, “Segunda” (Carta), “o trecho” e “ministros” (o lema do autor termina em fecit), troca o ato do autor, que põe as autoridades em concordância (concordabimus), por “encontrar passagens que concordam”, e perde o “antes” de praemittitur e o “queremos” de volumus; a tradução própria segue o latim nesses pontos. Na reavaliação de 26/11/2026, a tradução da Vozes foi lida neste parágrafo só para comparação, com a tradução própria já fixada; a tradução não mudou depois disso.",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -5972,7 +5992,15 @@
     "resultado": "conferido integralmente com o latim; nenhuma alteração",
     "alteracoes": [],
     "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
-   }
+   },
+   "atualizacoes": [
+    {
+     "data": "2026-11-27",
+     "campo": "justificativa",
+     "antes": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+     "motivo": "Reavaliação editorial das quatro traduções próprias (análise de 26/11/2026: https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw), aplicada por autorização do responsável em 27/11/2026. O motivo anterior, baseado na coincidência com a tradução da Vozes, não se sustenta como prova de dependência e deixou de ser critério; a tradução foi mantida por fidelidade ao latim. A redação anterior fica aqui."
+    }
+   ]
   },
   {
    "id": "SD42-01",
@@ -8235,9 +8263,9 @@
    "confianca": "alta",
    "localizacao": "§ 15 (inteiro)",
    "substitui_bloco": true,
-   "depois": "15. Do mesmo modo, quem tem fome e sede de justiça dá a cada um o que é seu: a Deus e ao próximo, o amor; a si mesmo, a aflição pelas faltas cometidas. Esta tríplice justiça se nota naquelas três palavras: “Deus meu, Deus meu, por que me abandonaste?” (Mt 27,46). Diz duas vezes “Deus”, por causa do duplo amor; “abandonaste”, por causa da pena corporal. Por isso diz ali a Glosa: “Por que me abandonaste? isto é: por que me expuseste a tão grande pena?”, diz o Filho ao Pai.\nDestas três palavras diz Habacuc: “O justo vive da fé” (Gl 3,11; cf. Hab 2,4). Justo se diz porque guarda os direitos. “Justo” refere-se a si mesmo; “da fé”, a Deus; “vive”, ao próximo. Quem é justo, guardando em si mesmo os direitos, julgando-se e condenando-se a si mesmo, vive da fé em Deus no amor do próximo. Mas “quem não ama”, como diz João, “permanece na morte” (1Jo 3,14).",
+   "depois": "15. Do mesmo modo, quem tem fome e sede de justiça dá a cada um o que é seu: a Deus e ao próximo, o amor; a si mesmo, a aflição pelas faltas cometidas. Esta tríplice justiça se nota naquelas três palavras: “Deus meu, Deus meu, por que me abandonaste?” (Mt 27,46; Mc 15,34). Diz duas vezes “Deus”, por causa do duplo amor; “abandonaste”, por causa da pena corporal. Por isso diz ali a Glosa: “Por que me abandonaste? isto é: por que me expuseste a tão grande pena?”, diz o Filho ao Pai.\nDestas três palavras diz Habacuc: “O justo vive da fé” (Gl 3,11; cf. Hab 2,4). Justo se diz porque guarda os direitos. “Justo” refere-se a si mesmo; “da fé”, a Deus; “vive”, ao próximo. Quem é justo, guardando em si mesmo os direitos, julgando-se e condenando-se a si mesmo, vive da fé em Deus no amor do próximo. Mas “quem não ama”, como diz João, “permanece na morte” (1Jo 3,14).",
    "latim": "Item, qui esuriem et sitim habet iustitiae, reddit unicuique quod suum est…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+   "justificativa": "Tradução própria do projeto, elaborada diretamente a partir do latim em 25/11/2026, sem consulta à tradução portuguesa da Vozes durante a primeira elaboração, e conferida novamente com o latim em 26/11/2026. Substituiu o texto do Lírio no programa de retradução de 25/11/2026. A versão foi mantida após revisão por apresentar maior fidelidade ao texto latino nos pontos identificados. As coincidências entre o texto do Lírio e a tradução da Vozes não permitem determinar, por si sós, a origem textual dessas escolhas. Pontos identificados na reavaliação de 26/11/2026: o texto do Lírio troca a causa (propter geminam dilectionem, propter corporalem poenam) por finalidade (“para recordar”), acrescenta “preceito”, traduz pro commissis afflictionem por “a penitência pelos pecados cometidos” e tantae poenae por “tão grande sofrimento”, o que quebra a repetição pena/pena em que o argumento se apoia; a tradução própria segue o latim nesses pontos. Na reavaliação de 26/11/2026, a tradução da Vozes foi lida neste parágrafo só para comparação, com a tradução própria já fixada; a tradução não mudou depois disso. Em 27/11/2026, só a referência do grito da cruz foi completada (Mt 27,46; Mc 15,34).",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -8290,7 +8318,22 @@
      }
     ],
     "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
-   }
+   },
+   "atualizacoes": [
+    {
+     "data": "2026-11-27",
+     "campo": "justificativa",
+     "antes": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+     "motivo": "Reavaliação editorial das quatro traduções próprias (análise de 26/11/2026: https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw), aplicada por autorização do responsável em 27/11/2026. O motivo anterior, baseado na coincidência com a tradução da Vozes, não se sustenta como prova de dependência e deixou de ser critério; a tradução foi mantida por fidelidade ao latim. A redação anterior fica aqui."
+    },
+    {
+     "data": "2026-11-27",
+     "campo": "depois",
+     "antes": "(Mt 27,46)",
+     "depois": "(Mt 27,46; Mc 15,34)",
+     "motivo": "Só a referência bíblica: o grito tem a mesma forma latina em Mt 27,46 e em Mc 15,34, e a edição crítica não indica a passagem. Decisão do responsável (27/11/2026) de indicar as duas. O texto da tradução não mudou."
+    }
+   ]
   },
   {
    "id": "SD55-01",
@@ -9059,7 +9102,7 @@
    "substitui_bloco": true,
    "depois": "6. Por isso se segue: “E deu à luz o seu filho primogênito” (Lc 2,7). Eis a bondade, eis o paraíso. Correi, pois, famintos, avarentos e usurários, para quem o dinheiro é mais caro que Deus, e “comprai sem dinheiro e sem troca alguma” (Is 55,1) o grão de trigo que hoje a Virgem tirou do celeiro do seu seio. Deu à luz, pois, um filho. Que filho? Deus, Filho de Deus. Ó mais feliz que todo feliz, tu que tiveste o Filho em comum com Deus Pai! Que glória seria para uma pobre mulherzinha ter um filho em comum com um imperador mortal! Quanto maior, sem comparação, a glória da Virgem, que teve o Filho em comum com Deus Pai! “Deu à luz o seu filho”. O Pai deu a divindade, a Mãe a humanidade; o Pai a majestade, a Mãe a fraqueza. Deu à luz o seu filho Emanuel, isto é, Deus conosco (cf. Mt 1,23). “Quem, então, será contra nós?” (cf. Rm 8,31). Como diz Isaías no capítulo 59: “O capacete da salvação sobre a sua cabeça” (Is 59,17). O capacete é a humanidade; a cabeça, a divindade; a cabeça escondida sob o capacete, a divindade sob a humanidade. Não há, pois, que temer. A vitória está do nosso lado, porque Deus está conosco armado. Graças a ti, Virgem gloriosa, porque por ti Deus está conosco. Deu à luz, pois, o seu filho primogênito, isto é, “gerado do Pai antes de todos os séculos”; ou “primogênito dentre os mortos” (cf. Cl 1,18); ou “entre muitos irmãos” (cf. Rm 8,29).",
    "latim": "Unde sequitur: Et peperit filium suum primogenitum… Ecce bonitas, ecce paradisus…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+   "justificativa": "Tradução própria do projeto, elaborada diretamente a partir do latim em 25/11/2026, sem consulta à tradução portuguesa da Vozes durante a primeira elaboração, e conferida novamente com o latim em 26/11/2026. Substituiu o texto do Lírio no programa de retradução de 25/11/2026. A versão foi mantida após revisão por apresentar maior fidelidade ao texto latino nos pontos identificados. As coincidências entre o texto do Lírio e a tradução da Vozes não permitem determinar, por si sós, a origem textual dessas escolhas. Pontos identificados na reavaliação de 26/11/2026: o texto do Lírio traduz famelici por “gananciosos” (erro que a Etapa 1 corrigia pela SD61-02), granum frumenti por “o trigo, o grão”, de promptuario sui uteri por “do tesouro de seu seio” (perdendo a imagem do celeiro) e mortali imperatori por “um imperador deste mundo”; a tradução própria segue o latim nesses pontos. Na reavaliação de 26/11/2026, a tradução da Vozes foi lida neste parágrafo só para comparação, com a tradução própria já fixada; a tradução não mudou depois disso. Depois da primeira elaboração, um “lhe” foi acrescentado em 25/11/2026 só para diminuir a coincidência com a Vozes; foi retirado na revisão corretiva de 26/11/2026.",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -9128,7 +9171,15 @@
      }
     ],
     "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
-   }
+   },
+   "atualizacoes": [
+    {
+     "data": "2026-11-27",
+     "campo": "justificativa",
+     "antes": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+     "motivo": "Reavaliação editorial das quatro traduções próprias (análise de 26/11/2026: https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw), aplicada por autorização do responsável em 27/11/2026. O motivo anterior, baseado na coincidência com a tradução da Vozes, não se sustenta como prova de dependência e deixou de ser critério; a tradução foi mantida por fidelidade ao latim. A redação anterior fica aqui."
+    }
+   ]
   },
   {
    "id": "SD62-01",
@@ -13235,7 +13286,7 @@
    "substitui_bloco": true,
    "depois": "2. Observa que há uma tríplice Jerusalém espiritual: a primeira, a Igreja militante; a segunda, a alma fiel; a terceira, a pátria celeste. Tomarei, pois, em nome do Senhor, um tijolo, isto é, o coração de cada ouvinte, e nele escreverei a cidade tríplice, isto é, os artigos da Igreja, as virtudes da alma, os prêmios da pátria celeste, trazendo, sob o número setenário, autoridades de um e de outro Testamento e expondo-as.",
    "latim": "Nota quod triplex est Ierusalem spiritualis… Sumam ergo in nomine Domini laterem…",
-   "justificativa": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+   "justificativa": "Tradução própria do projeto, elaborada diretamente a partir do latim em 25/11/2026, sem consulta à tradução portuguesa da Vozes durante a primeira elaboração, e conferida novamente com o latim em 26/11/2026. Substituiu o texto do Lírio no programa de retradução de 25/11/2026. A versão foi mantida após revisão por apresentar maior fidelidade ao texto latino nos pontos identificados. As coincidências entre o texto do Lírio e a tradução da Vozes não permitem determinar, por si sós, a origem textual dessas escolhas. Pontos identificados na reavaliação de 26/11/2026: “escreverei” traduz scribam, o verbo que o autor pôs no lugar do describes de Ez 4,1, citado no § 1 (o Lírio tem “desenharei”, o verbo de Ezequiel); e laterem vai sem artigo (“um tijolo”). No conjunto, o texto do Lírio também é fiel ao latim, e a diferença de fidelidade é pequena. Na reavaliação de 26/11/2026, a tradução da Vozes foi lida neste parágrafo só para comparação, com a tradução própria já fixada; a tradução não mudou depois disso.",
    "motivo": "Tradução própria em lugar do texto recebido (programa de retradução independente, autorizado pelo responsável).",
    "fonte_consultada": "Edição crítica (Centro Studi Antoniani, 1979), na publicação em PDF do CSA; traduzido em 25/11/2026 só a partir do latim, sem o Lírio nem a Vozes à vista",
    "origem_da_aplicacao": "programa de retradução independente (25/11/2026)",
@@ -13272,7 +13323,15 @@
      }
     ],
     "origem_verificada": "A origem de cada mudança foi conferida comparando a primeira versão às cegas (25/11/2026) com o texto anterior a esta revisão."
-   }
+   },
+   "atualizacoes": [
+    {
+     "data": "2026-11-27",
+     "campo": "justificativa",
+     "antes": "O texto do Lírio neste parágrafo coincide com a tradução da Vozes muito além do esperado, e uma tradução feita às cegas, só a partir do latim, coincide muito menos: a proximidade não vem da fórmula do latim. Pelo critério do programa de retradução independente, o parágrafo passa a esta tradução própria, identificada como tal. Conferido de novo com o latim, por inteiro, na revisão corretiva de 26/11/2026.",
+     "motivo": "Reavaliação editorial das quatro traduções próprias (análise de 26/11/2026: https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw), aplicada por autorização do responsável em 27/11/2026. O motivo anterior, baseado na coincidência com a tradução da Vozes, não se sustenta como prova de dependência e deixou de ser critério; a tradução foi mantida por fidelidade ao latim. A redação anterior fica aqui."
+    }
+   ]
   },
   {
    "id": "SD17-14",
@@ -14204,7 +14263,7 @@
   {
    "id": "OBS-02",
    "tema": "Glosas coincidentes com a tradução da Editora Vozes",
-   "descricao": "Algumas explicações que não estão no latim aparecem na tradução do Lírio com as mesmas palavras da tradução da Vozes (2019), que as traz entre parênteses: “isto é, da obra penitencial” (sd03 § 5), “pedra da fé” (sd03 § 7), “(símbolo da loucura)” (sd04 § 16), “a obra penitencial reparadora” (sd09 § 12). A tradução inglesa de Spilsbury não as tem. Isso sugere que a tradução do Lírio foi feita com a da Vozes à vista. Na revisada, essas glosas saem como acréscimos; o texto da Vozes não é usado como base nem reproduzido. Há também uma frase inteira ausente do latim e do Spilsbury que o Lírio traz com quase as mesmas palavras da Vozes (oração final do sd17 § 9); nesse caso, como pode vir de outra edição latina, ela foi mantida como variante. Medição refeita em 24/11/2026 com um controle limpo (tradução feita às cegas, só a partir do latim, de cinco parágrafos sorteados): nos mesmos parágrafos, o comentário do Lírio coincide com a Vozes em 17% (sequências de 8 palavras iguais), e a tradução às cegas em 13%; no conjunto dos sermões, o parágrafo mediano do Lírio fica em 19%. A dependência é pontual, não cópia; os casos extremos estão no programa de retradução independente (LEIA-ME). A medição anterior usava como controle as traduções próprias da Etapa 1, feitas com a Vozes aberta para conferência, e por isso foi substituída. Por decisão do responsável, o prólogo sm01 (50% contra 12% na tradução às cegas) e o sd46 passaram a tradução própria, e a oração final do sd17 § 9 foi retirada. O programa de retradução independente foi executado em 25/11/2026: dos seis parágrafos do Lírio acima de 50% (e com sequência de 20 palavras ou mais), quatro passaram a tradução própria, porque a tradução às cegas ficou muito abaixo (sd40 § 2: 51% contra 11%; sd02 § 2: 51% contra 14%; sd61 § 6: 56% contra 20%; sd54 § 15: 67% contra 16%); dois ficaram com o texto do Lírio, porque a tradução às cegas também coincidiu muito (sd03 § 1: 51% contra 42%; sd13 § 4: 51% contra 33%).",
+   "descricao": "Coincidências entre o texto do Lírio e a tradução da Vozes (2019). Em vários lugares o Lírio tem os mesmos afastamentos do latim que a Vozes: explicações que a Vozes traz entre parênteses, acréscimos, paráfrases e frases reestruturadas do mesmo modo; a tradução inglesa de Spilsbury não os tem. As ocorrências estão listadas abaixo; nelas, “segue a Vozes” descreve a coincidência observada, não uma origem comprovada. Na revisada, esses afastamentos foram corrigidos pelo latim, e as correções valem qualquer que seja a origem deles; o texto da Vozes não é usado como base nem reproduzido.\n\nInterpretação revista em 27/11/2026. A tradução da Vozes é a versão portuguesa da tradução italiana de Giordano Tollardo: a própria edição traz o prefácio e as advertências da tradução italiana. O Lírio Católico declara traduzir “a partir do latim com apoio do italiano” (a tradução italiana publicada pelo Centro Studi Antoniani) e calibrar os resultados “com traduções existentes em outras línguas”. Uma fonte italiana comum é, por isso, uma explicação plausível para parte das coincidências. O texto italiano não foi conferido diretamente, e não se verificou se a tradução italiana publicada pelo CSA é a mesma de Tollardo. Não há evidência suficiente para afirmar que o Lírio reproduziu ou copiou a tradução da Vozes; também não há elementos suficientes para afirmar que essa hipótese está descartada.\n\nHistórico da investigação. Em 24/11/2026, a medição com controle às cegas (cinco parágrafos sorteados) deu 17% para o Lírio e 13% para a tradução às cegas, com mediana de 19% no conjunto dos sermões, e a conclusão registrada foi “dependência pontual, não cópia”; por decisão do responsável, o prólogo sm01 e o sd46 passaram a tradução própria, e a oração final do sd17 § 9 foi retirada. Em 25/11/2026, pelo programa de retradução independente, quatro parágrafos passaram a tradução própria (sd40 § 2, sd02 § 2, sd61 § 6 e sd54 § 15), e dois ficaram com o Lírio (sd03 § 1 e sd13 § 4). Em 26/11/2026, a coincidência deixou de ser critério de tradução; a reavaliação dos quatro parágrafos concluiu que as traduções próprias são mais fiéis ao latim nos pontos examinados, e elas foram mantidas por esse motivo. A redação anterior desta observação, que concluía que a tradução do Lírio “foi feita com a da Vozes à vista”, fica em atualizacoes.",
    "ocorrencias": [
     "sd03 § 5 (SD03-04)",
     "sd03 § 7 (SD03-05)",
@@ -14250,7 +14309,15 @@
     "escolha": "publicar com atribuição",
     "texto": "Publicar a tradução revisada com atribuição explícita ao Lírio Católico; as coincidências com a Vozes ficam documentadas.",
     "ressalva": false
-   }
+   },
+   "atualizacoes": [
+    {
+     "data": "2026-11-27",
+     "campo": "descricao",
+     "antes": "Algumas explicações que não estão no latim aparecem na tradução do Lírio com as mesmas palavras da tradução da Vozes (2019), que as traz entre parênteses: “isto é, da obra penitencial” (sd03 § 5), “pedra da fé” (sd03 § 7), “(símbolo da loucura)” (sd04 § 16), “a obra penitencial reparadora” (sd09 § 12). A tradução inglesa de Spilsbury não as tem. Isso sugere que a tradução do Lírio foi feita com a da Vozes à vista. Na revisada, essas glosas saem como acréscimos; o texto da Vozes não é usado como base nem reproduzido. Há também uma frase inteira ausente do latim e do Spilsbury que o Lírio traz com quase as mesmas palavras da Vozes (oração final do sd17 § 9); nesse caso, como pode vir de outra edição latina, ela foi mantida como variante. Medição refeita em 24/11/2026 com um controle limpo (tradução feita às cegas, só a partir do latim, de cinco parágrafos sorteados): nos mesmos parágrafos, o comentário do Lírio coincide com a Vozes em 17% (sequências de 8 palavras iguais), e a tradução às cegas em 13%; no conjunto dos sermões, o parágrafo mediano do Lírio fica em 19%. A dependência é pontual, não cópia; os casos extremos estão no programa de retradução independente (LEIA-ME). A medição anterior usava como controle as traduções próprias da Etapa 1, feitas com a Vozes aberta para conferência, e por isso foi substituída. Por decisão do responsável, o prólogo sm01 (50% contra 12% na tradução às cegas) e o sd46 passaram a tradução própria, e a oração final do sd17 § 9 foi retirada. O programa de retradução independente foi executado em 25/11/2026: dos seis parágrafos do Lírio acima de 50% (e com sequência de 20 palavras ou mais), quatro passaram a tradução própria, porque a tradução às cegas ficou muito abaixo (sd40 § 2: 51% contra 11%; sd02 § 2: 51% contra 14%; sd61 § 6: 56% contra 20%; sd54 § 15: 67% contra 16%); dois ficaram com o texto do Lírio, porque a tradução às cegas também coincidiu muito (sd03 § 1: 51% contra 42%; sd13 § 4: 51% contra 33%).",
+     "motivo": "Correção autorizada pelo responsável em 27/11/2026, a partir da análise de 26/11/2026 (https://claude.ai/artifact/TXzvxmunAbuXMydyGXfxuw): a redação anterior tratava as coincidências como sinal de uso da Vozes sem considerar a fonte italiana comum, que o Lírio declara usar."
+    }
+   ]
   },
   {
    "id": "OBS-03",

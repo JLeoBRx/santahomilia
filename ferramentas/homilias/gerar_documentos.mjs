@@ -259,6 +259,8 @@ function auditoriaMd(REG, IND, gregorio) {
 // ---------------------------------------------------------------- antonio/AUDITORIA.md
 const TIPO_ANT = { correcao: 'correção', sugestao: 'sugestão', duvida: 'dúvida', variante: 'variante textual', 'problema-fonte': 'problema da fonte', 'traducao-propria': 'tradução própria', estrutura: 'estrutura' };
 const linha = (t) => String(t ?? '').replace(/\n+/g, ' ¶ ');
+/** atualização editorial rastreável: o campo mudado, o motivo e o texto anterior (que continua registrado) */
+const atualizacaoMd = (u) => `- **Atualização (${u.data.split('-').reverse().join('/')}, campo \`${u.campo}\`):** ${linha(u.motivo)}${u.depois !== undefined ? ` Antes: “${linha(u.antes)}”; depois: “${linha(u.depois)}”.` : ` Texto anterior: “${linha(u.antes)}”`}`;
 function entradaAntonio(r, item) {
   const L = [`#### ${r.id} · ${r.sermao} (${item ? item.titulo : '?'}) · ${r.localizacao || (r.paragrafo != null ? `§ ${r.paragrafo}` : 'temas')}`, ''];
   L.push(`- **Tipo:** ${TIPO_ANT[r.tipo] || r.tipo} · **confiança:** ${r.confianca || '—'} · **estado:** ${r.estado === 'aplicada' ? 'aplicada' : 'não aplicada'}`);
@@ -286,6 +288,7 @@ function entradaAntonio(r, item) {
     L.push(`- **Revisão corretiva (${rc.data.split('-').reverse().join('/')}):** critério: ${rc.criterio}. Resultado: ${rc.resultado}.${rc.origem_verificada ? ` ${rc.origem_verificada}` : ''}`);
     for (const a of rc.alteracoes) L.push(`  - “${linha(a.antes)}” → “${linha(a.depois)}”${a.ocorrencias ? ` (${a.ocorrencias} ocorrências)` : ''}. Latim: ${linha(a.latim)}. Origem: ${a.origem}; decisão: ${a.decisao}. ${linha(a.justificativa)}`);
   }
+  for (const u of r.atualizacoes || []) L.push(atualizacaoMd(u));
   L.push(`- **Fonte consultada:** ${r.fonte_consultada || '—'}`, '');
   return L.join('\n');
 }
@@ -307,7 +310,8 @@ function auditoriaAntonioMd(REG, CAT) {
   L.push(`- **Crédito:** ${P.traducao_recebida.credito}`);
   if (P.traducao_recebida.nota_editorial) L.push(`- **Nota editorial para a publicação:** ${P.traducao_recebida.nota_editorial}`);
   if (P.traducao_recebida.aviso_traducao_propria) L.push(`- **Aviso nos trechos traduzidos pelo projeto:** “${P.traducao_recebida.aviso_traducao_propria}”`);
-  L.push(`- **Latim:** ${P.latim.edicao.replace(/\.$/, '')}. ${P.latim.consulta}`);
+  for (const u of P.traducao_recebida.atualizacoes || []) L.push(atualizacaoMd(u));
+  L.push(`- **Latim:**${P.latim.edicao.replace(/\.$/, '')}. ${P.latim.consulta}`);
   L.push(`- **Diretriz sobre o latim:** ${P.latim.diretriz}`, '');
   L.push('## Critérios', '');
   const ROTULO = { ...TIPO_ANT, principio: 'princípio', estado_final: 'estado final' };
@@ -350,6 +354,7 @@ function auditoriaAntonioMd(REG, CAT) {
     L.push(`### ${o.id} · ${o.tema || ''}`.trimEnd(), '', o.descricao, '');
     if (o.decisao) L.push(`Decisão do responsável (${o.decisao.data.split('-').reverse().join('/')}, ${o.decisao.questao}): ${o.decisao.texto}`, '');
     if (o.ocorrencias?.length) { L.push('Ocorrências:', ''); for (const t of o.ocorrencias) L.push(`- ${t}`); L.push(''); }
+    if (o.atualizacoes?.length) { L.push('Atualizações desta observação:', ''); for (const u of o.atualizacoes) L.push(atualizacaoMd(u)); L.push(''); }
   }
   L.push('## 5. Histórico', '');
   for (const h of REG.historico) L.push(`- **${h.data.split('-').reverse().join('/')} · ${h.origem}:** ${h.decisao}${h.alteracoes ? ` ${h.alteracoes}` : ''}`);
