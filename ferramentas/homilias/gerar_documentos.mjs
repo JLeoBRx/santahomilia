@@ -301,7 +301,11 @@ function auditoriaAntonioMd(REG, CAT) {
   const L = [];
   L.push('# Auditoria da tradução — Sermões de Santo Antônio de Pádua', '', '> Gerado a partir de `dados/homilias/antonio/registro-editorial.json` por `ferramentas/homilias/gerar_documentos.mjs`. Não edite à mão.', '');
   L.push('## Etapas', '', '| Etapa | Estado | Data |', '|---|---|---|');
-  for (const e of Object.values(REG.etapas)) L.push(`| ${e.nome} | ${e.estado}${e.pendente ? ` (pendente: ${e.pendente})` : ''} | ${(e.data_de_conclusao || e.entregue_em || e.autorizada_em || '').split('-').reverse().join('/')} |`);
+  for (const e of Object.values(REG.etapas)) L.push(`| ${e.nome} | ${e.estado}${e.pendente ? ` (pendente: ${e.pendente})` : ''}${e.validacao_final ? ` (validação final em ${e.validacao_final.data.split('-').reverse().join('/')}, com ressalva)` : ''} | ${(e.data_de_conclusao || e.entregue_em || e.autorizada_em || '').split('-').reverse().join('/')} |`);
+  for (const e of Object.values(REG.etapas)) {
+    if (e.ressalva) L.push('', `**Ressalva (${e.nome}):** ${e.ressalva}`);
+    for (const u of e.atualizacoes || []) L.push('', atualizacaoMd(u));
+  }
   L.push('', '## Obra e fontes', '');
   L.push(`- **Obra:** ${REG.obra.autor}, *${REG.obra.titulo}*. ${REG.obra.divisao}`);
   const P = REG.procedencia;

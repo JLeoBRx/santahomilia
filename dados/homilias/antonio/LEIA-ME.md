@@ -9,10 +9,14 @@ deliberações finais do responsável aplicadas; os 85 itens foram conferidos po
 inteiro. Nenhum sermão está publicado no site. A distribuição no calendário é a
 Etapa 2.
 
-A validação final das dez retraduções do programa de retradução independente
-está pendente: elas passaram pela auditoria complementar e pela revisão
-corretiva de 26/11/2026 (abaixo) e aguardam revisão independente. A Etapa 1
-não foi declarada aprovada depois disso, e a Etapa 2 não começou.
+Em 27/11/2026 o responsável encerrou a Etapa 1 **com ressalva**: as dez
+traduções próprias do programa de retradução foram conferidas frase a frase
+com o latim (auditoria complementar, revisão corretiva e reavaliação, abaixo)
+e comparadas com a tradução da Vozes, sem nenhum afastamento do latim em
+comum, mas não passaram por revisor humano independente, por falta de
+recursos. A ressalva está em `etapas.etapa_1` do registro. A Etapa 2
+(distribuição no calendário) começa por uma auditoria das correspondências;
+nenhum sermão será publicado sem decisão do responsável.
 
 ## Fontes e crédito
 
