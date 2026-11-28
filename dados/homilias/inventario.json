@@ -1997,7 +1997,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sd02",
@@ -2016,7 +2017,8 @@
     "SD02-05"
    ],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "O sermão comenta o Gênesis; a Septuagésima não existe mais e a parábola do seu Evangelho só serve de moldura (decisão D7)."
   },
   {
    "codigo": "sd03",
@@ -2031,7 +2033,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd04",
@@ -2048,7 +2050,7 @@
     "SD04-11"
    ],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd05",
@@ -2063,7 +2065,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd06",
@@ -2078,7 +2080,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd07",
@@ -2093,7 +2095,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd08",
@@ -2108,7 +2110,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd09",
@@ -2123,7 +2125,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd10",
@@ -2138,7 +2140,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd11",
@@ -2153,7 +2155,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd12",
@@ -2168,7 +2170,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd13",
@@ -2183,7 +2185,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd14",
@@ -2198,7 +2200,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd15",
@@ -2213,7 +2215,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd16",
@@ -2228,7 +2230,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd17",
@@ -2245,7 +2247,7 @@
     "SD17-10"
    ],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd18",
@@ -2262,7 +2264,7 @@
     "SD18-12"
    ],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd19",
@@ -2279,7 +2281,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd20",
@@ -2294,7 +2296,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd21",
@@ -2309,7 +2311,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd22",
@@ -2324,7 +2326,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd23",
@@ -2339,7 +2341,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd24",
@@ -2356,7 +2358,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd25",
@@ -2371,7 +2373,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd26",
@@ -2386,7 +2388,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd27",
@@ -2401,7 +2403,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sd28",
@@ -2418,7 +2421,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd29",
@@ -2433,7 +2436,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd30",
@@ -2448,7 +2451,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd31",
@@ -2463,7 +2466,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd32",
@@ -2478,7 +2481,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd33",
@@ -2495,7 +2498,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd34",
@@ -2510,7 +2513,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd35",
@@ -2525,7 +2528,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd36",
@@ -2540,7 +2543,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sd37",
@@ -2555,7 +2559,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd38",
@@ -2570,7 +2574,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd39",
@@ -2585,7 +2589,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd40",
@@ -2602,7 +2606,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd41",
@@ -2617,7 +2621,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sd42",
@@ -2637,7 +2642,7 @@
     "SD42-20"
    ],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd43",
@@ -2652,7 +2657,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd44",
@@ -2671,7 +2676,7 @@
     "SD44-04"
    ],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd45",
@@ -2686,7 +2691,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd46",
@@ -2703,7 +2708,8 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sd47",
@@ -2720,7 +2726,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd48",
@@ -2735,7 +2741,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "O trecho comentado (Mt 22,41-46) não é lido no lecionário atual; o grande mandamento (Mt 22,34-40), lido em outros dias, não é comentado (decisão D7)."
   },
   {
    "codigo": "sd49",
@@ -2752,7 +2759,7 @@
     "SD49-05"
    ],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd50",
@@ -2771,7 +2778,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd51",
@@ -2786,7 +2793,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sd52",
@@ -2803,7 +2811,7 @@
     "SD52-01"
    ],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd53",
@@ -2821,7 +2829,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd54",
@@ -2838,7 +2846,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd55",
@@ -2853,7 +2861,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd56",
@@ -2868,7 +2876,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sd57",
@@ -2885,7 +2894,7 @@
     "SD57-05"
    ],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd58",
@@ -2900,7 +2909,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd59",
@@ -2917,7 +2926,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd60",
@@ -2932,7 +2941,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd61",
@@ -2949,7 +2958,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd62",
@@ -2964,7 +2973,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd63",
@@ -2979,7 +2988,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd64",
@@ -2994,7 +3003,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd65",
@@ -3012,7 +3021,7 @@
     "SD65-07"
    ],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd66",
@@ -3027,7 +3036,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd67",
@@ -3042,7 +3051,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd68",
@@ -3057,7 +3066,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd69",
@@ -3072,7 +3081,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd70",
@@ -3087,7 +3096,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd71",
@@ -3102,7 +3111,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sd72",
@@ -3117,7 +3126,8 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Epílogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sm01",
@@ -3134,7 +3144,8 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado só no catálogo geral",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7)."
   },
   {
    "codigo": "sm02",
@@ -3149,7 +3160,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sm03",
@@ -3168,7 +3179,7 @@
     "SM03-11"
    ],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sm04",
@@ -3187,7 +3198,7 @@
     "SM04-02"
    ],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sm05",
@@ -3202,7 +3213,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sm06",
@@ -3217,7 +3228,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sm07",
@@ -3232,7 +3243,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sf01",
@@ -3249,7 +3260,7 @@
    ],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada-com-ressalvas",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sf02",
@@ -3264,7 +3275,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sf03",
@@ -3281,7 +3292,7 @@
     "SF03-15"
    ],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sf04",
@@ -3296,7 +3307,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sf05",
@@ -3311,7 +3322,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   },
   {
    "codigo": "sf06",
@@ -3326,7 +3337,7 @@
    "traducoes_proprias": [],
    "duvidas_e_variantes": [],
    "estado_final": "finalizada",
-   "estado": "não publicado"
+   "estado": "publicado"
   }
  ]
 }

@@ -99,10 +99,26 @@
   },
   "etapa_2": {
    "nome": "Distribuição no calendário",
-   "estado": "em preparação (prévia; nada publicado)",
+   "estado": "concluída e publicada (28/11/2026)",
    "autorizada_em": "2026-11-28",
    "decisoes": "D1–D8 do responsável (28/11/2026), registradas em dados/homilias/antonio/distribuicao.json (decisoes) e aplicadas na distribuição; auditoria: https://claude.ai/artifact/8Ne4wL99JBNg4GN2kNMHfS",
-   "pendente": "aprovação expressa do responsável para publicar (as 85 entradas do índice estão com estado “previa”); D8 (índice das leituras, 30ª semana do Tempo Comum, ano I) interrompida até a conferência numa fonte litúrgica"
+   "publicada_em": "2026-11-28",
+   "aprovacao": "Aprovação expressa do responsável (“Pode publicar”), depois de examinar o resultado, as datas dos ciclos A, B e C e as telas do site.",
+   "pendente": "D8 (índice das leituras, 30ª semana do Tempo Comum, ano I) interrompida até a conferência numa fonte litúrgica; não faz parte da publicação.",
+   "atualizacoes": [
+    {
+     "data": "2026-11-28",
+     "campo": "estado",
+     "antes": "em preparação (prévia; nada publicado)",
+     "motivo": "Publicação aprovada pelo responsável."
+    },
+    {
+     "data": "2026-11-28",
+     "campo": "pendente",
+     "antes": "aprovação expressa do responsável para publicar (as 85 entradas do índice estão com estado “previa”); D8 (índice das leituras, 30ª semana do Tempo Comum, ano I) interrompida até a conferência numa fonte litúrgica",
+     "motivo": "A aprovação para publicar foi dada; resta só a D8."
+    }
+   ]
   }
  },
  "historico": [
@@ -159,6 +175,12 @@
    "origem": "Etapa 2: decisões D1–D8 e implementação controlada",
    "decisao": "O responsável aprovou as oito decisões da auditoria das correspondências (D1 critérios aplicados ao trecho comentado; D2 trechos reduzidos e sermões sem Evangelho comentado; D3 sd59 só no 3º Domingo do Advento, Ano C, pela 2ª leitura; D4a Purificação e Apresentação do Senhor, com a redação pedida; D4b sd66 só por correspondência bíblica em 1º de janeiro; D4c São Filipe e São Tiago, com a sequência 1º/5, 11/5 e 3/5; D5 vários sermões no mesmo dia; D6 domingos do Advento e da Quaresma só pela leitura proclamada; D7 onze itens só no catálogo; D8 correção independente do índice das leituras, condicionada à conferência numa fonte litúrgica) e autorizou a implementação técnica, sem publicação.",
    "alteracoes": "Criados dados/homilias/antonio/distribuicao.json (85 itens; 25 correspondências litúrgicas, 150 bíblicas e 100 recusas, com fundamento) e dados/homilias/antonio/DISTRIBUICAO.md (gerado). As 85 entradas do índice do site foram geradas com estado “previa”: o site não as mostra sem a prévia. D8 interrompida: a troca foi confirmada nos arquivos atuais, mas nenhuma fonte litúrgica externa pôde ser consultada; o índice das leituras não foi alterado. Nenhum texto dos sermões mudou (recebida e revisada intactas); nenhuma decisão da Etapa 1 foi alterada."
+  },
+  {
+   "data": "2026-11-28",
+   "origem": "Etapa 2: publicação aprovada",
+   "decisao": "Depois de examinar o resultado da implementação, as datas dos ciclos A, B e C e as telas do site em prévia, o responsável aprovou expressamente a publicação (“Pode publicar”). A D8 (correção do índice das leituras, 30ª semana do Tempo Comum, ano I) continua interrompida e fica fora da publicação.",
+   "alteracoes": "distribuicao.json: estado_da_publicacao de “previa” para “publicada”, com o campo publicacao (data, aprovação, o que fica de fora). As 85 entradas de Santo Antônio no índice do site passam ao estado “publicada”: aparecem nos dias do calendário e no catálogo geral sem a prévia. etapas.etapa_2: estado “concluída e publicada”, publicada_em e aprovacao; o campo pendente fica só com a D8 (os textos anteriores ficam em atualizacoes). Publicadas também a nota histórica do sm03 e do sm07 (Anunciação), apontada no relatório da implementação, e as correções de apresentação feitas depois da conferência das telas (rótulos dos dias no catálogo, seção Fonte). Nenhum texto dos sermões mudou (recebida e revisada intactas); nenhuma decisão da Etapa 1 foi alterada; o índice das leituras não foi alterado."
   }
  ],
  "registros": [

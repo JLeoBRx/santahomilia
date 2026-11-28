@@ -167,10 +167,11 @@ preferível a uma associação incorreta.
   edição crítica de 1979 (Etapa 1). A distribuição no calendário (Etapa 2)
   está em `antonio/distribuicao.json`, com o relatório em
   `antonio/DISTRIBUICAO.md`; as entradas do índice são geradas pelo mesmo
-  script de São Gregório e ficam com estado `previa` (não aparecem no site
-  sem a prévia, `?previa`) até a aprovação do responsável. Ainda não há
-  sermão publicado; o modo de trabalhar está em `antonio/LEIA-ME.md` e as
-  decisões em `antonio/AUDITORIA.md`.
+  script de São Gregório. Publicados em 28/11/2026, com a aprovação expressa
+  do responsável: 74 sermões aparecem nos dias do calendário e 11 só no
+  catálogo geral. O modo de trabalhar está em `antonio/LEIA-ME.md` e as
+  decisões em `antonio/AUDITORIA.md`. (O estado `previa` continua existindo
+  para preparar outros textos: entradas com ele só aparecem com `?previa`.)
 
 ## Áudio
 

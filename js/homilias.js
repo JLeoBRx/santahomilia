@@ -32,6 +32,8 @@ let previa = false;
 export function definirPrevia(v) { previa = !!v; }
 export const emPrevia = () => previa;
 export const visivel = (h) => h.estado === 'publicada' || (previa && h.estado === 'previa');
+/** Há alguma entrada em prévia (preparada e ainda não publicada)? */
+export const temPrevia = () => (indice?.homilias || []).some((h) => h.estado === 'previa');
 
 export async function iniciar() {
   if (indice) return indice;

@@ -117,7 +117,8 @@ describe('Homilias: nenhuma alteração silenciosa', () => {
 });
 
 // ------------------------------------------------------------------------
-const PUBLICADAS = INDICE.homilias.filter((h) => h.estado === 'publicada');
+// As homilias de São Gregório publicadas (Santo Antônio tem os seus testes em antonio-distribuicao.test.mjs).
+const PUBLICADAS = INDICE.homilias.filter((h) => h.obra === 'gregorio-homiliae-in-evangelia' && h.estado === 'publicada');
 const evangelhoDoArquivo = (chave, leitura) => (LDI.conjuntos[chave] || []).flat().filter(([secao, ref]) => secao === leitura && ref).map(([, ref]) => ref);
 
 describe('Homilias: dados publicados e correspondências', () => {
@@ -188,6 +189,7 @@ describe('Homilias: dias em que aparecem (2025–2045)', () => {
       const res = LD.resolver(dia, op);
       for (const { homilia: h, motivos } of HM.homiliasDoDia(res)) {
         assert.ok(motivos.length, 'homilia sem motivo');
+        if (h.obra !== 'gregorio-homiliae-in-evangelia') continue; // Santo Antônio: antonio-distribuicao.test.mjs
         aparicoes.get(h.id).push({ iso, op, motivos: motivos.map((m) => m.tipo), chave: res.chave });
       }
     }
@@ -255,7 +257,7 @@ describe('Homilias: dias em que aparecem (2025–2045)', () => {
     });
   }
   test('datas conferidas à mão (2026–2027)', () => {
-    const em = (iso, op = null) => HM.homiliasDoDia(LD.resolver(cal.dia(iso), op)).map((x) => x.homilia.numero).sort((a, b) => a - b);
+    const em = (iso, op = null) => HM.homiliasDoDia(LD.resolver(cal.dia(iso), op)).filter((x) => x.homilia.obra === 'gregorio-homiliae-in-evangelia').map((x) => x.homilia.numero).sort((a, b) => a - b);
     assert.deepEqual(em('2026-11-27'), [1]);                // sexta-feira da 34ª semana do Tempo Comum
     assert.deepEqual(em('2027-01-21'), [11, 12]);           // Santa Inês (quinta-feira)
     assert.deepEqual(em('2027-01-20'), []);                 // 20/1 sem escolher memória
@@ -319,7 +321,10 @@ describe('Homilias: dias em que aparecem (2025–2045)', () => {
     assert.ok(!dias('gregorio-hom-05').includes('2031-11-30'));
   });
   test('dia sem correspondência: nenhuma homilia', () => {
-    assert.deepEqual(HM.homiliasDoDia(LD.resolver(cal.dia('2026-11-06'), null)), []);
+    // 6/11/2026: nenhuma de São Gregório (Santo Antônio tem o sd37, pela leitura: Lc 16,1-8)
+    assert.deepEqual(HM.homiliasDoDia(LD.resolver(cal.dia('2026-11-06'), null)).filter((x) => x.homilia.obra === 'gregorio-homiliae-in-evangelia'), []);
+    // 7/11/2026 (sábado da 31ª semana, Lc 16,9-15): nenhuma homilia de nenhum autor
+    assert.deepEqual(HM.homiliasDoDia(LD.resolver(cal.dia('2026-11-07'), null)), []);
   });
 });
 
@@ -405,7 +410,7 @@ describe('Homilias: Etapa 1 (latim, revisão final e tradução própria)', () =
     // nenhuma sugestão ou dúvida ficou sem decisão
     assert.deepEqual(ids((r) => ['sugestao', 'duvida'].includes(r.tipo) && !r.decisao), []);
     // C2: a frase da Homilia XXVI continua no texto e a nota editorial está no índice
-    const h26 = INDICE.homilias.find((h) => h.numero === 26);
+    const h26 = INDICE.homilias.find((h) => h.obra === 'gregorio-homiliae-in-evangelia' && h.numero === 26);
     assert.ok(h26.notas_editoriais?.some((n) => n.registro === 'G26-08' && /Migne/.test(n.texto) && /CCSL 141/.test(n.texto)));
     assert.ok(fs.readFileSync(path.join(G, 'revisada', 'homilia-26.txt'), 'utf8').includes('Isto é: assim como o Pai, Deus, enviou a mim, Deus'));
   });

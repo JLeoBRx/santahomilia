@@ -7,12 +7,18 @@
   "liturgicas: o sermão foi pregado para esta celebração, e a mesma celebração existe no calendário do site ('celebracao' = id do santoral); fundamento (título da edição crítica), descricao (mostrada no site) e observacao_historica (quando a celebração mudou de título, de acento ou de data: D4).",
   "biblicas: o dia proclama a leitura que o sermão comenta ('leituras' = chave de dados/leituras/indice.json). Referência do dia, versículos em comum, percentuais e critério são calculados pelo script e registrados em DISTRIBUICAO.md. Toda correspondência bíblica é mostrada como tal: nunca como se o sermão tivesse sido pregado para aquele dia.",
   "nao_usadas: correspondências examinadas e recusadas (ocasião antiga, paralela, parcial, fora do calendário), com o motivo. Nada aqui aparece no site.",
-  "situacao: 'calendario' ou 'catalogo' (com motivo_catalogo). estado_da_publicacao: 'previa' enquanto o responsável não aprovar a publicação; as entradas geradas no índice ficam com estado 'previa' e o site não as mostra."
+  "situacao: 'calendario' ou 'catalogo' (com motivo_catalogo). estado_da_publicacao: 'previa' enquanto o responsável não aprova a publicação (as entradas do índice ficam com estado 'previa' e o site só as mostra com ?previa); 'publicada' depois da aprovação expressa, registrada em publicacao."
  ],
  "etapa": "Etapa 2 — distribuição no calendário",
  "data": "2026-11-28",
  "auditoria": "https://claude.ai/artifact/8Ne4wL99JBNg4GN2kNMHfS",
- "estado_da_publicacao": "previa",
+ "estado_da_publicacao": "publicada",
+ "publicacao": {
+  "data": "2026-11-28",
+  "aprovacao": "Aprovação expressa do responsável (“Pode publicar”, 28/11/2026), depois de examinar o resultado da implementação, as datas dos ciclos A, B e C e as telas do site em prévia.",
+  "fora_da_publicacao": "D8 (correção do índice das leituras, sexta e sábado da 30ª semana do Tempo Comum, ano I) continua interrompida até a conferência numa fonte litúrgica; o índice das leituras não foi alterado.",
+  "estado_anterior": "previa (de 28/11/2026 até a aprovação)"
+ },
  "criterios": {
   "liturgica": "O sermão foi pregado para uma celebração, segundo o título da edição crítica (Centro Studi Antoniani, 1979), e a mesma celebração existe hoje no calendário do site: a mesma festa ou solenidade. Celebrações antigas não são convertidas em atuais: os domingos que não existem mais (Septuagésima, depois de Pentecostes, depois da Epifania, depois da Páscoa) e os domingos numerados do Advento e da Quaresma entram só pela leitura (D1, D6). Quando a celebração mudou de título, de acento ou de data, a observação histórica é registrada e mostrada (D4).",
   "biblica_plena": {

@@ -4833,4 +4833,14 @@ Em cada caso abaixo, o português não segue o texto crítico, mas segue uma lei
 | São Gregório Magno | Homilia XXXI (Lc 13,6-13) | publicada só no catálogo geral, sem data litúrgica: A passagem comentada (Lc 13,6-13) junta a parábola da figueira estéril e a cura da mulher curvada; o lecionário atual lê as duas em dias diferentes, e nenhum deles cobre a maior parte do que a homilia comenta. |
 | São Gregório Magno | Homilia XXXII (Lc 9,23-27) | publicada só no catálogo geral, sem data litúrgica: Os santos do dia em que foi pregada não estão no calendário atual, e a única leitura de Lucas que coincide com a passagem (quinta-feira depois das Cinzas, Lc 9,22-25) fica abaixo do critério de correspondência plena. |
 | São João Maria Vianney | todos os sermões | sem tradução portuguesa; edição de origem e autoria a investigar |
-| Santo Antônio de Pádua | todos os sermões | colacionados com o latim (Etapa 1 concluída); aguardam a distribuição no calendário (Etapa 2) |
+| Santo Antônio de Pádua | Prólogo (sd01) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Domingo da Septuagésima (sd02) | publicado só no catálogo geral, sem data litúrgica: O sermão comenta o Gênesis; a Septuagésima não existe mais e a parábola do seu Evangelho só serve de moldura (decisão D7). |
+| Santo Antônio de Pádua | Prólogo (sd27) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Prólogo (sd36) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Prólogo (sd41) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Prólogo (sd46) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Domingo XVIII depois de Pentecostes (sd48) | publicado só no catálogo geral, sem data litúrgica: O trecho comentado (Mt 22,41-46) não é lido no lecionário atual; o grande mandamento (Mt 22,34-40), lido em outros dias, não é comentado (decisão D7). |
+| Santo Antônio de Pádua | Prólogo (sd51) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Prólogo (sd56) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Epílogo (sd72) | publicado só no catálogo geral, sem data litúrgica: Epílogo da coleção: não foi pregado para um dia do calendário (decisão D7). |
+| Santo Antônio de Pádua | Prólogo aos Quatro Sermões para as Festas da Bem-aventurada Virgem Maria (sm01) | publicado só no catálogo geral, sem data litúrgica: Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7). |

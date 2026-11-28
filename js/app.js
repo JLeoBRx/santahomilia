@@ -141,9 +141,9 @@ function blocoLeituras(res, chaveAtual) {
 }
 
 // ------------------------------------------------------------- homilias dos santos
-/** Faixa mostrada só na prévia (endereço com ?previa): nada do que ela revela está publicado. */
-const faixaPrevia = () => (HM.emPrevia()
-  ? `<div class="faixa-previa" role="note">${ICONE_INFO}<span><strong>Prévia.</strong> Os sermões de Santo Antônio ainda não estão publicados; esta visualização serve só para conferência.</span></div>`
+/** Faixa mostrada só na prévia (endereço com ?previa) e só se houver algo em prévia: o que vem marcado como prévia não está publicado. */
+const faixaPrevia = () => (HM.emPrevia() && HM.temPrevia()
+  ? `<div class="faixa-previa" role="note">${ICONE_INFO}<span><strong>Prévia.</strong> Os textos marcados como prévia ainda não estão publicados; esta visualização serve só para conferência.</span></div>`
   : '');
 const seloPrevia = (h) => (h.estado === 'previa' ? '<span class="selo-previa">prévia · não publicado</span>' : '');
 function itemMotivo(m, h) {
@@ -379,7 +379,6 @@ function telaCatalogoHomilias() {
     <section class="catalogo-obra">
       <h2>Em preparação</h2>
       <ul class="catalogo-lista catalogo-preparacao">
-        <li><p><strong>Santo Antônio de Pádua</strong> — Sermões dominicais e festivos (tradução do Lírio Católico, conferida com o latim).</p></li>
         <li><p><strong>São João Maria Vianney</strong> — Sermões do Cura d’Ars (edição francesa de 1883; ainda sem tradução).</p></li>
       </ul>
     </section>
@@ -468,7 +467,7 @@ function telaSobre() {
     <p><strong>As leituras não são reproduzidas aqui.</strong> O site indica só a referência de cada leitura (livro, capítulo e versículos). Para ler os textos, abra a <a href="${LT.LINK_CNBB}" target="_blank" rel="noopener noreferrer">Liturgia Diária da CNBB</a>.</p>
     <h2>Créditos e procedência dos textos</h2>
     <p><strong>Homilias de São Gregório Magno</strong><br>A tradução portuguesa das <em>Homilias sobre os Evangelhos</em> foi obtida no portal OpenSaints, que indica como base o texto latino da edição de Migne (<em>Patrologia Latina</em>, vol. 76). O tradutor não é identificado. O projeto conferiu essa tradução, homilia por homilia, com o latim de Migne e com a edição crítica de R. Étaix (<em>Corpus Christianorum, Series Latina</em> 141, Brepols, 1999), e corrigiu os erros encontrados. Dois trechos que faltavam na tradução recebida foram traduzidos do latim pelo projeto. Cada correção e cada trecho traduzido estão registrados com o texto latino e a justificativa; a tradução recebida é conservada, sem alteração, nos arquivos do projeto.</p>
-    <p><strong>Sermões de Santo Antônio de Pádua</strong> (em preparação; ainda não publicados)<br>A tradução de base é a do Lírio Católico (liriocatolico.com.br), creditada a ele, conferida com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979) e revisada pelo projeto. Os trechos traduzidos diretamente do latim pelo projeto são identificados um a um.</p>
+    <p><strong>Sermões de Santo Antônio de Pádua</strong><br>A tradução de base é a do Lírio Católico (liriocatolico.com.br), creditada a ele, conferida com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979) e revisada pelo projeto. Os trechos traduzidos diretamente do latim pelo projeto são identificados um a um.</p>
     <p><strong>Sermões de São João Maria Vianney</strong> (em preparação)<br>Ainda não há tradução portuguesa. O projeto dispõe da edição francesa em quatro tomos (Paris: Victor Lecoffre; Lyon: Librairie chrétienne, 1883), na cópia digitalizada pela Bibliothèque Saint Libère.</p>
     <p><strong>Calendário e referências das leituras</strong><br>O calendário é calculado pelo próprio site. As referências bíblicas das leituras são só a indicação de qual é cada leitura; nenhum texto litúrgico (leituras, refrões, orações) é reproduzido.</p>
     <p><strong>Uso de inteligência artificial</strong><br>O projeto usa inteligência artificial na organização dos textos, no cálculo do calendário, na conferência das traduções com o latim e nas traduções feitas pelo projeto. Os critérios e as decisões editoriais são do responsável pelo projeto.</p>

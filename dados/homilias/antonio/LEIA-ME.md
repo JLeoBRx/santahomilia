@@ -16,15 +16,17 @@ e comparadas com a tradução da Vozes, sem nenhum afastamento do latim em
 comum, mas não passaram por revisor humano independente, por falta de
 recursos. A ressalva está em `etapas.etapa_1` do registro.
 
-**Etapa 2 (distribuição no calendário): preparada em prévia, não publicada.**
+**Etapa 2 (distribuição no calendário): publicada em 28/11/2026.**
 Em 28/11/2026 o responsável aprovou as decisões D1–D8 da auditoria das
-correspondências e autorizou só a implementação técnica. As decisões e a
-distribuição dos 85 itens estão em `distribuicao.json`; o relatório gerado
-está em `DISTRIBUICAO.md`. As entradas do índice do site têm estado
-`previa`: o site não as mostra, a não ser com a prévia ligada (endereço do
-site com `?previa`), para conferência. Publicar exige a aprovação expressa do
-responsável: então `estado_da_publicacao` passa a `publicada` e o script é
-rodado de novo.
+correspondências e autorizou a implementação técnica, preparada primeiro em
+prévia (entradas do índice com estado `previa`, visíveis só com `?previa`).
+Depois de examinar o resultado, as datas dos ciclos A, B e C e as telas do
+site, aprovou expressamente a publicação: `estado_da_publicacao` passou a
+`publicada` (com o registro em `publicacao`) e o script foi rodado de novo.
+As decisões e a distribuição dos 85 itens estão em `distribuicao.json`; o
+relatório gerado está em `DISTRIBUICAO.md`. A D8 (correção do índice das
+leituras, 30ª semana do Tempo Comum, ano I) continua interrompida até a
+conferência numa fonte litúrgica.
 
 ## Fontes e crédito
 

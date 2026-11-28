@@ -14,7 +14,7 @@ leituras não são reproduzidas aqui**: para lê-las, o site indica a
 | Parte | Onde | Situação |
 |---|---|---|
 | Homilias de São Gregório Magno (*Homilias sobre os Evangelhos*) | `dados/homilias/gregorio-magno/` | 40 homilias conferidas com o latim; 37 no calendário, 3 só no catálogo |
-| Sermões de Santo Antônio de Pádua | `dados/homilias/antonio/` | 85 itens conferidos com o latim (Etapa 1 encerrada em 27/11/2026, com ressalva: as dez traduções próprias não passaram por revisor humano independente); distribuição no calendário preparada em prévia (Etapa 2); ainda não publicados no site |
+| Sermões de Santo Antônio de Pádua | `dados/homilias/antonio/` | 85 itens conferidos com o latim (Etapa 1 encerrada em 27/11/2026, com ressalva: as dez traduções próprias não passaram por revisor humano independente); distribuição no calendário (Etapa 2) publicada em 28/11/2026: 74 nos dias do calendário e 11 só no catálogo geral |
 | Sermões de São João Maria Vianney | `dados/homilias/vianney/` e os PDFs da edição francesa | em preparação; sem tradução portuguesa |
 | Calendário litúrgico do Brasil | `js/liturgical-calendar.js`, `dados/calendario/santoral.json` | calculado pelo próprio site |
 | Referências das leituras da Missa | `dados/leituras/indice.json` | só a indicação bíblica de cada leitura |

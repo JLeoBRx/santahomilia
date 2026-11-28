@@ -61,7 +61,7 @@ export function gerar() {
   const LDI = ler('dados/leituras/indice.json');
   const SAN = ler('dados/calendario/santoral.json');
   const evangelhos = evangelhosDoLecionario(LDI);
-  const publicadas = new Map(IND.homilias.filter((h) => h.estado === 'publicada').map((h) => [h.numero, h]));
+  const publicadas = new Map(IND.homilias.filter((h) => h.obra === 'gregorio-homiliae-in-evangelia' && h.estado === 'publicada').map((h) => [h.numero, h]));
   const colacao = new Set(REG.colacao.map((c) => c.homilia));
   const rubrica = (n) => {
     const t = fs.readFileSync(path.join(RAIZ, 'dados', 'homilias', 'gregorio-magno', 'revisada', `homilia-${String(n).padStart(2, '0')}.txt`), 'utf8');
@@ -87,6 +87,7 @@ export function gerar() {
   const vianney = VIA.sermoes.map((s) => ({ tomo: s.tomo, pagina: s.pagina, ocasiao: s.ocasiao, titulo: s.titulo, ocasiao_atual_provavel: ocasiaoAtual(VIANNEY_OCASIOES, s.ocasiao), estado: 'não publicado' }));
   const antonio = ACAT.itens.map((it) => {
     const c = AREG.colacao.find((x) => x.sermao === it.codigo);
+    const e = IND.homilias.find((h) => h.id === `antonio-${it.codigo}`);
     const rs = AREG.registros.filter((r) => r.sermao === it.codigo);
     return {
       codigo: it.codigo, ordem: it.ordem, colecao: it.colecao, tipo: it.tipo, titulo: it.titulo, titulo_latino: it.titulo_latino,
@@ -94,14 +95,16 @@ export function gerar() {
       correcoes_aplicadas: rs.filter((r) => r.tipo === 'correcao' && r.estado === 'aplicada').length,
       traducoes_proprias: rs.filter((r) => r.tipo === 'traducao-propria').map((r) => r.id),
       duvidas_e_variantes: rs.filter((r) => r.tipo === 'duvida' || r.tipo === 'variante').map((r) => r.id),
-      estado_final: c ? c.estado_final : null, estado: 'não publicado',
+      estado_final: c ? c.estado_final : null,
+      estado: e?.estado === 'publicada' ? (e.situacao === 'catalogo' ? 'publicado só no catálogo geral' : 'publicado') : 'não publicado',
+      ...(e?.estado === 'publicada' && e.situacao === 'catalogo' ? { motivo_catalogo: e.motivo_catalogo } : {}),
     };
   });
   const inventario = {
     _leia: ['Gerado por ferramentas/homilias/gerar_documentos.mjs — não editar à mão.', 'As correspondências "candidatas" e "prováveis" NÃO estão no site: foram calculadas para orientar o trabalho e precisam de verificação antes de qualquer publicação.', 'A distribuição das homilias de São Gregório no calendário (Etapa 2) está em gregorio-magno/distribuicao.json e DISTRIBUICAO.md.'],
     gregorio_magno: gregorio, joao_maria_vianney: vianney, antonio_de_padua: antonio,
   };
-  return { inventario, inventarioMd: inventarioMd(inventario, REG), auditoriaMd: auditoriaMd(REG, IND, gregorio), auditoriaAntonioMd: auditoriaAntonioMd(AREG, ACAT) };
+  return { inventario, inventarioMd: inventarioMd(inventario, REG), auditoriaMd: auditoriaMd(REG, IND, gregorio, antonio), auditoriaAntonioMd: auditoriaAntonioMd(AREG, ACAT) };
 }
 
 // ---------------------------------------------------------------- INVENTARIO.md
@@ -159,7 +162,8 @@ function inventarioMd(inv, REG) {
   L.push('| Tomo, p. | Ocasião (como no texto) | Título | Ocasião atual provável (não verificada) |', '|---|---|---|---|');
   for (const s of inv.joao_maria_vianney) L.push(`| ${s.tomo}, ${s.pagina} | ${md(s.ocasiao)} | ${md(s.titulo)} | ${md(s.ocasiao_atual_provavel || '— (domingo do calendário antigo ou tema; sem correspondência definida)')} |`);
   L.push('', '## Santo Antônio de Pádua — Sermones dominicales et festivi', '');
-  L.push('Nenhum sermão está publicado. Os 85 itens (72 dominicais, com 7 prólogos e o epílogo; 7 marianos, com o prólogo; 6 festivos) foram colacionados por inteiro com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979). O texto de base é a tradução do Lírio Católico, creditada a ele; as decisões de cada passagem estão em `antonio/AUDITORIA.md` e o modo de trabalhar em `antonio/LEIA-ME.md`. A distribuição no calendário é a Etapa 2.', '');
+  const antPub = ant.filter((s) => s.estado.startsWith('publicado'));
+  L.push(`${antPub.length ? `${antPub.length === ant.length ? 'Todos os' : antPub.length} sermões publicados (${antPub.filter((s) => s.estado === 'publicado').length} nos dias do calendário, ${antPub.filter((s) => s.estado !== 'publicado').length} só no catálogo geral; distribuição em \`antonio/DISTRIBUICAO.md\`).` : 'Nenhum sermão está publicado.'} Os 85 itens (72 dominicais, com 7 prólogos e o epílogo; 7 marianos, com o prólogo; 6 festivos) foram colacionados por inteiro com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979). O texto de base é a tradução do Lírio Católico, creditada a ele; as decisões de cada passagem estão em \`antonio/AUDITORIA.md\` e o modo de trabalhar em \`antonio/LEIA-ME.md\`. A distribuição no calendário é a Etapa 2.`, '');
   L.push('| Nº | Código | Título | Coleção | Colação | Correções aplicadas | Tradução própria | Dúvidas e variantes | Estado final |', '|---|---|---|---|---|---|---|---|---|');
   for (const s of ant) L.push(`| ${s.ordem} | ${s.codigo} | ${md(s.titulo)} | ${s.colecao.replace('Sermões ', '')}${s.tipo !== 'sermao' ? ` (${s.tipo === 'prologo' ? 'prólogo' : 'epílogo'})` : ''} | ${s.colacao_com_o_latim === 'integral' ? `integral${s.paragrafos_conferidos ? `, ${s.paragrafos_conferidos} §§` : ''}` : '—'} | ${s.correcoes_aplicadas} | ${s.traducoes_proprias.join(', ') || '—'} | ${s.duvidas_e_variantes.join(', ') || '—'} | ${s.estado_final === 'finalizada-com-ressalvas' ? 'finalizada com ressalvas' : s.estado_final || '—'} |`);
   L.push('');
@@ -184,7 +188,7 @@ function entrada(r) {
   L.push(`- **Grau de segurança:** ${r.confianca} · **estado:** ${ESTADO[r.estado]}`, '');
   return L.join('\n');
 }
-function auditoriaMd(REG, IND, gregorio) {
+function auditoriaMd(REG, IND, gregorio, antonio) {
   const R = REG.registros;
   const grupo = (f) => R.filter(f).sort((a, b) => a.homilia - b.homilia || a.bloco - b.bloco || a.id.localeCompare(b.id));
   const aplic = grupo((r) => r.estado === 'aplicada');
@@ -252,7 +256,10 @@ function auditoriaMd(REG, IND, gregorio) {
   for (const h of gregorio.filter((x) => x.estado !== 'publicada')) L.push(`| São Gregório Magno | ${h.titulo} (${h.pericope}) | colacionada (estado: ${h.estado_final === 'finalizada-com-ressalvas' ? 'finalizada com ressalvas' : h.estado_final}); não publicada |`);
   for (const h of gregorio.filter((x) => x.situacao === 'catalogo')) L.push(`| São Gregório Magno | ${h.titulo} (${h.pericope}) | publicada só no catálogo geral, sem data litúrgica: ${md(h.motivo_catalogo)} |`);
   L.push('| São João Maria Vianney | todos os sermões | sem tradução portuguesa; edição de origem e autoria a investigar |');
-  L.push('| Santo Antônio de Pádua | todos os sermões | colacionados com o latim (Etapa 1 concluída); aguardam a distribuição no calendário (Etapa 2) |', '');
+  const antNaoPub = antonio.filter((x) => !x.estado.startsWith('publicado'));
+  if (antNaoPub.length) L.push(`| Santo Antônio de Pádua | ${antNaoPub.length === antonio.length ? 'todos os sermões' : antNaoPub.map((x) => x.codigo).join(', ')} | colacionados com o latim (Etapa 1 concluída); não publicados |`);
+  for (const x of antonio.filter((y) => y.estado === 'publicado só no catálogo geral')) L.push(`| Santo Antônio de Pádua | ${x.titulo} (${x.codigo}) | publicado só no catálogo geral, sem data litúrgica: ${md(x.motivo_catalogo)} |`);
+  L.push('');
   return L.join('\n');
 }
 

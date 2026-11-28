@@ -2,7 +2,7 @@
 
 > Gerado por `ferramentas/homilias/aplicar_distribuicao.mjs` a partir de `dados/homilias/antonio/distribuicao.json`. Não edite à mão: altere as decisões no arquivo de distribuição e rode o script.
 
-> **Estado: PRÉVIA, não publicado.** As entradas do índice têm estado “previa”: o site não as mostra; só aparecem com a prévia ligada (endereço com ?previa), para a conferência do responsável. A publicação depende da sua aprovação expressa.
+> **Estado: publicado em 28/11/2026.** Aprovação expressa do responsável (“Pode publicar”, 28/11/2026), depois de examinar o resultado da implementação, as datas dos ciclos A, B e C e as telas do site em prévia. D8 (correção do índice das leituras, sexta e sábado da 30ª semana do Tempo Comum, ano I) continua interrompida até a conferência numa fonte litúrgica; o índice das leituras não foi alterado.
 
 Auditoria que fundamenta esta distribuição: https://claude.ai/artifact/8Ne4wL99JBNg4GN2kNMHfS
 
@@ -449,7 +449,7 @@ Nos três anos litúrgicos calculados. A página do dia mostra todos: primeiro o
 
 ## Datas nos anos litúrgicos 2026–2027 (Ano B), 2027–2028 (Ano C), 2028–2029 (Ano A)
 
-Calculadas pelo próprio mecanismo do site, com a prévia ligada.
+Calculadas pelo próprio mecanismo do site.
 
 - **sd01 · Prólogo:** nenhuma (catálogo geral).
 - **sd02 · Domingo da Septuagésima:** nenhuma (catálogo geral).

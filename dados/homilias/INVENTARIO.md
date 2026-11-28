@@ -216,7 +216,7 @@ Nenhum sermão foi inserido. Motivos: (1) não foi enviada tradução portuguesa
 
 ## Santo Antônio de Pádua — Sermones dominicales et festivi
 
-Nenhum sermão está publicado. Os 85 itens (72 dominicais, com 7 prólogos e o epílogo; 7 marianos, com o prólogo; 6 festivos) foram colacionados por inteiro com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979). O texto de base é a tradução do Lírio Católico, creditada a ele; as decisões de cada passagem estão em `antonio/AUDITORIA.md` e o modo de trabalhar em `antonio/LEIA-ME.md`. A distribuição no calendário é a Etapa 2.
+Todos os sermões publicados (74 nos dias do calendário, 11 só no catálogo geral; distribuição em `antonio/DISTRIBUICAO.md`). Os 85 itens (72 dominicais, com 7 prólogos e o epílogo; 7 marianos, com o prólogo; 6 festivos) foram colacionados por inteiro com o latim da edição crítica (Centro Studi Antoniani, Pádua, 1979). O texto de base é a tradução do Lírio Católico, creditada a ele; as decisões de cada passagem estão em `antonio/AUDITORIA.md` e o modo de trabalhar em `antonio/LEIA-ME.md`. A distribuição no calendário é a Etapa 2.
 
 | Nº | Código | Título | Coleção | Colação | Correções aplicadas | Tradução própria | Dúvidas e variantes | Estado final |
 |---|---|---|---|---|---|---|---|---|

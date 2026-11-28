@@ -476,7 +476,7 @@ function relatorioAntonio(DIST, CAT, indice, calculo, datas, SAN) {
   };
   L.push('# Distribuição dos sermões de Santo Antônio no calendário (Etapa 2)', '');
   L.push('> Gerado por `ferramentas/homilias/aplicar_distribuicao.mjs` a partir de `dados/homilias/antonio/distribuicao.json`. Não edite à mão: altere as decisões no arquivo de distribuição e rode o script.', '');
-  L.push(`> **Estado: ${DIST.estado_da_publicacao === 'publicada' ? 'publicado' : 'PRÉVIA, não publicado.'}** ${DIST.estado_da_publicacao === 'publicada' ? '' : 'As entradas do índice têm estado “previa”: o site não as mostra; só aparecem com a prévia ligada (endereço com ?previa), para a conferência do responsável. A publicação depende da sua aprovação expressa.'}`, '');
+  L.push(`> **Estado: ${DIST.estado_da_publicacao === 'publicada' ? `publicado em ${DIST.publicacao.data.split('-').reverse().join('/')}.` : 'PRÉVIA, não publicado.'}** ${DIST.estado_da_publicacao === 'publicada' ? `${DIST.publicacao.aprovacao} ${DIST.publicacao.fora_da_publicacao}` : 'As entradas do índice têm estado “previa”: o site não as mostra; só aparecem com a prévia ligada (endereço com ?previa), para a conferência do responsável. A publicação depende da sua aprovação expressa.'}`, '');
   L.push(`Auditoria que fundamenta esta distribuição: ${DIST.auditoria}`, '');
   L.push('## Critérios', '');
   const C = DIST.criterios;
@@ -536,7 +536,7 @@ function relatorioAntonio(DIST, CAT, indice, calculo, datas, SAN) {
   }
   const cicloDe = new Map([...datas.values()].flat().map((x) => [x.ano, x.ciclo]));
   const anos = ANOS_LITURGICOS.map((a) => `${a}–${a + 1}${cicloDe.has(a) ? ` (Ano ${cicloDe.get(a)})` : ''}`).join(', ');
-  L.push(`## Datas nos anos litúrgicos ${anos}`, '', 'Calculadas pelo próprio mecanismo do site, com a prévia ligada.', '');
+  L.push(`## Datas nos anos litúrgicos ${anos}`, '', DIST.estado_da_publicacao === 'publicada' ? 'Calculadas pelo próprio mecanismo do site.' : 'Calculadas pelo próprio mecanismo do site, com a prévia ligada.', '');
   for (const h of H) {
     const ds = datas.get(h.id) || [];
     L.push(`- **${h.codigo} · ${h.titulo}:** ${ds.length ? ANOS_LITURGICOS.map((a) => { const l = ds.filter((x) => x.ano === a); return l.length ? `${a}–${a + 1}: ${l.map((x) => `${dataCurta(x.iso)}${x.op ? ` (se escolhida a memória de ${x.op})` : ''}`).join(', ')}` : null; }).filter(Boolean).join('; ') : 'nenhuma (catálogo geral).'}`);

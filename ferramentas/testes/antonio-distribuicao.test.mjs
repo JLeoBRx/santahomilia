@@ -11,8 +11,8 @@
  *    bíblicas todas plenas pelos critérios declarados (D1), na leitura que o
  *    sermão comenta (D3), nunca para os sermões sem trecho comentado (D2) nem
  *    por passagem paralela (D6).
- * 3. Prévia: nenhum sermão aparece no site sem a prévia (nada publicado).
- *    Com a prévia, de 2025 a 2045, cada sermão aparece exatamente nos dias
+ * 3. Publicação (aprovada em 28/11/2026): os 85 itens estão publicados e o
+ *    site os mostra sem a prévia. De 2025 a 2045, cada sermão aparece exatamente nos dias
  *    calculados SÓ com o calendário a partir da lista ESPERADO (escrita à
  *    mão, independente de distribuicao.json), e a ordem do dia põe primeiro
  *    os pregados para a celebração (D5).
@@ -82,8 +82,15 @@ describe('Santo Antônio, Etapa 2: dados e decisões', () => {
     assert.deepEqual(DIST.decisoes.map((d) => d.id), ['D1', 'D2', 'D3', 'D4a', 'D4b', 'D4c', 'D5', 'D6', 'D7', 'D8']);
     for (const d of DIST.decisoes) assert.ok(d.data === '2026-11-28' && d.questao && d.decisao && d.aplicacao, `${d.id} incompleta`);
     assert.match(DIST.decisoes.find((d) => d.id === 'D8').aplicacao, /INTERROMPIDA/);
-    assert.match(REG.etapas.etapa_2.estado, /prévia/);
-    assert.match(REG.etapas.etapa_2.pendente, /aprovação expressa/);
+    // publicada com a aprovação expressa do responsável; os textos anteriores ficam em atualizacoes
+    const e2 = REG.etapas.etapa_2;
+    assert.match(e2.estado, /publicada/);
+    assert.equal(e2.publicada_em, '2026-11-28');
+    assert.match(e2.aprovacao, /Pode publicar/);
+    assert.deepEqual(e2.atualizacoes.map((a) => a.campo), ['estado', 'pendente']);
+    assert.match(e2.atualizacoes[0].antes, /prévia/);
+    assert.match(e2.atualizacoes[1].antes, /aprovação expressa/);
+    assert.ok(REG.historico.some((x) => x.data === '2026-11-28' && /publicação aprovada/.test(x.origem)), 'histórico da publicação');
     const h = REG.historico.find((x) => x.data === '2026-11-28' && /D1–D8/.test(x.origem));
     assert.ok(h && /previa/.test(h.alteracoes) && /D8 interrompida/.test(h.alteracoes), 'histórico da Etapa 2');
     // as decisões da Etapa 1 continuam as mesmas
@@ -233,21 +240,18 @@ describe('Santo Antônio, Etapa 2: correspondências', () => {
   });
 });
 
-describe('Santo Antônio, Etapa 2: prévia (nada publicado) e dias no calendário (2025–2045)', () => {
+describe('Santo Antônio, Etapa 2: publicação e dias no calendário (2025–2045)', () => {
   const DE = 2025, ATE = 2045;
 
-  test('nada publicado: estado “previa” em todos, e o site não mostra nenhum sermão sem a prévia', () => {
-    assert.equal(DIST.estado_da_publicacao, 'previa');
-    assert.deepEqual([...new Set(ANT.map((h) => h.estado))], ['previa']);
+  test('publicado: estado “publicada” em todos, visível sem a prévia, e a publicação registrada', () => {
+    assert.equal(DIST.estado_da_publicacao, 'publicada');
+    assert.equal(DIST.publicacao.data, '2026-11-28');
+    assert.match(DIST.publicacao.aprovacao, /Pode publicar/);
+    assert.deepEqual([...new Set(ANT.map((h) => h.estado))], ['publicada']);
     HM.definirPrevia(false);
-    assert.equal(HM.homilia('antonio-sd50'), null);
-    assert.ok(!HM.publicadas().some((h) => h.obra === 'antonio-sermones'));
-    for (let n = numeroDia(DE, 1, 1); n <= numeroDia(ATE, 12, 31); n++) {
-      const d = cal.dia(isoDeNumero(n));
-      for (const op of [null, ...d.opcoes.map((o) => o.id)]) {
-        assert.ok(!HM.homiliasDoDia(LD.resolver(d, op)).some((x) => x.homilia.obra === 'antonio-sermones'), `${isoDeNumero(n)}: sermão visível sem a prévia`);
-      }
-    }
+    assert.ok(HM.homilia('antonio-sd50'));
+    assert.equal(HM.publicadas().filter((h) => h.obra === 'antonio-sermones').length, 85);
+    assert.equal(HM.temPrevia(), false, 'nada deve ficar em prévia');
   });
 
   // Dias esperados, escritos à mão a partir das decisões (independentes de distribuicao.json):
@@ -306,8 +310,8 @@ describe('Santo Antônio, Etapa 2: prévia (nada publicado) e dias no calendári
     }
     return out;
   }
-  // aparições com a prévia ligada
-  HM.definirPrevia(true);
+  // aparições no site publicado (sem a prévia)
+  HM.definirPrevia(false);
   const aparicoes = new Map(ANT.map((h) => [h.id, new Set()]));
   const ordemDoDia = new Map();
   for (let n = numeroDia(DE, 1, 1); n <= numeroDia(ATE, 12, 31); n++) {
@@ -322,7 +326,7 @@ describe('Santo Antônio, Etapa 2: prévia (nada publicado) e dias no calendári
   HM.definirPrevia(false);
 
   for (const it of CAT.itens) {
-    test(`${it.codigo}: com a prévia, exatamente nos dias calculados pelo calendário`, () => {
+    test(`${it.codigo}: exatamente nos dias calculados pelo calendário`, () => {
       assert.ok(ESPERADO[it.codigo], `defina os dias esperados de ${it.codigo}`);
       const esp = diasDe(ESPERADO[it.codigo]);
       const obs = [...aparicoes.get(`antonio-${it.codigo}`)].sort();
