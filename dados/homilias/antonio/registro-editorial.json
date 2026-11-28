@@ -96,6 +96,13 @@
      "motivo": "O responsável decidiu encerrar a Etapa 1 com uma ressalva transparente, em lugar de aguardar uma revisão independente que o projeto não tem recursos para fazer."
     }
    ]
+  },
+  "etapa_2": {
+   "nome": "Distribuição no calendário",
+   "estado": "em preparação (prévia; nada publicado)",
+   "autorizada_em": "2026-11-28",
+   "decisoes": "D1–D8 do responsável (28/11/2026), registradas em dados/homilias/antonio/distribuicao.json (decisoes) e aplicadas na distribuição; auditoria: https://claude.ai/artifact/8Ne4wL99JBNg4GN2kNMHfS",
+   "pendente": "aprovação expressa do responsável para publicar (as 85 entradas do índice estão com estado “previa”); D8 (índice das leituras, 30ª semana do Tempo Comum, ano I) interrompida até a conferência numa fonte litúrgica"
   }
  },
  "historico": [
@@ -146,6 +153,12 @@
    "origem": "Encerramento da Etapa 1",
    "decisao": "O responsável encerrou a Etapa 1 com ressalva: as dez traduções próprias foram conferidas com o latim, mas não por revisor humano independente, por falta de recursos. Decidiu também manter as seis traduções próprias do grupo 1 (SD19-02, SM04-05, SD33-03, SD50-01, SD59-02 e SM03-06), desde que fiéis ao latim e não cópia direta da Vozes. A condição foi verificada: comparadas com a Vozes já fixadas, não têm nenhum afastamento do latim em comum com ela. Registro de método: vários erros da primeira versão às cegas (feita sem a Vozes) coincidiam com escolhas da Vozes (a omissão de “homem” em “homem rei”, “duas colunas”, “uma só substância”, plurais, artigos, “perfumes”, “enxugará as lágrimas”); foram corrigidos pelo latim em 26/11/2026. Isso mostra que afastamentos pequenos e naturais coincidem sem cópia; só os longos e incomuns servem de indício.",
    "alteracoes": "etapas.etapa_1: o campo pendente deu lugar a ressalva e validacao_final (o texto anterior fica em atualizacoes). Justificativas das seis entradas do grupo 1 com a decisão e a verificação (as anteriores ficam em atualizacoes). Nenhuma tradução mudou; nenhum sermão foi publicado."
+  },
+  {
+   "data": "2026-11-28",
+   "origem": "Etapa 2: decisões D1–D8 e implementação controlada",
+   "decisao": "O responsável aprovou as oito decisões da auditoria das correspondências (D1 critérios aplicados ao trecho comentado; D2 trechos reduzidos e sermões sem Evangelho comentado; D3 sd59 só no 3º Domingo do Advento, Ano C, pela 2ª leitura; D4a Purificação e Apresentação do Senhor, com a redação pedida; D4b sd66 só por correspondência bíblica em 1º de janeiro; D4c São Filipe e São Tiago, com a sequência 1º/5, 11/5 e 3/5; D5 vários sermões no mesmo dia; D6 domingos do Advento e da Quaresma só pela leitura proclamada; D7 onze itens só no catálogo; D8 correção independente do índice das leituras, condicionada à conferência numa fonte litúrgica) e autorizou a implementação técnica, sem publicação.",
+   "alteracoes": "Criados dados/homilias/antonio/distribuicao.json (85 itens; 25 correspondências litúrgicas, 150 bíblicas e 100 recusas, com fundamento) e dados/homilias/antonio/DISTRIBUICAO.md (gerado). As 85 entradas do índice do site foram geradas com estado “previa”: o site não as mostra sem a prévia. D8 interrompida: a troca foi confirmada nos arquivos atuais, mas nenhuma fonte litúrgica externa pôde ser consultada; o índice das leituras não foi alterado. Nenhum texto dos sermões mudou (recebida e revisada intactas); nenhuma decisão da Etapa 1 foi alterada."
   }
  ],
  "registros": [

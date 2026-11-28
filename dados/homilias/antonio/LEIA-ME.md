@@ -14,9 +14,17 @@ traduções próprias do programa de retradução foram conferidas frase a frase
 com o latim (auditoria complementar, revisão corretiva e reavaliação, abaixo)
 e comparadas com a tradução da Vozes, sem nenhum afastamento do latim em
 comum, mas não passaram por revisor humano independente, por falta de
-recursos. A ressalva está em `etapas.etapa_1` do registro. A Etapa 2
-(distribuição no calendário) começa por uma auditoria das correspondências;
-nenhum sermão será publicado sem decisão do responsável.
+recursos. A ressalva está em `etapas.etapa_1` do registro.
+
+**Etapa 2 (distribuição no calendário): preparada em prévia, não publicada.**
+Em 28/11/2026 o responsável aprovou as decisões D1–D8 da auditoria das
+correspondências e autorizou só a implementação técnica. As decisões e a
+distribuição dos 85 itens estão em `distribuicao.json`; o relatório gerado
+está em `DISTRIBUICAO.md`. As entradas do índice do site têm estado
+`previa`: o site não as mostra, a não ser com a prévia ligada (endereço do
+site com `?previa`), para conferência. Publicar exige a aprovação expressa do
+responsável: então `estado_da_publicacao` passa a `publicada` e o script é
+rodado de novo.
 
 ## Fontes e crédito
 
@@ -47,6 +55,8 @@ nenhum sermão será publicado sem decisão do responsável.
 | `revisao-corretiva-2026-11-26.json` | Histórico da revisão corretiva: texto anterior e texto corrigido de cada um dos dez trechos. Só histórico; não é lido pelo site nem pelos scripts |
 | `verificacao-estrutural.json` | Conferência automática da estrutura (seções, parágrafos, lacunas) |
 | `AUDITORIA.md` | Gerado do registro: cada decisão, com o latim e a justificativa |
+| `distribuicao.json` | Etapa 2: em que dias cada sermão aparece e por quê (trecho comentado, correspondências litúrgicas e bíblicas, recusas, decisões D1–D8). Editado à mão |
+| `DISTRIBUICAO.md` | Gerado por `ferramentas/homilias/aplicar_distribuicao.mjs`: critérios, decisões, os 85 itens, a auditoria de cada correspondência e as datas em três anos litúrgicos |
 | `sumario.json` | Títulos da edição da Vozes, usados só no catálogo |
 
 ## Formato dos arquivos de texto

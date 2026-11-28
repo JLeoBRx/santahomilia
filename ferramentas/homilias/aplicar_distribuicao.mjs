@@ -151,8 +151,8 @@ export async function gerarDistribuicao() {
 }
 
 const LEIA_INDICE = [
-  'Homilias dos santos no site. As entradas de São Gregório Magno são GERADAS por ferramentas/homilias/aplicar_distribuicao.mjs a partir de dados/homilias/gregorio-magno/distribuicao.json (decisões e justificativas); não as edite aqui.',
-  "estado: 'publicada' aparece no site; qualquer outro valor (ex.: 'suspensa') esconde a homilia sem apagar nada.",
+  'Homilias dos santos no site. As entradas de São Gregório Magno e de Santo Antônio de Pádua são GERADAS por ferramentas/homilias/aplicar_distribuicao.mjs a partir de dados/homilias/gregorio-magno/distribuicao.json e dados/homilias/antonio/distribuicao.json (decisões e justificativas); não as edite aqui.',
+  "estado: 'publicada' aparece no site; qualquer outro valor (ex.: 'suspensa') esconde a homilia sem apagar nada. 'previa' = preparada e não publicada: só aparece com a prévia ligada (endereço do site com ?previa), para conferência do responsável.",
   'ocasiao_nota: quando o lugar ou o dia da pregação (que a página mostra a partir do título da tradução, que segue Migne) não constam da edição crítica.',
   "situacao: 'calendario' (aparece na página do dia, nos dias das suas correspondências) ou 'catalogo' (só no catálogo geral, #/homilias, sem data litúrgica; motivo_catalogo diz por quê).",
   "correspondencias: 'liturgica' (pregada para esta celebração: 'celebracao' = id da celebração do dia, ou 'chaves' = chaves de leituras do dia do tempo) e 'biblica' (comenta a leitura proclamada: 'leituras' = chave de dados/liturgia-diaria/indice.json, 'leitura' = seção, 'referencia_do_dia' = referência exatamente como no arquivo de leituras, 'versiculos_comentados' = trecho comentado pela homilia que também é lido no dia). 'dia' = nome legível do dia ou da celebração. Correspondência só temática NUNCA entra aqui.",
@@ -295,11 +295,247 @@ function ocasiao(d) {
   return `${lugar}${extra ? ` (Migne: ${extra[1].replace(/\.$/, '')})` : ''}`;
 }
 
+// ================================================================ Santo Antônio de Pádua
+// dados/homilias/antonio/distribuicao.json -> entradas 'antonio-*' do índice e antonio/DISTRIBUICAO.md.
+// Mesmos critérios de São Gregório (D1), aplicados ao trecho que o sermão comenta; a seção
+// comparada é a leitura que o sermão comenta (Evangelho, ou 1ª/2ª leitura: D3).
+export const OBRA_ANTONIO = 'antonio-sermones';
+const AUTOR_ANTONIO = 'antonio-de-padua';
+const idAntonio = (cod) => `antonio-${cod}`;
+const NAO_FOI_PREGADO = 'O sermão não foi pregado para este dia: a ligação é a leitura.';
+const NOME_SECAO = { Evangelho: 'o Evangelho', 'Primeira leitura': 'a 1ª leitura', 'Segunda leitura': 'a 2ª leitura' };
+
+/** Leituras de uma seção ("Evangelho", "Primeira leitura"…) num conjunto de leituras. */
+export function leiturasDaSecao(LDI, chave, secao) {
+  return (LDI.conjuntos[chave] || []).flat().filter(([s, ref]) => s === secao && ref).map(([, ref]) => ref);
+}
+/** Qual regra da correspondência plena foi satisfeita: (a) ou (b). */
+export function criterioPleno(m, lim) {
+  if (m.daHomilia >= lim.cobre_a_homilia) return '(a) ao menos 90% do trecho comentado é lido no dia';
+  if (m.doDia >= lim.cobre_o_dia && m.R.size >= lim.minimo_de_versiculos_do_dia) return '(b) ao menos 90% da leitura do dia está no trecho comentado, e ela tem 5 versículos ou mais';
+  return '(b) ao menos 90% da leitura do dia está no trecho comentado, e ela cobre ao menos metade do trecho';
+}
+function descreverBiblicaAntonio(trecho, ref, m, secao) {
+  const l = NOME_SECAO[secao] || 'a leitura';
+  let s;
+  if (m.O.size === m.P.size && m.O.size === m.R.size) s = trecho === ref ? `Comenta ${l} deste dia: ${ref}.` : `Comenta ${trecho}, que corresponde a ${l} deste dia (${ref}).`;
+  else if (m.O.size === m.R.size) s = `Comenta ${trecho}, trecho que inclui ${l} deste dia por inteiro (${ref}).`;
+  else if (m.O.size === m.P.size) s = `Comenta ${trecho}, parte d${l.slice(0, 1) === 'o' ? 'o' : 'a'} ${l.slice(2)} deste dia (${ref}).`;
+  else s = `Comenta ${trecho}; ${l} deste dia (${ref}) coincide com esse trecho em ${formatar(m.O)}.`;
+  return `${s} ${NAO_FOI_PREGADO}`;
+}
+/** Marca de cada bloco da camada recebida (índice contado de 0, sem o cabeçalho): '@paragrafo 7' -> 7, '@temas' -> 'temas'. */
+function marcasDosBlocos(cod) {
+  const t = fs.readFileSync(path.join(RAIZ, 'dados', 'homilias', 'antonio', 'recebida', `${cod}.txt`), 'utf8').replace(/\n+$/, '');
+  const partes = t.split('\n\n');
+  let i = 0;
+  while (i < partes.length && /^@/.test(partes[i]) && !/^@(titulo|titulo-latino|secao|temas|paragrafo|lacuna)\b/.test(partes[i])) i++;
+  return partes.slice(i).map((p) => {
+    const m = p.match(/^@(paragrafo|lacuna) (\d+)/);
+    if (m) return +m[2];
+    return /^@temas/.test(p) ? 'temas' : null;
+  });
+}
+/** Avisos (traduções próprias) e notas (fora do corpo do texto) do registro editorial, para a página do sermão. */
+function avisosENotas(REG, cod) {
+  const marcas = marcasDosBlocos(cod);
+  const onde = (r) => (r.paragrafo != null ? r.paragrafo : marcas[r.bloco] ?? null);
+  const avisos = [], notas = [];
+  for (const r of REG.registros.filter((x) => x.sermao === cod && x.estado === 'aplicada')) {
+    if (r.aviso) avisos.push({ paragrafo: onde(r), registro: r.id, localizacao: r.localizacao, texto: r.aviso });
+    if (r.nota_do_tradutor) notas.push({ paragrafo: onde(r), registro: r.id, tipo: 'Nota do tradutor (Lírio Católico)', texto: r.nota_do_tradutor });
+    if (r.nota_editorial) notas.push({ paragrafo: onde(r), registro: r.id, tipo: 'Nota editorial', texto: r.nota_editorial });
+    if (r.nota) notas.push({ paragrafo: onde(r), registro: r.id, tipo: r.nota.aviso, texto: `${r.nota.texto} (${r.nota.procedencia})` });
+  }
+  return { avisos, notas };
+}
+
+export async function gerarDistribuicaoAntonio(indiceBase) {
+  const DIST = ler('dados/homilias/antonio/distribuicao.json');
+  const CAT = ler('dados/homilias/antonio/catalogo.json');
+  const REG = ler('dados/homilias/antonio/registro-editorial.json');
+  const LDI = ler('dados/leituras/indice.json');
+  const SAN = ler('dados/calendario/santoral.json');
+  const lim = DIST.criterios.biblica_plena.limiares;
+  const erros = [];
+  const decisoes = new Map(DIST.sermoes.map((s) => [s.codigo, s]));
+  const calculo = new Map(); // codigo -> [{leituras, secao, ref, m, criterio}]
+  const estado = DIST.estado_da_publicacao === 'publicada' ? 'publicada' : 'previa';
+
+  const entradas = CAT.itens.map((it) => {
+    const cod = it.codigo;
+    const s = decisoes.get(cod);
+    if (!s) { erros.push(`${cod}: falta em distribuicao.json`); return null; }
+    if (s.titulo_historico !== it.titulo) erros.push(`${cod}: o título histórico (“${s.titulo_historico}”) não é o do catálogo (“${it.titulo}”)`);
+    const corr = [];
+    for (const l of s.liturgicas || []) {
+      const nome = nomeCelebracao(l.celebracao, SAN);
+      if (!nome) erros.push(`${cod}: celebração ${l.celebracao} não está no santoral`);
+      if (!l.descricao || !l.fundamento) erros.push(`${cod}: correspondência litúrgica sem descrição ou fundamento`);
+      corr.push({ tipo: 'liturgica', celebracao: l.celebracao, dia: nome, descricao: l.descricao, ...(l.observacao_historica ? { observacao_historica: l.observacao_historica } : {}) });
+    }
+    const calc = [];
+    const secao = s.leitura_comentada || 'Evangelho';
+    if ((s.biblicas || []).length && !s.trecho_comentado) erros.push(`${cod}: correspondência bíblica sem trecho comentado (D2)`);
+    for (const b of s.biblicas || []) {
+      if (!LDI.conjuntos[b.leituras]) { erros.push(`${cod}: leituras ${b.leituras} não existem`); continue; }
+      const sec = b.leitura || secao;
+      const opcoes = leiturasDaSecao(LDI, b.leituras, sec).map((ref) => ({ ref, m: medir(s.trecho_comentado, ref, lim) })).sort((x, y) => y.m.O.size - x.m.O.size);
+      const melhor = opcoes[0];
+      if (!melhor || melhor.m.forca !== 'plena') {
+        erros.push(`${cod}: ${b.leituras} (${melhor ? melhor.ref : `sem ${sec}`}) não é correspondência plena (${melhor ? `${pct(melhor.m.doDia)} do dia, ${pct(melhor.m.daHomilia)} do trecho` : '—'})`);
+        continue;
+      }
+      const criterio = criterioPleno(melhor.m, lim);
+      calc.push({ leituras: b.leituras, secao: sec, ref: melhor.ref, m: melhor.m, criterio, outros: opcoes.length - 1 });
+      corr.push({
+        tipo: 'biblica', leituras: b.leituras, leitura: sec, referencia_do_dia: melhor.ref, versiculos_comentados: formatar(melhor.m.O),
+        versiculos_em_comum: melhor.m.O.size, cobertura_do_trecho: Math.round(melhor.m.daHomilia * 100), cobertura_do_dia: Math.round(melhor.m.doDia * 100), criterio,
+        dia: descreverChave(b.leituras, SAN), descricao: b.descricao || descreverBiblicaAntonio(s.trecho_comentado, melhor.ref, melhor.m, sec),
+      });
+    }
+    calculo.set(cod, calc);
+    if (s.situacao === 'catalogo' ? corr.length || !s.motivo_catalogo : !corr.length) erros.push(`${cod}: situação '${s.situacao}' incoerente com as correspondências`);
+    const { avisos, notas } = avisosENotas(REG, cod);
+    return {
+      id: idAntonio(cod), obra: OBRA_ANTONIO, numero: it.ordem, codigo: cod,
+      titulo: s.titulo_historico, titulo_latino: s.titulo_latino, colecao: it.colecao,
+      ...(it.lirio?.rotulo ? { rotulo: it.lirio.rotulo } : {}),
+      pericope: s.trecho_comentado || null, leitura_do_dia: s.leitura_do_dia || null, leitura_comentada: s.tipo === 'sermao' ? secao : null,
+      ...(s.reducao ? { reducao: s.reducao } : {}), ...(s.sem_trecho ? { sem_trecho: s.sem_trecho } : {}),
+      ocasiao: s.ocasiao || null,
+      arquivo: `homilias/antonio/revisada/${cod}`,
+      estado: s.estado || estado, situacao: s.situacao,
+      ...(s.situacao === 'catalogo' ? { motivo_catalogo: s.motivo_catalogo } : {}),
+      avisos, notas,
+      correspondencias: corr,
+    };
+  });
+  for (const s of DIST.sermoes) if (!CAT.itens.some((it) => it.codigo === s.codigo)) erros.push(`distribuicao.json: ${s.codigo} fora do catálogo`);
+  if (erros.length) throw new Error('distribuição de Santo Antônio recusada:\n  - ' + erros.join('\n  - '));
+
+  // autor e obra (dados vindos do registro editorial, para não divergirem dele)
+  const P = REG.procedencia;
+  const autores = { ...indiceBase.autores, [AUTOR_ANTONIO]: { nome: 'Santo Antônio de Pádua', titulo: 'Presbítero e Doutor da Igreja', datas: '1195–1231', memoria: '13 de junho' } };
+  const obras = {
+    ...indiceBase.obras,
+    [OBRA_ANTONIO]: {
+      autor: AUTOR_ANTONIO, titulo: 'Sermões dominicais e festivos', titulo_latino: 'Sermones dominicales et festivi',
+      // para a página pública, sem os caminhos de pastas internas do projeto (que ficam no registro)
+      edicao_critica: `${P.latim.edicao.replace(/\.$/, '')}. ${P.latim.consulta.replace(/\s*Cópia enviada pelo responsável:.*$/s, '')}`,
+      diretriz_latim: P.latim.diretriz.replace(/\s*\(Homilia dos Santos\/[^)]*\)/, ''),
+      traducao: { credito: P.traducao_recebida.credito, fonte: P.traducao_recebida.fonte, metodo_declarado: P.traducao_recebida.metodo_declarado, nota_editorial: P.traducao_recebida.nota_editorial },
+      etapa_1: REG.etapas.etapa_1.ressalva,
+    },
+  };
+  const homilias = [...indiceBase.homilias.filter((h) => h.obra !== OBRA_ANTONIO), ...entradas];
+  const indice = { ...indiceBase, autores, obras, homilias };
+  HM.definirPrevia(true);
+  const datas = await datasNosAnos(indice, SAN);
+  HM.definirPrevia(false);
+  return { indice, md: relatorioAntonio(DIST, CAT, indice, calculo, datas, SAN) };
+}
+
+function relatorioAntonio(DIST, CAT, indice, calculo, datas, SAN) {
+  const H = indice.homilias.filter((h) => h.obra === OBRA_ANTONIO);
+  const dec = new Map(DIST.sermoes.map((s) => [s.codigo, s]));
+  const L = [];
+  const noCal = H.filter((h) => h.situacao === 'calendario'), cat = H.filter((h) => h.situacao === 'catalogo');
+  const lits = H.flatMap((h) => h.correspondencias.filter((c) => c.tipo === 'liturgica').map((c) => ({ h, c })));
+  const bibs = H.flatMap((h) => h.correspondencias.filter((c) => c.tipo === 'biblica').map((c) => ({ h, c })));
+  const domingos = bibs.filter(({ c }) => /-domingo-[ABC]$/.test(c.leituras) && !c.leituras.startsWith('santo:'));
+  const festasNoDomingo = bibs.filter(({ c }) => c.leituras.startsWith('santo:') && /-domingo/.test(c.leituras));
+  const naoUsadas = DIST.sermoes.flatMap((s) => (s.nao_usadas || []).map((x) => ({ ...x, codigo: s.codigo })));
+  const porClasse = (k) => naoUsadas.filter((x) => x.classe === k).length;
+  const rot = (h) => HM.ondeAparece(h);
+  const ciclos = (h) => {
+    if (!h.correspondencias.length) return '—';
+    const porCorr = h.correspondencias.map((c) => [...new Set([c.leituras].filter(Boolean).map((k) => (k.match(/-([ABC])(-domingo)?$/) || [])[1]))]);
+    const todoAno = h.correspondencias.some((c) => c.tipo === 'liturgica') || porCorr.some((l) => !l.length || l.includes(undefined));
+    const abc = [...new Set(porCorr.flat().filter(Boolean))].sort();
+    if (abc.length === 3) return 'todo ano';
+    return todoAno ? (abc.length ? `todo ano; mais no Ano ${abc.join(', ')}` : 'todo ano') : `Ano ${abc.join(', ')}`;
+  };
+  L.push('# Distribuição dos sermões de Santo Antônio no calendário (Etapa 2)', '');
+  L.push('> Gerado por `ferramentas/homilias/aplicar_distribuicao.mjs` a partir de `dados/homilias/antonio/distribuicao.json`. Não edite à mão: altere as decisões no arquivo de distribuição e rode o script.', '');
+  L.push(`> **Estado: ${DIST.estado_da_publicacao === 'publicada' ? 'publicado' : 'PRÉVIA, não publicado.'}** ${DIST.estado_da_publicacao === 'publicada' ? '' : 'As entradas do índice têm estado “previa”: o site não as mostra; só aparecem com a prévia ligada (endereço com ?previa), para a conferência do responsável. A publicação depende da sua aprovação expressa.'}`, '');
+  L.push(`Auditoria que fundamenta esta distribuição: ${DIST.auditoria}`, '');
+  L.push('## Critérios', '');
+  const C = DIST.criterios;
+  L.push(`- **Correspondência litúrgica.** ${C.liturgica}`, `- **Correspondência bíblica plena.** ${C.biblica_plena.regra} ${C.biblica_plena.contagem}`, `- **Trecho comentado.** ${C.trecho_comentado}`);
+  L.push(`- **Parcial.** ${C.parcial}`, `- **Paralela.** ${C.paralela}`, `- **Temática.** ${C.tematica}`, `- **Catálogo geral.** ${C.catalogo}`, `- **Vários sermões no mesmo dia.** ${C.varios_no_mesmo_dia}`, '');
+  L.push('## Decisões do responsável (D1–D8)', '');
+  for (const d of DIST.decisoes) L.push(`- **${d.id}** (${d.data.split('-').reverse().join('/')}) — ${d.questao} ${d.decisao} *Aplicação:* ${d.aplicacao}`);
+  L.push('');
+  L.push('## Resumo', '', '| | Quantidade |', '|---|---|');
+  L.push(`| Itens no calendário (página do dia) | ${noCal.length} |`, `| Itens só no catálogo geral | ${cat.length} (${cat.map((h) => h.codigo).join(', ')}) |`);
+  L.push(`| Correspondências litúrgicas registradas | ${lits.length} (em ${new Set(lits.map((x) => x.h.codigo)).size} sermões) |`);
+  L.push(`| Correspondências bíblicas plenas registradas | ${bibs.length} (em ${new Set(bibs.map((x) => x.h.codigo)).size} sermões); ${domingos.length} em domingos do Tempo (ciclos A, B ou C) e ${festasNoDomingo.length} em festas quando caem no domingo |`);
+  L.push(`| Correspondências examinadas e recusadas | ${naoUsadas.length} (ocasião antiga ${porClasse('ocasiao-antiga')}, parcial ${porClasse('parcial')}, paralela ${porClasse('paralela')}, fora do calendário ${porClasse('fora-do-calendario')}) |`, '');
+  L.push('## Os 85 itens', '', 'Título: o histórico, como na tradição (nunca o nome atual da celebração). Anos: “todo ano” quando ao menos uma correspondência vale em todos os anos (celebrações e dias de semana: o Evangelho dos dias de semana é o mesmo nos anos I e II); “Ano A/B/C” quando depende do ciclo dominical.', '');
+  L.push('| Código | Título histórico | Trecho comentado | Classificação | Dias | Anos | Situação |', '|---|---|---|---|---|---|---|');
+  for (const h of H) {
+    const tem = (t) => h.correspondencias.some((c) => c.tipo === t);
+    const classe = tem('liturgica') && tem('biblica') ? 'litúrgica + bíblica' : tem('liturgica') ? 'litúrgica' : tem('biblica') ? 'bíblica' : '—';
+    L.push(`| ${h.codigo} | ${md(h.titulo)} | ${h.pericope || '—'}${h.reducao ? ' (reduzido)' : ''} | ${classe} | ${md(rot(h).join('; ') || '—')} | ${ciclos(h)} | ${h.situacao === 'catalogo' ? 'catálogo geral' : 'calendário'} |`);
+  }
+  L.push('');
+  L.push('## Auditoria individual das correspondências litúrgicas', '', '| Sermão | Celebração atual | Fundamento | Texto mostrado no site | Observação histórica |', '|---|---|---|---|---|');
+  for (const { h, c } of lits) {
+    const l = (dec.get(h.codigo).liturgicas || []).find((x) => x.celebracao === c.celebracao) || {};
+    L.push(`| ${h.codigo} · ${md(h.titulo)} | ${md(c.dia)} | ${md(l.fundamento)} | ${md(c.descricao)} | ${md(c.observacao_historica || '—')} |`);
+  }
+  L.push('');
+  L.push('## Auditoria individual das correspondências bíblicas', '', 'Cada linha foi recalculada pelo script a partir do índice das leituras; uma correspondência que não satisfizesse a regra seria recusada e nada seria gravado.', '');
+  L.push('| Sermão | Trecho comentado | Dia | Leitura do dia | Versículos em comum | Do trecho | Do dia | Critério | Resultado |', '|---|---|---|---|---|---|---|---|---|');
+  for (const h of H) {
+    for (const x of calculo.get(h.codigo) || []) {
+      L.push(`| ${h.codigo} | ${h.pericope} | ${md(descreverChave(x.leituras, SAN))} (\`${x.leituras}\`) | ${x.secao}: ${x.ref}${x.outros ? ` (o arquivo traz mais ${x.outros})` : ''} | ${formatar(x.m.O)} (${x.m.O.size}) | ${pct(x.m.daHomilia)} | ${pct(x.m.doDia)} | ${x.criterio} | plena: aceita |`);
+    }
+  }
+  L.push('');
+  L.push('## Trechos reduzidos e sermões sem trecho comentado (D2)', '');
+  for (const h of H.filter((x) => x.reducao)) L.push(`- **${h.codigo}** (leitura do dia: ${h.leitura_do_dia}; trecho usado: ${h.pericope}): ${h.reducao}`);
+  for (const h of H.filter((x) => x.sem_trecho)) L.push(`- **${h.codigo}** (leitura do dia: ${h.leitura_do_dia}): ${h.sem_trecho}`);
+  L.push('');
+  L.push('## Só no catálogo geral (D7)', '');
+  for (const h of cat) L.push(`- **${h.codigo} · ${h.titulo}**: ${h.motivo_catalogo}`);
+  L.push('');
+  // dias com mais de um sermão (nos três anos calculados)
+  const porDia = new Map();
+  for (const h of H) for (const d of datas.get(h.id) || []) { if (!porDia.has(d.iso)) porDia.set(d.iso, []); porDia.get(d.iso).push(h.codigo); }
+  const multi = [...porDia].filter(([, l]) => l.length > 1).sort();
+  L.push('## Dias com mais de um sermão (D5)', '', 'Nos três anos litúrgicos calculados. A página do dia mostra todos: primeiro os pregados para a celebração, depois os associados pela leitura.', '');
+  for (const [iso, l] of multi) L.push(`- ${dataCurta(iso)}: ${l.join(', ')}`);
+  L.push('');
+  L.push('## Correspondências examinadas e recusadas', '');
+  for (const s of DIST.sermoes.filter((x) => (x.nao_usadas || []).length)) L.push(`- **${s.codigo}**: ${s.nao_usadas.map((x) => `*${x.classe}* — ${md(x.alvo)}: ${x.motivo}`).join(' · ')}`);
+  L.push('');
+  if (DIST.lecionario?.length) {
+    L.push('## Problemas encontrados nos dados das leituras', '');
+    for (const x of DIST.lecionario) L.push(`- **${x.estado}.** ${x.descricao}`);
+    L.push('');
+  }
+  const cicloDe = new Map([...datas.values()].flat().map((x) => [x.ano, x.ciclo]));
+  const anos = ANOS_LITURGICOS.map((a) => `${a}–${a + 1}${cicloDe.has(a) ? ` (Ano ${cicloDe.get(a)})` : ''}`).join(', ');
+  L.push(`## Datas nos anos litúrgicos ${anos}`, '', 'Calculadas pelo próprio mecanismo do site, com a prévia ligada.', '');
+  for (const h of H) {
+    const ds = datas.get(h.id) || [];
+    L.push(`- **${h.codigo} · ${h.titulo}:** ${ds.length ? ANOS_LITURGICOS.map((a) => { const l = ds.filter((x) => x.ano === a); return l.length ? `${a}–${a + 1}: ${l.map((x) => `${dataCurta(x.iso)}${x.op ? ` (se escolhida a memória de ${x.op})` : ''}`).join(', ')}` : null; }).filter(Boolean).join('; ') : 'nenhuma (catálogo geral).'}`);
+  }
+  L.push('');
+  return L.join('\n');
+}
+
 // ---------------------------------------------------------------- CLI
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const r = await gerarDistribuicao();
-  fs.writeFileSync(path.join(RAIZ, 'dados', 'homilias', 'indice.json'), JSON.stringify(r.indice, null, 2));
+  const ra = await gerarDistribuicaoAntonio(r.indice);
+  fs.writeFileSync(path.join(RAIZ, 'dados', 'homilias', 'indice.json'), JSON.stringify(ra.indice, null, 2));
   fs.writeFileSync(path.join(RAIZ, 'dados', 'homilias', 'DISTRIBUICAO.md'), r.md);
-  const H = r.indice.homilias.filter((h) => h.obra === OBRA);
+  fs.writeFileSync(path.join(RAIZ, 'dados', 'homilias', 'antonio', 'DISTRIBUICAO.md'), ra.md);
+  const H = ra.indice.homilias.filter((h) => h.obra === OBRA);
   console.log(`gerados: indice.json (${H.length} homilias; ${H.filter((h) => h.situacao === 'calendario').length} no calendário, ${H.filter((h) => h.situacao === 'catalogo').length} só no catálogo) e DISTRIBUICAO.md`);
+  const A = ra.indice.homilias.filter((h) => h.obra === OBRA_ANTONIO);
+  console.log(`Santo Antônio: ${A.length} itens (${A.filter((h) => h.situacao === 'calendario').length} no calendário, ${A.filter((h) => h.situacao === 'catalogo').length} só no catálogo), estado ${[...new Set(A.map((h) => h.estado))].join('/')}; antonio/DISTRIBUICAO.md`);
 }

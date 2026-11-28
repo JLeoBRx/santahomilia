@@ -495,6 +495,30 @@ h4.subsecao .ref { color: var(--texto-3); font-weight: 500; margin-left: .4em; }
 .catalogo-lista a span { color: var(--texto-2); font-size: .88rem; }
 .catalogo-lista a:hover strong { text-decoration: underline; }
 .catalogo-lista p { margin: 3px 0 0; color: var(--texto-3); font-size: .8rem; line-height: 1.45; }
+/* sermões de Santo Antônio e prévia */
+.faixa-previa {
+  display: flex; gap: 10px; align-items: flex-start; margin: 16px 0 0; padding: 10px 14px; border: 1px dashed var(--rubrica);
+  border-radius: var(--raio-p); font-family: var(--fonte-ui); font-size: .84rem; line-height: 1.45; color: var(--texto);
+}
+.faixa-previa svg { width: 18px; height: 18px; flex: none; color: var(--rubrica); margin-top: 1px; }
+.selo-previa {
+  display: inline-block; margin-left: 8px; padding: 1px 8px; border: 1px solid var(--rubrica); border-radius: 999px;
+  font-family: var(--fonte-ui); font-size: .68rem; font-weight: 600; letter-spacing: .04em; color: var(--rubrica); vertical-align: middle;
+}
+.homilia-autor .selo-previa { display: inline-block; margin-top: 0; }
+.motivo-historia { display: block; margin-top: 3px; color: var(--texto-3); font-size: .8rem; line-height: 1.45; }
+.texto-sermao .temas-sermao { margin: 0 0 1.2em; padding-left: 20px; font-family: var(--fonte-ui); font-size: .86rem; line-height: 1.5; color: var(--texto-2); }
+.texto-sermao .temas-sermao li { margin: 0 0 4px; }
+.aviso-traducao {
+  display: flex; gap: 8px; align-items: flex-start; margin: -.2em 0 1.2em !important; padding: 8px 12px; border-left: 3px solid var(--rubrica);
+  background: var(--cartao); font-family: var(--fonte-ui); font-size: .8rem !important; line-height: 1.45; color: var(--texto-2); text-align: left !important;
+}
+.aviso-traducao svg { width: 16px; height: 16px; flex: none; color: var(--rubrica); margin-top: 1px; }
+.nota-sermao {
+  margin: -.2em 0 1.2em; padding: 8px 12px; border: 1px solid var(--linha); border-radius: var(--raio-p);
+  font-family: var(--fonte-ui); font-size: .8rem; line-height: 1.5; color: var(--texto-2);
+}
+.nota-sermao strong { color: var(--texto); }
 
 /* ---------------------------------------------------------- referências das leituras (Santa Homilia) */
 .bloco-indicacoes { font-family: var(--fonte-ui); }

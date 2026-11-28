@@ -23,6 +23,16 @@ import { lerDocumento } from './texto.js';
 
 let indice = null;
 
+/**
+ * Prévia: entradas com estado 'previa' (preparadas, ainda não publicadas)
+ * só aparecem quando a prévia é ligada (no site, pelo endereço ?previa).
+ * Sem a prévia, o site mostra só as homilias com estado 'publicada'.
+ */
+let previa = false;
+export function definirPrevia(v) { previa = !!v; }
+export const emPrevia = () => previa;
+export const visivel = (h) => h.estado === 'publicada' || (previa && h.estado === 'previa');
+
 export async function iniciar() {
   if (indice) return indice;
   indice = (await dados.json('homilias/indice.json')) || { homilias: [], autores: {}, obras: {} };
@@ -31,9 +41,9 @@ export async function iniciar() {
 
 export const autor = (id) => indice?.autores?.[id] || null;
 export const obra = (id) => indice?.obras?.[id] || null;
-export const homilia = (id) => indice?.homilias?.find((h) => h.id === id && h.estado === 'publicada') || null;
+export const homilia = (id) => indice?.homilias?.find((h) => h.id === id && visivel(h)) || null;
 /** Homilias publicadas (catálogo geral), na ordem da obra. */
-export const publicadas = () => (indice?.homilias || []).filter((h) => h.estado === 'publicada').sort((a, b) => (a.obra || '').localeCompare(b.obra || '') || a.numero - b.numero);
+export const publicadas = () => (indice?.homilias || []).filter(visivel).sort((a, b) => (a.obra || '').localeCompare(b.obra || '') || a.numero - b.numero);
 
 /**
  * Onde uma homilia aparece no calendário, em rótulos legíveis. Junta o
@@ -73,7 +83,7 @@ export function homiliasDoDia(res, ind = indice) {
   const chaves = new Set(conjuntos.map((c) => c.chave));
   const out = [];
   for (const h of ind.homilias) {
-    if (h.estado !== 'publicada') continue;
+    if (!visivel(h)) continue;
     const motivos = [];
     for (const c of h.correspondencias || []) {
       if (c.tipo === 'liturgica') {
@@ -87,15 +97,40 @@ export function homiliasDoDia(res, ind = indice) {
     }
     if (motivos.length) out.push({ homilia: h, motivos });
   }
-  // correspondência litúrgica primeiro; depois a ordem da obra
-  out.sort((a, b) => (b.motivos.some((m) => m.tipo === 'liturgica') - a.motivos.some((m) => m.tipo === 'liturgica')) || (a.homilia.numero - b.homilia.numero));
+  // correspondência litúrgica primeiro (pregadas para a celebração); depois a obra e a ordem na obra
+  out.sort((a, b) => (b.motivos.some((m) => m.tipo === 'liturgica') - a.motivos.some((m) => m.tipo === 'liturgica'))
+    || (a.homilia.obra || '').localeCompare(b.homilia.obra || '') || (a.homilia.numero - b.homilia.numero));
   return out;
+}
+
+/** Sermões de Santo Antônio: formato próprio da camada revisada (título, seções, temas, parágrafos numerados). */
+export const ehSermaoAntonio = (h) => h?.obra === 'antonio-sermones';
+
+function carregarSermao(t) {
+  const blocos = lerDocumento(t).blocos;
+  const r = { formato: 'antonio', titulo: '', tituloLatino: '', secoes: [], paragrafos: [] };
+  let secao = null;
+  const novaSecao = (titulo) => { secao = { titulo, temas: [], paragrafos: [] }; r.secoes.push(secao); };
+  for (const b of blocos) {
+    if (b.tipo === 'titulo') r.titulo = b.texto;
+    else if (b.tipo === 'titulo-latino') r.tituloLatino = b.texto;
+    else if (b.tipo === 'secao') novaSecao(b.texto.trim());
+    else if (b.tipo === 'temas') { if (!secao) novaSecao(''); secao.temas.push(...b.texto.split('\n').filter((l) => l.trim())); }
+    else if (b.tipo === 'paragrafo') {
+      if (!secao) novaSecao('');
+      const p = { n: b.arg, linhas: b.texto.split('\n').filter((l) => l.trim()) };
+      secao.paragrafos.push(p);
+      r.paragrafos.push(...p.linhas);
+    }
+  }
+  return r;
 }
 
 /** Texto publicado (camada revisada) -> { cabecalho, rubrica, leituraTitulo, leitura, paragrafos } */
 export async function carregarTexto(h) {
   const t = await dados.texto(h.arquivo + '.txt');
   if (t == null) return null;
+  if (ehSermaoAntonio(h)) return carregarSermao(t);
   const blocos = lerDocumento(t).blocos;
   const r = { cabecalho: [], rubrica: [], leituraTitulo: '', leitura: '', paragrafos: [], meta: {} };
   for (const b of blocos) {
@@ -110,9 +145,17 @@ export async function carregarTexto(h) {
   return r;
 }
 
-/** Descrição curta, para o visitante, de por que a homilia está neste dia. */
-export function descreverMotivo(m) {
-  if (m.tipo === 'liturgica') return { rotulo: 'Correspondência litúrgica', texto: m.descricao };
+/**
+ * Descrição curta, para o visitante, de por que a homilia está neste dia.
+ * Nos sermões de Santo Antônio, os rótulos dizem a modalidade com todas as
+ * letras (decisão D5 da Etapa 2): pregado para a celebração ou associado
+ * pela leitura; a observação histórica vai junto quando a celebração mudou.
+ */
+export function descreverMotivo(m, h = null) {
+  const antonio = ehSermaoAntonio(h);
+  if (m.tipo === 'liturgica') {
+    return { rotulo: antonio ? 'Pregado originalmente para esta celebração' : 'Correspondência litúrgica', texto: m.descricao, historia: m.observacao_historica || null };
+  }
   const onde = m.rotuloLeituras && !m.descricao.toLowerCase().includes(m.rotuloLeituras.toLowerCase()) ? ` (${m.rotuloLeituras})` : '';
-  return { rotulo: 'Correspondência bíblica', texto: `${m.descricao}${onde}` };
+  return { rotulo: antonio ? 'Associado a este dia pela leitura bíblica' : 'Correspondência bíblica', texto: `${m.descricao}${onde}`, historia: null };
 }

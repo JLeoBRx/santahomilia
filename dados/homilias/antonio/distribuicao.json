@@ -1,0 +1,2793 @@
+{
+ "_leia": [
+  "Distribuição dos 85 itens dos Sermones de Santo Antônio no calendário litúrgico (Etapa 2). Arquivo editado à mão: é aqui que se decide em que dias cada sermão aparece e por quê.",
+  "ferramentas/homilias/aplicar_distribuicao.mjs lê este arquivo, confere cada correspondência bíblica com o índice das referências das leituras (dados/leituras/indice.json), RECUSA as que não forem plenas, e gera as entradas de Santo Antônio em dados/homilias/indice.json e o relatório dados/homilias/antonio/DISTRIBUICAO.md. Não edite essas entradas do índice à mão.",
+  "titulo_historico: o título do sermão na tradição (catálogo); nunca é trocado pelo nome atual da celebração. A correspondência atual aparece à parte, como informação adicional.",
+  "leitura_do_dia: a leitura anunciada no início do sermão (missal do tempo de Santo Antônio). trecho_comentado: o trecho que o sermão efetivamente comenta, que decide as correspondências (D1); reducao explica quando é menor que a leitura do dia; sem_trecho, quando o sermão não comenta a sua leitura (D2). leitura_comentada: seção do arquivo de leituras a comparar (Evangelho, ou 1ª/2ª leitura nos sermões construídos sobre a epístola: D3).",
+  "liturgicas: o sermão foi pregado para esta celebração, e a mesma celebração existe no calendário do site ('celebracao' = id do santoral); fundamento (título da edição crítica), descricao (mostrada no site) e observacao_historica (quando a celebração mudou de título, de acento ou de data: D4).",
+  "biblicas: o dia proclama a leitura que o sermão comenta ('leituras' = chave de dados/leituras/indice.json). Referência do dia, versículos em comum, percentuais e critério são calculados pelo script e registrados em DISTRIBUICAO.md. Toda correspondência bíblica é mostrada como tal: nunca como se o sermão tivesse sido pregado para aquele dia.",
+  "nao_usadas: correspondências examinadas e recusadas (ocasião antiga, paralela, parcial, fora do calendário), com o motivo. Nada aqui aparece no site.",
+  "situacao: 'calendario' ou 'catalogo' (com motivo_catalogo). estado_da_publicacao: 'previa' enquanto o responsável não aprovar a publicação; as entradas geradas no índice ficam com estado 'previa' e o site não as mostra."
+ ],
+ "etapa": "Etapa 2 — distribuição no calendário",
+ "data": "2026-11-28",
+ "auditoria": "https://claude.ai/artifact/8Ne4wL99JBNg4GN2kNMHfS",
+ "estado_da_publicacao": "previa",
+ "criterios": {
+  "liturgica": "O sermão foi pregado para uma celebração, segundo o título da edição crítica (Centro Studi Antoniani, 1979), e a mesma celebração existe hoje no calendário do site: a mesma festa ou solenidade. Celebrações antigas não são convertidas em atuais: os domingos que não existem mais (Septuagésima, depois de Pentecostes, depois da Epifania, depois da Páscoa) e os domingos numerados do Advento e da Quaresma entram só pela leitura (D1, D6). Quando a celebração mudou de título, de acento ou de data, a observação histórica é registrada e mostrada (D4).",
+  "biblica_plena": {
+   "regra": "O dia proclama a leitura que o sermão comenta, e a coincidência é forte: (a) pelo menos 90% do trecho comentado é lido no dia; ou (b) pelo menos 90% da leitura do dia está no trecho comentado, e essa leitura tem pelo menos 5 versículos ou cobre pelo menos metade do trecho comentado. Os mesmos critérios de São Gregório (D1).",
+   "limiares": {
+    "cobre_a_homilia": 0.9,
+    "cobre_o_dia": 0.9,
+    "minimo_de_versiculos_do_dia": 5,
+    "minimo_da_homilia_se_curto": 0.5
+   },
+   "contagem": "Versículos contados por ferramentas/homilias/referencias.mjs; meio versículo (16a) conta como versículo inteiro. Compara-se só a seção da leitura que o sermão comenta: o Evangelho; ou a 1ª ou 2ª leitura nos sermões construídos sobre a epístola (sd25, sd59: D3)."
+  },
+  "trecho_comentado": "Santo Antônio divide a leitura do dia em cláusulas e comenta cada uma. O trecho comentado é, em regra, a leitura anunciada no início do sermão, conferida com os versículos citados nas notas da edição; é reduzido quando o sermão não comenta parte da leitura, e não existe quando o sermão não comenta a sua leitura (D1, D2).",
+  "parcial": "Coincidência de pelo menos 2 versículos que não atinge a regra da correspondência plena. Documentada; não usada.",
+  "paralela": "O mesmo episódio narrado por outro evangelista. O sermão não comenta a leitura proclamada; não usada (D6).",
+  "tematica": "Ligação só de assunto, de lugar ou de devoção. Nunca usada.",
+  "catalogo": "Sem correspondência litúrgica nem bíblica plena, o item fica só no catálogo geral do site, sem data litúrgica (D7).",
+  "varios_no_mesmo_dia": "Quando mais de um sermão corresponde ao dia, todos aparecem: primeiro os pregados para a celebração (correspondência litúrgica), depois os ligados pela leitura (correspondência bíblica), e a página distingue as duas modalidades (D5)."
+ },
+ "decisoes": [
+  {
+   "id": "D1",
+   "data": "2026-11-28",
+   "questao": "Critérios de correspondência.",
+   "decisao": "Aprovado. Adotar os critérios já utilizados no projeto de São Gregório, aplicados ao trecho que Santo Antônio efetivamente comenta, e não automaticamente ao Evangelho inteiro indicado no título do sermão.",
+   "aplicacao": "criterios; trecho_comentado de cada sermão; verificação automática no script."
+  },
+  {
+   "id": "D2",
+   "data": "2026-11-28",
+   "questao": "Trechos reduzidos e sermões sem Evangelho comentado.",
+   "decisao": "Aprovado. Aceitar os oito trechos reduzidos e os cinco sermões sem Evangelho comentado, conforme a seção 7 da auditoria. Não criar correspondências bíblicas artificiais para esses cinco sermões.",
+   "aplicacao": "reducao em sd07, sd14, sd25, sd48, sd57, sd65, sf03, sf05; sem_trecho em sd02, sd16, sd26, sm02, sm05 (sem correspondência bíblica)."
+  },
+  {
+   "id": "D3",
+   "data": "2026-11-28",
+   "questao": "sd59 e o 3º Domingo do Advento.",
+   "decisao": "Aprovado. Associar SD59, baseado em Filipenses 4,4-7, exclusivamente ao terceiro Domingo do Advento do Ano C, pela segunda leitura.",
+   "aplicacao": "sd59: biblicas = [ADV-3-domingo-C, leitura = Segunda leitura]."
+  },
+  {
+   "id": "D4a",
+   "data": "2026-11-28",
+   "questao": "Purificação e Apresentação do Senhor.",
+   "decisao": "Aprovado, com ajuste de redação. SM04 e SM06 podem ser apresentados na atual festa da Apresentação do Senhor, em 2 de fevereiro, preservando os títulos históricos e explicando: “Este sermão foi originalmente intitulado ‘Na Purificação da Bem-aventurada Virgem Maria’ e corresponde à atual festa da Apresentação do Senhor, celebrada em 2 de fevereiro.” Não afirmar que houve apenas uma troca de nome.",
+   "aplicacao": "sm04, sm06: liturgica apresentacao, com a descrição pedida e a observação histórica."
+  },
+  {
+   "id": "D4b",
+   "data": "2026-11-28",
+   "questao": "Circuncisão do Senhor e 1º de janeiro.",
+   "decisao": "Aprovado. SD66 não é classificado como sermão pregado para a atual Solenidade de Santa Maria, Mãe de Deus; pode aparecer em 1º de janeiro por correspondência bíblica com Lc 2,21, com a informação de que o título e o contexto originais dizem respeito à Circuncisão do Senhor.",
+   "aplicacao": "sd66: sem liturgica; biblica santamaria com descrição própria; a litúrgica recusada em nao_usadas."
+  },
+  {
+   "id": "D4c",
+   "data": "2026-11-28",
+   "questao": "São Filipe e São Tiago.",
+   "decisao": "Aprovado, com correção histórica. SF03 pode ser associado à atual festa de 3 de maio; a sequência histórica é 1º de maio, depois 11 de maio, e finalmente 3 de maio, após as respectivas reformas.",
+   "aplicacao": "sf03: liturgica saofilipeetiago, com a observação histórica 1º/5 → 11/5 (1955) → 3/5 (1969)."
+  },
+  {
+   "id": "D5",
+   "data": "2026-11-28",
+   "questao": "Mais de um sermão no mesmo dia.",
+   "decisao": "Aprovado. Mostrar todos; primeiro os sermões originalmente destinados à celebração (litúrgica), depois os associados pela leitura (bíblica); a interface distingue as duas modalidades.",
+   "aplicacao": "js/homilias.js (ordem) e js/app.js (rótulos “Pregado para esta celebração” e “Associado pela leitura bíblica”)."
+  },
+  {
+   "id": "D6",
+   "data": "2026-11-28",
+   "questao": "Domingos do Advento e da Quaresma.",
+   "decisao": "Aprovado. Restringir as associações ao ciclo litúrgico e à leitura efetivamente proclamada; um sermão que comenta Mateus não é associado aos anos em que o lecionário traz a narrativa segundo Marcos ou Lucas.",
+   "aplicacao": "Nenhuma correspondência por domingo de mesmo nome; paralelas registradas como recusadas (sd06, sd07, sd08, sd13)."
+  },
+  {
+   "id": "D7",
+   "data": "2026-11-28",
+   "questao": "Itens exclusivamente no catálogo.",
+   "decisao": "Aprovado. Manter os 11 itens da seção 7 da auditoria só no catálogo geral, sem datas litúrgicas.",
+   "aplicacao": "situacao catalogo: sd01, sd02, sd27, sd36, sd41, sd46, sd48, sd51, sd56, sd72, sm01."
+  },
+  {
+   "id": "D8",
+   "data": "2026-11-28",
+   "questao": "Correção do índice das leituras (30ª semana do Tempo Comum, ano I).",
+   "decisao": "Aprovado como alteração independente, condicionada à conferência numa fonte litúrgica confiável e nos arquivos atuais.",
+   "aplicacao": "INTERROMPIDA em 28/11/2026: a inversão foi confirmada nos arquivos atuais e a causa identificada, mas nenhuma fonte litúrgica externa pôde ser consultada neste ambiente. O índice não foi alterado; ver lecionario. Não afeta a distribuição: o sd47 corresponde à sexta e ao sábado da 30ª semana nos dois anos."
+  }
+ ],
+ "lecionario": [
+  {
+   "estado": "identificado, não corrigido (D8 aguarda conferência numa fonte litúrgica)",
+   "descricao": "Em dados/leituras/indice.json, os conjuntos TC-30-sexta-I e TC-30-sabado-I estão trocados por inteiro: a sexta traz Rm 11,1-2a.11-12.25-29, Sl 93 e Lc 14,1.7-11, e o sábado traz Rm 9,1-5, Sl 147(147B),12-13.14-15.19-20 e Lc 14,1-6. O ano II está na ordem do lecionário (sexta Lc 14,1-6; sábado Lc 14,1.7-11). Causa: o gerador do índice anterior (LiturgiadasHoras, ferramentas/gerar_indice_liturgia_diaria.py) escolhia o arquivo de cada dia pelo primeiro versículo do Evangelho, e sexta e sábado começam ambos em Lc 14,1; no ano I, a escolha caiu trocada. Evidência interna da ordem correta: os Evangelhos dos dias de semana do Tempo Comum são os mesmos nos anos I e II; a leitura semicontínua de Romanos no ano I segue Rm 8,31b-39 (quinta), Rm 9,1-5, Rm 11,1-2a.11-12.25-29 e Rm 11,29-36 (segunda da 31ª semana, que começa onde a do sábado termina); a de Lucas segue Lc 13,31-35, Lc 14,1-6, Lc 14,1.7-11 e Lc 14,12-14. A correção (trocar os dois conjuntos do ano I, sem tocar no ano II) fica preparada para quando a ordem for confirmada no Lecionário ou na Liturgia Diária da CNBB (por exemplo, sexta 29/10/2027 e sábado 30/10/2027)."
+  }
+ ],
+ "sermoes": [
+  {
+   "codigo": "sd01",
+   "titulo_historico": "Prólogo",
+   "titulo_latino": "Prologus",
+   "colecao": "Sermões dominicais",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sd02",
+   "titulo_historico": "Domingo da Septuagésima",
+   "titulo_latino": "Dominica in Septuagesima",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo da Septuagésima — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IN SEPTUAGESIMA»)",
+   "leitura_do_dia": "Mt 20,1-16",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": null,
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Primum evangelium in Septuagesima: Simile est regnum caelorum homini patrifamilias». Versículos de Mt 20 citados nas notas da edição: —.",
+   "sem_trecho": "O sermão comenta o Gênesis (os dias da criação). Da parábola dos trabalhadores, Evangelho da Septuagésima, usa só o primeiro versículo (Mt 20,1), como moldura; não a comenta. Nenhuma correspondência bíblica é criada para ele (decisão D2).",
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo da Septuagésima (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "catalogo",
+   "motivo_catalogo": "O sermão comenta o Gênesis; a Septuagésima não existe mais e a parábola do seu Evangelho só serve de moldura (decisão D7).",
+   "justificativa": "O sermão comenta o Gênesis; a Septuagésima não existe mais e a parábola do seu Evangelho só serve de moldura (decisão D7)."
+  },
+  {
+   "codigo": "sd03",
+   "titulo_historico": "Domingo da Sexagésima",
+   "titulo_latino": "Dominica in Sexagesima",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo da Sexagésima — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IN SEXAGESIMA»)",
+   "leitura_do_dia": "Lc 8,4-15",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 8,4-15",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Secundum evangelium in Sexagesima: Exiit qui seminat». Versículos de Lc 8 citados nas notas da edição: Lc 8,5-8.11.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-24-sabado-I"
+    },
+    {
+     "leituras": "TC-24-sabado-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo da Sexagésima (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd04",
+   "titulo_historico": "Domingo da Quinquagésima",
+   "titulo_latino": "Domenica Di Quinquagesima",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo da Quinquagésima — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IN QUINQUAGESIMA»)",
+   "leitura_do_dia": "Lc 18,31-43",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 18,31-43",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Tertium evangelium in Quinquagesima: Caecus sedebat secus viam». Versículos de Lc 18 citados nas notas da edição: Lc 18,32-33.35.42.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-33-segunda-I"
+    },
+    {
+     "leituras": "TC-33-segunda-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo da Quinquagésima (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd05",
+   "titulo_historico": "Início do Jejum",
+   "titulo_latino": "In Capite Ieiunii",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Início do Jejum — no calendário do tempo de Santo Antônio (título na edição crítica: «IN CAPITE IEIUNII»)",
+   "leitura_do_dia": "Mt 6,16-21",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 6,16-21",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Dixit Iesus discipulis suis: Cum ieiunatis etc. (nota: Mt 6,16 (Vg. Cum autem…))». Versículos de Mt 6 citados nas notas da edição: Mt 6,16-20.",
+   "liturgicas": [
+    {
+     "celebracao": "cinzas",
+     "fundamento": "Título na edição crítica: «IN CAPITE IEIUNII». O início do jejum quaresmal (caput ieiunii) é a Quarta-feira de Cinzas.",
+     "descricao": "Pregado para o início do jejum, a Quarta-feira de Cinzas."
+    }
+   ],
+   "biblicas": [],
+   "nao_usadas": [
+    {
+     "alvo": "TC-11-quarta-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 6,1-6.16-18. Em comum com o trecho comentado: Mt 6,16-18 (50% do trecho, 33% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-11-quarta-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 6,1-6.16-18. Em comum com o trecho comentado: Mt 6,16-18 (50% do trecho, 33% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-11-sexta-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 6,19-23. Em comum com o trecho comentado: Mt 6,19-21 (50% do trecho, 60% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-11-sexta-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 6,19-23. Em comum com o trecho comentado: Mt 6,19-21 (50% do trecho, 60% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "cinzas",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 6,1-6.16-18. Em comum com o trecho comentado: Mt 6,16-18 (50% do trecho, 33% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual."
+  },
+  {
+   "codigo": "sd06",
+   "titulo_historico": "Domingo I da Quaresma (I)",
+   "titulo_latino": "Dominica I in Quadragesima (I)",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo I da Quaresma — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA I IN QUADRAGESIMA»)",
+   "leitura_do_dia": "Mt 4,1-11",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 4,1-11",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Quartum evangelium in Quadragesima: Ductus est Iesus in desertum». Versículos de Mt 4 citados nas notas da edição: Mt 4,1.4-5.7-10.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-1-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo I da Quaresma (I) (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "QUA-1-domingo-B",
+     "classe": "paralela",
+     "motivo": "Este dia lê Mc 1,12-15, o mesmo episódio em outro evangelista; o sermão comenta Mt 4,1-11 (decisão D6)."
+    },
+    {
+     "alvo": "QUA-1-domingo-C",
+     "classe": "paralela",
+     "motivo": "Este dia lê Lc 4,1-13, o mesmo episódio em outro evangelista; o sermão comenta Mt 4,1-11 (decisão D6)."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd07",
+   "titulo_historico": "Domingo I da Quaresma (II) da Penitência",
+   "titulo_latino": "Dominica I in Quadragesima (II) de Poenitentia",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo I da Quaresma — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA I IN QUADRAGESIMA»)",
+   "leitura_do_dia": "Mt 4,1-11",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 4,1-2",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Ductus est Iesus in desertum a Spiritu etc. (nota: Mt 4,1 (Vg. Tunc Iesus ductus est…))». Versículos de Mt 4 citados nas notas da edição: Mt 4,1-2.",
+   "reducao": "Sermão sobre a penitência, construído sobre o jejum de Jesus no deserto; das notas da edição, só Mt 4,1-2 é citado, e o sermão não trata das três tentações. (decisão D2)",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-1-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo I da Quaresma (II) da Penitência (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "QUA-1-domingo-B",
+     "classe": "paralela",
+     "motivo": "Este dia lê Mc 1,12-15, o mesmo episódio em outro evangelista; o sermão comenta Mt 4,1-2 (decisão D6)."
+    },
+    {
+     "alvo": "QUA-1-domingo-C",
+     "classe": "paralela",
+     "motivo": "Este dia lê Lc 4,1-13, o mesmo episódio em outro evangelista; o sermão comenta Mt 4,1-2 (decisão D6)."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd08",
+   "titulo_historico": "Domingo II da Quaresma (I)",
+   "titulo_latino": "Dominica II in Quadragesima (I)",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo II da Quaresma — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA II in QUADRAGESIMA»)",
+   "leitura_do_dia": "Mt 17,1-9",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 17,1-9",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Quintum evangelium in Dominica secunda Quadragesimae: Assumpsit Iesus Petrum». Versículos de Mt 17 citados nas notas da edição: Mt 17,1-3.5.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-2-domingo-A"
+    },
+    {
+     "leituras": "santo:transfiguracao-A"
+    },
+    {
+     "leituras": "santo:transfiguracao-A-domingo"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo II da Quaresma (I) (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "QUA-2-domingo-B",
+     "classe": "paralela",
+     "motivo": "Este dia lê Mc 9,2-10, o mesmo episódio em outro evangelista; o sermão comenta Mt 17,1-9 (decisão D6)."
+    },
+    {
+     "alvo": "QUA-2-domingo-C",
+     "classe": "paralela",
+     "motivo": "Este dia lê Lc 9,28b-36, o mesmo episódio em outro evangelista; o sermão comenta Mt 17,1-9 (decisão D6)."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd09",
+   "titulo_historico": "Domingo II da Quaresma (II)",
+   "titulo_latino": "Dominica II in Quadragesima (II)",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo II da Quaresma — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA II IN QUADRAGESIMA»)",
+   "leitura_do_dia": "Mt 15,21-28",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 15,21-28",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Sermo alter Item evangelium in eadem dominica: Egressus Iesus». Versículos de Mt 15 citados nas notas da edição: Mt 15,21-23.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-18-quarta-I"
+    },
+    {
+     "leituras": "TC-18-quarta-II"
+    },
+    {
+     "leituras": "TC-20-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo II da Quaresma (II) (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd10",
+   "titulo_historico": "Domingo III da Quaresma",
+   "titulo_latino": "Dominica III in Quadragesima",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo III da Quaresma — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA III IN QUADRAGESIMA»)",
+   "leitura_do_dia": "Lc 11,14-28",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 11,14-28",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in tertia dominica Quadragesimae: Erat Iesus eiciens daemonium». Versículos de Lc 11 citados nas notas da edição: Lc 11,14.21-22.24-28.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-3-quinta"
+    },
+    {
+     "leituras": "TC-27-sexta-I"
+    },
+    {
+     "leituras": "TC-27-sexta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo III da Quaresma (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "TC-27-sabado-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 11,27-28. Em comum com o trecho comentado: Lc 11,27-28 (13% do trecho, 100% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-27-sabado-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 11,27-28. Em comum com o trecho comentado: Lc 11,27-28 (13% do trecho, 100% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "santo:assuncao",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 11,27-28. Em comum com o trecho comentado: Lc 11,27-28 (13% do trecho, 100% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd11",
+   "titulo_historico": "Domingo IV da Quaresma",
+   "titulo_latino": "Dominica IV in Quadragesima",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo IV da Quaresma — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IV IN QUADRAGESIMA»)",
+   "leitura_do_dia": "Jo 6,1-15",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 6,1-15",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium. in quarta dominica Quadragesimae: “De quinque panibus”». Versículos de Jo 6 citados nas notas da edição: Jo 6,1-15.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "PAS-2-sexta"
+    },
+    {
+     "leituras": "TC-17-domingo-B"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo IV da Quaresma (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd12",
+   "titulo_historico": "Domingo V da Quaresma",
+   "titulo_latino": "Dominica V in Quadragesima",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo V da Quaresma — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA V IN QUADRAGESIMA»)",
+   "leitura_do_dia": "Jo 8,46-59",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 8,46-59",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in quinta dominica Quadragesimae: Quis ex vobis arguet me de peccato». Versículos de Jo 8 citados nas notas da edição: Jo 8,46-59.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-5-quinta"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo V da Quaresma (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd13",
+   "titulo_historico": "Domingo de Ramos",
+   "titulo_latino": "Dominica in Ramis Palmarum",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo de Ramos — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IN RAMIS PALMARUM»)",
+   "leitura_do_dia": "Mt 21,1-9",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 21,1-9",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in ramis palmarum: Cum appropinquasset Iesus». Versículos de Mt 21 citados nas notas da edição: Mt 21,1-2.4-5.8-9.",
+   "liturgicas": [
+    {
+     "celebracao": "ramos",
+     "fundamento": "Título na edição crítica: «DOMINICA IN RAMIS PALMARUM».",
+     "descricao": "Pregado para o Domingo de Ramos."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "ramos-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "ramos-B",
+     "classe": "paralela",
+     "motivo": "Este dia lê Mc 11,1-10, o mesmo episódio em outro evangelista; o sermão comenta Mt 21,1-9 (decisão D6)."
+    },
+    {
+     "alvo": "ramos-C",
+     "classe": "paralela",
+     "motivo": "Este dia lê Lc 19,28-40, o mesmo episódio em outro evangelista; o sermão comenta Mt 21,1-9 (decisão D6)."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd14",
+   "titulo_historico": "Ceia do Senhor (Quinta-feira Santa)",
+   "titulo_latino": "In Cena Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Ceia do Senhor (Quinta-feira Santa) — no calendário do tempo de Santo Antônio (título na edição crítica: «IN CENA DOMINI»)",
+   "leitura_do_dia": "Jo 13,1-15",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 13,4-8",
+   "fundamento_do_trecho": "Versículos de Jo 13 citados nas notas da edição: Jo 13,4-6.8.",
+   "reducao": "Comenta o lava-pés (Jo 13,4-8, versículos citados nas notas); não trata do v. 1 nem do “dei-vos o exemplo” (v. 12-15). (decisão D2)",
+   "liturgicas": [
+    {
+     "celebracao": "ceiadosenhor",
+     "fundamento": "Título na edição crítica: «IN CENA DOMINI».",
+     "descricao": "Pregado para a Ceia do Senhor, na Quinta-feira Santa."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "ceiadosenhor"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd15",
+   "titulo_historico": "Na Páscoa do Senhor",
+   "titulo_latino": "In Pascha Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Na Páscoa do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «IN PASCHA DOMINI»)",
+   "leitura_do_dia": "Mc 16,1-7",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mc 16,1-7",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in Pascha Domini: Maria Magdalene». Versículos de Mc 16 citados nas notas da edição: Mc 16,1-7.",
+   "liturgicas": [
+    {
+     "celebracao": "pascoa",
+     "fundamento": "Título na edição crítica: «IN PASCHA DOMINI».",
+     "descricao": "Pregado para a Páscoa do Senhor."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "vigilia-pascal-B"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd16",
+   "titulo_historico": "Na Ressurreição do Senhor",
+   "titulo_latino": "In Resurrectione Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Na Ressurreição do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «IN RESURRECTIONE DOMINI»)",
+   "leitura_do_dia": null,
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": null,
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Florebit amygdalus, impinguabitur locusta, dissipabitur capparis (nota: Eccle 12,5 (Vg. … et dissipabitur…; in G)».",
+   "sem_trecho": "Sermão sobre a Ressurreição, construído sobre Ecl 12,5 e outros textos; não comenta um Evangelho. Nenhuma correspondência bíblica é criada para ele (decisão D2).",
+   "liturgicas": [
+    {
+     "celebracao": "pascoa",
+     "fundamento": "Título na edição crítica: «IN RESURRECTIONE DOMINI».",
+     "descricao": "Pregado para a Ressurreição do Senhor, na Páscoa."
+    }
+   ],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual."
+  },
+  {
+   "codigo": "sd17",
+   "titulo_historico": "Domingo da Oitava da Páscoa",
+   "titulo_latino": "Dominica in Octava Paschae",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo da Oitava da Páscoa — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IN OCTAVA PASCHAE»)",
+   "leitura_do_dia": "Jo 20,19-31",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 20,19-31",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in octava Paschae: Cum esset sero die illo». Versículos de Jo 20 citados nas notas da edição: Jo 20,19-29.",
+   "liturgicas": [
+    {
+     "celebracao": "divinamisericordia",
+     "fundamento": "Título na edição crítica: «DOMINICA IN OCTAVA PASCHAE». O domingo da oitava da Páscoa é o atual 2º Domingo da Páscoa.",
+     "descricao": "Pregado para o domingo da oitava da Páscoa, que é o atual 2º Domingo da Páscoa."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "divinamisericordia-A"
+    },
+    {
+     "leituras": "divinamisericordia-B"
+    },
+    {
+     "leituras": "divinamisericordia-C"
+    },
+    {
+     "leituras": "pentecostes"
+    },
+    {
+     "leituras": "santo:saotome"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd18",
+   "titulo_historico": "Domingo II depois da Páscoa",
+   "titulo_latino": "Dominica II post Pascha",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo II depois da Páscoa — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA II POST PASCHA»)",
+   "leitura_do_dia": "Jo 10,11-16",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 10,11-16",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in secunda dominica post Pascha; Ego sum pastor bonus». Versículos de Jo 10 citados nas notas da edição: Jo 10,11.14-16.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "PAS-4-domingo-B"
+    },
+    {
+     "leituras": "PAS-4-segunda"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo II depois da Páscoa (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd19",
+   "titulo_historico": "Domingo III depois da Páscoa",
+   "titulo_latino": "Dominica III post Pascha",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo III depois da Páscoa — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA III POST PASCHA»)",
+   "leitura_do_dia": "Jo 16,16-22",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 16,16-22",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in tertia dominica post Pascha: Modicum et iam non videbitis me». Versículos de Jo 16 citados nas notas da edição: Jo 16,16.20-22.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "PAS-6-quinta"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo III depois da Páscoa (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "PAS-6-sexta",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 16,20-23a. Em comum com o trecho comentado: Jo 16,20-22 (43% do trecho, 75% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd20",
+   "titulo_historico": "Domingo IV depois da Páscoa",
+   "titulo_latino": "Dominica IV post Pascha",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo IV depois da Páscoa — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IV POST PASCHA»)",
+   "leitura_do_dia": "Jo 16,5-14",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 16,5-14",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in quarta dominica post Pascha: Vado ad eum qui me misit». Versículos de Jo 16 citados nas notas da edição: Jo 16,5.8-11.13.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "PAS-6-terca"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo IV depois da Páscoa (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "PAS-6-quarta",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 16,12-15. Em comum com o trecho comentado: Jo 16,12-14 (30% do trecho, 75% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "santissimatrindade-C",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 16,12-15. Em comum com o trecho comentado: Jo 16,12-14 (30% do trecho, 75% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd21",
+   "titulo_historico": "Domingo V depois da Páscoa",
+   "titulo_latino": "Dominica V post Pascha",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo V depois da Páscoa — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA V POST PASCHA»)",
+   "leitura_do_dia": "Jo 16,23-30",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 16,23-30",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in quinta dominica post Pascha: Amen». Versículos de Jo 16 citados nas notas da edição: Jo 16,23-24.26-27.29.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "PAS-6-sabado"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo V depois da Páscoa (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "PAS-7-segunda",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 16,29-33. Em comum com o trecho comentado: Jo 16,29-30 (25% do trecho, 40% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd22",
+   "titulo_historico": "Domingo VI depois da Páscoa",
+   "titulo_latino": "Dominica VI post Pascha",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo VI depois da Páscoa — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA VI POST PASCHA»)",
+   "leitura_do_dia": "Jo 15,26–16,4",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 15,26–16,4",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in sexta dominica post Pascha: Cum venerit Paraclitus quod in duabus clausulis dividitur». Versículos de Jo 15 citados nas notas da edição: Jo 15,26-27; 16,2.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "PAS-6-segunda"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo VI depois da Páscoa (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd23",
+   "titulo_historico": "Nas Ladainhas",
+   "titulo_latino": "In Litaniis",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Nas Ladainhas — no calendário do tempo de Santo Antônio (título na edição crítica: «IN LITANIIS»)",
+   "leitura_do_dia": "Lc 11,5-13",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 11,5-13",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Dixit Iesus discipulis suis: Quis vestrum habebit amicum (nota: Lc 11,5)». Versículos de Lc 11 citados nas notas da edição: Lc 11,5-9.11-13.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-17-domingo-C"
+    },
+    {
+     "leituras": "TC-27-quinta-I"
+    },
+    {
+     "leituras": "TC-27-quinta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Ladainhas (rogações)",
+     "classe": "fora-do-calendario",
+     "motivo": "As Ladainhas (rogações) não estão no calendário atual do Brasil."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd24",
+   "titulo_historico": "Na Ascensão do Senhor",
+   "titulo_latino": "In Ascensione Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Na Ascensão do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «IN ASCENSIONE DOMINI»)",
+   "leitura_do_dia": "Mc 16,14-20",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mc 16,14-20",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Recumbentibus undecim discipulis, apparuit illis Iesus (nota: Mc 16,14 (Vg. Recumbentibus illis undeci)». Versículos de Mc 16 citados nas notas da edição: Mc 16,14-19.",
+   "liturgicas": [
+    {
+     "celebracao": "ascensaodosenhor",
+     "fundamento": "Título na edição crítica: «IN ASCENSIONE DOMINI».",
+     "descricao": "Pregado para a Ascensão do Senhor.",
+     "observacao_historica": "No Brasil, a solenidade é celebrada no domingo seguinte à quinta-feira da Ascensão."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "ascensaodosenhor-B"
+    },
+    {
+     "leituras": "santo:conversaosaopaulo"
+    },
+    {
+     "leituras": "santo:saomarcos"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "PAS-1-sabado",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mc 16,9-15. Em comum com o trecho comentado: Mc 16,14-15 (29% do trecho, 29% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd25",
+   "titulo_historico": "Domingo de Pentecostes (I)",
+   "titulo_latino": "Dominica Pentecostes (I)",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA PENTECOSTES»)",
+   "leitura_do_dia": "At 2,1-11",
+   "leitura_comentada": "Primeira leitura",
+   "trecho_comentado": "At 2,1-4",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Epistola in die sancto Pentecostes». Versículos de At 2 citados nas notas da edição: At 2,1-4.",
+   "reducao": "O sermão é sobre a epístola (At 2): comenta a descida do Espírito Santo e as línguas (At 2,1-4); não trata da lista dos povos (v. 5-11). (decisão D2)",
+   "liturgicas": [
+    {
+     "celebracao": "pentecostes",
+     "fundamento": "Título na edição crítica: «DOMINICA PENTECOSTES».",
+     "descricao": "Pregado para o domingo de Pentecostes."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "pentecostes",
+     "leitura": "Primeira leitura"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd26",
+   "titulo_historico": "Na Festa de Pentecostes (II)",
+   "titulo_latino": "In Festo Pentecostes (II)",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Na Festa de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «IN FESTO PENTECOSTES»)",
+   "leitura_do_dia": "Jo 14,23-31",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": null,
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Paraclitus Spiritus Sanctus, quem mittet Pater in nomine meo, ille vos docebit omnia et suggeret vobis omnia quaecumque dixero vobis (nota: Io 14,26 (Vg. Paraclitus autem…))». Versículos de Jo 14 citados nas notas da edição: —.",
+   "sem_trecho": "Do Evangelho da festa cita só Jo 14,26 (e Jo 15,26); não o comenta por cláusulas. Nenhuma correspondência bíblica é criada para ele (decisão D2).",
+   "liturgicas": [
+    {
+     "celebracao": "pentecostes",
+     "fundamento": "Título na edição crítica: «IN FESTO PENTECOSTES».",
+     "descricao": "Pregado para a festa de Pentecostes."
+    }
+   ],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual."
+  },
+  {
+   "codigo": "sd27",
+   "titulo_historico": "Prólogo",
+   "titulo_latino": "Prologus",
+   "colecao": "Sermões dominicais",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sd28",
+   "titulo_historico": "Domingo I depois de Pentecostes",
+   "titulo_latino": "Dominica I post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo I depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA I POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 16,19-31",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 16,19-31",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in prima dominica post Pentecosten: Homo quidam erat dives». Versículos de Lc 16 citados nas notas da edição: Lc 16,19-31.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-2-quinta"
+    },
+    {
+     "leituras": "TC-26-domingo-C"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo I depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd29",
+   "titulo_historico": "Domingo II depois de Pentecostes",
+   "titulo_latino": "Dominica II post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo II depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA II POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 14,16-24",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 14,16-24",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in dominica secunda post Pentecosten: Homo quidam fecit cenam magnam». Versículos de Lc 14 citados nas notas da edição: Lc 14,16-21.23.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-31-terca-I"
+    },
+    {
+     "leituras": "TC-31-terca-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo II depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd30",
+   "titulo_historico": "Domingo III depois de Pentecostes",
+   "titulo_latino": "Dominica III post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo III depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA III POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 15,1-10",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 15,1-10",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in tertia dominica post Pentecosten: Erant appropinquantes ad Iesum publicani». Versículos de Lc 15 citados nas notas da edição: Lc 15,1-8.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-24-domingo-C"
+    },
+    {
+     "leituras": "TC-31-quinta-I"
+    },
+    {
+     "leituras": "TC-31-quinta-II"
+    },
+    {
+     "leituras": "scj-C"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo III depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "QUA-2-sabado",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 15,1-3.11-32. Em comum com o trecho comentado: Lc 15,1-3 (30% do trecho, 12% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "QUA-4-domingo-C",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 15,1-3.11-32. Em comum com o trecho comentado: Lc 15,1-3 (30% do trecho, 12% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd31",
+   "titulo_historico": "Domingo IV depois de Pentecostes",
+   "titulo_latino": "Dominica IV post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo IV depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IV POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 6,36-42",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 6,36-42",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in quarta dominica post Pentecosten: Estote misericordes». Versículos de Lc 6 citados nas notas da edição: Lc 6,36-42.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-23-sexta-I"
+    },
+    {
+     "leituras": "TC-23-sexta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo IV depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "QUA-2-segunda",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 6,36-38. Em comum com o trecho comentado: Lc 6,36-38 (43% do trecho, 100% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-23-quinta-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 6,27-38. Em comum com o trecho comentado: Lc 6,36-38 (43% do trecho, 25% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-23-quinta-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 6,27-38. Em comum com o trecho comentado: Lc 6,36-38 (43% do trecho, 25% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-7-domingo-C",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 6,27-38. Em comum com o trecho comentado: Lc 6,36-38 (43% do trecho, 25% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-8-domingo-C",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 6,39-45. Em comum com o trecho comentado: Lc 6,39-42 (57% do trecho, 57% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd32",
+   "titulo_historico": "Domingo V depois de Pentecostes",
+   "titulo_latino": "Dominica V post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo V depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA V POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 5,1-11",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 5,1-11",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in quinta dominica post Pentecosten: Cum turbae irruerent in Iesum». Versículos de Lc 5 citados nas notas da edição: Lc 5,1-11.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-22-quinta-I"
+    },
+    {
+     "leituras": "TC-22-quinta-II"
+    },
+    {
+     "leituras": "TC-5-domingo-C"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo V depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd33",
+   "titulo_historico": "Domingo VI depois de Pentecostes",
+   "titulo_latino": "Dominica VI post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo VI depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA VI POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 5,20-24",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 5,20-24",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in dominica sexta post Pentecosten: Nisi abundaverit iustitia vestra». Versículos de Mt 5 citados nas notas da edição: Mt 5,20.22-24.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-1-sexta"
+    },
+    {
+     "leituras": "TC-10-quinta-I"
+    },
+    {
+     "leituras": "TC-10-quinta-II"
+    },
+    {
+     "leituras": "TC-6-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo VI depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd34",
+   "titulo_historico": "Domingo VII depois de Pentecostes",
+   "titulo_latino": "Dominica VII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo VII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA VII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mc 8,1-9",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mc 8,1-9",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in dominica septima post Pentecosten: Cum turba multa esset cum Iesu». Versículos de Mc 8 citados nas notas da edição: Mc 8,1-9.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-5-sabado-I"
+    },
+    {
+     "leituras": "TC-5-sabado-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo VII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd35",
+   "titulo_historico": "Domingo VIII depois de Pentecostes",
+   "titulo_latino": "Dominica VIII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo VIII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA VIII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 7,15-21",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 7,15-21",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in octava dominica post Pentecosten: Attendite a falsis prophetis». Versículos de Mt 7 citados nas notas da edição: Mt 7,15-18.20-21.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-12-quarta-I"
+    },
+    {
+     "leituras": "TC-12-quarta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo VIII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd36",
+   "titulo_historico": "Prólogo",
+   "titulo_latino": "Prologus",
+   "colecao": "Sermões dominicais",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sd37",
+   "titulo_historico": "Domingo IX depois de Pentecostes",
+   "titulo_latino": "Dominica IX post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo IX depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IX POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 16,1-9",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 16,1-9",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in nona dominica post Pentecosten: Homo quidam erat dives qui habebat villicum». Versículos de Lc 16 citados nas notas da edição: Lc 16,1-4.6.8-9.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-25-domingo-C"
+    },
+    {
+     "leituras": "TC-31-sexta-I"
+    },
+    {
+     "leituras": "TC-31-sexta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo IX depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd38",
+   "titulo_historico": "Domingo X depois de Pentecostes",
+   "titulo_latino": "Dominica X post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo X depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA X POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 19,41-47",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 19,41-47",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in decima dominica post Pentecosten: Cum appropinquaret Iesus Ierusalem». Versículos de Lc 19 citados nas notas da edição: Lc 19,41-47.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-33-quinta-I"
+    },
+    {
+     "leituras": "TC-33-quinta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo X depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "TC-33-sexta-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 19,45-48. Em comum com o trecho comentado: Lc 19,45-47 (43% do trecho, 75% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-33-sexta-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 19,45-48. Em comum com o trecho comentado: Lc 19,45-47 (43% do trecho, 75% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd39",
+   "titulo_historico": "Domingo XI depois de Pentecostes",
+   "titulo_latino": "Dominica XI post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XI depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XI POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 18,9-14",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 18,9-14",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in undecima dominica post Pentecosten: Duo homines ascenderunt in templum». Versículos de Lc 18 citados nas notas da edição: Lc 18,9-14.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-3-sabado"
+    },
+    {
+     "leituras": "TC-30-domingo-C"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XI depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd40",
+   "titulo_historico": "Domingo XII depois de Pentecostes",
+   "titulo_latino": "Dominica XII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mc 7,31-37",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mc 7,31-37",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in duodecima dominica post Pentecosten: Exiens Iesus de finibus Tyri». Versículos de Mc 7 citados nas notas da edição: Mc 7,31-35.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-23-domingo-B"
+    },
+    {
+     "leituras": "TC-5-sexta-I"
+    },
+    {
+     "leituras": "TC-5-sexta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd41",
+   "titulo_historico": "Prólogo",
+   "titulo_latino": "Prologus",
+   "colecao": "Sermões dominicais",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sd42",
+   "titulo_historico": "Domingo XIII depois de Pentecostes",
+   "titulo_latino": "Dominica XIII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XIII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XIII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 10,23-37",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 10,23-37",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in decimatertia dominica post Pentecosten: Beati oculi». Versículos de Lc 10 citados nas notas da edição: Lc 10,23-28.30-37.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-15-domingo-C"
+    },
+    {
+     "leituras": "TC-27-segunda-I"
+    },
+    {
+     "leituras": "TC-27-segunda-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XIII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "ADV-1-terca",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 10,21-24. Em comum com o trecho comentado: Lc 10,23-24 (13% do trecho, 50% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-26-sabado-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 10,17-24. Em comum com o trecho comentado: Lc 10,23-24 (13% do trecho, 25% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-26-sabado-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 10,17-24. Em comum com o trecho comentado: Lc 10,23-24 (13% do trecho, 25% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd43",
+   "titulo_historico": "Domingo XIV depois de Pentecostes",
+   "titulo_latino": "Dominica XIV post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XIV depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XIV POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 17,11-19",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 17,11-19",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in dominica decimaquarta post Pentecosten: Dum iret Iesus in Ierusalem». Versículos de Lc 17 citados nas notas da edição: Lc 17,11-19.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-28-domingo-C"
+    },
+    {
+     "leituras": "TC-32-quarta-I"
+    },
+    {
+     "leituras": "TC-32-quarta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XIV depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd44",
+   "titulo_historico": "Domingo XV depois de Pentecostes",
+   "titulo_latino": "Dominica XV post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XV depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XV POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 6,24-33",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 6,24-33",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in decima quinta dominica post Pentecosten: Nemo potest duobus dominis servire». Versículos de Mt 6 citados nas notas da edição: Mt 6,24-33.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-11-sabado-I"
+    },
+    {
+     "leituras": "TC-11-sabado-II"
+    },
+    {
+     "leituras": "TC-8-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XV depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd45",
+   "titulo_historico": "Domingo XVI depois de Pentecostes",
+   "titulo_latino": "Dominica XVI post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XVI depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XVI POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 7,11-16",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 7,11-16",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in decima sexta dominica post Pentecosten: Ibat Iesus in civitatem quae vocatur Naim». Versículos de Lc 7 citados nas notas da edição: Lc 7,11-16.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-10-domingo-C"
+    },
+    {
+     "leituras": "TC-24-terca-I"
+    },
+    {
+     "leituras": "TC-24-terca-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XVI depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd46",
+   "titulo_historico": "Prólogo",
+   "titulo_latino": "Prologus",
+   "colecao": "Sermões dominicais",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sd47",
+   "titulo_historico": "Domingo XVII depois de Pentecostes",
+   "titulo_latino": "Dominica XVII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XVII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XVII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Lc 14,1-11",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 14,1-11",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in decima septima dominica post Pentecosten: Cum intraret Iesus in domum». Versículos de Lc 14 citados nas notas da edição: Lc 14,1-6.8-11.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-30-sabado-I"
+    },
+    {
+     "leituras": "TC-30-sabado-II"
+    },
+    {
+     "leituras": "TC-30-sexta-I"
+    },
+    {
+     "leituras": "TC-30-sexta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XVII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "TC-22-domingo-C",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 14,1.7-14. Em comum com o trecho comentado: Lc 14,1.7-11 (55% do trecho, 67% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd48",
+   "titulo_historico": "Domingo XVIII depois de Pentecostes",
+   "titulo_latino": "Dominica XVIII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XVIII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XVIII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 22,34-46",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 22,41-46",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in decima octava dominica post Pentecosten: Congregatis pharisaeis». Versículos de Mt 22 citados nas notas da edição: Mt 22,41-45.",
+   "reducao": "O lema do sermão começa em “Congregatis pharisaeis” (Mt 22,41); a pergunta sobre o grande mandamento (v. 34-40) não é comentada. (decisão D2)",
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XVIII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "catalogo",
+   "motivo_catalogo": "O trecho comentado (Mt 22,41-46) não é lido no lecionário atual; o grande mandamento (Mt 22,34-40), lido em outros dias, não é comentado (decisão D7).",
+   "justificativa": "O trecho comentado (Mt 22,41-46) não é lido no lecionário atual; o grande mandamento (Mt 22,34-40), lido em outros dias, não é comentado (decisão D7)."
+  },
+  {
+   "codigo": "sd49",
+   "titulo_historico": "Domingo XIX depois de Pentecostes",
+   "titulo_latino": "Dominica XIX post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XIX depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XIX POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 9,1-8",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 9,1-8",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in decima nona dominica post Pentecosten: Ascendens Iesus in naviculam». Versículos de Mt 9 citados nas notas da edição: Mt 9,1-8.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-13-quinta-I"
+    },
+    {
+     "leituras": "TC-13-quinta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XIX depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd50",
+   "titulo_historico": "Domingo XX depois de Pentecostes",
+   "titulo_latino": "Dominica XX post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XX depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XX POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 22,1-14",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 22,1-14",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in vigesima dominica post Pentecosten: Simile est regnum caelorum homini regi». Versículos de Mt 22 citados nas notas da edição: Mt 22,2-14.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-20-quinta-I"
+    },
+    {
+     "leituras": "TC-20-quinta-II"
+    },
+    {
+     "leituras": "TC-28-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XX depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd51",
+   "titulo_historico": "Prólogo",
+   "titulo_latino": "Prologus",
+   "colecao": "Sermões dominicais",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sd52",
+   "titulo_historico": "Domingo XXI depois de Pentecostes",
+   "titulo_latino": "Dominica XXI post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XXI depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XXI POST PENTECOSTEN»)",
+   "leitura_do_dia": "Jo 4,46-53",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 4,46-53",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in vigesimaprima dominica post Pentecosten: Erat quidam regulus». Versículos de Jo 4 citados nas notas da edição: Jo 4,46-53.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-4-segunda"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XXI depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd53",
+   "titulo_historico": "Domingo XXII depois de Pentecostes",
+   "titulo_latino": "Dominica XXII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XXII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XXII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 18,23-35",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 18,23-35",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in vigesimasecunda dominica post Pentecosten: Simile est regnum caelorum». Versículos de Mt 18 citados nas notas da edição: Mt 18,23-33.35.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "QUA-3-terca"
+    },
+    {
+     "leituras": "TC-19-quinta-I"
+    },
+    {
+     "leituras": "TC-19-quinta-II"
+    },
+    {
+     "leituras": "TC-24-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XXII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd54",
+   "titulo_historico": "Domingo XXIII depois de Pentecostes",
+   "titulo_latino": "Dominica XXIII post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XXIII depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XXIII POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 22,15-21",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 22,15-21",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in vigesimatertia dominica post Pentecosten: Abeuntes Pharisaei». Versículos de Mt 22 citados nas notas da edição: Mt 22,15-19.21.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-29-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XXIII depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd55",
+   "titulo_historico": "Domingo XXIV depois de Pentecostes",
+   "titulo_latino": "Dominica XXIV post Pentecosten",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo XXIV depois de Pentecostes — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA XXIV POST PENTECOSTEN»)",
+   "leitura_do_dia": "Mt 9,18-26",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 9,18-26",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in vigesimaquarta dominica post Pentecosten: Loquente Iesu ad turbas». Versículos de Mt 9 citados nas notas da edição: Mt 9,18-25.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-14-segunda-I"
+    },
+    {
+     "leituras": "TC-14-segunda-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo XXIV depois de Pentecostes (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd56",
+   "titulo_historico": "Prólogo",
+   "titulo_latino": "Prologus",
+   "colecao": "Sermões dominicais",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sd57",
+   "titulo_historico": "Domingo I do Advento",
+   "titulo_latino": "Dominica I de Adventu",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo I do Advento — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA I DE ADVENTU*»)",
+   "leitura_do_dia": "Lc 21,25-33",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 21,25-27",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in prima dominica de Adventu, quod in quattuor clausulis dividitur: Erunt signa in sole et luna». Versículos de Lc 21 citados nas notas da edição: Lc 21,25-27.",
+   "reducao": "Os quatro adventos são comentados sobre os sinais e a vinda do Filho do Homem (Lc 21,25-27); a parábola da figueira (v. 29-33) não é comentada. (decisão D2)",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "ADV-1-domingo-C"
+    },
+    {
+     "leituras": "TC-34-quinta-I"
+    },
+    {
+     "leituras": "TC-34-quinta-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo I do Advento (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd58",
+   "titulo_historico": "Domingo II do Advento",
+   "titulo_latino": "Dominica II de Adventu",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo II do Advento — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA II DE ADVENTU»)",
+   "leitura_do_dia": "Mt 11,2-10",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 11,2-10",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in secunda dominica de Adventu: Cum audisset Ioannes». Versículos de Mt 11 citados nas notas da edição: Mt 11,2-8.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "ADV-3-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo II do Advento (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd59",
+   "titulo_historico": "Domingo III do Advento",
+   "titulo_latino": "Dominica III de Adventu",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo III do Advento — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA III DE ADVENTU»)",
+   "leitura_do_dia": "Fl 4,4-7",
+   "leitura_comentada": "Segunda leitura",
+   "trecho_comentado": "Fl 4,4-7",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Sermo in tertia dominica Adventus, de epistola beati Pauli: Gaudete in Domino». Versículos de Fl 4 citados nas notas da edição: Fl 4,4-7.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "ADV-3-domingo-C",
+     "leitura": "Segunda leitura"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo III do Advento (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "TC-27-domingo-A",
+     "classe": "parcial",
+     "motivo": "Segunda leitura do dia: Fl 4,6-9. Em comum com o trecho comentado: Fl 4,6-7 (50% do trecho, 50% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd60",
+   "titulo_historico": "Domingo IV do Advento",
+   "titulo_latino": "Dominica IV de Adventu",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo IV do Advento — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA IV DE ADVENTU»)",
+   "leitura_do_dia": "Lc 3,1-6",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 3,1-6",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in quarta dominica Adventus: Factum est verbum Domini super Ioannem». Versículos de Lc 3 citados nas notas da edição: Lc 3,2-6.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "ADV-2-domingo-C"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo IV do Advento (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd61",
+   "titulo_historico": "Natal do Senhor",
+   "titulo_latino": "In Nativitate Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Natal do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «IN NATIVITATE DOMINI»)",
+   "leitura_do_dia": "Lc 2,1-14",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 2,1-14",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Exiit edictum a Caesare Augusto, ut describeretur universus orbis (nota: Lc 2,1)». Versículos de Lc 2 citados nas notas da edição: Lc 2,1-8.10-12.",
+   "liturgicas": [
+    {
+     "celebracao": "natal",
+     "fundamento": "Título na edição crítica: «IN NATIVITATE DOMINI».",
+     "descricao": "Pregado para o Natal do Senhor."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "natal-noite"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd62",
+   "titulo_historico": "Festa de Santo Estêvão Protomártir",
+   "titulo_latino": "In Festo S. Stephani Protomartyris",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Festa de Santo Estêvão Protomártir — no calendário do tempo de Santo Antônio (título na edição crítica: «IN FESTO S. STEPHANI PROTOMARTYRIS»)",
+   "leitura_do_dia": "Mt 23,34-39",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 23,34-39",
+   "fundamento_do_trecho": "Versículos de Mt 23 citados nas notas da edição: Mt 23,34-35.37.",
+   "liturgicas": [
+    {
+     "celebracao": "santoestevao",
+     "fundamento": "Título na edição crítica: «IN FESTO S. STEPHANI PROTOMARTYRIS».",
+     "descricao": "Pregado para a festa de Santo Estêvão."
+    }
+   ],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual."
+  },
+  {
+   "codigo": "sd63",
+   "titulo_historico": "Festa de São João Evangelista",
+   "titulo_latino": "In Festo S. Ioannis Evangelistae",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Festa de São João Evangelista — no calendário do tempo de Santo Antônio (título na edição crítica: «IN FESTO S. IOANNIS EVANGELISTAE»)",
+   "leitura_do_dia": "Jo 21,19-24",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 21,19-24",
+   "fundamento_do_trecho": "Versículos de Jo 21 citados nas notas da edição: Jo 21,20.24.",
+   "liturgicas": [
+    {
+     "celebracao": "joaoevangelista",
+     "fundamento": "Título na edição crítica: «IN FESTO S. IOANNIS EVANGELISTAE».",
+     "descricao": "Pregado para a festa de São João Evangelista."
+    }
+   ],
+   "biblicas": [],
+   "nao_usadas": [
+    {
+     "alvo": "PAS-7-sabado",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 21,20-25. Em comum com o trecho comentado: Jo 21,20-24 (83% do trecho, 83% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual."
+  },
+  {
+   "codigo": "sd64",
+   "titulo_historico": "Festa dos Santos Inocentes",
+   "titulo_latino": "In Festo Sanctorum Innocentium",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Festa dos Santos Inocentes — no calendário do tempo de Santo Antônio (título na edição crítica: «IN FESTO SANCTORUM INNOCENTIUM»)",
+   "leitura_do_dia": "Mt 2,13-18",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 2,13-18",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore; Angelus Domini apparuit in somnis Ioseph, dicens: Surge etc. (nota: Mt 2,13)». Versículos de Mt 2 citados nas notas da edição: Mt 2,13.15-16.",
+   "liturgicas": [
+    {
+     "celebracao": "santosinocentes",
+     "fundamento": "Título na edição crítica: «IN FESTO SANCTORUM INNOCENTIUM».",
+     "descricao": "Pregado para a festa dos Santos Inocentes."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "santo:santosinocentes"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "sagradafamilia-A",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 2,13-15.19-23. Em comum com o trecho comentado: Mt 2,13-15 (50% do trecho, 38% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd65",
+   "titulo_historico": "Domingo I depois do Natal do Senhor",
+   "titulo_latino": "Dominica I post Nativitatem Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo I depois do Natal do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA I POST NATIVITATEM DOMINI»)",
+   "leitura_do_dia": "Lc 2,33-40",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 2,33-38",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in prima dominica post Nativitatem Domini: Erant Ioseph et Maria». Versículos de Lc 2 citados nas notas da edição: Lc 2,33-35.",
+   "reducao": "Comenta Simeão e Ana (Lc 2,33-38); o v. 40 não é comentado. (decisão D2)",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "santo:apresentacao"
+    },
+    {
+     "leituras": "santo:apresentacao-domingo"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo I depois do Natal do Senhor (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "NAT-dez29",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 2,22-35. Em comum com o trecho comentado: Lc 2,33-35 (50% do trecho, 21% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "NAT-dez30",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 2,36-40. Em comum com o trecho comentado: Lc 2,36-38 (50% do trecho, 60% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "sagradafamilia-B",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Lc 2,22-35. Em comum com o trecho comentado: Lc 2,33-35 (50% do trecho, 21% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd66",
+   "titulo_historico": "Circuncisão do Senhor",
+   "titulo_latino": "In Circumcisione Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Circuncisão do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «IN CIRCUMCISIONE DOMINI»)",
+   "leitura_do_dia": "Lc 2,21",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 2,21",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Postquam consummati sunt dies octo etc. (nota: Lc 2,21)». Versículos de Lc 2 citados nas notas da edição: Lc 2,21.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "santamaria",
+     "descricao": "Comenta Lc 2,21, que está no Evangelho deste dia (Lc 2,16-21). O sermão foi pregado para a festa da Circuncisão do Senhor, título que o dia 1º de janeiro tinha no calendário do tempo de Santo Antônio; não foi pregado para a atual solenidade de Santa Maria, Mãe de Deus: a ligação é a leitura do Evangelho."
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Santa Maria, Mãe de Deus (1º/1), como correspondência litúrgica",
+     "classe": "ocasiao-antiga",
+     "motivo": "Decisão D4b (28/11/2026): o sermão foi pregado para a Circuncisão do Senhor, título que o dia 1º de janeiro tinha no calendário do tempo de Santo Antônio; não foi pregado para a atual solenidade de Santa Maria, Mãe de Deus. Aparece em 1º de janeiro só pela leitura (Lc 2,21 está no Evangelho do dia)."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A festa da Circuncisão não existe mais com esse título; aparece em 1º de janeiro pela leitura do Evangelho (decisão D4b)."
+  },
+  {
+   "codigo": "sd67",
+   "titulo_historico": "Domingo II depois do Natal do Senhor",
+   "titulo_latino": "Dominica II post Nativitatem Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo II depois do Natal do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA II POST NATIVITATEM DOMINI»)",
+   "leitura_do_dia": "Lc 2,42-52",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 2,42-52",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in secunda dominica post Nativitatem: Cum factus esset Iesus». Versículos de Lc 2 citados nas notas da edição: Lc 2,42.46.48.51.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "sagradafamilia-C"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo II depois do Natal do Senhor (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd68",
+   "titulo_historico": "Epifania do Senhor",
+   "titulo_latino": "In Epiphania Domini",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Epifania do Senhor — no calendário do tempo de Santo Antônio (título na edição crítica: «IN EPIPHANIA DOMINI»)",
+   "leitura_do_dia": "Mt 2,1-12",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 2,1-12",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Cum natus esset Iesus in Bethlehem Iuda etc. (nota: Mt 2,1 (Vg. Cum ergo…).)». Versículos de Mt 2 citados nas notas da edição: Mt 2,1-3.9-11.",
+   "liturgicas": [
+    {
+     "celebracao": "epifania",
+     "fundamento": "Título na edição crítica: «IN EPIPHANIA DOMINI».",
+     "descricao": "Pregado para a Epifania do Senhor.",
+     "observacao_historica": "No Brasil, a solenidade é celebrada no domingo entre 2 e 8 de janeiro."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "epifania"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd69",
+   "titulo_historico": "Domingo I depois da Oitava da Epifania",
+   "titulo_latino": "Dominica I post Octavam Epiphaniae",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo I depois da Oitava da Epifania — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA I POST OCTAVAM EPIPHANIAE»)",
+   "leitura_do_dia": "Jo 2,1-11",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 2,1-11",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in prima dominica post octavam Epiphaniae: Nuptiae factae sunt». Versículos de Jo 2 citados nas notas da edição: Jo 2,1-10.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "NAT-jan07"
+    },
+    {
+     "leituras": "TC-2-domingo-C"
+    },
+    {
+     "leituras": "santo:NSAparecida"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo I depois da Oitava da Epifania (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd70",
+   "titulo_historico": "Domingo II depois da Oitava da Epifania",
+   "titulo_latino": "Dominica II post Octavam Epiphaniae",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo II depois da Oitava da Epifania — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA II POST OCTAVAM EPIPHANIAE»)",
+   "leitura_do_dia": "Mt 8,1-13",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 8,1-13",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in secunda dominica post octavam Epiphaniae: Cum descendisset Iesus». Versículos de Mt 8 citados nas notas da edição: Mt 8,1-5.7-13.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "ADV-1-segunda"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo II depois da Oitava da Epifania (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    },
+    {
+     "alvo": "TC-12-sabado-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 8,5-17. Em comum com o trecho comentado: Mt 8,5-13 (69% do trecho, 69% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-12-sabado-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 8,5-17. Em comum com o trecho comentado: Mt 8,5-13 (69% do trecho, 69% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-12-sexta-I",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 8,1-4. Em comum com o trecho comentado: Mt 8,1-4 (31% do trecho, 100% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "TC-12-sexta-II",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Mt 8,1-4. Em comum com o trecho comentado: Mt 8,1-4 (31% do trecho, 100% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd71",
+   "titulo_historico": "Domingo III depois da Oitava da Epifania",
+   "titulo_latino": "Dominica III post Octavam Epiphaniae",
+   "colecao": "Sermões dominicais",
+   "tipo": "sermao",
+   "ocasiao": "Domingo III depois da Oitava da Epifania — no calendário do tempo de Santo Antônio (título na edição crítica: «DOMINICA III POST OCTAVAM EPIPHANIAE*»)",
+   "leitura_do_dia": "Mt 8,23-27",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 8,23-27",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «Evangelium in ultima dominica: Ascendente Iesu in naviculam». Versículos de Mt 8 citados nas notas da edição: Mt 8,23-26.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "TC-13-terca-I"
+    },
+    {
+     "leituras": "TC-13-terca-II"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Domingo III depois da Oitava da Epifania (ocasião antiga)",
+     "classe": "ocasiao-antiga",
+     "motivo": "O domingo do calendário do tempo de Santo Antônio não é convertido num domingo atual (decisões D1 e D6). O sermão entra só pelos dias em que se proclama a leitura que ele comenta."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sd72",
+   "titulo_historico": "Epílogo",
+   "titulo_latino": "Epilogus",
+   "colecao": "Sermões dominicais",
+   "tipo": "epilogo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Epílogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sm01",
+   "titulo_historico": "Prólogo aos Quatro Sermões para as Festas da Bem-aventurada Virgem Maria",
+   "titulo_latino": "Prologus in Quattuor Sermones in Festivitatibus Beatae Mariae Virginis",
+   "colecao": "Sermões marianos",
+   "tipo": "prologo",
+   "leitura_do_dia": null,
+   "trecho_comentado": null,
+   "liturgicas": [],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "catalogo",
+   "motivo_catalogo": "Prólogo da coleção: não foi pregado para um dia do calendário (decisão D7).",
+   "justificativa": "Texto de abertura ou fecho da coleção, sem ocasião litúrgica."
+  },
+  {
+   "codigo": "sm02",
+   "titulo_historico": "Na Natividade da Bem-aventurada Virgem Maria",
+   "titulo_latino": "In Nativitate Beatae Mariae Virginis",
+   "colecao": "Sermões marianos",
+   "tipo": "sermao",
+   "ocasiao": "Na Natividade da Bem-aventurada Virgem Maria — no calendário do tempo de Santo Antônio (título na edição crítica: «IN NATIVITATE BEATAE MARIAE VIRGINIS»)",
+   "leitura_do_dia": "Mt 1,1-16",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": null,
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Dicamus ergo: Gloriosa Virgo Maria fuit quasi stella matutina etc. Dicit Ecclesiasticus: Species caeli, gloria stellarum, mundum illuminans (nota: Eccli 43,10)». Versículos de Mt 1 citados nas notas da edição: —.",
+   "sem_trecho": "Construído sobre Eclo 50 (“Quasi stella matutina”); a genealogia, Evangelho da festa, só é mencionada. Nenhuma correspondência bíblica é criada para ele (decisão D2).",
+   "liturgicas": [
+    {
+     "celebracao": "natividade",
+     "fundamento": "Título na edição crítica: «IN NATIVITATE BEATAE MARIAE VIRGINIS».",
+     "descricao": "Pregado para a festa da Natividade de Nossa Senhora."
+    }
+   ],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual."
+  },
+  {
+   "codigo": "sm03",
+   "titulo_historico": "Na Anunciação da Bem-aventurada Virgem Maria (I)",
+   "titulo_latino": "In Annuntiatione Beatae Mariae Virginis (I)",
+   "colecao": "Sermões marianos",
+   "tipo": "sermao",
+   "ocasiao": "Na Anunciação da Bem-aventurada Virgem Maria — no calendário do tempo de Santo Antônio (título na edição crítica: «IN ANNUNTIATIONE BEATAE MARIAE VIRGINIS»)",
+   "leitura_do_dia": "Lc 1,26-38",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 1,26-38",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Quasi sol refulgens, et quasi arcus refulgens inter nebulas gloriae etc. (nota: Eccli 50,7-8 (Vg. add om))». Versículos de Lc 1 citados nas notas da edição: Lc 1,26.28-29.31.34-35.38.",
+   "liturgicas": [
+    {
+     "celebracao": "anunciacao",
+     "fundamento": "Título na edição crítica: «IN ANNUNTIATIONE BEATAE MARIAE VIRGINIS».",
+     "descricao": "Este sermão foi originalmente intitulado “Na Anunciação da Bem-aventurada Virgem Maria” e corresponde à atual solenidade da Anunciação do Senhor, celebrada em 25 de março.",
+     "observacao_historica": "No tempo de Santo Antônio, a festa de 25 de março era celebrada como Anunciação da Bem-aventurada Virgem Maria; o calendário reformado em 1969 a celebra como solenidade do Senhor, com o título de Anunciação do Senhor. O Evangelho é o mesmo (Lc 1,26-38)."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "ADV-4-domingo-B"
+    },
+    {
+     "leituras": "ADV-dez20"
+    },
+    {
+     "leituras": "santo:anunciacao"
+    },
+    {
+     "leituras": "santo:imaculada"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sm04",
+   "titulo_historico": "Na Purificação da Bem-aventurada Virgem Maria (I)",
+   "titulo_latino": "In Purificatione Beatae Mariae Virginis (I)",
+   "colecao": "Sermões marianos",
+   "tipo": "sermao",
+   "ocasiao": "Na Purificação da Bem-aventurada Virgem Maria — no calendário do tempo de Santo Antônio (título na edição crítica: «IN PURIFICATIONE BEATAE MARIAE VIRGINIS»)",
+   "leitura_do_dia": "Lc 2,22-32",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 2,22-32",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Quasi thus redolens in diebus aestatis; quasi ignis effulgens et thus ardens in igne (nota: Eccli 50,8-9)». Versículos de Lc 2 citados nas notas da edição: Lc 2,22-24.29-32.",
+   "liturgicas": [
+    {
+     "celebracao": "apresentacao",
+     "fundamento": "Título na edição crítica: «IN PURIFICATIONE BEATAE MARIAE VIRGINIS». Decisão D4a (28/11/2026).",
+     "descricao": "Este sermão foi originalmente intitulado “Na Purificação da Bem-aventurada Virgem Maria” e corresponde à atual festa da Apresentação do Senhor, celebrada em 2 de fevereiro.",
+     "observacao_historica": "No tempo de Santo Antônio, a festa de 2 de fevereiro era celebrada no Ocidente como Purificação da Bem-aventurada Virgem Maria, com acento mariano; o calendário reformado em 1969 a celebra como festa do Senhor, com o título de Apresentação do Senhor. O Evangelho é o mesmo (Lc 2,22-40). A correspondência não significa que o sermão tenha sido pregado para a festa com o sentido e o título atuais."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "NAT-dez29"
+    },
+    {
+     "leituras": "sagradafamilia-B"
+    },
+    {
+     "leituras": "santo:apresentacao"
+    },
+    {
+     "leituras": "santo:apresentacao-domingo"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sm05",
+   "titulo_historico": "Na Assunção da Bem-aventurada Virgem Maria",
+   "titulo_latino": "In Assumptione Beatae Mariae Virginis",
+   "colecao": "Sermões marianos",
+   "tipo": "sermao",
+   "ocasiao": "Na Assunção da Bem-aventurada Virgem Maria — no calendário do tempo de Santo Antônio (título na edição crítica: «IN ASSUMPTIONE BEATAE MARIAE VIRGINIS»)",
+   "leitura_do_dia": "Lc 10,38-42",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": null,
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: Quasi vas auri solidum ornatum omni lapide pretioso, quasi oliva pullulans et cypressus in altum se extollens (nota: Eccli 50,10-11 (Vg. … in altitudinem…))». Versículos de Lc 10 citados nas notas da edição: —.",
+   "sem_trecho": "Construído sobre Eclo 50 (“Quasi vas auri”); o Evangelho antigo da festa (Lc 10,38-42) só é aludido. Nenhuma correspondência bíblica é criada para ele (decisão D2).",
+   "liturgicas": [
+    {
+     "celebracao": "assuncao",
+     "fundamento": "Título na edição crítica: «IN ASSUMPTIONE BEATAE MARIAE VIRGINIS».",
+     "descricao": "Pregado para a festa da Assunção de Nossa Senhora.",
+     "observacao_historica": "No Brasil, a solenidade é celebrada no domingo, quando 15 de agosto cai em dia de semana."
+    }
+   ],
+   "biblicas": [],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual."
+  },
+  {
+   "codigo": "sm06",
+   "titulo_historico": "Na Festa da Purificação da Bem-aventurada Virgem Maria (II)",
+   "titulo_latino": "In Festo Purificationis Beatae Mariae Virginis (II)",
+   "colecao": "Sermões marianos",
+   "tipo": "sermao",
+   "ocasiao": "Na Festa da Purificação da Bem-aventurada Virgem Maria — no calendário do tempo de Santo Antônio (título na edição crítica: «IN FESTO PURIFICATIONIS B. MARIAE VIRGINIS»)",
+   "leitura_do_dia": "Lc 2,22-32",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 2,22-32",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Postquam impleti sunt dies purgationis Mariae etc. (nota: Lc 2,22 (Vg. … purgationis eius…))». Versículos de Lc 2 citados nas notas da edição: Lc 2,22-25.27-29.31-32.",
+   "liturgicas": [
+    {
+     "celebracao": "apresentacao",
+     "fundamento": "Título na edição crítica: «IN FESTO PURIFICATIONIS B. MARIAE VIRGINIS». Decisão D4a (28/11/2026).",
+     "descricao": "Este sermão foi originalmente intitulado “Na Festa da Purificação da Bem-aventurada Virgem Maria” e corresponde à atual festa da Apresentação do Senhor, celebrada em 2 de fevereiro.",
+     "observacao_historica": "No tempo de Santo Antônio, a festa de 2 de fevereiro era celebrada no Ocidente como Purificação da Bem-aventurada Virgem Maria, com acento mariano; o calendário reformado em 1969 a celebra como festa do Senhor, com o título de Apresentação do Senhor. O Evangelho é o mesmo (Lc 2,22-40). A correspondência não significa que o sermão tenha sido pregado para a festa com o sentido e o título atuais."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "NAT-dez29"
+    },
+    {
+     "leituras": "sagradafamilia-B"
+    },
+    {
+     "leituras": "santo:apresentacao"
+    },
+    {
+     "leituras": "santo:apresentacao-domingo"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sm07",
+   "titulo_historico": "Na Anunciação de Santa Maria (II)",
+   "titulo_latino": "In Annuntiatione Sanctae Mariae (II)",
+   "colecao": "Sermões marianos",
+   "tipo": "sermao",
+   "ocasiao": "Na Anunciação de Santa Maria — no calendário do tempo de Santo Antônio (título na edição crítica: «IN ANNUNTIATIONE SANCTAE MARIAE»)",
+   "leitura_do_dia": "Lc 1,26-38",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 1,26-38",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Missus est angelus Gabriel a Deo (nota: Lc 1,26)». Versículos de Lc 1 citados nas notas da edição: Lc 1,26-31.34-36.38.",
+   "liturgicas": [
+    {
+     "celebracao": "anunciacao",
+     "fundamento": "Título na edição crítica: «IN ANNUNTIATIONE SANCTAE MARIAE».",
+     "descricao": "Este sermão foi originalmente intitulado “Na Anunciação de Santa Maria” e corresponde à atual solenidade da Anunciação do Senhor, celebrada em 25 de março.",
+     "observacao_historica": "No tempo de Santo Antônio, a festa de 25 de março era celebrada como Anunciação da Bem-aventurada Virgem Maria; o calendário reformado em 1969 a celebra como solenidade do Senhor, com o título de Anunciação do Senhor. O Evangelho é o mesmo (Lc 1,26-38)."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "ADV-4-domingo-B"
+    },
+    {
+     "leituras": "ADV-dez20"
+    },
+    {
+     "leituras": "santo:anunciacao"
+    },
+    {
+     "leituras": "santo:imaculada"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sf01",
+   "titulo_historico": "Na Conversão de São Paulo",
+   "titulo_latino": "In Conversione Beati Pauli",
+   "colecao": "Sermões festivos",
+   "tipo": "sermao",
+   "ocasiao": "Na Conversão de São Paulo — no calendário do tempo de Santo Antônio (título na edição crítica: «IN CONVERSIONE BEATI PAULI»)",
+   "leitura_do_dia": "Mt 19,27-29",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 19,27-29",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Dixit Simon Petrus ad Iesum: Ecce nos reliquimus omnia et secuti sumus te (nota: Mt 19,27)». Versículos de Mt 19 citados nas notas da edição: Mt 19,27-29.",
+   "liturgicas": [
+    {
+     "celebracao": "conversaosaopaulo",
+     "fundamento": "Título na edição crítica: «IN CONVERSIONE BEATI PAULI».",
+     "descricao": "Pregado para a festa da Conversão de São Paulo."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "TC-20-terca-I"
+    },
+    {
+     "leituras": "TC-20-terca-II"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sf02",
+   "titulo_historico": "Cátedra de São Pedro",
+   "titulo_latino": "In Cathedra Sancti Petri",
+   "colecao": "Sermões festivos",
+   "tipo": "sermao",
+   "ocasiao": "Cátedra de São Pedro — no calendário do tempo de Santo Antônio (título na edição crítica: «IN CATHEDRA SANCTI PETRI»)",
+   "leitura_do_dia": "Mt 16,13-19",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Mt 16,13-19",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Venit Iesus in partes Caesareae Philippi (nota: Mt 16,13 (Vg. Venit autem…))». Versículos de Mt 16 citados nas notas da edição: Mt 16,13-18.",
+   "liturgicas": [
+    {
+     "celebracao": "catedra",
+     "fundamento": "Título na edição crítica: «IN CATHEDRA SANCTI PETRI».",
+     "descricao": "Pregado para a festa da Cátedra de São Pedro."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "TC-18-quinta-I"
+    },
+    {
+     "leituras": "TC-18-quinta-II"
+    },
+    {
+     "leituras": "TC-21-domingo-A"
+    },
+    {
+     "leituras": "santo:catedra"
+    },
+    {
+     "leituras": "santo:pedroepaulo"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sf03",
+   "titulo_historico": "Festa dos Santos Apóstolos Filipe e Tiago",
+   "titulo_latino": "In Festivitate Apostolorum Philippi et Iacobi",
+   "colecao": "Sermões festivos",
+   "tipo": "sermao",
+   "ocasiao": "Festa dos Santos Apóstolos Filipe e Tiago — no calendário do tempo de Santo Antônio (título na edição crítica: «IN FESTIVITATE APOSTOLORUM PHILIPPI ET IACOBI»)",
+   "leitura_do_dia": "Jo 14,1-13",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 14,1-10",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Dixit Iesus discipulis suis: Non turbetur cor vestrum (nota: Io 14,1)». Versículos de Jo 14 citados nas notas da edição: Jo 14,1-2.6-9.",
+   "reducao": "Comenta Jo 14,1-10, até a igualdade do Pai e do Filho (v. 9-10); os v. 11-13 não são comentados. (decisão D2)",
+   "liturgicas": [
+    {
+     "celebracao": "saofilipeetiago",
+     "fundamento": "Título na edição crítica: «IN FESTIVITATE APOSTOLORUM PHILIPPI ET IACOBI». Decisão D4c (28/11/2026).",
+     "descricao": "Pregado para a festa dos Santos Apóstolos Filipe e Tiago, que o calendário atual celebra em 3 de maio.",
+     "observacao_historica": "No tempo de Santo Antônio, a festa dos Apóstolos Filipe e Tiago era celebrada em 1º de maio. Em 1955, com a instituição de São José Operário em 1º de maio, passou a 11 de maio; na reforma do calendário de 1969, passou a 3 de maio."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "PAS-4-sexta"
+    },
+    {
+     "leituras": "PAS-5-domingo-A"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "PAS-4-sabado",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 14,7-14. Em comum com o trecho comentado: Jo 14,7-10 (40% do trecho, 50% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "santo:saofilipeetiago",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 14,6-14. Em comum com o trecho comentado: Jo 14,6-10 (50% do trecho, 56% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sf04",
+   "titulo_historico": "Invenção da Santa Cruz",
+   "titulo_latino": "In Inventione Sanctae Crucis",
+   "colecao": "Sermões festivos",
+   "tipo": "sermao",
+   "ocasiao": "Invenção da Santa Cruz — no calendário do tempo de Santo Antônio (título na edição crítica: «IN INVENTIONE SANCTAE CRUCIS»)",
+   "leitura_do_dia": "Jo 3,1-15",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 3,1-15",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Erat homo ex Pharisaeis, Nicodemus nomine (nota: Io 3,1 (Vg. Erat autem…))». Versículos de Jo 3 citados nas notas da edição: Jo 3,1-3.13-15.",
+   "liturgicas": [],
+   "biblicas": [
+    {
+     "leituras": "PAS-2-segunda"
+    },
+    {
+     "leituras": "PAS-2-terca"
+    }
+   ],
+   "nao_usadas": [
+    {
+     "alvo": "Invenção da Santa Cruz (3/5)",
+     "classe": "fora-do-calendario",
+     "motivo": "A festa da Invenção da Santa Cruz foi suprimida do calendário romano em 1960; não se converte na Exaltação da Santa Cruz (14/9), que é outra celebração."
+    },
+    {
+     "alvo": "QUA-4-domingo-B",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 3,14-21. Em comum com o trecho comentado: Jo 3,14-15 (13% do trecho, 25% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "santo:exaltacao",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 3,13-17. Em comum com o trecho comentado: Jo 3,13-15 (20% do trecho, 60% da leitura do dia); não atinge a regra da correspondência plena."
+    },
+    {
+     "alvo": "santo:exaltacao-domingo",
+     "classe": "parcial",
+     "motivo": "Evangelho do dia: Jo 3,13-17. Em comum com o trecho comentado: Jo 3,13-15 (20% do trecho, 60% da leitura do dia); não atinge a regra da correspondência plena."
+    }
+   ],
+   "situacao": "calendario",
+   "justificativa": "A ocasião antiga não existe no calendário atual; aparece nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sf05",
+   "titulo_historico": "Natividade de São João Batista",
+   "titulo_latino": "In Nativitate Sancti Ioannis Baptistae",
+   "colecao": "Sermões festivos",
+   "tipo": "sermao",
+   "ocasiao": "Natividade de São João Batista — no calendário do tempo de Santo Antônio (título na edição crítica: «IN NATIVITATE SANCTI IOANNIS BAPTISTAE»)",
+   "leitura_do_dia": "Lc 1,57-68",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Lc 1,57-63",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Elisabeth impletum est tempus pariendi, et peperit filium (nota: Lc 1,57 (Vg. Elisabeth autem…))». Versículos de Lc 1 citados nas notas da edição: Lc 1,57-63.",
+   "reducao": "Comenta o nascimento, a circuncisão e o nome de João (Lc 1,57-63); o “Benedictus” (v. 67-68) não é comentado. (decisão D2)",
+   "liturgicas": [
+    {
+     "celebracao": "saojoao",
+     "fundamento": "Título na edição crítica: «IN NATIVITATE SANCTI IOANNIS BAPTISTAE».",
+     "descricao": "Pregado para a solenidade do Nascimento de São João Batista."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "ADV-dez23"
+    },
+    {
+     "leituras": "santo:saojoao"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  },
+  {
+   "codigo": "sf06",
+   "titulo_historico": "Festa dos Santos Apóstolos Pedro e Paulo",
+   "titulo_latino": "De Sanctis Apostolis Petro et Paulo",
+   "colecao": "Sermões festivos",
+   "tipo": "sermao",
+   "ocasiao": "Festa dos Santos Apóstolos Pedro e Paulo — no calendário do tempo de Santo Antônio (título na edição crítica: «DE SANCTIS APOSTOLIS PETRO ET PAULO»)",
+   "leitura_do_dia": "Jo 21,15-19",
+   "leitura_comentada": "Evangelho",
+   "trecho_comentado": "Jo 21,15-19",
+   "fundamento_do_trecho": "Início do sermão na edição crítica: «§ 1: In illo tempore: Dixit Dominus Simoni Petro: Simon Ioannis, diligis me plus his? (nota: Io, 21,15 (Vg. Dicit Simoni Petro Iesus…)». Versículos de Jo 21 citados nas notas da edição: Jo 21,15.17-19.",
+   "liturgicas": [
+    {
+     "celebracao": "pedroepaulo",
+     "fundamento": "Título na edição crítica: «DE SANCTIS APOSTOLIS PETRO ET PAULO».",
+     "descricao": "Pregado para a solenidade dos Apóstolos São Pedro e São Paulo.",
+     "observacao_historica": "No Brasil, a solenidade é celebrada no domingo, quando 29 de junho cai em dia de semana."
+    }
+   ],
+   "biblicas": [
+    {
+     "leituras": "PAS-3-domingo-C"
+    },
+    {
+     "leituras": "PAS-7-sexta"
+    },
+    {
+     "leituras": "santo:pedroepaulo"
+    }
+   ],
+   "nao_usadas": [],
+   "situacao": "calendario",
+   "justificativa": "Pregado para uma celebração que existe no calendário atual; aparece também nos dias que proclamam a leitura que comenta."
+  }
+ ]
+}

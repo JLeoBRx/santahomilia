@@ -141,14 +141,24 @@ function blocoLeituras(res, chaveAtual) {
 }
 
 // ------------------------------------------------------------- homilias dos santos
+/** Faixa mostrada só na prévia (endereço com ?previa): nada do que ela revela está publicado. */
+const faixaPrevia = () => (HM.emPrevia()
+  ? `<div class="faixa-previa" role="note">${ICONE_INFO}<span><strong>Prévia.</strong> Os sermões de Santo Antônio ainda não estão publicados; esta visualização serve só para conferência.</span></div>`
+  : '');
+const seloPrevia = (h) => (h.estado === 'previa' ? '<span class="selo-previa">prévia · não publicado</span>' : '');
+function itemMotivo(m, h) {
+  const d = HM.descreverMotivo(m, h);
+  return `<li class="motivo-${m.tipo}"><strong>${esc(d.rotulo)}.</strong> ${esc(d.texto)}${d.historia ? `<br><small class="motivo-historia">${esc(d.historia)}</small>` : ''}</li>`;
+}
 function cartaoHomilia(h, motivos, href) {
   const a = HM.autor(HM.obra(h.obra)?.autor) || {};
   const ob = HM.obra(h.obra) || {};
+  const sermao = HM.ehSermaoAntonio(h);
   return `<div class="homilia-cartao">
-    <p class="homilia-autor">${esc(a.nome || '')}${a.titulo ? `<span>${esc(a.titulo)}</span>` : ''}</p>
+    <p class="homilia-autor">${esc(a.nome || '')}${a.titulo ? `<span>${esc(a.titulo)}</span>` : ''}${seloPrevia(h)}</p>
     <p class="homilia-titulo">${esc(h.titulo)} · <em>${esc(ob.titulo || '')}</em></p>
-    <ul class="homilia-motivos">${motivos.map((m) => { const d = HM.descreverMotivo(m); return `<li><strong>${esc(d.rotulo)}.</strong> ${esc(d.texto)}</li>`; }).join('')}</ul>
-    <a class="botao" href="${href}">${svg('livro')} Ler a homilia</a>
+    <ul class="homilia-motivos">${motivos.map((m) => itemMotivo(m, h)).join('')}</ul>
+    <a class="botao" href="${href}">${svg('livro')} ${sermao ? 'Ler o sermão' : 'Ler a homilia'}</a>
   </div>`;
 }
 
@@ -173,6 +183,7 @@ async function telaDia(iso, op, alt, inicio = false) {
   definirCor(cel.cor || d.cor);
   const res = LT.resolver(d, op);
   app.innerHTML = `<div class="pagina leitura">
+    ${faixaPrevia()}
     ${inicio ? `<p class="saudacao">${saudacao()} — ${esc(NOMES_DIAS[d.diaSemana].toLowerCase())}, ${esc(dataPorExtenso(iso))}</p>
       <h1 class="titulo-pagina">A Palavra de hoje,<br>comentada pelos santos.</h1>`
     : `<h1 class="titulo-pagina" style="margin-top:22px">Leituras e homilias</h1>${navegadorData(iso)}`}
@@ -225,6 +236,7 @@ async function telaHomilia(iso, id, op) {
   }
   carregando();
   const t = await HM.carregarTexto(h);
+  if (t && HM.ehSermaoAntonio(h)) return telaSermao(iso, h, t, doDia, voltar);
   const ob = HM.obra(h.obra) || {};
   const a = HM.autor(ob.autor) || {};
   const onde = HM.ondeAparece(h);
@@ -276,6 +288,69 @@ async function telaHomilia(iso, id, op) {
   window.scrollTo({ top: 0 });
 }
 
+/**
+ * Um sermão de Santo Antônio. O título é o histórico (nunca o nome atual da
+ * celebração); a correspondência com o calendário atual aparece à parte,
+ * distinguindo “pregado para esta celebração” de “associado pela leitura”.
+ * O texto é o da camada revisada, sem nenhuma mudança; os avisos das
+ * traduções próprias e as notas fora do corpo do texto vêm do registro.
+ */
+function telaSermao(iso, h, t, doDia, voltar) {
+  const ob = HM.obra(h.obra) || {};
+  const a = HM.autor(ob.autor) || {};
+  const tr = ob.traducao || {};
+  const onde = HM.ondeAparece(h);
+  const doPar = (lista, n) => (lista || []).filter((x) => String(x.paragrafo) === String(n));
+  const avisos = (n) => doPar(h.avisos, n).map((x) => `<p class="aviso-traducao">${ICONE_INFO}<span>${esc(x.texto)}${x.localizacao && !/inteiro/.test(x.localizacao) ? ` <small>(${esc(x.localizacao)})</small>` : ''}</span></p>`).join('');
+  const notas = (n) => doPar(h.notas, n).map((x) => `<aside class="nota-sermao"><strong>${esc(x.tipo)}.</strong> ${esc(x.texto)}</aside>`).join('');
+  const trecho = h.pericope
+    ? `${esc(h.pericope)}${h.reducao ? `<br><small>Leitura do dia no missal da época: ${esc(h.leitura_do_dia)}. ${esc(h.reducao)}</small>` : ''}${h.leitura_comentada && h.leitura_comentada !== 'Evangelho' ? `<br><small>O sermão comenta a ${h.leitura_comentada === 'Segunda leitura' ? 'epístola (2ª leitura)' : '1ª leitura'}.</small>` : ''}`
+    : (h.sem_trecho ? `Nenhum.<br><small>${esc(h.sem_trecho)}</small>` : '—');
+  const ondeHTML = onde.length ? `<ul>${onde.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : `Sem data litúrgica: fica só no catálogo geral. ${esc(h.motivo_catalogo || '')}`;
+  const temVoz = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+  app.innerHTML = `<div class="pagina leitura">
+    ${faixaPrevia()}
+    <a class="voltar" href="${voltar}">${svg('esq')} ${iso ? `Leituras e homilias · ${esc(dataPorExtenso(iso))}` : 'Homilias dos santos'}</a>
+    <header class="cab-oficio cab-homilia">
+      <span class="rotulo-tempo" style="display:flex"><span class="ponto-cor"></span>Sermões dos santos${seloPrevia(h)}</span>
+      <h1>${esc(a.nome || '')}</h1>
+      <div class="sub">${esc(a.titulo || '')}${a.datas ? ` · ${esc(a.datas)}` : ''}<br><strong>${esc(h.titulo)}</strong> — ${esc(ob.titulo || '')}${h.titulo_latino ? `<br><em>${esc(h.titulo_latino)}</em>` : ''}</div>
+    </header>
+    <dl class="homilia-meta">
+      <div><dt>Ocasião em que foi pregado</dt><dd>${esc(h.ocasiao || 'Sem ocasião litúrgica: texto de abertura ou fecho da coleção.')}</dd></div>
+      <div><dt>Trecho comentado</dt><dd>${trecho}</dd></div>
+      ${!iso ? `<div><dt>Dias em que aparece no calendário atual</dt><dd>${ondeHTML}</dd></div>`
+        : doDia ? `<div><dt>Por que está neste dia</dt><dd><ul>${doDia.motivos.map((m) => itemMotivo(m, h)).join('')}</ul></dd></div>`
+        : `<div><dt>Este dia</dt><dd>Este sermão não está associado às leituras de ${esc(dataPorExtenso(iso))}.</dd></div>`}
+    </dl>
+    ${temVoz ? `<div class="controle-voz" role="group" aria-label="Ouvir o sermão">
+      <button class="botao fino" data-voz="ouvir">${svg('som')} Ouvir</button>
+      <button class="botao fino" data-voz="pausar" hidden>Pausar</button>
+      <button class="botao fino" data-voz="continuar" hidden>Continuar</button>
+      <button class="botao fino" data-voz="parar" hidden>Parar</button>
+      <small>Leitura pela voz sintetizada do seu aparelho (não é uma gravação).</small>
+    </div>` : ''}
+    <article class="texto-liturgico texto-homilia texto-sermao">
+      ${t.secoes.map((s) => `
+        ${s.titulo ? `<h3 class="secao">${esc(s.titulo)}</h3>` : ''}
+        ${s.temas.length ? `<ul class="temas-sermao">${s.temas.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>${avisos('temas')}${notas('temas')}` : ''}
+        ${s.paragrafos.map((p) => `${p.linhas.map((l) => `<p>${esc(l)}</p>`).join('')}${avisos(p.n)}${notas(p.n)}`).join('')}`).join('')}
+    </article>
+    <section class="homilia-fonte">
+      <h3>Fonte</h3>
+      <p><strong>Tradução:</strong> ${esc((tr.credito || '').replace(/^Tradução:\s*/, ''))}</p>
+      <p><strong>Texto latino de referência:</strong> ${esc(ob.edicao_critica || '')}</p>
+      ${ob.diretriz_latim ? `<p><strong>Sobre o latim:</strong> ${esc(ob.diretriz_latim)}</p>` : ''}
+      ${tr.nota_editorial ? `<p><strong>Nota editorial:</strong> ${esc(tr.nota_editorial)}</p>` : ''}
+      ${ob.etapa_1 ? `<p><strong>Conferência com o latim:</strong> ${esc(ob.etapa_1)}</p>` : ''}
+      <p class="homilia-arquivo">Arquivo do texto: <code>dados/${esc(h.arquivo)}.txt</code></p>
+    </section>
+    <div class="seguinte">${iso ? `<a href="${voltar}"><small>Voltar para</small><strong>Leituras e homilias</strong></a>` : ''}<a class="dir" href="#/homilias"><small>Ver todas as</small><strong>Homilias</strong></a></div>
+  </div>`;
+  if (temVoz) ligarVoz([h.titulo, ...t.paragrafos].filter(Boolean));
+  window.scrollTo({ top: 0 });
+}
+
 /** Catálogo geral: todas as homilias publicadas, com ou sem data litúrgica. */
 function telaCatalogoHomilias() {
   marcarNav('homilias');
@@ -285,6 +360,7 @@ function telaCatalogoHomilias() {
   for (const h of lista) { if (!porObra.has(h.obra)) porObra.set(h.obra, []); porObra.get(h.obra).push(h); }
   const semData = lista.filter((h) => !h.correspondencias?.length).length;
   app.innerHTML = `<div class="pagina leitura catalogo-homilias">
+    ${faixaPrevia()}
     <h1 class="titulo-pagina" style="margin-top:22px">Homilias dos santos</h1>
     <p class="catalogo-intro">Todas as homilias publicadas no site. A maior parte aparece também nos dias do calendário em que se lê o Evangelho que comentam ou na celebração para a qual foram pregadas. ${semData ? `Destas, ${semData === 1 ? 'uma não tem' : `${semData} não têm`} correspondência suficiente com o calendário atual e ${semData === 1 ? 'fica' : 'ficam'} só aqui, sem data litúrgica.` : ''}</p>
     ${[...porObra].map(([idObra, hs]) => {
@@ -295,7 +371,7 @@ function telaCatalogoHomilias() {
         <p class="catalogo-obra-titulo">${esc(ob.titulo || '')}${ob.titulo_latino ? ` · <em>${esc(ob.titulo_latino)}</em>` : ''}</p>
         <ul class="catalogo-lista">${hs.map((h) => {
           const onde = HM.ondeAparece(h);
-          return `<li><a href="#/homilias/${encodeURIComponent(h.id)}"><strong>${esc(h.titulo)}</strong><span>${esc(h.pericope)}</span></a>
+          return `<li><a href="#/homilias/${encodeURIComponent(h.id)}"><strong>${esc(h.titulo)}</strong><span>${esc(h.pericope || '')}</span></a>
             <p>${onde.length ? `No calendário: ${esc(onde.join('; '))}.` : 'Sem data litúrgica (só no catálogo).'}</p></li>`;
         }).join('')}</ul>
       </section>`;
@@ -467,6 +543,8 @@ async function rotear() {
 
 async function iniciar() {
   aplicarPrefs();
+  // prévia (só para conferência): index.html?previa mostra as entradas preparadas e ainda não publicadas
+  HM.definirPrevia(new URLSearchParams(location.search).has('previa'));
   const santoral = await dados.json('calendario/santoral.json');
   cal = new CalendarioLiturgico(santoral);
   await Promise.all([LT.iniciar(), HM.iniciar()]);

@@ -164,8 +164,13 @@ preferível a uma associação incorreta.
   nada é publicado.
 - `antonio/`: os 85 sermões de Santo Antônio de Pádua. A tradução de base é a
   do Lírio Católico (creditada a ele), conferida por inteiro com o latim da
-  edição crítica de 1979 (Etapa 1). Ainda não há sermão publicado; o modo de
-  trabalhar está em `antonio/LEIA-ME.md` e as decisões em `antonio/AUDITORIA.md`.
+  edição crítica de 1979 (Etapa 1). A distribuição no calendário (Etapa 2)
+  está em `antonio/distribuicao.json`, com o relatório em
+  `antonio/DISTRIBUICAO.md`; as entradas do índice são geradas pelo mesmo
+  script de São Gregório e ficam com estado `previa` (não aparecem no site
+  sem a prévia, `?previa`) até a aprovação do responsável. Ainda não há
+  sermão publicado; o modo de trabalhar está em `antonio/LEIA-ME.md` e as
+  decisões em `antonio/AUDITORIA.md`.
 
 ## Áudio
 
