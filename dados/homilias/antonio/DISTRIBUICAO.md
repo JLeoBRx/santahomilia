@@ -53,16 +53,16 @@ Título: o histórico, como na tradição (nunca o nome atual da celebração). 
 | sd05 | Início do Jejum | Mt 6,16-21 | litúrgica | Quarta-feira de Cinzas | todo ano | calendário |
 | sd06 | Domingo I da Quaresma (I) | Mt 4,1-11 | bíblica | 1º Domingo da Quaresma, Ano A | Ano A | calendário |
 | sd07 | Domingo I da Quaresma (II) da Penitência | Mt 4,1-2 (reduzido) | bíblica | 1º Domingo da Quaresma, Ano A | Ano A | calendário |
-| sd08 | Domingo II da Quaresma (I) | Mt 17,1-9 | bíblica | 2º Domingo da Quaresma, Ano A; Transfiguração do Senhor (06/08); celebração transfiguracao-A-domingo | Ano A | calendário |
+| sd08 | Domingo II da Quaresma (I) | Mt 17,1-9 | bíblica | 2º Domingo da Quaresma, Ano A; Transfiguração do Senhor (06/08), Ano A | Ano A | calendário |
 | sd09 | Domingo II da Quaresma (II) | Mt 15,21-28 | bíblica | Quarta-feira da 18ª semana do Tempo Comum (anos I e II); 20º Domingo do Tempo Comum, Ano A | todo ano; mais no Ano A | calendário |
 | sd10 | Domingo III da Quaresma | Lc 11,14-28 | bíblica | Quinta-feira da 3ª semana da Quaresma; Sexta-feira da 27ª semana do Tempo Comum (anos I e II) | todo ano | calendário |
 | sd11 | Domingo IV da Quaresma | Jo 6,1-15 | bíblica | Sexta-feira da 2ª semana da Páscoa; 17º Domingo do Tempo Comum, Ano B | todo ano; mais no Ano B | calendário |
 | sd12 | Domingo V da Quaresma | Jo 8,46-59 | bíblica | Quinta-feira da 5ª semana da Quaresma | todo ano | calendário |
-| sd13 | Domingo de Ramos | Mt 21,1-9 | litúrgica + bíblica | Domingo de Ramos da Paixão do Senhor; ramos-A | todo ano; mais no Ano A | calendário |
-| sd14 | Ceia do Senhor (Quinta-feira Santa) | Jo 13,4-8 (reduzido) | litúrgica + bíblica | Quinta-feira Santa — Ceia do Senhor; ceiadosenhor | todo ano | calendário |
+| sd13 | Domingo de Ramos | Mt 21,1-9 | litúrgica + bíblica | Domingo de Ramos da Paixão do Senhor | todo ano; mais no Ano A | calendário |
+| sd14 | Ceia do Senhor (Quinta-feira Santa) | Jo 13,4-8 (reduzido) | litúrgica + bíblica | Quinta-feira Santa — Ceia do Senhor | todo ano | calendário |
 | sd15 | Na Páscoa do Senhor | Mc 16,1-7 | litúrgica + bíblica | Domingo da Páscoa na Ressurreição do Senhor; Vigília Pascal, Ano B | todo ano; mais no Ano B | calendário |
 | sd16 | Na Ressurreição do Senhor | — | litúrgica | Domingo da Páscoa na Ressurreição do Senhor | todo ano | calendário |
-| sd17 | Domingo da Oitava da Páscoa | Jo 20,19-31 | litúrgica + bíblica | 2º Domingo da Páscoa (da Divina Misericórdia); 2º Domingo da Páscoa (anos A, B e C); Pentecostes; São Tomé, Apóstolo (03/07) | todo ano | calendário |
+| sd17 | Domingo da Oitava da Páscoa | Jo 20,19-31 | litúrgica + bíblica | 2º Domingo da Páscoa (da Divina Misericórdia); Domingo de Pentecostes; São Tomé, Apóstolo (03/07) | todo ano | calendário |
 | sd18 | Domingo II depois da Páscoa | Jo 10,11-16 | bíblica | 4º Domingo da Páscoa, Ano B; Segunda-feira da 4ª semana da Páscoa | todo ano; mais no Ano B | calendário |
 | sd19 | Domingo III depois da Páscoa | Jo 16,16-22 | bíblica | Quinta-feira da 6ª semana da Páscoa | todo ano | calendário |
 | sd20 | Domingo IV depois da Páscoa | Jo 16,5-14 | bíblica | Terça-feira da 6ª semana da Páscoa | todo ano | calendário |
@@ -70,7 +70,7 @@ Título: o histórico, como na tradição (nunca o nome atual da celebração). 
 | sd22 | Domingo VI depois da Páscoa | Jo 15,26–16,4 | bíblica | Segunda-feira da 6ª semana da Páscoa | todo ano | calendário |
 | sd23 | Nas Ladainhas | Lc 11,5-13 | bíblica | 17º Domingo do Tempo Comum, Ano C; Quinta-feira da 27ª semana do Tempo Comum (anos I e II) | todo ano; mais no Ano C | calendário |
 | sd24 | Na Ascensão do Senhor | Mc 16,14-20 | litúrgica + bíblica | Ascensão do Senhor; Conversão de São Paulo, Apóstolo (25/01); São Marcos Evangelista (25/04) | todo ano; mais no Ano B | calendário |
-| sd25 | Domingo de Pentecostes (I) | At 2,1-4 (reduzido) | litúrgica + bíblica | Domingo de Pentecostes; Pentecostes | todo ano | calendário |
+| sd25 | Domingo de Pentecostes (I) | At 2,1-4 (reduzido) | litúrgica + bíblica | Domingo de Pentecostes | todo ano | calendário |
 | sd26 | Na Festa de Pentecostes (II) | — | litúrgica | Domingo de Pentecostes | todo ano | calendário |
 | sd27 | Prólogo | — | — | — | — | catálogo geral |
 | sd28 | Domingo I depois de Pentecostes | Lc 16,19-31 | bíblica | Quinta-feira da 2ª semana da Quaresma; 26º Domingo do Tempo Comum, Ano C | todo ano; mais no Ano C | calendário |
@@ -110,9 +110,9 @@ Título: o histórico, como na tradição (nunca o nome atual da celebração). 
 | sd62 | Festa de Santo Estêvão Protomártir | Mt 23,34-39 | litúrgica | Santo Estêvão, Protomártir (26/12) | todo ano | calendário |
 | sd63 | Festa de São João Evangelista | Jo 21,19-24 | litúrgica | São João, Apóstolo e Evangelista (27/12) | todo ano | calendário |
 | sd64 | Festa dos Santos Inocentes | Mt 2,13-18 | litúrgica + bíblica | Os Santos Inocentes, Mártires (28/12) | todo ano | calendário |
-| sd65 | Domingo I depois do Natal do Senhor | Lc 2,33-38 (reduzido) | bíblica | Apresentação do Senhor (02/02); celebração apresentacao-domingo | todo ano | calendário |
-| sd66 | Circuncisão do Senhor | Lc 2,21 | bíblica | santamaria | todo ano | calendário |
-| sd67 | Domingo II depois do Natal do Senhor | Lc 2,42-52 | bíblica | Sagrada Família, Ano C | Ano C | calendário |
+| sd65 | Domingo I depois do Natal do Senhor | Lc 2,33-38 (reduzido) | bíblica | Apresentação do Senhor (02/02) | todo ano | calendário |
+| sd66 | Circuncisão do Senhor | Lc 2,21 | bíblica | Santa Maria, Mãe de Deus | todo ano | calendário |
+| sd67 | Domingo II depois do Natal do Senhor | Lc 2,42-52 | bíblica | Sagrada Família, Jesus, Maria e José, Ano C | Ano C | calendário |
 | sd68 | Epifania do Senhor | Mt 2,1-12 | litúrgica + bíblica | Epifania do Senhor | todo ano | calendário |
 | sd69 | Domingo I depois da Oitava da Epifania | Jo 2,1-11 | bíblica | 7 de janeiro (tempo do Natal); 2º Domingo do Tempo Comum, Ano C; Bem-aventurada Virgem Maria da Conceição Aparecida (12/10) | todo ano; mais no Ano C | calendário |
 | sd70 | Domingo II depois da Oitava da Epifania | Mt 8,1-13 | bíblica | Segunda-feira da 1ª semana do Advento | todo ano | calendário |
@@ -121,9 +121,9 @@ Título: o histórico, como na tradição (nunca o nome atual da celebração). 
 | sm01 | Prólogo aos Quatro Sermões para as Festas da Bem-aventurada Virgem Maria | — | — | — | — | catálogo geral |
 | sm02 | Na Natividade da Bem-aventurada Virgem Maria | — | litúrgica | Natividade da Bem-aventurada Virgem Maria (08/09) | todo ano | calendário |
 | sm03 | Na Anunciação da Bem-aventurada Virgem Maria (I) | Lc 1,26-38 | litúrgica + bíblica | Anunciação do Senhor (25/03); 4º Domingo do Advento, Ano B; 20 de dezembro (Advento); Imaculada Conceição da Bem-aventurada Virgem Maria (08/12) | todo ano; mais no Ano B | calendário |
-| sm04 | Na Purificação da Bem-aventurada Virgem Maria (I) | Lc 2,22-32 | litúrgica + bíblica | Apresentação do Senhor (02/02); 29 de dezembro (oitava do Natal); Sagrada Família, Ano B; celebração apresentacao-domingo | todo ano; mais no Ano B | calendário |
+| sm04 | Na Purificação da Bem-aventurada Virgem Maria (I) | Lc 2,22-32 | litúrgica + bíblica | Apresentação do Senhor (02/02); 29 de dezembro (oitava do Natal); Sagrada Família, Jesus, Maria e José, Ano B | todo ano; mais no Ano B | calendário |
 | sm05 | Na Assunção da Bem-aventurada Virgem Maria | — | litúrgica | Assunção da Bem-aventurada Virgem Maria (15/08) | todo ano | calendário |
-| sm06 | Na Festa da Purificação da Bem-aventurada Virgem Maria (II) | Lc 2,22-32 | litúrgica + bíblica | Apresentação do Senhor (02/02); 29 de dezembro (oitava do Natal); Sagrada Família, Ano B; celebração apresentacao-domingo | todo ano; mais no Ano B | calendário |
+| sm06 | Na Festa da Purificação da Bem-aventurada Virgem Maria (II) | Lc 2,22-32 | litúrgica + bíblica | Apresentação do Senhor (02/02); 29 de dezembro (oitava do Natal); Sagrada Família, Jesus, Maria e José, Ano B | todo ano; mais no Ano B | calendário |
 | sm07 | Na Anunciação de Santa Maria (II) | Lc 1,26-38 | litúrgica + bíblica | Anunciação do Senhor (25/03); 4º Domingo do Advento, Ano B; 20 de dezembro (Advento); Imaculada Conceição da Bem-aventurada Virgem Maria (08/12) | todo ano; mais no Ano B | calendário |
 | sf01 | Na Conversão de São Paulo | Mt 19,27-29 | litúrgica + bíblica | Conversão de São Paulo, Apóstolo (25/01); Terça-feira da 20ª semana do Tempo Comum (anos I e II) | todo ano | calendário |
 | sf02 | Cátedra de São Pedro | Mt 16,13-19 | litúrgica + bíblica | Cátedra de São Pedro, Apóstolo (22/02); Quinta-feira da 18ª semana do Tempo Comum (anos I e II); 21º Domingo do Tempo Comum, Ano A; São Pedro e São Paulo, Apóstolos (29/06) | todo ano; mais no Ano A | calendário |

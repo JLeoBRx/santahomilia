@@ -350,6 +350,24 @@ function avisosENotas(REG, cod) {
   return { avisos, notas };
 }
 
+/**
+ * Rótulo do dia de uma correspondência bíblica de Santo Antônio, para o catálogo.
+ * Usa o nome da celebração no santoral (o mesmo das litúrgicas, para que o catálogo
+ * junte "Domingo de Pentecostes" litúrgico e bíblico numa só menção) e indica o ano
+ * quando a chave tem ciclo ("santo:transfiguracao-A" -> "…, Ano A"). A variante
+ * "-domingo" (festa que cai no domingo, com 2ª leitura) é o mesmo dia da festa.
+ * Só para Santo Antônio: os rótulos de Gregório continuam os de descreverChave.
+ */
+function descreverChaveAntonio(k, SAN) {
+  const m = k.match(/^(santo:)?([A-Za-z]+?)(?:-([ABC]))?(-domingo)?$/);
+  if (m) {
+    const ehCelebracao = m[1] ? SAN.fixas.some((x) => x.id === m[2]) || !!SAN.moveis[m[2]] : !!SAN.moveis[m[2]];
+    const nome = ehCelebracao ? nomeCelebracao(m[2], SAN) : null;
+    if (nome) return m[3] ? `${nome}, Ano ${m[3]}` : nome;
+  }
+  return descreverChave(k, SAN);
+}
+
 export async function gerarDistribuicaoAntonio(indiceBase) {
   const DIST = ler('dados/homilias/antonio/distribuicao.json');
   const CAT = ler('dados/homilias/antonio/catalogo.json');
@@ -391,7 +409,7 @@ export async function gerarDistribuicaoAntonio(indiceBase) {
       corr.push({
         tipo: 'biblica', leituras: b.leituras, leitura: sec, referencia_do_dia: melhor.ref, versiculos_comentados: formatar(melhor.m.O),
         versiculos_em_comum: melhor.m.O.size, cobertura_do_trecho: Math.round(melhor.m.daHomilia * 100), cobertura_do_dia: Math.round(melhor.m.doDia * 100), criterio,
-        dia: descreverChave(b.leituras, SAN), descricao: b.descricao || descreverBiblicaAntonio(s.trecho_comentado, melhor.ref, melhor.m, sec),
+        dia: descreverChaveAntonio(b.leituras, SAN), descricao: b.descricao || descreverBiblicaAntonio(s.trecho_comentado, melhor.ref, melhor.m, sec),
       });
     }
     calculo.set(cod, calc);

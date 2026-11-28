@@ -1814,7 +1814,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 100,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "Transfiguração do Senhor (06/08)",
+          "dia": "Transfiguração do Senhor (06/08), Ano A",
           "descricao": "Comenta o Evangelho deste dia: Mt 17,1-9. O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
@@ -1827,7 +1827,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 100,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "celebração transfiguracao-A-domingo",
+          "dia": "Transfiguração do Senhor (06/08), Ano A",
           "descricao": "Comenta o Evangelho deste dia: Mt 17,1-9. O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
@@ -2068,7 +2068,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 82,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "ramos-A",
+          "dia": "Domingo de Ramos da Paixão do Senhor, Ano A",
           "descricao": "Comenta Mt 21,1-9, parte do Evangelho deste dia (Mt 21,1-11). O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
@@ -2109,7 +2109,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 33,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "ceiadosenhor",
+          "dia": "Quinta-feira Santa — Ceia do Senhor",
           "descricao": "Comenta Jo 13,4-8, parte do Evangelho deste dia (Jo 13,1-15). O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
@@ -2217,7 +2217,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 100,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "2º Domingo da Páscoa, Ano A",
+          "dia": "2º Domingo da Páscoa (da Divina Misericórdia), Ano A",
           "descricao": "Comenta o Evangelho deste dia: Jo 20,19-31. O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
@@ -2230,7 +2230,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 100,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "2º Domingo da Páscoa, Ano B",
+          "dia": "2º Domingo da Páscoa (da Divina Misericórdia), Ano B",
           "descricao": "Comenta o Evangelho deste dia: Jo 20,19-31. O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
@@ -2243,7 +2243,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 100,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "2º Domingo da Páscoa, Ano C",
+          "dia": "2º Domingo da Páscoa (da Divina Misericórdia), Ano C",
           "descricao": "Comenta o Evangelho deste dia: Jo 20,19-31. O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
@@ -2256,7 +2256,7 @@
           "cobertura_do_trecho": 38,
           "cobertura_do_dia": 100,
           "criterio": "(b) ao menos 90% da leitura do dia está no trecho comentado, e ela tem 5 versículos ou mais",
-          "dia": "Pentecostes",
+          "dia": "Domingo de Pentecostes",
           "descricao": "Comenta Jo 20,19-31, trecho que inclui o Evangelho deste dia por inteiro (Jo 20,19-23). O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
@@ -2634,7 +2634,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 36,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "Pentecostes",
+          "dia": "Domingo de Pentecostes",
           "descricao": "Comenta At 2,1-4, parte da 1ª leitura deste dia (At 2,1-11). O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
@@ -4540,7 +4540,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 32,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "celebração apresentacao-domingo",
+          "dia": "Apresentação do Senhor (02/02)",
           "descricao": "Comenta Lc 2,33-38, parte do Evangelho deste dia (Lc 2,22-40). O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
@@ -4574,7 +4574,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 17,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "santamaria",
+          "dia": "Santa Maria, Mãe de Deus",
           "descricao": "Comenta Lc 2,21, que está no Evangelho deste dia (Lc 2,16-21). O sermão foi pregado para a festa da Circuncisão do Senhor, título que o dia 1º de janeiro tinha no calendário do tempo de Santo Antônio; não foi pregado para a atual solenidade de Santa Maria, Mãe de Deus: a ligação é a leitura do Evangelho."
         }
       ]
@@ -4608,7 +4608,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 92,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "Sagrada Família, Ano C",
+          "dia": "Sagrada Família, Jesus, Maria e José, Ano C",
           "descricao": "Comenta Lc 2,42-52, parte do Evangelho deste dia (Lc 2,41-52). O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
@@ -5022,7 +5022,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 79,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "Sagrada Família, Ano B",
+          "dia": "Sagrada Família, Jesus, Maria e José, Ano B",
           "descricao": "Comenta Lc 2,22-32, parte do Evangelho deste dia (Lc 2,22-35). O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
@@ -5048,7 +5048,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 58,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "celebração apresentacao-domingo",
+          "dia": "Apresentação do Senhor (02/02)",
           "descricao": "Comenta Lc 2,22-32, parte do Evangelho deste dia (Lc 2,22-40). O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
@@ -5131,7 +5131,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 79,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "Sagrada Família, Ano B",
+          "dia": "Sagrada Família, Jesus, Maria e José, Ano B",
           "descricao": "Comenta Lc 2,22-32, parte do Evangelho deste dia (Lc 2,22-35). O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
@@ -5157,7 +5157,7 @@
           "cobertura_do_trecho": 100,
           "cobertura_do_dia": 58,
           "criterio": "(a) ao menos 90% do trecho comentado é lido no dia",
-          "dia": "celebração apresentacao-domingo",
+          "dia": "Apresentação do Senhor (02/02)",
           "descricao": "Comenta Lc 2,22-32, parte do Evangelho deste dia (Lc 2,22-40). O sermão não foi pregado para este dia: a ligação é a leitura."
         }
       ]
