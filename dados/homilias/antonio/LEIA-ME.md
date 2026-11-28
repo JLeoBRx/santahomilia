@@ -25,8 +25,9 @@ site, aprovou expressamente a publicação: `estado_da_publicacao` passou a
 `publicada` (com o registro em `publicacao`) e o script foi rodado de novo.
 As decisões e a distribuição dos 85 itens estão em `distribuicao.json`; o
 relatório gerado está em `DISTRIBUICAO.md`. A D8 (correção do índice das
-leituras, 30ª semana do Tempo Comum, ano I) continua interrompida até a
-conferência numa fonte litúrgica.
+leituras, 30ª semana do Tempo Comum, ano I) foi aplicada no mesmo dia, como
+alteração independente, depois de o responsável conferir a ordem numa fonte
+litúrgica; o registro está em `dados/leituras/indice.json` (`corrigidas`).
 
 ## Fontes e crédito
 

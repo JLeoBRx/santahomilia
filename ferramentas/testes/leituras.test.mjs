@@ -87,6 +87,24 @@ describe('Leituras de cada dia (2025–2031)', () => {
     assert.ok(ev('2026-04-05').includes('Jo 20,1-9')); // Páscoa, missa do dia
   });
 
+  test('30ª semana do Tempo Comum, ano I: sexta e sábado na ordem do Lecionário (correção D8, 28/11/2026)', () => {
+    const conj = (k) => IND.conjuntos[k][0];
+    // conferido pelo responsável na Liturgia Diária de 29 e 30/10/2027 e no índice do Lecionário (Ano I)
+    assert.deepEqual(conj('TC-30-sexta-I'), [['Primeira leitura', 'Rm 9,1-5'], ['Salmo responsorial', 'Sl 147(147B),12-13.14-15.19-20'], ['Evangelho', 'Lc 14,1-6']]);
+    assert.deepEqual(conj('TC-30-sabado-I'), [['Primeira leitura', 'Rm 11,1-2a.11-12.25-29'], ['Salmo responsorial', 'Sl 93'], ['Evangelho', 'Lc 14,1.7-11']]);
+    // o ano II não foi alterado
+    assert.deepEqual(conj('TC-30-sexta-II'), [['Primeira leitura', 'Fl 1,1-11'], ['Salmo responsorial', 'Sl 110'], ['Evangelho', 'Lc 14,1-6']]);
+    assert.deepEqual(conj('TC-30-sabado-II'), [['Primeira leitura', 'Fl 1,18b-26'], ['Salmo responsorial', 'Sl 41(42),2.3.5bcd'], ['Evangelho', 'Lc 14,1.7-11']]);
+    // nos dias do calendário: sexta 29 e sábado 30/10/2027 (ano I); sexta 30 e sábado 31/10/2026 (ano II)
+    const ev = (iso) => LT.resolver(cal.dia(iso), null).conjuntos.flat().filter(([s]) => s === 'Evangelho').map(([, r]) => r);
+    assert.deepEqual(ev('2027-10-29'), ['Lc 14,1-6']);
+    assert.deepEqual(ev('2027-10-30'), ['Lc 14,1.7-11']);
+    assert.deepEqual(ev('2026-10-30'), ['Lc 14,1-6']);
+    assert.deepEqual(ev('2026-10-31'), ['Lc 14,1.7-11']);
+    // a correção está registrada no índice
+    assert.match(IND.corrigidas['TC-30-sexta-I e TC-30-sabado-I (conjuntos inteiros)'], /O ano II .* não foi alterado/);
+  });
+
   test('o link geral da CNBB é o indicado pelo responsável', () => {
     assert.equal(LT.LINK_CNBB, 'https://www.cnbb.org.br/liturgia-diaria/');
   });

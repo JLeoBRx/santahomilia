@@ -104,7 +104,7 @@
    "decisoes": "D1–D8 do responsável (28/11/2026), registradas em dados/homilias/antonio/distribuicao.json (decisoes) e aplicadas na distribuição; auditoria: https://claude.ai/artifact/8Ne4wL99JBNg4GN2kNMHfS",
    "publicada_em": "2026-11-28",
    "aprovacao": "Aprovação expressa do responsável (“Pode publicar”), depois de examinar o resultado, as datas dos ciclos A, B e C e as telas do site.",
-   "pendente": "D8 (índice das leituras, 30ª semana do Tempo Comum, ano I) interrompida até a conferência numa fonte litúrgica; não faz parte da publicação.",
+   "pendente": "nenhum (D8 aplicada em 28/11/2026)",
    "atualizacoes": [
     {
      "data": "2026-11-28",
@@ -117,6 +117,12 @@
      "campo": "pendente",
      "antes": "aprovação expressa do responsável para publicar (as 85 entradas do índice estão com estado “previa”); D8 (índice das leituras, 30ª semana do Tempo Comum, ano I) interrompida até a conferência numa fonte litúrgica",
      "motivo": "A aprovação para publicar foi dada; resta só a D8."
+    },
+    {
+     "data": "2026-11-28",
+     "campo": "pendente",
+     "antes": "D8 (índice das leituras, 30ª semana do Tempo Comum, ano I) interrompida até a conferência numa fonte litúrgica; não faz parte da publicação.",
+     "motivo": "D8 aplicada depois da conferência do responsável numa fonte litúrgica."
     }
    ]
   }
@@ -181,6 +187,12 @@
    "origem": "Etapa 2: publicação aprovada",
    "decisao": "Depois de examinar o resultado da implementação, as datas dos ciclos A, B e C e as telas do site em prévia, o responsável aprovou expressamente a publicação (“Pode publicar”). A D8 (correção do índice das leituras, 30ª semana do Tempo Comum, ano I) continua interrompida e fica fora da publicação.",
    "alteracoes": "distribuicao.json: estado_da_publicacao de “previa” para “publicada”, com o campo publicacao (data, aprovação, o que fica de fora). As 85 entradas de Santo Antônio no índice do site passam ao estado “publicada”: aparecem nos dias do calendário e no catálogo geral sem a prévia. etapas.etapa_2: estado “concluída e publicada”, publicada_em e aprovacao; o campo pendente fica só com a D8 (os textos anteriores ficam em atualizacoes). Publicadas também a nota histórica do sm03 e do sm07 (Anunciação), apontada no relatório da implementação, e as correções de apresentação feitas depois da conferência das telas (rótulos dos dias no catálogo, seção Fonte). Nenhum texto dos sermões mudou (recebida e revisada intactas); nenhuma decisão da Etapa 1 foi alterada; o índice das leituras não foi alterado."
+  },
+  {
+   "data": "2026-11-28",
+   "origem": "Etapa 2: D8 aplicada (índice das leituras)",
+   "decisao": "O responsável conferiu a ordem das leituras da sexta e do sábado da 30ª semana do Tempo Comum, ano I, em a Liturgia Diária de 29 e 30/10/2027 (Lírio Católico, que a publica com autorização da CNBB) e o índice do Lecionário dos dias de semana, Ano I, e confirmou a inversão apontada no relatório: sexta Rm 9,1-5 e Lc 14,1-6; sábado Rm 11,1-2a.11-12.25-29 e Lc 14,1.7-11.",
+   "alteracoes": "dados/leituras/indice.json: os conjuntos TC-30-sexta-I e TC-30-sabado-I trocados entre si, cada salmo com a sua primeira leitura; registro em 'corrigidas'. O ano II não foi alterado. distribuicao.json: D8 e lecionario atualizados (os textos anteriores ficam em atualizacoes). A distribuição não mudou: o sd47 continua na sexta e no sábado da 30ª semana nos dois anos. Nenhum texto dos sermões mudou."
   }
  ],
  "registros": [

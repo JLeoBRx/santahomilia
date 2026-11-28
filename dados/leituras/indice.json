@@ -5,7 +5,8 @@
   "Cada chave tem uma lista de conjuntos; quase sempre um só. Quando há mais de um (por exemplo, missa da vigília e missa do dia, ou leituras à escolha), o site mostra todos e remete à CNBB para saber qual se usa em cada missa.",
   "Numeração dos salmos como no Lecionário brasileiro: grega e, entre parênteses, a hebraica (ex.: Sl 121(122)).",
   "Origem: extraídas em 25/11/2026 do índice anterior do projeto, só a indicação bíblica de cada leitura. As poucas que o índice anterior não trazia foram indicadas à mão e estão listadas em 'indicadas_a_mao'. Os três domingos que o índice anterior não tinha (TC-7-domingo-B, TC-8-domingo-B e TC-9-domingo-A) foram indicados à mão segundo o Ordo Lectionum Missae.",
-  "Natal: o índice anterior juntava num só conjunto a missa da aurora com a do dia (natal-dia) e as missas da vigília e da noite com a manhã do dia 24 (ADV-dez24). Aqui cada missa tem a sua chave: natal-vigilia, natal-noite, natal-aurora e natal-dia. Grafia de dois salmos uniformizada (Sl 96(97),1.6.11-12; Sl 95(96),1-2a.2b-3.11-12.13)."
+  "Natal: o índice anterior juntava num só conjunto a missa da aurora com a do dia (natal-dia) e as missas da vigília e da noite com a manhã do dia 24 (ADV-dez24). Aqui cada missa tem a sua chave: natal-vigilia, natal-noite, natal-aurora e natal-dia. Grafia de dois salmos uniformizada (Sl 96(97),1.6.11-12; Sl 95(96),1-2a.2b-3.11-12.13).",
+  "Correções de conjuntos que o índice anterior trazia errados estão listadas em 'corrigidas', com a fonte da conferência."
  ],
  "indicadas_a_mao": {
   "pentecostes / Primeira leitura (missa do dia)": "At 2,1-11 (o índice anterior trazia só \"At 11\")",
@@ -23,6 +24,9 @@
   "TC-7-domingo-B (domingo inteiro)": "Is 43,18-19.21-22.24b-25; Sl 40(41),2-3.4-5.13-14; 2Cor 1,18-22; Mc 2,1-12 (o índice anterior não tinha este domingo)",
   "TC-8-domingo-B (domingo inteiro)": "Os 2,16b.17b.21-22; Sl 102(103),1-2.3-4.8.10.12-13; 2Cor 3,1b-6; Mc 2,18-22 (o índice anterior não tinha este domingo)",
   "TC-9-domingo-A (domingo inteiro)": "Dt 11,18.26-28.32; Sl 30(31),2-3a.3bc-4.17.25; Rm 3,21-25a.28; Mt 7,21-27 (o índice anterior não tinha este domingo)"
+ },
+ "corrigidas": {
+  "TC-30-sexta-I e TC-30-sabado-I (conjuntos inteiros)": "Trocados entre si em 28/11/2026 (decisão D8 da Etapa 2 de Santo Antônio, como correção independente). O índice anterior trazia na sexta Rm 11,1-2a.11-12.25-29; Sl 93; Lc 14,1.7-11 e no sábado Rm 9,1-5; Sl 147(147B),12-13.14-15.19-20; Lc 14,1-6; a ordem correta é sexta Rm 9,1-5; Sl 147(147B),12-13.14-15.19-20; Lc 14,1-6 e sábado Rm 11,1-2a.11-12.25-29; Sl 93; Lc 14,1.7-11. Causa: o gerador do índice anterior escolhia o arquivo de cada dia pelo primeiro versículo do Evangelho, e a sexta e o sábado começam ambos em Lc 14,1. Ordem conferida pelo responsável na Liturgia Diária de 29 e 30/10/2027 (Lírio Católico, que a publica com autorização da CNBB) e no índice do Lecionário dos dias de semana, Ano I; coincide com a sequência das leituras contínuas (Rm 8,31b-39, Rm 9,1-5, Rm 11,1-2a.11-12.25-29, Rm 11,29-36; Lc 13,31-35, Lc 14,1-6, Lc 14,1.7-11, Lc 14,12-14). Cada salmo continua com a sua primeira leitura. O ano II (TC-30-sexta-II e TC-30-sabado-II) não foi alterado."
  },
  "conjuntos": {
   "ADV-1-domingo-A": [
@@ -8629,15 +8633,15 @@
    [
     [
      "Primeira leitura",
-     "Rm 9,1-5"
+     "Rm 11,1-2a.11-12.25-29"
     ],
     [
      "Salmo responsorial",
-     "Sl 147(147B),12-13.14-15.19-20"
+     "Sl 93"
     ],
     [
      "Evangelho",
-     "Lc 14,1-6"
+     "Lc 14,1.7-11"
     ]
    ]
   ],
@@ -8693,15 +8697,15 @@
    [
     [
      "Primeira leitura",
-     "Rm 11,1-2a.11-12.25-29"
+     "Rm 9,1-5"
     ],
     [
      "Salmo responsorial",
-     "Sl 93"
+     "Sl 147(147B),12-13.14-15.19-20"
     ],
     [
      "Evangelho",
-     "Lc 14,1.7-11"
+     "Lc 14,1-6"
     ]
    ]
   ],

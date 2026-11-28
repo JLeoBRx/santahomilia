@@ -476,7 +476,7 @@ function relatorioAntonio(DIST, CAT, indice, calculo, datas, SAN) {
   };
   L.push('# Distribuição dos sermões de Santo Antônio no calendário (Etapa 2)', '');
   L.push('> Gerado por `ferramentas/homilias/aplicar_distribuicao.mjs` a partir de `dados/homilias/antonio/distribuicao.json`. Não edite à mão: altere as decisões no arquivo de distribuição e rode o script.', '');
-  L.push(`> **Estado: ${DIST.estado_da_publicacao === 'publicada' ? `publicado em ${DIST.publicacao.data.split('-').reverse().join('/')}.` : 'PRÉVIA, não publicado.'}** ${DIST.estado_da_publicacao === 'publicada' ? `${DIST.publicacao.aprovacao} ${DIST.publicacao.fora_da_publicacao}` : 'As entradas do índice têm estado “previa”: o site não as mostra; só aparecem com a prévia ligada (endereço com ?previa), para a conferência do responsável. A publicação depende da sua aprovação expressa.'}`, '');
+  L.push(`> **Estado: ${DIST.estado_da_publicacao === 'publicada' ? `publicado em ${DIST.publicacao.data.split('-').reverse().join('/')}.` : 'PRÉVIA, não publicado.'}** ${DIST.estado_da_publicacao === 'publicada' ? `${DIST.publicacao.aprovacao} ${DIST.publicacao.fora_da_publicacao}${DIST.publicacao.depois_da_publicacao ? ` ${DIST.publicacao.depois_da_publicacao}` : ''}` : 'As entradas do índice têm estado “previa”: o site não as mostra; só aparecem com a prévia ligada (endereço com ?previa), para a conferência do responsável. A publicação depende da sua aprovação expressa.'}`, '');
   L.push(`Auditoria que fundamenta esta distribuição: ${DIST.auditoria}`, '');
   L.push('## Critérios', '');
   const C = DIST.criterios;
@@ -531,7 +531,7 @@ function relatorioAntonio(DIST, CAT, indice, calculo, datas, SAN) {
   L.push('');
   if (DIST.lecionario?.length) {
     L.push('## Problemas encontrados nos dados das leituras', '');
-    for (const x of DIST.lecionario) L.push(`- **${x.estado}.** ${x.descricao}`);
+    for (const x of DIST.lecionario) L.push(`- **${x.estado}.** ${x.correcao ? `Problema encontrado: ${x.descricao} ${x.correcao}` : x.descricao}`);
     L.push('');
   }
   const cicloDe = new Map([...datas.values()].flat().map((x) => [x.ano, x.ciclo]));

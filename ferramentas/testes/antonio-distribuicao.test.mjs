@@ -81,15 +81,21 @@ describe('Santo Antônio, Etapa 2: dados e decisões', () => {
   test('decisões D1–D8 registradas na distribuição e no registro editorial', () => {
     assert.deepEqual(DIST.decisoes.map((d) => d.id), ['D1', 'D2', 'D3', 'D4a', 'D4b', 'D4c', 'D5', 'D6', 'D7', 'D8']);
     for (const d of DIST.decisoes) assert.ok(d.data === '2026-11-28' && d.questao && d.decisao && d.aplicacao, `${d.id} incompleta`);
-    assert.match(DIST.decisoes.find((d) => d.id === 'D8').aplicacao, /INTERROMPIDA/);
+    // D8: interrompida na implementação, aplicada depois da conferência do responsável (o texto anterior fica em atualizacoes)
+    const d8 = DIST.decisoes.find((d) => d.id === 'D8');
+    assert.match(d8.aplicacao, /^APLICADA em 28\/11\/2026/);
+    assert.match(d8.atualizacoes[0].antes, /^INTERROMPIDA/);
     // publicada com a aprovação expressa do responsável; os textos anteriores ficam em atualizacoes
     const e2 = REG.etapas.etapa_2;
     assert.match(e2.estado, /publicada/);
     assert.equal(e2.publicada_em, '2026-11-28');
     assert.match(e2.aprovacao, /Pode publicar/);
-    assert.deepEqual(e2.atualizacoes.map((a) => a.campo), ['estado', 'pendente']);
+    assert.deepEqual(e2.atualizacoes.map((a) => a.campo), ['estado', 'pendente', 'pendente']);
     assert.match(e2.atualizacoes[0].antes, /prévia/);
     assert.match(e2.atualizacoes[1].antes, /aprovação expressa/);
+    assert.match(e2.atualizacoes[2].antes, /^D8/);
+    assert.match(e2.pendente, /^nenhum/);
+    assert.ok(REG.historico.some((x) => x.data === '2026-11-28' && /D8 aplicada/.test(x.origem)), 'histórico da D8');
     assert.ok(REG.historico.some((x) => x.data === '2026-11-28' && /publicação aprovada/.test(x.origem)), 'histórico da publicação');
     const h = REG.historico.find((x) => x.data === '2026-11-28' && /D1–D8/.test(x.origem));
     assert.ok(h && /previa/.test(h.alteracoes) && /D8 interrompida/.test(h.alteracoes), 'histórico da Etapa 2');
@@ -369,18 +375,14 @@ describe('Santo Antônio, Etapa 2: publicação e dias no calendário (2025–20
     assert.ok(em('2026-02-22', 'sd06')); assert.ok(!em('2027-02-14', 'sd06')); assert.ok(!em('2028-03-05', 'sd06'));
   });
 
-  test('D8 interrompida: o índice das leituras não foi alterado, e o sd47 está na sexta e no sábado da 30ª semana nos dois anos', () => {
-    const ev = (k) => LDI.conjuntos[k][0].find(([s]) => s === 'Evangelho')[1];
-    assert.equal(ev('TC-30-sexta-II'), 'Lc 14,1-6');
-    assert.equal(ev('TC-30-sabado-II'), 'Lc 14,1.7-11');
-    assert.ok(DIST.lecionario.some((x) => /não corrigido/.test(x.estado) && /TC-30-sexta-I/.test(x.descricao)));
+  test('D8 aplicada: o sd47 continua na sexta e no sábado da 30ª semana nos dois anos, com a referência correta do ano I', () => {
+    // a correção do índice em si é testada em leituras.test.mjs
+    assert.ok(DIST.lecionario.some((x) => /^corrigido em 28\/11\/2026/.test(x.estado) && /TC-30-sexta-I/.test(x.descricao) && x.correcao && x.atualizacoes?.[0]?.antes));
     for (const iso of ['2027-10-29', '2027-10-30', '2026-10-30', '2026-10-31']) assert.ok(aparicoes.get('antonio-sd47').has(iso), iso);
-  });
-
-  test('D8, depois de conferida numa fonte litúrgica: sexta Lc 14,1-6 e sábado Lc 14,1.7-11 também no ano I', { skip: 'D8 interrompida: aguarda a conferência numa fonte litúrgica (ver distribuicao.json, lecionario)' }, () => {
-    const conj = (k) => LDI.conjuntos[k][0];
-    assert.deepEqual(conj('TC-30-sexta-I'), [['Primeira leitura', 'Rm 9,1-5'], ['Salmo responsorial', 'Sl 147(147B),12-13.14-15.19-20'], ['Evangelho', 'Lc 14,1-6']]);
-    assert.deepEqual(conj('TC-30-sabado-I'), [['Primeira leitura', 'Rm 11,1-2a.11-12.25-29'], ['Salmo responsorial', 'Sl 93'], ['Evangelho', 'Lc 14,1.7-11']]);
-    assert.deepEqual(conj('TC-30-sexta-II').map(([s]) => s), ['Primeira leitura', 'Salmo responsorial', 'Evangelho']);
+    const ref = (k) => porCod.get('sd47').correspondencias.find((c) => c.leituras === k).referencia_do_dia;
+    assert.equal(ref('TC-30-sexta-I'), 'Lc 14,1-6');
+    assert.equal(ref('TC-30-sabado-I'), 'Lc 14,1.7-11');
+    assert.equal(ref('TC-30-sexta-II'), 'Lc 14,1-6');
+    assert.equal(ref('TC-30-sabado-II'), 'Lc 14,1.7-11');
   });
 });

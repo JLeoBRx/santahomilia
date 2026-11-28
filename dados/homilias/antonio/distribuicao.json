@@ -17,7 +17,8 @@
   "data": "2026-11-28",
   "aprovacao": "Aprovação expressa do responsável (“Pode publicar”, 28/11/2026), depois de examinar o resultado da implementação, as datas dos ciclos A, B e C e as telas do site em prévia.",
   "fora_da_publicacao": "D8 (correção do índice das leituras, sexta e sábado da 30ª semana do Tempo Comum, ano I) continua interrompida até a conferência numa fonte litúrgica; o índice das leituras não foi alterado.",
-  "estado_anterior": "previa (de 28/11/2026 até a aprovação)"
+  "estado_anterior": "previa (de 28/11/2026 até a aprovação)",
+  "depois_da_publicacao": "D8 aplicada em 28/11/2026, como alteração independente, depois de o responsável conferir a ordem numa fonte litúrgica (ver decisoes, D8, e lecionario)."
  },
  "criterios": {
   "liturgica": "O sermão foi pregado para uma celebração, segundo o título da edição crítica (Centro Studi Antoniani, 1979), e a mesma celebração existe hoje no calendário do site: a mesma festa ou solenidade. Celebrações antigas não são convertidas em atuais: os domingos que não existem mais (Septuagésima, depois de Pentecostes, depois da Epifania, depois da Páscoa) e os domingos numerados do Advento e da Quaresma entram só pela leitura (D1, D6). Quando a celebração mudou de título, de acento ou de data, a observação histórica é registrada e mostrada (D4).",
@@ -107,13 +108,30 @@
    "data": "2026-11-28",
    "questao": "Correção do índice das leituras (30ª semana do Tempo Comum, ano I).",
    "decisao": "Aprovado como alteração independente, condicionada à conferência numa fonte litúrgica confiável e nos arquivos atuais.",
-   "aplicacao": "INTERROMPIDA em 28/11/2026: a inversão foi confirmada nos arquivos atuais e a causa identificada, mas nenhuma fonte litúrgica externa pôde ser consultada neste ambiente. O índice não foi alterado; ver lecionario. Não afeta a distribuição: o sd47 corresponde à sexta e ao sábado da 30ª semana nos dois anos."
+   "aplicacao": "APLICADA em 28/11/2026, depois da aprovação da publicação, como alteração independente: o responsável conferiu a ordem em a Liturgia Diária de 29 e 30/10/2027 (Lírio Católico, que a publica com autorização da CNBB) e o índice do Lecionário dos dias de semana, Ano I, que confirmam a sequência do relatório (sexta Rm 9,1-5 e Lc 14,1-6; sábado Rm 11,1-2a.11-12.25-29 e Lc 14,1.7-11). Em dados/leituras/indice.json, os conjuntos TC-30-sexta-I e TC-30-sabado-I foram trocados entre si, com o registro em 'corrigidas'; o ano II não foi alterado. A distribuição não muda: o sd47 continua na sexta e no sábado da 30ª semana nos dois anos; só a referência do dia de cada correspondência do ano I passa a ser a correta.",
+   "atualizacoes": [
+    {
+     "data": "2026-11-28",
+     "campo": "aplicacao",
+     "antes": "INTERROMPIDA em 28/11/2026: a inversão foi confirmada nos arquivos atuais e a causa identificada, mas nenhuma fonte litúrgica externa pôde ser consultada neste ambiente. O índice não foi alterado; ver lecionario. Não afeta a distribuição: o sd47 corresponde à sexta e ao sábado da 30ª semana nos dois anos.",
+     "motivo": "O responsável conferiu a ordem numa fonte litúrgica e confirmou a inversão."
+    }
+   ]
   }
  ],
  "lecionario": [
   {
-   "estado": "identificado, não corrigido (D8 aguarda conferência numa fonte litúrgica)",
-   "descricao": "Em dados/leituras/indice.json, os conjuntos TC-30-sexta-I e TC-30-sabado-I estão trocados por inteiro: a sexta traz Rm 11,1-2a.11-12.25-29, Sl 93 e Lc 14,1.7-11, e o sábado traz Rm 9,1-5, Sl 147(147B),12-13.14-15.19-20 e Lc 14,1-6. O ano II está na ordem do lecionário (sexta Lc 14,1-6; sábado Lc 14,1.7-11). Causa: o gerador do índice anterior (LiturgiadasHoras, ferramentas/gerar_indice_liturgia_diaria.py) escolhia o arquivo de cada dia pelo primeiro versículo do Evangelho, e sexta e sábado começam ambos em Lc 14,1; no ano I, a escolha caiu trocada. Evidência interna da ordem correta: os Evangelhos dos dias de semana do Tempo Comum são os mesmos nos anos I e II; a leitura semicontínua de Romanos no ano I segue Rm 8,31b-39 (quinta), Rm 9,1-5, Rm 11,1-2a.11-12.25-29 e Rm 11,29-36 (segunda da 31ª semana, que começa onde a do sábado termina); a de Lucas segue Lc 13,31-35, Lc 14,1-6, Lc 14,1.7-11 e Lc 14,12-14. A correção (trocar os dois conjuntos do ano I, sem tocar no ano II) fica preparada para quando a ordem for confirmada no Lecionário ou na Liturgia Diária da CNBB (por exemplo, sexta 29/10/2027 e sábado 30/10/2027)."
+   "estado": "corrigido em 28/11/2026 (D8)",
+   "descricao": "Em dados/leituras/indice.json, os conjuntos TC-30-sexta-I e TC-30-sabado-I estão trocados por inteiro: a sexta traz Rm 11,1-2a.11-12.25-29, Sl 93 e Lc 14,1.7-11, e o sábado traz Rm 9,1-5, Sl 147(147B),12-13.14-15.19-20 e Lc 14,1-6. O ano II está na ordem do lecionário (sexta Lc 14,1-6; sábado Lc 14,1.7-11). Causa: o gerador do índice anterior (LiturgiadasHoras, ferramentas/gerar_indice_liturgia_diaria.py) escolhia o arquivo de cada dia pelo primeiro versículo do Evangelho, e sexta e sábado começam ambos em Lc 14,1; no ano I, a escolha caiu trocada. Evidência interna da ordem correta: os Evangelhos dos dias de semana do Tempo Comum são os mesmos nos anos I e II; a leitura semicontínua de Romanos no ano I segue Rm 8,31b-39 (quinta), Rm 9,1-5, Rm 11,1-2a.11-12.25-29 e Rm 11,29-36 (segunda da 31ª semana, que começa onde a do sábado termina); a de Lucas segue Lc 13,31-35, Lc 14,1-6, Lc 14,1.7-11 e Lc 14,12-14. A correção (trocar os dois conjuntos do ano I, sem tocar no ano II) fica preparada para quando a ordem for confirmada no Lecionário ou na Liturgia Diária da CNBB (por exemplo, sexta 29/10/2027 e sábado 30/10/2027).",
+   "correcao": "Corrigido em 28/11/2026: os dois conjuntos do ano I foram trocados entre si (sexta: Rm 9,1-5; Sl 147(147B),12-13.14-15.19-20; Lc 14,1-6; sábado: Rm 11,1-2a.11-12.25-29; Sl 93; Lc 14,1.7-11), e o ano II ficou como estava. Conferência do responsável: a Liturgia Diária de 29 e 30/10/2027 (Lírio Católico, que a publica com autorização da CNBB) e o índice do Lecionário dos dias de semana, Ano I.",
+   "atualizacoes": [
+    {
+     "data": "2026-11-28",
+     "campo": "estado",
+     "antes": "identificado, não corrigido (D8 aguarda conferência numa fonte litúrgica)",
+     "motivo": "Correção aplicada depois da conferência numa fonte litúrgica."
+    }
+   ]
   }
  ],
  "sermoes": [

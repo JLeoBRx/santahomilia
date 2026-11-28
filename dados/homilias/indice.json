@@ -3731,14 +3731,14 @@
           "tipo": "biblica",
           "leituras": "TC-30-sabado-I",
           "leitura": "Evangelho",
-          "referencia_do_dia": "Lc 14,1-6",
-          "versiculos_comentados": "Lc 14,1-6",
+          "referencia_do_dia": "Lc 14,1.7-11",
+          "versiculos_comentados": "Lc 14,1.7-11",
           "versiculos_em_comum": 6,
           "cobertura_do_trecho": 55,
           "cobertura_do_dia": 100,
           "criterio": "(b) ao menos 90% da leitura do dia está no trecho comentado, e ela tem 5 versículos ou mais",
           "dia": "Sábado da 30ª semana do Tempo Comum, Ano I",
-          "descricao": "Comenta Lc 14,1-11, trecho que inclui o Evangelho deste dia por inteiro (Lc 14,1-6). O sermão não foi pregado para este dia: a ligação é a leitura."
+          "descricao": "Comenta Lc 14,1-11, trecho que inclui o Evangelho deste dia por inteiro (Lc 14,1.7-11). O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
           "tipo": "biblica",
@@ -3757,14 +3757,14 @@
           "tipo": "biblica",
           "leituras": "TC-30-sexta-I",
           "leitura": "Evangelho",
-          "referencia_do_dia": "Lc 14,1.7-11",
-          "versiculos_comentados": "Lc 14,1.7-11",
+          "referencia_do_dia": "Lc 14,1-6",
+          "versiculos_comentados": "Lc 14,1-6",
           "versiculos_em_comum": 6,
           "cobertura_do_trecho": 55,
           "cobertura_do_dia": 100,
           "criterio": "(b) ao menos 90% da leitura do dia está no trecho comentado, e ela tem 5 versículos ou mais",
           "dia": "Sexta-feira da 30ª semana do Tempo Comum, Ano I",
-          "descricao": "Comenta Lc 14,1-11, trecho que inclui o Evangelho deste dia por inteiro (Lc 14,1.7-11). O sermão não foi pregado para este dia: a ligação é a leitura."
+          "descricao": "Comenta Lc 14,1-11, trecho que inclui o Evangelho deste dia por inteiro (Lc 14,1-6). O sermão não foi pregado para este dia: a ligação é a leitura."
         },
         {
           "tipo": "biblica",
